@@ -1,0 +1,130 @@
+/*
+     _    ____ ____ ___  ____  ____ ___ ___  _   _ ____
+    / \  / ___/ ___/ _ \|  _ \|  _ \_ _/ _ \| \ | / ___|
+   / _ \| |  | |  | | | | |_) | | | | | | | |  \| \___ \
+  / ___ \ |__| |__| |_| |  _ <| |_| | | |_| | |\  |___) |
+ /_/   \_\____\____\___/|_| \_\____/___\___/|_| \_|____/
+*/
+
+
+/* ==========================================================================
+   %% Styling for Vanishing Content %%
+   ========================================================================== */
+
+.subnav {
+ 	width: auto;
+ 	position: absolute;
+ 	top: $unit-xl;
+ 	right: $unit-md;
+ 	z-index: 10000000;
+
+ 	li {
+    padding: $unit-xs $unit-xs;
+ 		margin-bottom: 7px;
+ 		text-align: center;
+
+ 		a {
+ 			font-size: 1.4rem;
+ 			color: white;
+ 			text-align: center;
+ 		}
+ 	}
+
+ 	@include mq (md) {
+ 		display: none;
+ 	}
+
+ 	@include mq (sm) {
+ 		display: none;
+ 	}
+
+  &.home {
+    li {
+      background-color: rgba(34, 135, 190, .4);
+      border: 1px solid $blue-potion;
+
+      &:hover {
+        background-color: $blue-potion;
+
+        a {
+          background-color: $blue-potion;
+        }
+      }
+    }
+  }
+
+  &.about {
+    li {
+      background-color: rgba(160, 110, 175, .4);
+      border: 1px solid $purple-potion;
+
+      &:hover {
+        background-color: $purple-potion;
+
+        a {
+          background-color: $purple-potion;
+        }
+      }
+    }
+  }
+
+  &.portfolio {
+    li {
+      background-color: rgba(133, 185, 51, .4);
+      border: 1px solid $green-potion;
+
+      &:hover {
+        background-color: $green-potion;
+
+        a {
+          background-color: $green-potion;
+        }
+      }
+    }
+  }
+
+  &.photography {
+    li {
+      background-color: rgba(231, 30, 37, .4);
+      border: 1px solid $red-potion;
+
+      &:hover {
+        background-color: $red-potion;
+
+        a {
+          background-color: $red-potion;
+        }
+      }
+    }
+  }
+
+  &.resume {
+    li {
+      background-color: rgba(245, 126, 32, .4);
+      border: 1px solid $orange-potion;
+
+      &:hover {
+        background-color: $orange-potion;
+
+        a {
+          background-color: $orange-potion;
+        }
+      }
+    }
+  }
+
+  &.contact {
+    li {
+      background-color: rgba(225, 178, 37, .7);
+      border: 1px solid $yellow-potion;
+
+      &:hover {
+        background-color: $yellow-potion;
+
+        a {
+          background-color: $yellow-potion;
+        }
+      }
+    }
+  }
+}

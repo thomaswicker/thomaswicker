@@ -1,0 +1,73 @@
+%header#home-header.main-header{"ng-controller" => "HomeController", "ng-init" => "init()",:style => "background-image: url(img/superheros/bg-code-" + "{{ activePage }}" + ".jpg)"}
+  #home-container-inner.main-header-inner
+    .my-img.large-2.medium-3.columns
+      %img{:src => "img/pixelme/pixel-me-" + "{{ activePage }}" + ".png"}
+
+    .my-info.large-10.medium-9.columns
+      %h1 {{ title }}
+
+      %h2 {{ subtitle }}
+
+      %p.quote {{ quote }}
+
+%ng-include{ :src => "'partials/header.html'" }
+%ul.subnav.home{ 'role' => 'navigation', 'aria-label' => 'social networks navigation' }
+  %ng-include{ :src => "'partials/subnav.html'" }
+
+%section#body-home
+  #body-home-inner
+    .my-info-mobile.show-for-small-only
+      %h1
+        Thomas Wicker
+      %h2
+        Senior Front End Developer
+      %p.quote
+        Code monkey, $AAPL enthusiast, lifelong learner, entrepreneur, gambler, fine artist, photographer and father of two healthy girls
+
+    .body-home-left.medium-7.large-8.columns
+      %ul.post-list.medium-12{ "ng-repeat" => "post in posts" }
+        %li.medium-12
+          .medium-12
+            %h2
+              %a{:href => ""}
+                {{ post.title }}
+          -# %ul.medium-12.margin.bottom.lg.post-tags
+          -#   %li
+          -#     %a{:href => ""}
+          -#       {{ post.tags }}
+
+          .medium-12
+            %p {{ post.body}}
+
+            %img{:alt => "{{ post.title }}", :src => "{{ post.imgurl }}"}
+
+          .medium-12.admin-buttons
+            %a.btn.btn-secondary{:href => ""} View
+
+
+    %aside.body-home-right.medium-5.large-4.columns
+      #lastfm-container.medium-12
+        #lastfm-title
+
+          #lastfm-title-left
+            %img{:src => "img/spotify_logo.png"}
+
+          #lastfm-title-right
+            %h4
+              LISTENING TO
+
+        %ul#lastfm
+
+
+      .social-feed.medium-12
+        #twitter-title
+          #twitter-title-left
+            %img{:src => "img/twitter_logo.png"}
+
+          #twitter-title-right
+            %h4
+              TWITTER FEED
+
+        %aside#twitter-feed
+          %a.twitter-timeline{href: "https://twitter.com/thomasjwicker", "data-widget-id" => "392388763487182849", "data-chrome" => "noheader nofooter noborders transparent", "data-tweet-limit" => "7"}
+            Tweets by @thomasjwicker

@@ -1,0 +1,1 @@
+function instagramFeed(){var e=new Instafeed({get:"user",userId:"187394513",accessToken:"187394513.566a3a4.bda225779b204cec8ce823dc4394a1a9"});e.run()}var $navItems=$(".superhero-nav li a");$navItems.on("click",function(){alert("test")}),setTimeout(instagramFeed,300);

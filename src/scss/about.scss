@@ -1,0 +1,36 @@
+#about-header {
+  border-top: 5px solid $purple-potion;
+
+  #about-header-inner {
+
+  }
+}
+
+#about-body {
+  #about-me {
+
+  }
+
+  #how-i-work {
+    h3 {
+      margin-top: $base-unit;
+      font-size: $font-size-xl;
+      font-weight: 600;
+      color: $black;
+    }
+
+    ul {
+      margin-top: $unit-base;
+      margin-left: $unit-base;
+      list-style-type: disc;
+
+      li {
+        margin-top: $unit-sm;
+
+        a {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE>
+%html{"ng-app" => "twApp"}
+  %head
+    %title thomaswicker.com - Thomas Wicker - Senior UX Developer
+
+    %meta{:charset => "UTF-8"}
+    %meta{name: 'description', content: 'Personal website and portfolio for Thomas Wicker: Software Developer in Denver, CO'}
+    %meta{'http-equiv' => 'X-UA-Compatible', content: 'IE=edge'}
+    %meta{charset: 'UTF-8'}
+    %meta{name: 'viewport', 'initial-scale' => '1', 'maximum-scale' => '1', 'user-scalable' => 'no', 'content' => 'width=device-width' }
+    %meta{property: 'og:title', content: 'Personal website and portfolio for Thomas Wicker: Front End Dev'}
+
+    / Begin ## FAVICONS ## Replace the icon images with your own under img/
+    %link{:href => "img/favicon.ico", :rel => "shortcut icon"}
+    / Application Spells
+    %link{:href => "bower_components/foundation-sites/dist/foundation.min.css", :rel => "stylesheet"}
+    %link{:href => "bower_components/lightbox2/dist/css/lightbox.min.css", :rel => "stylesheet"}
+    %link{:href => "css/application.min.css", :rel => "stylesheet"}
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css", :rel => "stylesheet"}
+
+  %body{"ng-controller" => "TWController", "ng-init" => "init()"}
+    //default ng-view to spit out partials
+    %ng-view
+
+    / Magical Spells --  VENDOR
+    %script{:src => "bower_components/jquery/dist/jquery.min.js"}
+    %script{:src => "bower_components/angular/angular.min.js"}
+    %script{:src => "bower_components/angular-route/angular-route.min.js"}
+    %script{:src => "bower_components/foundation-sites/dist/foundation.min.js"}
+    %script{:src => "bower_components/lightbox2/dist/js/lightbox.min.js"}
+    %script{:src => "bower_components/masonry/dist/masonry.pkgd.min.js"}
+    %script{:src => "bower_components/instafeed.js/instafeed.min.js"}
+
+    / Magical Spells --  OTHER LIBRARIES
+    %script{:src => "js/nav.js"}
+    %script{:src => "js/lastfm.js"}
+
+    / Magical Spells --  MAIN APP.JS
+    %script{:src => "js/application.min.js"}
+
+:javascript
+  $(document).foundation();
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+
+  //TWITTER API
+  !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");

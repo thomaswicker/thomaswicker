@@ -1,0 +1,194 @@
+@import 'global/vars';
+@import 'global/mixins';
+
+/*
+  ____   ___  ____ _____ _____ ___  _     ___ ___
+ |  _ \ / _ \|  _ \_   _|  ___/ _ \| |   |_ _/ _ \
+ | |_) | | | | |_) || | | |_ | | | | |    | | | | |
+ |  __/| |_| |  _ < | | |  _|| |_| | |___ | | |_| |
+ |_|    \___/|_| \_\|_| |_|   \___/|_____|___\___/
+
+*/
+
+#portfolio-header {
+  border-top: $unit-xxs solid $green-potion;
+
+  #portfolio-header-inner {
+
+  }
+}
+
+#body-portfolio {
+  background-color: $white;
+  padding-bottom: $unit-jumbo;
+  overflow-x: hidden;
+}
+
+#body-portfolio-inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 $unit-xl 0;
+  overflow-x: hidden;
+
+  .masonry-container {
+    float: left;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white !important;
+    background-color: $white !important;
+    overflow-x: hidden;
+
+    @include mq(sm) {
+      margin-top: -$unit-base !important;
+    }
+
+    .portfolio-item {
+      float: left;
+      width: 33.3%;
+      height: auto;
+      background-color: $white;
+      -moz-box-shadow:    0px 0px 5px #ccc;
+      -webkit-box-shadow: 0px 0px 5px #ccc;
+      box-shadow:         0px 0px 5px #ccc;
+      display: inline;
+
+      @include mq(lg) {
+        width: 49.95%;
+      }
+
+      @include mq(md) {
+        width: 49.90%;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+      }
+
+      h3 {
+        float: left;
+        width: 90%;
+        padding: $unit-base $unit-xl 0 $unit-base;
+        font-family: $font-2;
+        font-size: $font-size-xxl;
+        font-weight: 200;
+        line-height: $base-line-height;
+        color: $black;
+
+        @include mq(md) {
+
+        }
+
+        @include mq(sm) {
+          padding: $unit-base $unit-xs 0 $unit-base;
+        }
+      }
+
+      h4 {
+        float: left;
+        width: 90%;
+        margin-top: -$unit-xxs;
+        padding: 0 $unit-xxl 0 $unit-base;
+        font-family: $font-1;
+        font-size: $font-size-md;
+        font-weight: 400;
+        line-height: $base-line-height;
+        color: $color-primary;
+
+        @include mq(md) {
+          font-size: $font-size-base;
+        }
+
+        @include mq(sm) {
+          padding: 0 $unit-sm 0 $unit-xxl;
+          font-size: $font-size-base;
+        }
+      }
+
+      h5 {
+        float: left;
+        width: 90%;
+        padding: 0 $unit-xxl 0 $unit-xl;
+        font-family: $font-1;
+        font-size: $font-size-base;
+        font-weight: 400;
+        line-height: $base-line-height;
+        color: $light-gray;
+
+        @include mq(md) {
+          font-size: $font-size-sm;
+        }
+
+        @include mq(sm) {
+          font-size: $font-size-sm;
+        }
+      }
+
+      a {
+        font-size: $font-size-sm;
+        text-decoration: none;
+      }
+
+      .buttons {
+        float: left;
+        width: 100%;
+        padding: 0 $unit-base $unit-base $unit-base;
+
+        .button-secondary {
+          margin-left: $unit-xs;
+        }
+
+        @include mq(sm) {
+          padding: $unit-base;
+        }
+      }
+
+      .image {
+        padding: $unit-base;
+      }
+    }
+  }
+}
+
+#details {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 175px;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  z-index: 100;
+  display: none;
+}
+
+.active-modal {
+  display: block !important;
+  transition: .8s;
+}
+
+.modules {
+  position: relative;
+  top: 10%;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: $unit-xxl;
+  overflow: scroll;
+  background-color: $white;
+  text-align: center;
+  z-index: 101;
+
+  @include mq(sm) {
+    width: 90%;
+  }
+
+  article img {
+    margin-top: $unit-lg;
+  }
+}
+/* ========================================================
+   END PORTFOLIO PAGE SCSS
+   ======================================================== */

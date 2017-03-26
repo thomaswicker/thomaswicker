@@ -1,0 +1,21 @@
+%nav{:role => "navigation"}
+  .superhero-nav.medium-12.columns
+    %ul
+      %li
+        %a{:href => "#/home", "ng-class" => "{active: $route.current.activeTab == 'index'}"}
+          Home
+      %li
+        %a{:href => "#/about", "ng-class" => "{active: $route.current.activeTab == 'about'}"}
+          About
+      %li
+        %a{:href => "#/portfolio", "ng-class" => "{active: $route.current.activeTab == 'portfolio'}"}
+          Portfolio
+      %li
+        %a{:href => "#/photography", "ng-class" => "{active: $route.current.activeTab == 'photography'}"}
+          Photography
+      %li
+        %a{:href => "#/resume", "ng-class" => "{active: $route.current.activeTab == 'resume'}"}
+          Resume
+      %li
+        %a{:href => "#/contact", "ng-class" => "{active: $route.current.activeTab == 'contact'}"}
+          Contact

@@ -1,0 +1,68 @@
+/*
+  ____  _   _ ____  _____ ____  _   _ _____ ____   ___  ____
+ / ___|| | | |  _ \| ____|  _ \| | | | ____|  _ \ / _ \/ ___|
+ \___ \| | | | |_) |  _| | |_) | |_| |  _| | |_) | | | \___ \
+  ___) | |_| |  __/| |___|  _ <|  _  | |___|  _ <| |_| |___) |
+ |____/ \___/|_|   |_____|_| \_\_| |_|_____|_| \_\\___/|____/
+*/
+
+
+/* ==========================================================================
+   %% Styling for Potion Superheros %%
+   ========================================================================== */
+
+.superhero {
+  min-height: 300px;
+  padding: $unit-xxl 0 $unit-jumbo $unit-jumbo;
+
+  @include mq(sm) {
+    padding: 2em 2em 1.5em 2em;
+  }
+
+  &.short {
+    min-height: 200px;
+  }
+
+  &.normal {
+    min-height: 350px;
+  }
+
+  &.tall {
+    min-height: 500px;
+  }
+}
+
+.superhero-nav {
+  min-height: $unit-xxl;
+  background-color: $xdark-gray;
+
+  ul {
+    float: left;
+
+    li {
+      float: left;
+      width: auto;
+
+      a {
+        float: left;
+        padding: $unit-base $unit-base;
+        font-family: $font-1;
+        font-size: $font-size-md;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        background-color: $xdark-gray;
+
+        &:hover {
+          background-color: $dark-gray;
+          text-decoration: none;
+        }
+
+        &.active {
+          background-color: $white !important;
+          color: $black;
+        }
+      }
+    }
+  }
+}

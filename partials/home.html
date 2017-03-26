@@ -1,0 +1,83 @@
+<header class='main-header' id='home-header' ng-controller='HomeController' ng-init='init()' style='background-image: url(img/superheros/bg-code-{{ activePage }}.jpg)'>
+  <div class='main-header-inner' id='home-container-inner'>
+    <div class='my-img large-2 medium-3 columns'>
+      <img src='img/pixelme/pixel-me-{{ activePage }}.png'>
+    </div>
+    <div class='my-info large-10 medium-9 columns'>
+      <h1>{{ title }}</h1>
+      <h2>{{ subtitle }}</h2>
+      <p class='quote'>{{ quote }}</p>
+    </div>
+  </div>
+</header>
+<ng-include src="'partials/header.html'"></ng-include>
+<ul aria-label='social networks navigation' class='subnav home' role='navigation'>
+  <ng-include src="'partials/subnav.html'"></ng-include>
+</ul>
+<section id='body-home'>
+  <div id='body-home-inner'>
+    <div class='my-info-mobile show-for-small-only'>
+      <h1>
+        Thomas Wicker
+      </h1>
+      <h2>
+        Senior Front End Developer
+      </h2>
+      <p class='quote'>
+        Code monkey, $AAPL enthusiast, lifelong learner, entrepreneur, gambler, fine artist, photographer and father of two healthy girls
+      </p>
+    </div>
+    <div class='body-home-left medium-7 large-8 columns'>
+      <ul class='post-list medium-12' ng-repeat='post in posts'>
+        <li class='medium-12'>
+          <div class='medium-12'>
+            <h2>
+              <a href=''>
+                {{ post.title }}
+              </a>
+            </h2>
+          </div>
+          <div class='medium-12'>
+            <p>{{ post.body}}</p>
+            <img alt='{{ post.title }}' src='{{ post.imgurl }}'>
+          </div>
+          <div class='medium-12 admin-buttons'>
+            <a class='btn btn-secondary' href=''>View</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <aside class='body-home-right medium-5 large-4 columns'>
+      <div class='medium-12' id='lastfm-container'>
+        <div id='lastfm-title'>
+          <div id='lastfm-title-left'>
+            <img src='img/spotify_logo.png'>
+          </div>
+          <div id='lastfm-title-right'>
+            <h4>
+              LISTENING TO
+            </h4>
+          </div>
+        </div>
+        <ul id='lastfm'></ul>
+      </div>
+      <div class='social-feed medium-12'>
+        <div id='twitter-title'>
+          <div id='twitter-title-left'>
+            <img src='img/twitter_logo.png'>
+          </div>
+          <div id='twitter-title-right'>
+            <h4>
+              TWITTER FEED
+            </h4>
+          </div>
+        </div>
+        <aside id='twitter-feed'>
+          <a class='twitter-timeline' data-chrome='noheader nofooter noborders transparent' data-tweet-limit='7' data-widget-id='392388763487182849' href='https://twitter.com/thomasjwicker'>
+            Tweets by @thomasjwicker
+          </a>
+        </aside>
+      </div>
+    </aside>
+  </div>
+</section>

@@ -1,0 +1,291 @@
+/*
+   ____ ___  _   _ _____  _    ____ _____
+  / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
+ | |  | | | |  \| | | | / _ \| |     | |
+ | |__| |_| | |\  | | |/ ___ \ |___  | |
+  \____\___/|_| \_| |_/_/   \_\____| |_|
+
+*/
+
+#contact-header {
+  border-top: $unit-xxs solid $yellow-potion;
+
+  #contact-header-inner {
+
+  }
+}
+
+#body-contact {
+  background-color: $white;
+  padding-bottom: $unit-xxl;
+  margin-bottom: $unit-lg;
+
+  @include mq(sm) {
+		top: $unit-xs;
+
+		.my-info-mobile {
+			display: none;
+		}
+  }
+}
+
+#body-contact-inner {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 $unit-xl 0;
+  background-color: $white;
+
+  @include mq(lg) {
+ 		width: 90%;
+  }
+
+  @include mq(md) {
+ 		width: 95%;
+  }
+
+  @include mq(sm) {
+ 		width: 95%;
+  }
+}
+
+.body-contact-left {
+	float: left;
+	padding: $unit-lg $unit-sm 0 $unit-sm;
+
+	@include mq(sm) {
+    padding: $unit-lg $unit-sm 0 $unit-sm;
+		text-align: center;
+	}
+
+  .contact-info-container {
+    float: right;
+    width: 100%;
+    min-width: 275px;
+    max-width: 325px;
+
+    @include mq(xl) {
+
+    }
+
+    @include mq(lg) {
+
+    }
+
+    @include mq(md) {
+      float: left;
+      min-width: none;
+      max-width: none;
+    }
+
+    @include mq(sm) {
+      float: left;
+      min-width: none;
+      max-width: none;
+    }
+
+    h2 {
+      margin-top: 1rem;
+    }
+
+    h4 {
+      margin: $unit-md 0 $unit-xs 0;
+    }
+
+    p {
+      float: left;
+      width: 100%;
+      line-height: $base-line-height;
+
+      strong {
+        font-weight: 600 !important;
+      }
+    }
+
+    a {
+      display: block;
+      color: $color-primary;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+	.contact-page-email-btn a {
+		@include mq(sm) {
+			width: 100%;
+      margin-top: $unit-xl;
+			font-size: 1rem !important;
+		}
+	}
+
+	.google-map {
+		float: left;
+		width: 100%;
+		margin: $unit-lg 0 0 0;
+
+		iframe {
+			width: 250px;
+			height: 250px;
+			background-color: $white;
+			padding: 7px;
+			-moz-box-shadow: 0 0 6px #444;
+			-webkit-box-shadow: 0 3px 6px #444;
+			box-shadow: 0 0 6px #444;
+
+			@include mq(lg) {
+				width: 275px;
+				height: 275px;
+			}
+
+			@include mq(md) {
+				width: 240px;
+				height: 240px;
+			}
+
+			@include mq(sm) {
+				width: 90%;
+			}
+		}
+	}
+}
+
+.body-contact-right {
+	float: left;
+	padding: $unit-xxl $unit-sm $unit-xxl $unit-sm !important;
+
+  @include mq(xl) {
+
+  }
+
+  @include mq(lg) {
+
+  }
+
+	@include mq(md) {
+		padding: $unit-lg 0 $unit-lg $unit-xxl !important;
+  }
+
+	@include mq(sm) {
+		padding: $unit-lg 0 $unit-lg 0 !important;
+	}
+
+  .btn {
+    border: 0;
+  }
+
+  .btn-secondary {
+
+  }
+  .btn-gray {
+
+  }
+
+	h2.contact-header {
+		margin: 0 0 $unit-sm 0;
+		@include font($font-2, normal, $font-size-xl, $font-weight-light);
+		font-size: $font-size-xxl;;
+
+		@include mq(sm) {
+			font-size: $font-size-xl;
+		}
+	}
+
+	.contact-blurb {
+		font-size: $font-size-lg;
+		line-height: $base-line-height;
+		margin: 0 0 $unit-base 0;
+	}
+
+	.contact-button-container {
+		float: left;
+		margin: $unit-base 0;
+
+    .btn {
+      @include mq(sm) {
+        width: 100% !important;
+      }
+    }
+    .btn-secondary {
+      @include mq(sm) {
+        margin-top: $unit-base;
+      }
+    }
+    .btn-gray {
+      @include mq(sm) {
+        margin-top: $unit-xs;
+      }
+    }
+	}
+
+  label {
+    margin-bottom: $unit-xs;
+    font-weight: 600;
+  }
+
+	input {
+		float: left;
+		clear: both;
+		width: 60%;
+    max-width: 600px;
+		padding: 7px $unit-xxs 7px 8px;
+		border: 1px solid $light-gray;
+		border-radius: 0;
+    box-shadow: none;
+
+		&:focus {
+			-moz-box-shadow: 0 0 6px $color-primary;
+			-webkit-box-shadow: 0 3px 6px $color-primary;
+			box-shadow: 0 0 6px $color-primary;
+			border: none;
+		}
+
+		@include mq(md) {
+			width: 90%;
+		}
+
+		@include mq(sm) {
+			width: 90%;
+		}
+	}
+
+	textarea  {
+		float: left;
+		clear: both;
+		width: 90%;
+		min-height: 180px;
+		padding: 7px $unit-xxs 7px $unit-xxs;
+		border: 1px solid $light-gray;
+		border-radius: 0;
+
+		@include mq(md) {
+			width: 90%;
+		}
+
+		@include mq(sm) {
+			width: 100%;
+		}
+	}
+}
+
+.contact-form {
+  padding-left: $unit-sm;
+
+  label {
+    float: left;
+    width: 100%;
+  }
+
+  .buttons {
+    .btn {
+      max-width: 150px;
+      margin-top: $unit-sm;
+    }
+  }
+}
+
+/* ========================================================
+   END CONTACT PAGE SCSS
+   ======================================================== */

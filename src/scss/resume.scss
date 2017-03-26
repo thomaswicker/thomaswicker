@@ -1,0 +1,867 @@
+@import 'global/vars';
+@import 'global/mixins';
+
+/*
+  ____  _____ ____  _   _ __  __ _____
+ |  _ \| ____/ ___|| | | |  \/  | ____|
+ | |_) |  _| \___ \| | | | |\/| |  _|
+ |  _ <| |___ ___) | |_| | |  | | |___
+ |_| \_\_____|____/ \___/|_|  |_|_____|
+
+*/
+
+#resume-header {
+  border-top: 5px solid $orange-potion;
+
+  #resume-header-inner {
+
+  }
+}
+
+#body-resume {
+	float: left;
+	background-color: $white;
+	padding-bottom: 3rem;
+}
+
+#body-resume-inner {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $white;
+
+	@include mq(lg) {
+		width: 90%;
+	}
+
+	@include mq(md) {
+		width: 90%;
+	}
+
+	@include mq(sm) {
+		float: left;
+		width: 100%;
+		padding: 0 .5rem;
+
+		h1 {
+			padding-top: 1rem;
+		}
+
+		h2 {
+			font-size: 1.4rem !important;
+		}
+	}
+}
+
+.office-image {
+	width: 90%;
+	margin-top: 1rem;
+	background-color: white;
+}
+
+.linkedin-logo {
+	margin: 1rem 0 0 0;
+	padding: 1rem 0 1rem 0;
+	max-width: 10rem;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+#job-status {
+	float: left;
+	width: 100%;
+
+  @include mq(md) {
+  	display: none;
+	}
+
+  @include mq(sm) {
+  	display: none;
+	}
+
+	p {
+		float: right;
+		display: block;
+		width: 70%;
+		margin-top: .5rem;
+		padding: 1rem 1rem 0 0;
+		text-align: right;
+		font-weight: 600;
+		font-family: $font-1;
+		font-size: .8rem;
+
+		i {
+			font-size: 1rem;
+			color: #f1603f;
+			top: 2px;
+			position: relative;
+		}
+
+		span {
+
+			&:first-child {
+				padding: .1rem .1rem .1rem .5rem;
+				color: #000;
+				font-size: .8rem;
+			}
+
+			&:last-child {
+				padding: .3rem 1rem .3rem 0;
+				font-size: .85rem;
+				font-weight: 300;
+				color: #000;
+			}
+		}
+	}
+}
+
+#download-resume {
+	margin-top: 15px;
+	@include font($font-1, normal, 1rem, $font-weight-bold);
+	font-weight: bold !important;
+}
+
+#download-resume-btns {
+	float: left;
+	width: 100%;
+	padding-top: $unit-xs;
+
+  @include mq(sm) {
+    width: 100%;
+   	margin-top: .6rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  h3 {
+  	color: #111;
+  	font-size: $font-size-sm;
+  	font-weight: 600;
+  }
+
+  i {
+  	display: inline;
+  	margin-left: .2rem;
+  	color: $color-primary;
+
+   	@include mq(md) {
+			display: none;
+		}
+
+   	@include mq(sm) {
+			display: none;
+		}
+  }
+
+  a {
+  	width: auto;
+    text-decoration: none;
+    margin-right: 0;
+  }
+
+  .download-icons {
+		color: white;
+		font-size: 1rem;
+		margin-right: .35rem;
+		padding: .3rem;
+
+		&.fa-file-pdf-o {
+			background-color: #d81f26;
+			border: 1px solid #d81f26;
+
+			&:hover {
+				color: #d81f26;
+				background-color: white;
+				border: 1px solid #d81f26;
+			}
+		}
+
+		&.fa-file-word-o {
+			background-color: #2b579b;
+			border: 1px solid #2b579b;
+
+			&:hover {
+				color: #2b579b;
+				background-color: white;
+				border: 1px solid #2b579b;
+			}
+		}
+
+		&.fa-print {
+			background-color: #999;
+			border: 1px solid #999;
+			color: white;
+
+			&:hover {
+				color: #999;
+				background-color: white;
+				border: 1px solid #999;
+			}
+		}
+	}
+
+	.download-links {
+		position: relative;
+		right: 0;
+		margin-top: $unit-base;
+	}
+}
+
+#my-resume-container-details {
+	float: left;
+	padding: 0 0 2.8rem 0;
+	margin: 0 0 2.2rem 0;
+	font-family: $font-1;
+	font-size: .9rem;
+	color: $black;
+	border-bottom: 1px dotted $color-primary;
+
+	@include mq(md) {
+		padding: 2rem 0 2.8rem 0;
+	}
+
+	@include mq(sm) {
+		padding: 1rem 0 1.1rem 0;
+	}
+}
+
+#my-resume-container-details-left {
+	float: left;
+	width: 250px;
+	margin-top: 1rem;
+	padding: 1.5rem 1rem 1.5rem 2rem;
+	border: 1px solid #ccc;
+
+	@include mq(lg) {
+
+	}
+
+	@include mq(md) {
+
+	}
+
+	@include mq(sm) {
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+		padding: 1.5rem 0 2rem 0;
+	}
+
+	#my-info-contact {
+		p, a {
+			float: left;
+			width: 100%;
+			@include font($font-1, normal, .85rem, $font-weight-normal);
+		}
+
+		a {
+			line-height: 1.2rem;
+			text-decoration: none;
+			color: $color-primary;
+
+			@include mq(sm) {
+				font-size: 1rem;
+				line-height: 1.4rem;
+			}
+
+			&:hover {
+				text-decoration: underline;
+				background-color: transparent;
+			}
+		}
+
+		button {
+			margin-top: 10;
+			font-size: .4rem;
+			padding: 8px 11px 8px 11px;
+
+			@include mq(md) {
+				font-size: .1rem;
+				padding: 6px 9px 6px 9px;
+			}
+
+			@include mq(sm) {
+				margin-top: 15px;
+				width: 100%;
+			}
+
+			a {
+				text-decoration: none;
+				color: $white;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.name-block {
+			@include font($font-1, normal, $font-size-xxl, $font-weight-bold);
+			margin-bottom: .25em;
+
+			@include mq(md) {
+				font-size: 1.5rem;
+				line-height: 1.7rem;
+			}
+
+			@include mq(sm) {
+				font-size: 1.3rem;
+				line-height: 1.5rem;
+			}
+		}
+
+		.title-block {
+			@include font($font-1, italic, $font-size-lg, $font-weight-normal);
+			margin-bottom: $unit-xxs;
+
+			@include mq(sm) {
+				font-size: 1rem;
+			}
+		}
+
+		.website-block {
+      margin-top: $unit-xxs;
+			@include font($font-1, italic, $font-size-lg, $font-weight-normal);
+      display: block;
+
+			@include mq(sm) {
+				font-size: $font-size-base;
+			}
+		}
+
+    .linkedin-block {
+      margin-top: $unit-base;
+      margin-bottom: $unit-xxs;
+      padding-top: $unit-base;
+      padding-bottom: $unit-base;
+      @include font($font-1, italic, $font-size-lg, $font-weight-normal);
+      border-top: 1px solid $xxlight-gray;
+      border-bottom: 1px solid $xxlight-gray;
+
+      @include mq(sm) {
+        font-size: 1rem;
+      }
+    }
+	}
+}
+
+#my-resume-container-details-right {
+	float: left;
+	width: calc(100% - 250px);
+	max-width: 1500px;
+	@include font($font-1, normal, $font-size-sm, $font-weight-normal);
+	line-height: 1.3rem;
+	padding: 1.5rem 4rem 1rem 3rem;
+
+	@include mq(lg) {
+		padding: 1rem 4rem 1rem 3rem;
+	}
+
+	@include mq(md) {
+		padding: 0;
+	}
+
+	@include mq(sm) {
+		width: 100%;
+		height: auto;
+		padding: 1rem 0 1rem 0;
+		@include font($font-1, normal, .9rem, $font-weight-normal);
+		border-top: 1px dotted $color-primary;
+	}
+
+	#my-objective {
+		padding: 0;
+
+		@include mq(lg) {
+			padding: 2rem 0 0 2rem;
+		}
+
+		@include mq(md) {
+			padding: .75rem 0 0 3rem;
+		}
+
+		h2 {
+			margin: .8rem 0 0 0;
+
+			@include mq(sm) {
+				margin: 5px 0 0 0;
+			}
+		}
+
+		p {
+			float: left;
+			margin-top: 1.8rem;
+
+			@include mq(sm) {
+				margin-top: .5rem;
+			}
+		}
+	}
+}
+
+.resume-experience-block {
+	display: block;
+	float: left;
+	width: 100%;
+	padding: .8rem 0 2rem 0;
+	border-bottom: 1px solid lighten($light-gray, 10%);
+
+	a {
+		color: $color-primary;
+	}
+
+	span {
+		text-decoration: none !important;
+	}
+}
+
+#my-resume-container-skills {
+	text-align: left;
+
+	@include mq(sm) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	#skills-block {
+		float: left;
+		width: 100%;
+		border-bottom: 1px dotted $color-primary;
+		padding-bottom: 1.7rem;
+
+		h2 {
+			color: #8ACE39;
+			font-size: 1.2rem;
+			font-weight: 500;
+			text-align: center;
+
+			@include mq(sm) {
+				margin-top: 0;
+			}
+		}
+
+		#skills-block-left {
+			padding-right: 1.4rem;
+			padding-left: 0;
+
+			@include mq(md) {
+				padding-right: 0;
+			}
+
+			@include mq(sm) {
+				padding-right: 0;
+			}
+		}
+
+		#skills-block-middle {
+			padding-left: 1.4rem;
+
+			h2 {
+				color: #007EC3;
+			}
+
+			@include mq(md) {
+				padding-right: 0;
+			}
+
+			@include mq(sm) {
+				padding-left: 0;
+			}
+		}
+
+		#skills-block-right {
+			padding-left: 1.4rem;
+			padding-right: 0;
+
+			h2 {
+				color: #FFCC00;
+			}
+
+			@include mq(sm) {
+				padding-left: 0;
+			}
+		}
+
+		.skills-top {
+			float: left;
+			width: 100%;
+			margin-bottom: 5px;
+		}
+
+		.skills-bottom {
+			float: left;
+			width: 100%;
+			margin-bottom: 1rem;
+
+			.progress {
+
+			}
+		}
+	}
+}
+
+.resume-logo {
+	margin-top: 1.4rem;
+
+	@include mq(md) {
+		width: 150px;
+	}
+
+	@include mq(sm) {
+		width: 100px;
+	}
+
+	&.oppenheimer {
+		width: 80%;
+
+		@include mq(md) {
+			width: 150px;
+		}
+
+		@include mq(sm) {
+			width: 120px;
+		}
+	}
+
+	&.davita {
+		width: 80%;
+
+		@include mq(md) {
+			width: 150px;
+		}
+
+		@include mq(sm) {
+			width: 120px;
+		}
+	}
+
+	&.att {
+		width: 80%;
+
+		@include mq(md) {
+			width: 150px;
+		}
+
+		@include mq(sm) {
+			width: 120px;
+		}
+	}
+
+	&.cricket {
+		width: 80%;
+		margin-top: 1.6rem;
+
+		@include mq(md) {
+			width: 150px;
+		}
+
+		@include mq(sm) {
+			width: 120px;
+		}
+	}
+
+	&.rbsi {
+		width: 80%;
+
+		@include mq(md) {
+			width: 150px;
+		}
+
+		@include mq(sm) {
+			width: 120px;
+		}
+	}
+
+	&.regis {
+		width: 80%;
+		margin-top: 2rem;
+
+		@include mq(md) {
+			width: 150px;
+		}
+
+		@include mq(sm) {
+			width: 120px;
+		}
+	}
+
+	&.apex {
+		width: 80%;
+
+		@include mq(md) {
+			width: 160px;
+		}
+
+		@include mq(sm) {
+			width: 150px;
+		}
+	}
+}
+
+
+.resume-logo-container {
+	text-align: center;
+}
+
+#my-resume-container-experience {
+	float: left;
+	width: 100%;
+
+	@include mq(sm) {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	#my-experience {
+		height: auto;
+		border-right: 1px dotted $color-primary;
+		padding: 3rem 3.2rem 0 0;
+
+		@include mq(md) {
+			padding: 1.7rem 1.5rem 0 0
+		}
+
+		@include mq(sm) {
+			border-right: none;
+			padding: 0 0 1.7rem 0;
+		}
+
+		h2 {
+			float: left;
+			width: 100%;
+			color: $black;
+			line-height: 110%;
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+
+			@include mq(sm) {
+				margin-top: 1rem;
+			}
+		}
+
+		h3 {
+			float: left;
+			width: 100%;
+			@include font($font-1, normal, $font-size-md, $font-weight-normal);
+			line-height: 110%;
+			color: black;
+			margin: 1.7rem 0 0 0;
+
+			@include mq(sm) {
+				@include font($font-1, normal, 1.1rem, $font-weight-normal);
+				margin: 1.7rem 0 0 0;
+				height: auto;
+
+				span {
+					display: none;
+				}
+			}
+		}
+
+		h4 {
+			float: left;
+			width: 100%;
+			font-size: .85rem;
+			margin-bottom: 0;
+			text-transform: capitalize;
+
+			@include mq(sm) {
+				margin: 0 0 .1rem 0;
+				line-height: 1.3rem;
+			}
+
+			a {
+				float: left;
+				width: 100%;
+				color: $color-primary;
+				font-size: .9rem;
+
+				&:hover {
+					background-color: transparent;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		h5 {
+			float: left;
+			width: 100%;
+			color: #aaa;
+			font-size: .85rem;
+			margin: 0 0 .5rem 0;
+		}
+
+		p {
+			float: left;
+			width: 100%;
+			@include font($font-1, normal, .9em, $font-weight-normal);
+			color: $black;
+			padding: .5rem 0 .5rem 0;
+			font-size: .9rem;
+			line-height: 1.1rem;
+		}
+	}
+
+	#my-references {
+		padding: 1.7rem 0 0 1.5rem;
+
+		@include mq(md) {
+			padding: .7rem 0 0 1.3rem;
+		}
+
+		@include mq(sm) {
+			border-top: 1px dotted $color-primary;
+			padding: 0;
+		}
+
+		h2 {
+			float: left;
+			width: 100%;
+			color: $color-primary;
+			margin: 1rem 0 0 0;
+			line-height: 1.3rem;
+			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+		}
+
+		.ref-card {
+			float: left;
+			width: 98%;
+			border: 1px solid $color-primary;
+			background-color: transparent;
+			background-color: white;
+			padding: 1.8rem;
+			color: $black;
+			margin: .9rem 0 .9rem 0;
+
+			@include mq(md) {
+				width: 100%;
+			}
+
+			.ref-card-top {
+				float: left;
+				width: 100%;
+
+				.ref-card-top-left {
+					float: left;
+					width: 130px;
+					min-width: 100px;
+
+					@include mq(sm) {
+						width: 100%;
+						text-align: center;
+					}
+
+					img {
+						width: 100%;
+						max-width: 110px;
+						margin-top: -5px;
+						border-radius: 50%;
+						border: 1px solid $color-primary;
+						padding: 7px;
+
+						@include mq(sm) {
+							width: 40%;
+							margin-bottom: 1rem;
+						}
+					}
+				}
+
+				.ref-card-top-right {
+					float: left;
+  				width: calc(100% - 130px);
+					padding-top: 15px;
+
+  				@include mq(md) {
+  					width: 100%;
+  				}
+
+  				@include mq(sm) {
+  					width: 100%;
+						text-align: center;
+  				}
+
+					p {
+						float: left;
+						clear: right;
+						width: 100%;
+						color: $color-primary;
+						font-family: $font-1;
+					}
+
+					.ref-card-p1 {
+						@include font($font-2, normal, 1.05rem, $font-weight-bold);
+						padding: 0 0 5px 0;
+						text-transform: uppercase;
+						color: $color-primary;
+					}
+
+					.ref-card-p2 {
+						@include font($font-1, normal, 1rem, $font-weight-normal);
+						font-style: italic;
+	  				padding: 0 0 5px 0;
+						color: $color-primary;
+					}
+
+					.ref-card-p3 {
+						@include font($font-1, italic, .95rem, $font-weight-normal);
+						color: $color-primary;
+
+						@include mq(sm) {
+							margin-bottom: 1rem;
+						}
+  				}
+				}
+			}
+
+			.ref-card-bottom {
+				float: left;
+				width: 100%;
+				@include font($font-1, normal, 1rem, $font-weight-normal);
+				line-height: 140%;
+				padding-top: 10px;
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.progress {
+	background: #e9e5e2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#e9e5e2));
+	background-image: -webkit-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -moz-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -ms-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: -o-linear-gradient(top, #dddddd, #e9e5e2);
+	background-image: linear-gradient(top, #dddddd, #e9e5e2);
+	height: .6rem;
+	padding: 0;
+	margin: 0;
+}
+
+.adobe, .html, .css, .sass, .javascript, .react, .angular, .commandline, .haml, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
+	 -webkit-transition: width 4s ease !important;
+	 -moz-transition: width 4s ease !important;
+	 -o-transition: width 4s ease !important;
+	 transition: width 4s ease !important;
+ }
+
+.progress-frontend {
+	height: .5rem;
+	background-color: #8ACE39;
+}
+
+.progress-backend {
+	height: .5rem;
+	background-color: #FFCC00;
+}
+
+.progress-uiux {
+	height: .5rem;
+	background-color: #007EC3;
+}
+
+
+
+
+/* ========================================================
+   END RESUME PAGE SCSS
+   ======================================================== */
