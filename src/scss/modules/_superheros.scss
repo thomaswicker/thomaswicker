@@ -12,11 +12,14 @@
    ========================================================================== */
 
 .superhero {
+  position: relative;
+  float: left;
+  width: 100%;
   min-height: 300px;
-  padding: $unit-xxl 0 $unit-jumbo $unit-jumbo;
+  background-size: cover;
 
   @include mq(sm) {
-    padding: 2em 2em 1.5em 2em;
+
   }
 
   &.short {
@@ -30,7 +33,102 @@
   &.tall {
     min-height: 500px;
   }
+
+  .sh--inner {
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: $xl-end;
+    min-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq(xl) {
+
+    }
+
+    @include mq(lg) {
+      left: 3%;
+      right: 3%;
+      width: 94%;
+    }
+
+    @include mq(md) {
+      left: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    @include mq(sm) {
+
+    }
+
+    img {
+      position: relative;
+      top: 30px;
+      left: 50px;
+      max-width: 170px !important;
+      padding-top: 20px;
+      text-align: right;
+    }
+
+    .my-info {
+      text-align: left;
+      padding: 90px 100px 0 20px;
+
+      h1 {
+        font-family: $font-1;
+        font-size: $h1-size;
+        font-weight: 200;
+        color: white;
+      }
+
+      h2 {
+        font-family: $font-1;
+        color: $color-primary;
+      }
+
+      p.quote {
+        font-family: $font-2;
+        font-size: $font-size-lg;
+        color: white;
+        line-height: 140%;
+      }
+
+      span.quotee {
+        display: block;
+        margin-top: 20px;
+        font-style: italic;
+        color: $color-primary;
+      }
+    }
+  }
+
+  &.superhero-home {
+    background-image: url("../img/superheroes/bg-code-home.jpg");
+  }
+
+  &.superhero-about {
+    background-image: url("../img/superheroes/bg-code-about.jpg");
+  }
+
+  &.superhero-portfolio {
+    background-image: url("../img/superheroes/bg-code-portfolio.jpg");
+  }
+
+  &.superhero-photography {
+    background-image: url("../img/superheroes/bg-code-photography.jpg");
+  }
+
+  &.superhero-resume {
+    background-image: url("../img/superheroes/bg-code-resume.jpg");
+  }
+
+  &.superhero-contact {
+    background-image: url("../img/superheroes/bg-code-contact.jpg");
+  }
 }
+
 
 .superhero-nav {
   min-height: $unit-xxl;

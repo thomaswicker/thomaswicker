@@ -30,13 +30,20 @@ add_action( 'wp_enqueue_scripts', 'theme_styles' );
 add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 function theme_js() {
-    wp_register_script( 'foundationjs', get_template_directory_uri() . '/js/foundation.min.js',array('jquery') );
     wp_register_script( 'motion-ui', get_template_directory_uri() . '/bower_components/motion-ui/dist/motion-ui.min.js',array('jquery') );
+    wp_register_script( 'foundationjs', get_template_directory_uri() . '/js/foundation.min.js',array('jquery') );
     wp_register_script( 'appjs', get_template_directory_uri() . '/js/application.min.js',array('jquery') );
+    wp_register_script( 'lightboxjs', get_template_directory_uri() . '/bower_components/lightbox2/dist/js/lightbox.min.js',array('jquery') );
+    wp_register_script( 'masonryjs', get_template_directory_uri() . '/bower_components/masonry/dist/masonry.pkgd.min.js"',array('jquery') );
+    wp_register_script( 'lightboxjs', get_template_directory_uri() . '/bower_components/instafeed.js/instafeed.min.js',array('jquery') );
 
     wp_enqueue_script( 'foundationjs' );
     wp_enqueue_script( 'motion-ui' );
     wp_enqueue_script( 'appjs' );
+    wp_enqueue_script( 'lightboxjs' );
+    wp_enqueue_script( 'masonryjs' );
+    wp_enqueue_script( 'lightboxjs' );
+
 }
 
 // END - LOAD THEME JS
@@ -116,6 +123,17 @@ function create_widget($name, $id, $description) {
 
 /* END ENABLE CUSTOM MENUS */
 
+// Changing excerpt length for posts on home page...
+function new_excerpt_length($length) {
+return 50;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+// Changing excerpt more
+function new_excerpt_more($more) {
+return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 
 // Create widgets in the footer
 create_widget("Left Footer", "footer_left", "Displays in the left of the footer");
