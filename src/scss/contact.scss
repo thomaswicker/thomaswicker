@@ -15,6 +15,26 @@
   }
 }
 
+div.wpcf7 {
+  float: left;
+  width: 100%;
+  padding-left: 18px;
+}
+
+.wpcf7-form {
+  label {
+    font-family: arial;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+}
+
+.wpcf7-form-control-wrap {
+  float: left;
+  width: 100%;
+  margin-top: 5px;
+}
+
 #body-contact {
   background-color: $white;
   padding-bottom: $unit-xxl;
@@ -221,15 +241,14 @@
 	}
 
   label {
-    margin-bottom: $unit-xs;
     font-weight: 600;
   }
 
 	input {
 		float: left;
-		clear: both;
-		width: 60%;
+		width: 100%;
     max-width: 600px;
+    margin: 0;
 		padding: 7px $unit-xxs 7px 8px;
 		border: 1px solid $light-gray;
 		border-radius: 0;
@@ -256,7 +275,8 @@
 		clear: both;
 		width: 90%;
 		min-height: 180px;
-		padding: 7px $unit-xxs 7px $unit-xxs;
+    font-size: 14px;
+		padding: 17px 15px;
 		border: 1px solid $light-gray;
 		border-radius: 0;
 
@@ -268,6 +288,67 @@
 			width: 100%;
 		}
 	}
+
+  .wpcf7-submit {
+    float: left;
+    width: auto;
+    min-width: $unit-jumbo;
+    margin-top: $unit-md;
+    padding: $unit-sm $unit-md;
+    border: 2px solid $color-primary;
+    border-radius: 0;
+    font-family: $font-1;
+    font-size: $font-size;
+    font-weight: $font-weight-semibold;
+    text-align: center;
+    background: $color-primary;
+    color: $white;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transition: all .3s ease;
+    display: block;
+
+    &:hover {
+      border: 2px solid darken($color-primary, 15%);
+      background: darken($color-primary, 15%);
+    }
+  }
+
+  .wpcf7 .ajax-loader {
+
+  }
+
+  .wpcf7-response-output {
+    float: left;
+    width: 100%;
+    margin: $unit-md 0 0 0;
+    padding: $unit-xs $unit-md;
+    border: 0;
+
+    &.wpcf7-mail-sent-ok {
+      background-color: green;
+      color: white;
+    }
+
+    &.wpcf7-validation-errors {
+      background-color: red;
+      color: white;
+    }
+  }
+
+  .wpcf7-form label {
+    float: left;
+    width: 100%;
+    margin: $unit-sm 0 0 0;
+  }
+
+  .wpcf7-not-valid-tip {
+    float: left;
+    width: 100%;
+    margin: $unit-xs 0 0 0;
+  }
 }
 
 .contact-form {

@@ -18,33 +18,19 @@
       </p>
     </div>
     <div class='body-home-left medium-7 large-8 columns'>
-      <ul class='post-list medium-12' ng-repeat='post in posts'>
-        <li class='medium-12'>
-          <div class='medium-12'>
-            <h2>
-            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-            </h2>
-          </div>
-          <div class='medium-12'>
-            <?php
-              $args = array( 'numberposts' => 6, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
-              $postslist = get_posts( $args );
-              echo '<ul id="latest_posts">';
-               foreach ($postslist as $post) :  setup_postdata($post); ?>
-               <li><strong><?php the_date(); ?></strong><br />
-               <a href="<?php the_permalink(); ?>" title="<?php the_title();?>"> <?php the_title(); ?></a>
-               <?php the_excerpt(); ?>
-               <a href="<?php echo get_permalink(); ?>"> Read More...</a>
-              </li>
-              <?php endforeach; ?>
-            </ul>
-
-          </div>
-          <div class='medium-12 admin-buttons'>
-            <a class='btn btn-secondary' href=''>View</a>
-          </div>
+      <?php
+        $args = array( 'numberposts' => 3, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
+        $postslist = get_posts( $args );
+        echo '<ul class="post-list">';
+         foreach ($postslist as $post) :  setup_postdata($post); ?>
+         <li><strong><?php the_date(); ?></strong><br />
+         <a class="post-title" href="<?php the_permalink(); ?>" title="<?php the_title();?>"> <?php the_title(); ?></a>
+         <div class="post-content">
+           <?php the_excerpt(); ?>
+         </div>
+         <a href="<?php echo get_permalink(); ?>"> Read More...</a>
         </li>
-      </ul>
+        <?php endforeach; ?>
     </div>
     <aside class='body-home-right medium-5 large-4 columns'>
       <div class='medium-12' id='lastfm-container'>
@@ -58,7 +44,16 @@
             </h4>
           </div>
         </div>
-        <ul id='lastfm'></ul>
+        <article id="thomaswicker-sidebar">
+          <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('lastfm')) : else : ?>
+
+          <div class="pre-widget">
+              <p><strong>Widgetized Area</strong></p>
+              <p>Something went wrong... widgets are not loading.</p>
+          </div>
+
+          <?php endif; ?>
+        </article>
       </div>
       <div class='social-feed medium-12'>
         <div id='twitter-title'>
@@ -80,3 +75,5 @@
     </aside>
   </div>
 </section>
+
+<?php get_footer(); ?>

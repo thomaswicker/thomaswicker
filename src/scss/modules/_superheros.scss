@@ -95,11 +95,15 @@
         line-height: 140%;
       }
 
-      span.quotee {
+      p.quotee {
         display: block;
         margin-top: 20px;
         font-style: italic;
         color: $color-primary;
+      }
+
+      .btn-resume {
+        margin-right: 100px;
       }
     }
   }

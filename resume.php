@@ -658,3 +658,5 @@ Template Name: Resume Template
     </section>
   </div>
 </section>
+
+<?php get_footer(); ?>

@@ -62,6 +62,40 @@
 	@include mq(sm) {
 		padding: .6rem 0rem 0rem 0rem;
 	}
+
+  ul.post-list {
+    li {
+      float: left;
+      width: 100%;
+      margin-top: $unit-lg;
+      padding-top: $unit-md;
+      padding-bottom: $unit-md;
+      padding-left: $unit-md;
+      border: 1px solid #EEE;
+      border-left: 3px solid $color-primary;
+
+      a.post-title {
+        float: left;
+        width: 100%;
+        margin-bottom: $unit-xs;
+        font-size: 20px;
+      }
+
+      .post-content {
+        float: left;
+        width: 100%;
+
+        p {
+          float: left;
+          width: 100%;
+          margin-bottom: $unit-xs;
+          font-size: 12px;
+          line-height: 145%;
+          font-family: $font-2;
+        }
+      }
+    }
+  }
 }
 
 .body-home-right {

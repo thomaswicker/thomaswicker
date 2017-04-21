@@ -16,27 +16,27 @@ var autoprefixer 	= require('gulp-autoprefixer'),
 		uglify        = require('gulp-uglify');
 
 // Compile Haml into HTML
-gulp.task('haml', function() {
-  gulp.src('src/views/**/*.haml')
-    .pipe(haml().on('error', function(e) { console.log(e.message); }))
-    .pipe(gulp.dest('./'))
-		.pipe(notify({ message: 'Compile HAML task complete' }))
-		.pipe(livereload());
-});
-
-gulp.task('minify-index-html', function () {
-    gulp.src('index.html') // path to your files
-    .pipe(minifyHtml())
-    .pipe(gulp.dest('./'))
-		.pipe(notify({ message: 'Minify index file -- task complete' }));
-});
-
-gulp.task('minify-partials-html', function () {
-    gulp.src('partials/*.html') // path to your files
-    .pipe(minifyHtml())
-    .pipe(gulp.dest('partials'))
-		.pipe(notify({ message: 'Minify partials -- task complete' }));
-});
+// gulp.task('haml', function() {
+//   gulp.src('src/views/**/*.haml')
+//     .pipe(haml().on('error', function(e) { console.log(e.message); }))
+//     .pipe(gulp.dest('./'))
+// 		.pipe(notify({ message: 'Compile HAML task complete' }))
+// 		.pipe(livereload());
+// });
+//
+// gulp.task('minify-index-html', function () {
+//     gulp.src('index.html') // path to your files
+//     .pipe(minifyHtml())
+//     .pipe(gulp.dest('./'))
+// 		.pipe(notify({ message: 'Minify index file -- task complete' }));
+// });
+//
+// gulp.task('minify-partials-html', function () {
+//     gulp.src('partials/*.html') // path to your files
+//     .pipe(minifyHtml())
+//     .pipe(gulp.dest('partials'))
+// 		.pipe(notify({ message: 'Minify partials -- task complete' }));
+// });
 
 gulp.task('scss', function() {
 	return sass('src/scss/application.scss', { sourcemap: false })
@@ -63,37 +63,36 @@ gulp.task('mainjs', function() {
 		.pipe(livereload());
 });
 
-gulp.task('otherjs', function() {
-	return gulp.src('src/js/**/*.js')
-		.pipe(gulp.dest('js'))
-		.pipe(uglify().on('error', function(e){
-				console.log(e);
-		 }))
-		 .pipe(gulp.dest('js'))
-		 .pipe(notify({ message: 'Compile other javascript -- task complete' }))
-		.pipe(livereload());
-});
-
-gulp.task('images', function() {
-	return gulp.src('src/img/**/*')
-		.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-		.pipe(gulp.dest('img'))
-		.pipe(notify({ message: 'Minify images -- task complete' }))
-		.pipe(livereload());
-});
+// gulp.task('otherjs', function() {
+// 	return gulp.src('src/js/**/*.js')
+// 		.pipe(gulp.dest('js'))
+// 		.pipe(uglify().on('error', function(e){
+// 				console.log(e);
+// 		 }))
+// 		 .pipe(gulp.dest('js'))
+// 		 .pipe(notify({ message: 'Compile other javascript -- task complete' }))
+// 		.pipe(livereload());
+// });
+//
+// gulp.task('images', function() {
+// 	return gulp.src('src/img/**/*')
+// 		.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+// 		.pipe(gulp.dest('img'))
+// 		.pipe(notify({ message: 'Minify images -- task complete' }))
+// 		.pipe(livereload());
+// });
 
 
 gulp.task('watch', function() {
 	livereload.listen();
-	gulp.watch('src/views/**/*.haml', ['haml']).on('change', livereload.changed);
+	// gulp.watch('src/views/**/*.haml', ['haml']).on('change', livereload.changed);
   gulp.watch('src/scss/**/*.scss', ['scss']).on('change', livereload.changed);
   gulp.watch('src/js/**/*.js', ['mainjs']).on('change', livereload.changed);
-	gulp.watch('src/js/**/*.js', ['otherjs']).on('change', livereload.changed);
-  gulp.watch('src/img/**/*', ['images']).on('change', livereload.changed);
+  // gulp.watch('src/img/**/*', ['images']).on('change', livereload.changed);
 	livereload.listen();
 });
 
 // Kick off
 gulp.task('default', ['watch'], function() {
-	gulp.start('haml', 'minify-index-html', 'minify-partials-html', 'scss', 'mainjs', 'otherjs', 'images');
+	gulp.start('scss', 'mainjs');
 });

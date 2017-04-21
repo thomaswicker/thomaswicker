@@ -22,12 +22,18 @@ Template Name: Photography Template
     <section id='body-photography-left'>
       <div class='instagram-brand'>
         <a href='http://instagram.com/thomasjwicker' target='_blank'>
-          <img class='image' src='img/instagram_brand.png'>
+          <img class='image' src='<?php echo get_template_directory_uri(); ?>/img/instagram_brand.png'>
         </a>
       </div>
       <div class='photo-strip-left'></div>
       <div class='photo-strip-middle'>
-        <div id='instafeed'></div>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+          <?php the_content(); ?>
+
+        <?php endwhile; else: ?>
+
+        <?php endif; ?>
       </div>
       <div class='photo-strip-right'></div>
     </section>
@@ -151,4 +157,5 @@ Template Name: Photography Template
     </section>
   </div>
 </section>
-<script src='js/instafeed.js'></script>
+
+<?php get_footer(); ?>

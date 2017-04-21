@@ -36,6 +36,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='https://www.oppenheimerfunds.com/private-client-groups' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web Design
@@ -52,6 +53,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='http://www.xiri.io' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Advisor Responsive Web App
@@ -68,6 +70,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='https://www.oppenheimerfunds.com/advisors' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           eLearning App UI/UX Design
@@ -83,6 +86,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio margin right xs' href='https://www.behance.net/gallery/28101621/eLearning-App-UIUX?' target='blank'>View on Behance</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web App
@@ -99,6 +103,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='http://www.vinelist.com' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web App
@@ -115,6 +120,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='https://www.oppenheimerfunds.com/advisors/election-2016' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Website
@@ -131,6 +137,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='http://www.rms.bi' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web App
@@ -147,6 +154,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='https://www.oppenheimerfunds.com/investors' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web & Mobile
@@ -163,6 +171,7 @@ Template Name: Portfolio Template
           <a class='btn btn-mini btn-portfolio btn-primary btn-secondary' href='http://www.west-inc.com' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Task App
@@ -178,6 +187,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio margin right xs' href='https://www.behance.net/gallery/18351745/Responsive-Task-Manager-and-Intranet-Design' target='blank'>View on Behance</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Tablet App
@@ -193,6 +203,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio margin right xs' href='https://www.behance.net/gallery/18269631/UIUX-for-iPad-app-for-Cricket-Communications' target='blank'>View on Behance</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Clinic App
@@ -208,6 +219,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio margin right xs' href='https://www.behance.net/gallery/18351653/UIUX-Front-End-Dev-for-DaVita' target='blank'>View on Behance</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           App UI/UX
@@ -225,6 +237,7 @@ Template Name: Portfolio Template
           </a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Website
@@ -241,6 +254,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio' href='http://www.paragonkitchen.com' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web & Mobile App
@@ -257,6 +271,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio' href='http://www.mystream.com' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Android App Design
@@ -272,6 +287,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio margin right xs' href='https://www.behance.net/gallery/18269737/Android-App-Design-for-Cricket-Communications' target='blank'>View on Behance</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Site Design & Mobile
@@ -288,6 +304,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio' href='http://www.tattoogil.com' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive SVG - jMap
@@ -304,6 +321,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio' href='https://github.com/thomaswicker/jMap' target='blank'>View on Github</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Responsive Web Design
@@ -320,6 +338,7 @@ Template Name: Portfolio Template
           <a class='btn btn-primary btn-mini btn-portfolio' href='http://lumbleau.com/' target='blank'>View Site</a>
         </div>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           App Design
@@ -332,6 +351,7 @@ Template Name: Portfolio Template
         </h5>
         <img class='image' src='<?php bloginfo( 'template_directory' ); ?>/img/portfolio/cricket-main-site.jpg'>
       </article>
+
       <article class='portfolio-item'>
         <h3>
           Personal CSS Framework - PotionCSS
@@ -350,3 +370,5 @@ Template Name: Portfolio Template
     </div>
   </div>
 </section>
+
+<?php get_footer(); ?>
