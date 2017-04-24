@@ -8,3 +8,42 @@
 
 
 console.log('connection to application.js successful!!!');
+
+// js controlling width of resume skills bars
+
+$(document).ready(function() {
+  $('.html').css('width', '98%');
+  $('.haml').css('width', '98%');
+  $('.css').css('width', '98%');
+  $('.sass').css('width', '98%');
+  $('.javascript').css('width', '80%');
+  $('.react').css('width', '60%');
+  $('.angular').css('width', '60%');
+  $('.wordpress').css('width', '90%');
+
+  $('.ui').css('width', '100%');
+  $('.ux').css('width', '95%');
+  $('.zurb').css('width', '100%');
+  $('.rwd').css('width', '98%');
+  $('.agile').css('width', '90%');
+  $('.rapidproto').css('width', '100%');
+  $('.adobe').css('width', '98%');
+
+  $('.rails').css('width', '70%');
+  $('.php').css('width', '50%');
+  $('.heroku').css('width', '90%');
+  $('.git').css('width', '85%');
+  $('.db').css('width', '30%');
+  $('.commandline').css('width', '75%');
+  $('.git').css('width', '85%');
+
+  var siteNav = $(".superhero-nav"),
+      navToggle = $("#nav-toggle"),
+      siteNavUL = $(".superhero-nav ul");
+
+    navToggle.on('click', function () {
+      console.log('toggle clicked!');
+      siteNav.toggleClass('active-main');
+      siteNavUL.toggleClass('active-nav');
+    });
+});

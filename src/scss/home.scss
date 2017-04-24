@@ -89,8 +89,8 @@
           float: left;
           width: 100%;
           margin-bottom: $unit-xs;
-          font-size: 12px;
-          line-height: 145%;
+          font-size: 16px;
+          line-height: 140%;
           font-family: $font-2;
         }
       }
@@ -228,7 +228,17 @@
 	}
 }
 
+.lastfm {
+  table {
+    td:nth-child(1) {
+      width: 65px;
+    }
 
+    td:nth-child(2) {
+      width: calc(100% - 65px);
+    }
+  }
+}
 
 #lastfm-container {
 	float: left;
@@ -237,50 +247,6 @@
 
 	@include mq (sm) {
 		width: 100%;
-	}
-
-	.lastfm-song {
-		float: left;
-		width: 100%;
-		padding: 1rem .5rem 1rem .5rem;
-		border-bottom: 1px solid $xlight-gray;
-		background-color: $white;
-
-		&:before {
-	  	content: '\f001';
-	  	font-family: FontAwesome;
-	  	margin-right: .6rem;
-	 		color: darken($green-potion, 10%);
-
-	  }
-
-		&.lastfm-song:nth-child(odd) {
-		    background-color: lighten($light-gray, 22%);
-		}
-
-		.song-title {
-			@include font($font-2, normal, 1rem, $font-weight-light);
-			color: $black;
-			font-weight: 400;
-		}
-
-		.song-artist {
-			@include font($font-2, normal, .85rem, $font-weight-light);
-			font-style: italic;
-			color: $black;
-		}
-
-		span {
-			@include font($font-1, italic, .9rem, $font-weight-normal);
-			color: $dark-gray;
-			line-height: 1.4em;
-		}
-
-		a {
-			@include font($font-1, normal, .9rem, $font-weight-semibold);
-			color: darken($green-potion, 10%);
-			line-height: 1.4em;
-		}
 	}
 
 	#lastfm-title {

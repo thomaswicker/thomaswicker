@@ -1,58 +1,69 @@
-
-<?php
-/*
-Template Name: About => News & Events
-*/
-?>
-
 <?php get_header(); ?>
-
-<?php get_template_part('partials/superheros/superhero-news'); ?>
-
-<?php get_template_part('partials/sm-nav'); ?>
+<?php get_template_part('partials/superheroes/superhero-home'); ?>
+<?php get_template_part('partials/main-nav/main-nav-home'); ?>
 
 
+<section id="body-post" class=" medium-12 body-post">
 
+	<section class="bp--inner">
 
+		<div class="bp--left medium-8 columns">
 
-<section class="news-events-container">
-	<div class="body-content-news">
+			<?php if (have_posts()) : ?>
 
-		<section class='bc-news-left'>
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<a href="http://west-ulc.ca/news-and-events/" class="btn btn-secondary btn-back-to-news"><i class="fa fa-arrow-left"></i>Back to News & Events</a>
+				<?php while (have_posts()) : the_post(); ?>
 
-				<article>
-					<h1><?php the_title() ;?></h1>
-					<p><?php the_field( 'description' ); ?></p>
-					<span><?php the_field( 'links' ); ?></span>
-				</article>
-			<?php endwhile; ?>
+				<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+					<h1>
+						<a href="<?php the_permalink(); ?>" title="Permanent link: <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+					</h1>
+
+					<?php the_tags('<p>Tags: ', ', ', '</p>'); ?>
+
+					<p class="post-categories">
+						<?php _e('Posted in', 'thomaswicker'); ?> <?php the_category(' '); ?>
+					</p>
+
+					<?php get_template_part('inc/meta'); ?>
+
+					<?php if (has_post_thumbnail()) the_post_thumbnail(); ?>
+
+					<div class="post-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
+					</div>
+
+				</section>
+
+				<?php endwhile; ?>
+
+				<?php get_template_part('inc/nav'); ?>
+
+				<section class="post-comments">
+					<?php comments_popup_link('Leave a comment', '1 comment', '% comments', 'comments-link', 'Comments disabled'); ?>
+					<?php comments_template(); ?>
+				</section>
 
 			<?php else : ?>
 
-				<article id="post-not-found" class="hentry cf">
-						<header class="article-header">
-							<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-						</header>
-						<section class="entry-content">
-							<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-						</section>
-						<footer class="article-footer">
-								<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-						</footer>
-				</article>
-
 			<?php endif; ?>
+		</div>
 
-		</section>
+		<div class="bp--right medium-4 columns">
+			<section class="alt-sidebar">
+				<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('alt-sidebar')) : else : ?>
 
-		<section class="bc-news-right">
-			<?php get_template_part('partials/sidebars/sidebar-about-news-events'); ?>
-		</section>
+				<div class="pre-widget">
+						<p><strong>Widgetized Area</strong></p>
+						<p>Something went wrong... widgets are not loading.</p>
+				</div>
 
-	</div>
+				<?php endif; ?>
+			</section>
+		</div>
+	</section>
+
 </section>
-
 
 <?php get_footer(); ?>

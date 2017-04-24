@@ -1,0 +1,71 @@
+/*
+ ____   ___  ____ _____ ____
+|  _ \ / _ \/ ___|_   _/ ___|
+| |_) | | | \___ \ | | \___ \
+|  __/| |_| |___) || |  ___) |
+|_|    \___/|____/ |_| |____/
+
+*/
+
+
+/* ==========================================================================
+   %% Styling for Posts %%
+   ========================================================================== */
+
+
+.body-post {
+  float: left;
+  width: 100%;
+  padding-bottom: $unit-xxl;
+
+  .bp--inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: $unit-xxl 0 $unit-xl 0;
+    background-color: $white;
+
+    @include mq(lg) {
+   		width: 90%;
+    }
+
+    @include mq(md) {
+   		width: 95%;
+    }
+
+    @include mq(sm) {
+   		width: 95%;
+    }
+
+    .bp--left {
+      h1 {
+        font-size: 24px;
+        color: black;
+      }
+
+      p {
+        float: left;
+        width: 100%;
+        margin-top: 15px;
+        font-family: $font-2;
+        font-size: 16px;
+        line-height: 135%;
+      }
+
+      .post-categories {
+        a {
+          padding: 4px 9px;
+          font-size: 12px;
+          font-weight: $font-weight-bold;
+          text-transform: uppercase;
+          background-color: $color-secondary;
+          color: white;
+        }
+      }
+    }
+
+    .bp--right {
+
+    }
+  }
+}

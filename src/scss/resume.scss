@@ -381,7 +381,7 @@
 		}
 
 		h2 {
-			margin: .8rem 0 0 0;
+			margin: .8rem 0 $unit-md 0;
 
 			@include mq(sm) {
 				margin: 5px 0 0 0;
@@ -395,20 +395,30 @@
 			@include mq(sm) {
 				margin-top: .5rem;
 			}
+
+      &.body-text {
+        margin-top: 0;
+      }
 		}
 	}
 }
 
 .resume-experience-block {
-	display: block;
 	float: left;
 	width: 100%;
 	padding: .8rem 0 2rem 0;
 	border-bottom: 1px solid lighten($light-gray, 10%);
+  display: block;
 
 	a {
 		color: $color-primary;
 	}
+
+  p.body-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
 
 	span {
 		text-decoration: none !important;
@@ -641,14 +651,14 @@
 		h3 {
 			float: left;
 			width: 100%;
-			@include font($font-1, normal, $font-size-md, $font-weight-normal);
+			@include font($font-1, normal, 18px, $font-weight-normal);
 			line-height: 110%;
 			color: black;
-			margin: 1.7rem 0 0 0;
+			margin: $unit-xs 0 0 0;
 
 			@include mq(sm) {
-				@include font($font-1, normal, 1.1rem, $font-weight-normal);
-				margin: 1.7rem 0 0 0;
+				@include font($font-1, normal, 14px, $font-weight-normal);
+        margin: $unit-xs 0 0 0;
 				height: auto;
 
 				span {
@@ -661,7 +671,7 @@
 			float: left;
 			width: 100%;
 			font-size: .85rem;
-			margin-bottom: 0;
+      margin: $unit-xs 0 0 0;
 			text-transform: capitalize;
 
 			@include mq(sm) {
@@ -687,7 +697,7 @@
 			width: 100%;
 			color: #aaa;
 			font-size: .85rem;
-			margin: 0 0 .5rem 0;
+      margin: $unit-xs 0 $unit-xs 0;
 		}
 
 		p {

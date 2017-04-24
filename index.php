@@ -19,19 +19,22 @@
     </div>
     <div class='body-home-left medium-7 large-8 columns'>
       <?php
-        $args = array( 'numberposts' => 3, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
+        $args = array( 'numberposts' => 5, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
         $postslist = get_posts( $args );
         echo '<ul class="post-list">';
          foreach ($postslist as $post) :  setup_postdata($post); ?>
-         <li><strong><?php the_date(); ?></strong><br />
-         <a class="post-title" href="<?php the_permalink(); ?>" title="<?php the_title();?>"> <?php the_title(); ?></a>
-         <div class="post-content">
-           <?php the_excerpt(); ?>
-         </div>
-         <a href="<?php echo get_permalink(); ?>"> Read More...</a>
+         <li>
+           <a class="post-title" href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+             <?php the_title(); ?>
+           </a>
+           <div class="post-content">
+             <?php the_excerpt(); ?>
+           </div>
+           <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-mini"> Read More...</a>
         </li>
         <?php endforeach; ?>
     </div>
+
     <aside class='body-home-right medium-5 large-4 columns'>
       <div class='medium-12' id='lastfm-container'>
         <div id='lastfm-title'>
@@ -44,7 +47,8 @@
             </h4>
           </div>
         </div>
-        <article id="thomaswicker-sidebar">
+
+        <section id="thomaswicker-sidebar">
           <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('lastfm')) : else : ?>
 
           <div class="pre-widget">
@@ -53,8 +57,9 @@
           </div>
 
           <?php endif; ?>
-        </article>
+        </section>
       </div>
+
       <div class='social-feed medium-12'>
         <div id='twitter-title'>
           <div id='twitter-title-left'>
@@ -67,12 +72,13 @@
           </div>
         </div>
         <aside id='twitter-feed'>
-          <a class='twitter-timeline' data-chrome='noheader nofooter noborders transparent' data-tweet-limit='7' data-widget-id='392388763487182849' href='https://twitter.com/thomasjwicker'>
+          <a class='twitter-timeline' data-chrome='noheader nofooter noborders transparent' data-tweet-limit='5' data-widget-id='392388763487182849' href='https://twitter.com/thomasjwicker'>
             Tweets by @thomasjwicker
           </a>
         </aside>
       </div>
     </aside>
+
   </div>
 </section>
 

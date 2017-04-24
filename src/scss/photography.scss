@@ -18,7 +18,9 @@
 }
 
 #body-photography {
-  background-color: $white;
+  float: left;
+  width: 100%;
+  background-color: $black;
   padding-bottom: $unit-jumbo;
 
   @include mq(sm) {
@@ -28,59 +30,7 @@
   }
 
   #body-photography-inner {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 0 $unit-base 0;
-    background-color: $white;
-
-    @include mq(lg) {
-      width: 100%;
-    }
-
-    @include mq(md) {
-      width: 100%;
-    }
-
-    @include mq(sm) {
-      width: 100%;
-      background-color: $white;
-    }
-  }
-
-  #body-photography-left {
-    float: left;
-    width: 220px;
-
-    @include mq(md) {
-      display: none;
-    }
-
-    @include mq(sm) {
-      display: none;
-    }
-  }
-
-  #body-photography-right {
-    float: left;
-    width: calc(100% - 220px);
-    padding-left: $unit-xxl;
-
-    @include mq(lg) {
-      padding-left: 0;
-    }
-
-    @include mq(md) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    @include mq(sm) {
-      padding-top: 0;
-      padding-right: 0;
-      padding-left: 0;
-      background-color: $white;
-    }
+    background-color: $black;
   }
 }
 
@@ -94,22 +44,22 @@
 
 .photo-strip-left {
   float: left;
-  min-height: 1144px;
   width: $unit-base;
+  min-height: 3850px;
   background-image: url("../img/photo_strip_dot.png");
   background-repeat: repeat-y;
 }
 
 .photo-strip-middle {
   float: left;
+  width: calc(100% - 40px);
   height: 100%;
-  width: 160px;
 }
 
 .photo-strip-right {
   float: left;
-  min-height: 1144px;
   width: $unit-base;
+  min-height: 3850px;
   background-image: url("../img/photo_strip_dot.png");
   background-repeat: repeat-y;
 }

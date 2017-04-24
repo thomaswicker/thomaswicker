@@ -12,10 +12,10 @@ Template Name: About Template
 <?php get_template_part('partials/main-nav/main-nav-about'); ?>
 
 
-<section class='page-body' id='about-body'>
-  <div class='page-body-inner'>
+<section id='body-about'>
+  <div id='body-about-inner'>
     <section class='grid-row' id='about-me'>
-      <section class='large-10 medium-9 columns'>
+      <section class='large-9 medium-8 columns'>
         <h2>
           About Me
         </h2>
@@ -29,15 +29,15 @@ Template Name: About Template
         <?php endif; ?>
       </section>
 
-      <div class='large-2 medium-3 columns'>
+      <div class='large-3 medium-4 columns'>
         <img src='<?php bloginfo( 'template_directory' ); ?>/img/me_with_the_girls.jpg'>
       </div>
     </section>
     <section class='grid-row' id='how-i-work'>
-      <div class='large-2 medium-3 columns'>
+      <div class='large-3 medium-4 columns'>
         <img src='<?php bloginfo( 'template_directory' ); ?>/img/office_image.jpg'>
       </div>
-      <div class='large-10 medium-9 columns'>
+      <div class='large-9 medium-8 columns'>
         <h3 class='shim top xs'>
           How I work
         </h3>

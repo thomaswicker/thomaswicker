@@ -25,11 +25,6 @@ Template Name: Resume Template
     </p>
   </div>
   <div id='body-resume-inner'>
-    <div class='my-info-mobile show-for-small-only'>
-      <h2>
-        MY RESUME
-      </h2>
-    </div>
     <section class='medium-12 columns' id='my-resume-container-details'>
       <aside id='my-resume-container-details-left'>
         <div id='my-info-contact'>

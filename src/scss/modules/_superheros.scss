@@ -19,7 +19,7 @@
   background-size: cover;
 
   @include mq(sm) {
-
+    margin-top: 40px;
   }
 
   &.short {
@@ -63,18 +63,57 @@
 
     }
 
-    img {
-      position: relative;
-      top: 30px;
-      left: 50px;
-      max-width: 170px !important;
-      padding-top: 20px;
-      text-align: right;
+    .my-pic {
+      float: left;
+      width: 250px;
+
+      img {
+        position: relative;
+        top: 30px;
+        left: 50px;
+        max-width: 170px !important;
+        padding-top: $unit-base;
+        text-align: right;
+      }
+
+      @include mq(md) {
+        float: left;
+        width: 250px;
+      }
+
+      @include mq(sm) {
+        float: left;
+        width: 100%;
+        text-align: center;
+
+        img {
+          position: static;
+          max-width: 170px !important;
+          padding-top: $unit-base;
+          padding-bottom: $unit-base;
+          text-align: center;
+        }
+      }
     }
 
     .my-info {
+      float: left;
+      width: calc(100% - 250px);
       text-align: left;
-      padding: 90px 100px 0 20px;
+      padding: 90px 100px 0 $unit-base;
+
+      @include mq(md) {
+        float: left;
+        width: calc(100% - 250px);
+        padding: 40px 100px 0 20px;
+      }
+
+      @include mq(sm) {
+        float: left;
+        width: 100%;
+        padding: 0 $unit-base $unit-lg $unit-base;
+        text-align: center;
+      }
 
       h1 {
         font-family: $font-1;
@@ -130,41 +169,5 @@
 
   &.superhero-contact {
     background-image: url("../img/superheroes/bg-code-contact.jpg");
-  }
-}
-
-
-.superhero-nav {
-  min-height: $unit-xxl;
-  background-color: $xdark-gray;
-
-  ul {
-    float: left;
-
-    li {
-      float: left;
-      width: auto;
-
-      a {
-        float: left;
-        padding: $unit-base $unit-base;
-        font-family: $font-1;
-        font-size: $font-size-md;
-        font-weight: 600;
-        color: white;
-        text-transform: uppercase;
-        background-color: $xdark-gray;
-
-        &:hover {
-          background-color: $dark-gray;
-          text-decoration: none;
-        }
-
-        &.active {
-          background-color: $white !important;
-          color: $black;
-        }
-      }
-    }
   }
 }

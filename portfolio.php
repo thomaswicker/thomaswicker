@@ -14,11 +14,6 @@ Template Name: Portfolio Template
 
 <section class='medium-12 columns' id='body-portfolio'>
   <div class='medium-12 columns' id='body-portfolio-inner' role='main'>
-    <div class='my-info-mobile show-for-small-only'>
-      <h2>
-        PORTFOLIO
-      </h2>
-    </div>
     <div class='masonry-container transitions-enabled infinite-scroll clearfix' id='masonry-container'>
       <article class='portfolio-item'>
         <h3>

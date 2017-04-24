@@ -123,8 +123,8 @@ _______   ______  _____
   float: left;
   width: 100%;
   margin: $unit-xs 0;
-  @include font($font: $font-1, $style: normal, $size: $body-text, $weight: $font-weight-normal);
-  line-height: $base-line-height * 1.10;
+  @include font($font: $font-1, $style: normal, $size: 16px, $weight: $font-weight-normal);
+  line-height: 135%;
   letter-spacing: normal;
 
   @include mq(sm) {

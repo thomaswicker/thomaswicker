@@ -167,8 +167,15 @@
   // creates a miniature size button
   &.btn-mini {
     min-width: 0;
-    padding: $unit-xs $unit-sm;
-    @include font($font: $font-1, $style: normal, $size: $font-size-base, $weight: normal);
+    padding: $unit-tiny $unit-xs;
+    @include font($font: $font-1, $style: normal, $size: 11px, $weight: 600);
+  }
+
+  // creates a small size button
+  &.btn-small {
+    min-width: 0;
+    padding: $unit-sm $unit-sm;
+    @include font($font: $font-1, $style: normal, $size: $font-size-base, $weight: 400);
   }
 
   // button that spans/fills the width of the container

@@ -11,7 +11,7 @@
 
       <p class="quotee">~ Steve Jobs</p>
 
-      <a class='btn btn-mini btn-header btn-resume' href='resume.pdf'>
+      <a class='btn btn-header btn-resume' href='resume.pdf'>
         Download Resume
       </a>
     </div>

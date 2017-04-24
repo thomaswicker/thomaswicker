@@ -1,74 +1,66 @@
 <?php get_header(); ?>
 
-			<div id="content">
+<?php get_template_part('partials/superheroes/superhero-home'); ?>
 
-				<div id="inner-content" class="wrap cf">
+<?php get_template_part('partials/main-nav/main-nav-inner-page'); ?>
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+	<?php if (have_posts()) : ?>
+ 		<?php if (is_category()) { ?>
 
-							<?php
-							the_archive_title( '<h1 class="page-title">', '</h1>' );
-							the_archive_description( '<div class="taxonomy-description">', '</div>' );
-							?>
-							
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<h2><?php _e('Archive for the', 'blank-theme'); ?> &#8216;<?php single_cat_title(); ?>&#8217; <?php _e('Category', 'blank-theme'); ?></h2>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'cf' ); ?> role="article">
+		<?php } elseif(is_tag()) { ?>
 
-								<header class="entry-header article-header">
+		<h2><?php _e('Posts Tagged', 'blank-theme'); ?> &#8216;<?php single_tag_title(); ?>&#8217;</h2>
 
-									<h3 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-									<p class="byline entry-meta vcard">
-										<?php printf( __( 'Posted', 'bonestheme' ).' %1$s %2$s',
-                  							     /* the time the post was published */
-                  							     '<time class="updated entry-time" datetime="' . get_the_time('Y-m-d') . '" itemprop="datePublished">' . get_the_time(get_option('date_format')) . '</time>',
-                       								/* the author of the post */
-                       								'<span class="by">'.__('by', 'bonestheme').'</span> <span class="entry-author author" itemprop="author" itemscope itemptype="http://schema.org/Person">' . get_the_author_link( get_the_author_meta( 'ID' ) ) . '</span>'
-                    							); ?>
-									</p>
+		<?php } elseif (is_day()) { ?>
 
-								</header>
+		<h2><?php _e('Archive for', 'blank-theme'); ?> <?php the_time('F jS, Y'); ?></h2>
 
-								<section class="entry-content cf">
+		<?php } elseif (is_month()) { ?>
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+		<h2><?php _e('Archive for', 'blank-theme'); ?> <?php the_time('F, Y'); ?></h2>
 
-									<?php the_excerpt(); ?>
+		<?php } elseif (is_year()) { ?>
 
-								</section>
+		<h2><?php _e('Archive for', 'blank-theme'); ?> <?php the_time('Y'); ?></h2>
 
-								<footer class="article-footer">
+		<?php } elseif (is_author()) { ?>
 
-								</footer>
+		<h2><?php _e('Author Archive for', 'blank-theme'); ?> <?php the_post(); echo get_the_author(); rewind_posts(); ?></h2>
 
-							</article>
+		<?php } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 
-							<?php endwhile; ?>
+		<h2><?php _e('Blog Archives', 'blank-theme'); ?></h2>
 
-									<?php bones_page_navi(); ?>
+		<?php } ?>
 
-							<?php else : ?>
+		<?php get_template_part('inc/nav'); ?>
 
-									<article id="post-not-found" class="hentry cf">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
+		<?php while (have_posts()) : the_post(); ?>
 
-							<?php endif; ?>
+		<div id="post-<?php the_ID(); ?>" <?php post_class() ?>>
 
-						</main>
+			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
-					<?php get_sidebar(); ?>
+			<?php get_template_part('inc/meta'); ?>
 
-				</div>
+			<div class="entry">
+
+				<?php the_excerpt(); ?>
 
 			</div>
+
+		</div>
+
+		<?php endwhile; ?>
+
+	<?php else : ?>
+
+		<?php get_template_part('inc/gone'); ?>
+
+	<?php endif; ?>
+
+<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

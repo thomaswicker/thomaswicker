@@ -1809,8 +1809,8 @@ _______   ______  _____
   font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 148.5%;
+  font-size: 16px;
+  line-height: 135%;
   letter-spacing: normal; }
   @media only screen and (max-width: 640px) {
     .body-text {
@@ -2407,10 +2407,17 @@ html[data-useragent*='MSIE 10.0'] .alert {
     font-size: 12px; }
   .btn.btn-mini, .button.btn-mini, button.btn-mini {
     min-width: 0;
-    padding: 10px 15px;
+    padding: 2px 10px;
     font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 600;
+    font-size: 11px; }
+  .btn.btn-small, .button.btn-small, button.btn-small {
+    min-width: 0;
+    padding: 15px 15px;
+    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 13px; }
   .btn.btn-full, .button.btn-full, button.btn-full {
     display: block;
@@ -2638,6 +2645,22 @@ code, .code {
     background-color: #85b933; }
   .highlight.wide {
     padding: 5px 8px 5px 8px; }
+
+/*
+  ____ ___  __  __ __  __ _____ _   _ _____ ____
+ / ___/ _ \|  \/  |  \/  | ____| \ | |_   _/ ___|
+| |  | | | | |\/| | |\/| |  _| |  \| | | | \___ \
+| |__| |_| | |  | | |  | | |___| |\  | | |  ___) |
+ \____\___/|_|  |_|_|  |_|_____|_| \_| |_| |____/
+
+*/
+/* ==========================================================================
+   %% Styling for Comments %%
+   ========================================================================== */
+.post-comments {
+  float: left;
+  width: 100%;
+  margin-top: 35px; }
 
 /*
   _____ ___  ____  __  __ ____
@@ -3116,203 +3139,29 @@ figure > img {
 /* ==========================================================================
    %% Styling for Global Navigation %%
    ========================================================================== */
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table; }
-
-.clearfix:after {
-  clear: both; }
-
-.clearfix {
-  *zoom: 1; }
-
-.nav-header {
-  background: rgba(43, 43, 43, 0.9);
-  width: 100%;
-  height: 46px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-bottom: 3px solid #2a98c6;
-  z-index: 101; }
-
-.nav-header-inner {
-  background: rgba(43, 43, 43, 0.9);
-  width: 100%;
-  height: 46px;
-  float: left;
-  border-bottom: 3px solid #2a98c6;
-  z-index: 101; }
-
-.brand {
-  position: absolute;
-  top: 7px;
-  left: 17px;
-  width: 115px;
-  height: 30px;
-  text-decoration: none;
-  text-align: center; }
-
-nav {
-  height: auto; }
-
-.active {
-  background-color: #ffffff;
-  color: #444444 !important;
-  font-weight: 600; }
-
-.menu-icon {
-  display: none;
-  box-sizing: border-box; }
-  @media only screen and (max-width: 640px) {
-    .menu-icon {
-      display: block;
-      position: absolute;
-      top: 6px;
-      right: 13px;
-      width: 20%;
-      height: 30px;
-      padding: 7px 0px 0px 0px;
-      background-color: transparent;
-      border: 1px solid #2a98c6;
-      text-decoration: none;
-      color: #2a98c6;
-      text-transform: uppercase;
-      text-align: center; }
-      .menu-icon span {
-        float: none;
-        width: auto;
-        margin: 0px;
-        border: none; }
-      .menu-icon .menu-btn {
-        display: block; }
-      .menu-icon .open-btn {
-        display: none; }
-      .menu-icon:hover {
-        background-color: #2a98c6;
-        color: #ffffff; }
-        .menu-icon:hover span {
-          border: none; }
-        .menu-icon:hover .menu-btn {
-          display: block; }
-        .menu-icon:hover .open-btn {
-          display: none; } }
-
-.toggled {
-  background-color: #000000 !important; }
-
-.magic-nav {
-  list-style: none; }
-  .magic-nav ul {
-    float: right;
-    display: block; }
-    @media only screen and (min-width: 1993px) {
-      .magic-nav ul {
-        display: block !important; } }
-    @media only screen and (min-width: 90.1441px) and (max-width: 1992px) {
-      .magic-nav ul {
-        display: block !important; } }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .magic-nav ul {
-        display: block !important; } }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .magic-nav ul {
-        display: block !important; } }
-    @media only screen and (max-width: 640px) {
-      .magic-nav ul {
-        display: none;
-        background: rgba(68, 68, 68, 0.9);
-        position: relative;
-        right: 0px;
-        top: 45px;
-        width: 100%;
-        border-bottom: 4px solid #2a98c6; } }
-  .magic-nav ul li {
-    float: left;
-    padding: 0px 0px 0px 0px;
-    border-right: 1px solid #777777;
-    -webkit-transition: background 0.3s ease;
-            transition: background 0.3s ease;
-    display: block; }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .magic-nav ul li {
-        padding: 0px 0px 0px 0px; } }
-    @media only screen and (max-width: 640px) {
-      .magic-nav ul li {
-        width: 100%;
-        margin: 0px;
-        border-bottom: 1px solid #777777;
-        background-color: rgba(30, 30, 30, 0.95);
-        text-align: center; } }
-    .magic-nav ul li:hover {
-      background-color: #5e5e5e;
-      cursor: pointer;
-      -webkit-transition: background 0.3s ease;
-              transition: background 0.3s ease; }
-    .magic-nav ul li a {
-      display: block;
-      color: #ffffff;
-      padding: 15px 20px 15px 20px;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-      font-size: .75rem;
-      text-decoration: none; }
-      .magic-nav ul li a:hover {
-        cursor: pointer; }
-      @media only screen and (max-width: 640px) {
-        .magic-nav ul li a {
-          text-decoration: none;
-          display: block;
-          width: 100%;
-          border-right: none;
-          font-size: 1.1rem;
-          padding: 20px 0px 20px 0px;
-          min-height: 50px; }
-          .magic-nav ul li a .active {
-            padding: 20px 0px 20px 0px; } }
-
-.nav-box-vertical {
-  border: 1px solid #bbbbbb;
-  background-color: #ffffff;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
-  .nav-box-vertical li {
-    border-bottom: 1px solid #bbbbbb;
-    padding: 10px 15px 10px 15px;
-    color: #777777;
-    font-weight: 300; }
-    .nav-box-vertical li:hover {
-      cursor: pointer;
-      background-color: #74c1e2;
-      color: #ffffff; }
-  .nav-box-vertical li:nth-child(even) {
-    background-color: #f8f8f8; }
-    .nav-box-vertical li:nth-child(even):hover {
-      cursor: pointer;
-      background-color: #74c1e2;
-      color: #ffffff; }
-  .nav-box-vertical li.nav-box-header {
-    border-bottom: 2px solid #444444;
-    padding: 10px 15px 10px 15px;
-    font-size: .95rem;
-    font-weight: 300;
-    color: #ffffff;
-    background-color: #373737;
-    text-transform: uppercase;
-    text-align: center; }
-    .nav-box-vertical li.nav-box-header:hover {
-      cursor: default;
-      color: #ffffff;
-      background-color: #373737; }
-  .nav-box-vertical .active-sidebar-link {
-    -webkit-transition: background-color 0.5s ease;
-            transition: background-color 0.5s ease;
-    background-color: #b4da78 !important;
-    color: #444444; }
-    .nav-box-vertical .active-sidebar-link:hover {
-      color: #444444 !important;
-      cursor: default !important; }
+.superhero-nav {
+  min-height: 50px;
+  background-color: #222222; }
+  .superhero-nav ul {
+    float: left; }
+    .superhero-nav ul li {
+      float: left;
+      width: auto; }
+      .superhero-nav ul li.active a {
+        background-color: #ffffff !important;
+        color: #000000; }
+      .superhero-nav ul li a {
+        float: left;
+        padding: 20px 20px;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+        text-transform: uppercase;
+        background-color: #222222; }
+        .superhero-nav ul li a:hover {
+          background-color: #444444;
+          text-decoration: none; }
 
 /*
   ____   _    _   _ _____ _     ____
@@ -3377,6 +3226,82 @@ html[data-useragent*='MSIE 10.0'] .panel {
     content: '';
     display: table;
     clear: both; }
+
+/*
+ ____   ___  ____ _____ ____
+|  _ \ / _ \/ ___|_   _/ ___|
+| |_) | | | \___ \ | | \___ \
+|  __/| |_| |___) || |  ___) |
+|_|    \___/|____/ |_| |____/
+
+*/
+/* ==========================================================================
+   %% Styling for Posts %%
+   ========================================================================== */
+.body-post {
+  float: left;
+  width: 100%;
+  padding-bottom: 50px; }
+  .body-post .bp--inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 35px 0;
+    background-color: #ffffff; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .body-post .bp--inner {
+        width: 90%; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .body-post .bp--inner {
+        width: 95%; } }
+    @media only screen and (max-width: 640px) {
+      .body-post .bp--inner {
+        width: 95%; } }
+    .body-post .bp--inner .bp--left h1 {
+      font-size: 24px;
+      color: black; }
+    .body-post .bp--inner .bp--left p {
+      float: left;
+      width: 100%;
+      margin-top: 15px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 135%; }
+    .body-post .bp--inner .bp--left .post-categories a {
+      padding: 4px 9px;
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      background-color: #85b933;
+      color: white; }
+
+/*
+ ____ ___ ____  _____ ____    _    ____  ____
+/ ___|_ _|  _ \| ____| __ )  / \  |  _ \/ ___|
+\___ \| || | | |  _| |  _ \ / _ \ | |_) \___ \
+ ___) | || |_| | |___| |_) / ___ \|  _ < ___) |
+|____/___|____/|_____|____/_/   \_\_| \_\____/
+
+*/
+/* ==========================================================================
+   %% Styling for Sidebars throughout the site %%
+   ========================================================================== */
+.alt-sidebar {
+  float: left;
+  width: 100%; }
+  .alt-sidebar h4 {
+    float: left;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; }
+  .alt-sidebar .widget_recent_entries {
+    float: left;
+    width: 100%;
+    margin-top: 30px; }
+    .alt-sidebar .widget_recent_entries ul li {
+      float: left;
+      width: 100%;
+      margin-top: 15px; }
 
 /*
      _    ____ ____ ___  ____  ____ ___ ___  _   _ ____
@@ -3534,30 +3459,6 @@ html[data-useragent*='MSIE 10.0'] .panel {
   .superhero.superhero-contact {
     background-image: url("../img/superheroes/bg-code-contact.jpg"); }
 
-.superhero-nav {
-  min-height: 50px;
-  background-color: #222222; }
-  .superhero-nav ul {
-    float: left; }
-    .superhero-nav ul li {
-      float: left;
-      width: auto; }
-      .superhero-nav ul li a {
-        float: left;
-        padding: 20px 20px;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        color: white;
-        text-transform: uppercase;
-        background-color: #222222; }
-        .superhero-nav ul li a:hover {
-          background-color: #444444;
-          text-decoration: none; }
-        .superhero-nav ul li a.active {
-          background-color: #ffffff !important;
-          color: #000000; }
-
 /*
   _____  _    ____  _     _____ ____
  |_   _|/ \  | __ )| |   | ____/ ___|
@@ -3662,57 +3563,6 @@ html[data-useragent*='MSIE 10.0'] .panel {
   margin: 0 12px -13px 0; }
 
 /* ## Pages ## */
-.page-body {
-  position: relative;
-  float: left;
-  width: 100%; }
-  .page-body .page-body-inner {
-    position: relative;
-    left: 10%;
-    right: 10%;
-    float: left;
-    width: 80%;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    max-width: 1992px; }
-    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-      .page-body .page-body-inner {
-        left: 5%;
-        right: 5%;
-        width: 90%; } }
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
-      .page-body .page-body-inner {
-        left: 0;
-        right: 0;
-        width: 100%; } }
-    @media only screen and (max-width: 640px) {
-      .page-body .page-body-inner {
-        left: 0;
-        right: 0;
-        width: 100%; } }
-    .page-body .page-body-inner h2 {
-      font-family: "Roboto", sans-serif;
-      font-size: 40px;
-      font-weight: 300;
-      color: #000000; }
-    .page-body .page-body-inner blockquote {
-      float: left;
-      clear: both;
-      max-width: 1000px;
-      margin-bottom: 20px;
-      padding-left: 20px;
-      font-family: "Roboto", sans-serif;
-      font-weight: 200;
-      font-size: 15px;
-      color: #a06eaf;
-      line-height: 135%;
-      border-left: 3px solid #a06eaf; }
-      .page-body .page-body-inner blockquote a {
-        color: #2a98c6;
-        text-decoration: underline; }
-        .page-body .page-body-inner blockquote a:hover {
-          color: black; }
-
 /*
   _   _  ___  __  __ _____
  | | | |/ _ \|  \/  | ____|
@@ -3778,8 +3628,8 @@ html[data-useragent*='MSIE 10.0'] .panel {
         float: left;
         width: 100%;
         margin-bottom: 10px;
-        font-size: 12px;
-        line-height: 145%;
+        font-size: 16px;
+        line-height: 140%;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
 .body-home-right {
@@ -3879,6 +3729,11 @@ html[data-useragent*='MSIE 10.0'] .panel {
           #tag-cloud-container #tag-cloud-title #tag-cloud-title-right h4 {
             padding: .2rem 0rem 0rem 0rem; } }
 
+.lastfm table td:nth-child(1) {
+  width: 65px; }
+.lastfm table td:nth-child(2) {
+  width: calc(100% - 65px); }
+
 #lastfm-container {
   float: left;
   border: 2px solid #689128;
@@ -3886,47 +3741,6 @@ html[data-useragent*='MSIE 10.0'] .panel {
   @media only screen and (max-width: 640px) {
     #lastfm-container {
       width: 100%; } }
-  #lastfm-container .lastfm-song {
-    float: left;
-    width: 100%;
-    padding: 1rem .5rem 1rem .5rem;
-    border-bottom: 1px solid #cccccc;
-    background-color: #ffffff; }
-    #lastfm-container .lastfm-song:before {
-      content: '\f001';
-      font-family: FontAwesome;
-      margin-right: .6rem;
-      color: #689128; }
-    #lastfm-container .lastfm-song.lastfm-song:nth-child(odd) {
-      background-color: #f3f3f3; }
-    #lastfm-container .lastfm-song .song-title {
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 1rem;
-      color: #000000;
-      font-weight: 400; }
-    #lastfm-container .lastfm-song .song-artist {
-      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 0.85rem;
-      font-style: italic;
-      color: #000000; }
-    #lastfm-container .lastfm-song span {
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 0.9rem;
-      color: #444444;
-      line-height: 1.4em; }
-    #lastfm-container .lastfm-song a {
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 0.9rem;
-      color: #689128;
-      line-height: 1.4em; }
   #lastfm-container #lastfm-title {
     float: left;
     width: 100%;
@@ -4043,13 +3857,15 @@ html[data-useragent*='MSIE 10.0'] .panel {
   margin-top: 20px;
   font-size: 20px;
   font-weight: 600;
+  line-height: 140%;
   color: #000000; }
 #about-body #how-i-work ul {
   margin-top: 20px;
   margin-left: 20px;
   list-style-type: disc; }
   #about-body #how-i-work ul li {
-    margin-top: 15px; }
+    margin-top: 15px;
+    line-height: 140%; }
 
 /*
  __     ___    ____  ___    _    ____  _     _____ ____
@@ -5579,7 +5395,7 @@ button.mfp-close {
       #my-resume-container-details-right #my-objective {
         padding: .75rem 0 0 3rem; } }
     #my-resume-container-details-right #my-objective h2 {
-      margin: .8rem 0 0 0; }
+      margin: 0.8rem 0 25px 0; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-details-right #my-objective h2 {
           margin: 5px 0 0 0; } }
@@ -5589,15 +5405,21 @@ button.mfp-close {
       @media only screen and (max-width: 640px) {
         #my-resume-container-details-right #my-objective p {
           margin-top: .5rem; } }
+      #my-resume-container-details-right #my-objective p.body-text {
+        margin-top: 0; }
 
 .resume-experience-block {
-  display: block;
   float: left;
   width: 100%;
   padding: .8rem 0 2rem 0;
-  border-bottom: 1px solid #d5d5d5; }
+  border-bottom: 1px solid #d5d5d5;
+  display: block; }
   .resume-experience-block a {
     color: #2a98c6; }
+  .resume-experience-block p.body-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0; }
   .resume-experience-block span {
     text-decoration: none !important; }
 
@@ -5762,17 +5584,17 @@ button.mfp-close {
       font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 110%;
       color: black;
-      margin: 1.7rem 0 0 0; }
+      margin: 10px 0 0 0; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-experience #my-experience h3 {
           font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 400;
-          font-size: 1.1rem;
-          margin: 1.7rem 0 0 0;
+          font-size: 14px;
+          margin: 10px 0 0 0;
           height: auto; }
           #my-resume-container-experience #my-experience h3 span {
             display: none; } }
@@ -5780,7 +5602,7 @@ button.mfp-close {
       float: left;
       width: 100%;
       font-size: .85rem;
-      margin-bottom: 0;
+      margin: 10px 0 0 0;
       text-transform: capitalize; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-experience #my-experience h4 {
@@ -5799,7 +5621,7 @@ button.mfp-close {
       width: 100%;
       color: #aaa;
       font-size: .85rem;
-      margin: 0 0 .5rem 0; }
+      margin: 10px 0 10px 0; }
     #my-resume-container-experience #my-experience p {
       float: left;
       width: 100%;
@@ -6020,7 +5842,8 @@ div.wpcf7 {
         min-width: none;
         max-width: none; } }
     .body-contact-left .contact-info-container h2 {
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      font-size: 18px; }
     .body-contact-left .contact-info-container h4 {
       margin: 25px 0 10px 0; }
     .body-contact-left .contact-info-container p {
@@ -6078,7 +5901,7 @@ div.wpcf7 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 40px;
     font-size: 24px; }
     @media only screen and (max-width: 640px) {
       .body-contact-right h2.contact-header {
@@ -6187,7 +6010,3 @@ div.wpcf7 {
   .contact-form .buttons .btn {
     max-width: 150px;
     margin-top: 15px; }
-
-/* ========================================================
-   END CONTACT PAGE SCSS
-   ======================================================== */

@@ -10,33 +10,33 @@
   </div>
 
   <ul>
-    <li class="active">
-      <a href='/'>
+    <li>
+      <a href='../'>
         Home
       </a>
     </li>
     <li>
-      <a href='../about/'>
+      <a href='../../about/'>
         About
       </a>
     </li>
     <li>
-      <a href='../portfolio/'>
+      <a href='../../portfolio/'>
         Portfolio
       </a>
     </li>
     <li>
-      <a href='../photography/'>
+      <a href='../../photography/'>
         Photography
       </a>
     </li>
     <li>
-      <a href='../my-resume/'>
+      <a href='../../my-resume/'>
         Resume
       </a>
     </li>
     <li>
-      <a href='../contact/'>
+      <a href='../../contact/'>
         Contact
       </a>
     </li>
