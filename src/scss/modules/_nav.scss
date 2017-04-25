@@ -6,15 +6,11 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 |_| \_/_/   \_\_/  |___\____/_/   \_\_| |___\___/|_| \_|
 */
 
-
-/* ==========================================================================
-%% Styling for Global Navigation %%
-========================================================================== */
 .superhero-nav {
   float: left;
   width: 100%;
   min-height: $unit-xxl;
-  background-color: $xdark-gray;
+  background-color: $black;
 
   #nav-toggle-container {
     position: fixed;
@@ -66,10 +62,15 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
     li {
       float: left;
       width: auto;
+      border-bottom: 4px solid $black;
 
-      &.active a {
-        background-color: $white !important;
-        color: $black;
+      &.active {
+        border-bottom: 4px solid $white !important;
+
+        a {
+          background-color: $white !important;
+          color: $black;
+        }
       }
 
       a {
@@ -80,11 +81,62 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
         font-weight: 600;
         color: white;
         text-transform: uppercase;
-        background-color: $xdark-gray;
+        background-color: $black;
 
         &:hover {
-          background-color: $dark-gray;
+          background-color: $xdark-gray;
           text-decoration: none;
+        }
+
+        @include mq(md) {
+          padding: $unit-base $unit-sm;
+          font-size: $font-size-base;
+        }
+
+        @include mq(sm) {
+
+        }
+      }
+
+      &:nth-child(1) {
+        &:hover {
+          border-bottom: 4px solid $color-primary;
+        }
+      }
+
+      &:nth-child(2) {
+        &:hover {
+          border-bottom: 4px solid $teal-potion;
+        }
+      }
+
+      &:nth-child(3) {
+        &:hover {
+          border-bottom: 4px solid $purple-potion;
+        }
+      }
+
+      &:nth-child(4) {
+        &:hover {
+          border-bottom: 4px solid $green-potion;
+        }
+      }
+
+      &:nth-child(5) {
+        &:hover {
+          border-bottom: 4px solid $red-potion;
+        }
+      }
+
+      &:nth-child(6) {
+        &:hover {
+          border-bottom: 4px solid $orange-potion;
+        }
+      }
+
+      &:nth-child(7) {
+        &:hover {
+          border-bottom: 4px solid $yellow-potion;
         }
       }
     }
@@ -97,13 +149,13 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
   @include mq(sm) {
     position: fixed;
     top: -50px;
-    bottom: 0;
     transition: all 200ms ease;
     background-color: transparent;
     z-index: 1001;
 
     &.active-main {
       top: 0;
+      bottom: 0;
       background-color: rgba(255, 255, 255, .9);
     }
 

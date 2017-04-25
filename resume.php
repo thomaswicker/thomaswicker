@@ -26,7 +26,7 @@ Template Name: Resume Template
   </div>
   <div id='body-resume-inner'>
     <section class='medium-12 columns' id='my-resume-container-details'>
-      <aside id='my-resume-container-details-left'>
+      <aside id='mrcd--left'>
         <div id='my-info-contact'>
           <p class='name-block'>
             Thomas J. Wicker
@@ -41,7 +41,11 @@ Template Name: Resume Template
             <img src='<?php bloginfo( 'template_directory' ); ?>/img/linkedin_logo.png'>
           </a>
         </div>
-        <div id='download-resume-btns'>
+
+        <a class='btn btn-header btn-resume' href='<?php echo get_template_directory_uri(); ?>/pdfs/resume.pdf' target="_blank">
+          Download Resume
+        </a>
+        <!-- <div id='download-resume-btns'>
           <div class='medium-12'>
             <h3>Download Resume</h3>
           </div>
@@ -56,9 +60,9 @@ Template Name: Resume Template
               <i class='fa fa-print download-icons'></i>
             </a>
           </div>
-        </div>
+        </div> -->
       </aside>
-      <section id='my-resume-container-details-right'>
+      <section id='mrcd--right'>
         <div id='my-objective'>
           <h2>
             OBJECTIVE

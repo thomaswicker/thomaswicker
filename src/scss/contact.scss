@@ -104,9 +104,13 @@ div.wpcf7 {
       max-width: none;
     }
 
-    h2 {
-      margin-top: 1rem;
-      font-size: 18px;
+    h3 {
+      margin-top: $unit-xl;
+      font-size: $font-size-xl;
+
+      @include mq(sm) {
+        display: none;
+      }
     }
 
     h4 {
@@ -118,8 +122,30 @@ div.wpcf7 {
       width: 100%;
       line-height: $base-line-height;
 
-      strong {
-        font-weight: 600 !important;
+      &.name {
+        strong {
+          font-weight: 600 !important;
+        }
+
+        @include mq(sm) {
+          font-size: $font-size-xxl;
+
+          strong {
+          }
+        }
+      }
+
+      &.title {
+        @include mq(sm) {
+          font-size: $font-size-xl;
+          font-style: italic;
+        }
+      }
+
+      &.address {
+        @include mq(sm) {
+
+        }
       }
     }
 
@@ -130,6 +156,26 @@ div.wpcf7 {
 
       &:hover {
         text-decoration: underline;
+      }
+    }
+
+    .contact-email {
+      float: left;
+      width: 100%;
+      margin-top: 3px;
+      padding-left: 0;
+
+      a {
+        float: left;
+        width: 100%;
+
+        &:before {
+          content: "thomas@thomaswicker.com";
+        }
+
+        @include mq(sm) {
+          display: none;
+        }
       }
     }
   }
@@ -145,7 +191,19 @@ div.wpcf7 {
 	.google-map {
 		float: left;
 		width: 100%;
-		margin: $unit-lg 0 0 0;
+		margin: $unit-xxs 0 0 0;
+
+    @include mq(lg) {
+
+    }
+
+    @include mq(md) {
+
+    }
+
+    @include mq(sm) {
+      margin: $unit-xxs 0 0 0;
+    }
 
 		iframe {
 			width: 250px;
@@ -167,7 +225,7 @@ div.wpcf7 {
 			}
 
 			@include mq(sm) {
-				width: 90%;
+				width: 100%;
 			}
 		}
 	}
@@ -186,7 +244,7 @@ div.wpcf7 {
   }
 
 	@include mq(md) {
-		padding: $unit-lg 0 $unit-lg $unit-xxl !important;
+		padding: $unit-xxl 0 $unit-lg $unit-xxl !important;
   }
 
 	@include mq(sm) {
@@ -315,10 +373,16 @@ div.wpcf7 {
       border: 2px solid darken($color-primary, 15%);
       background: darken($color-primary, 15%);
     }
+
+    @include mq(sm) {
+      width: 100%;
+      font-family: $font-1;
+      font-size: 16px;
+    }
   }
 
   .wpcf7 .ajax-loader {
-
+    float: left;
   }
 
   .wpcf7-response-output {

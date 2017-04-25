@@ -1,12 +1,10 @@
 <?php get_header(); ?>
-<?php get_template_part('partials/superheroes/superhero-home'); ?>
-<?php get_template_part('partials/main-nav/main-nav-home'); ?>
+<?php get_template_part('partials/superheroes/superhero-blog'); ?>
+<?php get_template_part('partials/main-nav/main-nav-inner-page'); ?>
 
 
 <section id="body-post" class=" medium-12 body-post">
-
 	<section class="bp--inner">
-
 		<div class="bp--left medium-8 columns">
 
 			<?php if (have_posts()) : ?>
@@ -16,7 +14,7 @@
 				<section id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 					<h1>
-						<a href="<?php the_permalink(); ?>" title="Permanent link: <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+						<?php the_title(); ?>
 					</h1>
 
 					<?php the_tags('<p>Tags: ', ', ', '</p>'); ?>
@@ -39,11 +37,6 @@
 				<?php endwhile; ?>
 
 				<?php get_template_part('inc/nav'); ?>
-
-				<section class="post-comments">
-					<?php comments_popup_link('Leave a comment', '1 comment', '% comments', 'comments-link', 'Comments disabled'); ?>
-					<?php comments_template(); ?>
-				</section>
 
 			<?php else : ?>
 

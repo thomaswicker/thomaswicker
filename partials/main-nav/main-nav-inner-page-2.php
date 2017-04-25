@@ -11,37 +11,37 @@
 
   <ul>
     <li>
-      <a href='/'>
+      <a href='../../'>
         Home
       </a>
     </li>
-    <li>
-      <a href='../blog/'>
+    <li class="active">
+      <a href='../../../blog/'>
         Blog
       </a>
     </li>
     <li>
-      <a href='/about/'>
+      <a href='../../../about/'>
         About
       </a>
     </li>
     <li>
-      <a href='/portfolio/'>
+      <a href='../../../portfolio/'>
         Portfolio
       </a>
     </li>
     <li>
-      <a href='/photography/'>
+      <a href='../../../photography/'>
         Photography
       </a>
     </li>
     <li>
-      <a href='/my-resume/'>
+      <a href='../../../my-resume/'>
         Resume
       </a>
     </li>
-    <li class="active">
-      <a href='/contact/'>
+    <li>
+      <a href='../../../contact/'>
         Contact
       </a>
     </li>

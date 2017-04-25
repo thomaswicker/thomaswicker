@@ -15,6 +15,11 @@
         Home
       </a>
     </li>
+    <li>
+      <a href='../blog/'>
+        Blog
+      </a>
+    </li>
     <li class="active">
       <a href='../about/'>
         About

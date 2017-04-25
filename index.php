@@ -6,18 +6,8 @@
 
 <section id='body-home'>
   <div id='body-home-inner'>
-    <div class='my-info-mobile show-for-small-only'>
-      <h1>
-        Thomas Wicker
-      </h1>
-      <h2>
-        Senior Front End Developer
-      </h2>
-      <p class='quote'>
-        Code monkey, $AAPL enthusiast, lifelong learner, entrepreneur, gambler, fine artist, photographer and father of two healthy girls
-      </p>
-    </div>
     <div class='body-home-left medium-7 large-8 columns'>
+      <a href="/blog" class="btn btn-inline btn-view-all">VIEW ALL POSTS <i class="fa fa-arrow-right"></i> </a>
       <?php
         $args = array( 'numberposts' => 5, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
         $postslist = get_posts( $args );
@@ -29,8 +19,9 @@
            </a>
            <div class="post-content">
              <?php the_excerpt(); ?>
+             <?php if ( has_post_thumbnail()) the_post_thumbnail('excerpt-thumb'); ?>
            </div>
-           <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-mini"> Read More...</a>
+           <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-mini btn-read-more"> Read More...</a>
         </li>
         <?php endforeach; ?>
     </div>
@@ -39,7 +30,7 @@
       <div class='medium-12' id='lastfm-container'>
         <div id='lastfm-title'>
           <div id='lastfm-title-left'>
-            <img src='<?php bloginfo( 'template_directory' ); ?>/img/spotify_logo.png'>
+            <i class="fa fa-spotify"></i>
           </div>
           <div id='lastfm-title-right'>
             <h4>
@@ -48,22 +39,63 @@
           </div>
         </div>
 
-        <section id="thomaswicker-sidebar">
+        <section id="lastfm-sidebar">
           <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('lastfm')) : else : ?>
 
           <div class="pre-widget">
-              <p><strong>Widgetized Area</strong></p>
-              <p>Something went wrong... widgets are not loading.</p>
+            <p><strong>Oops! Looks like there was an error...</strong></p>
+              <p>Recent songs are not loading.</p>
           </div>
 
           <?php endif; ?>
         </section>
       </div>
 
+
+
+
+
+
+
+
+
+      <div class='medium-12' id='instagram-container'>
+        <div id='instagram-title'>
+          <div id='instagram-title-left'>
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div id='instagram-title-right'>
+            <h4>
+              RECENT PHOTOS
+            </h4>
+          </div>
+        </div>
+
+        <section id="instagram-sidebar">
+          <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('instagram')) : else : ?>
+
+          <div class="pre-widget">
+              <p><strong>Oops! Looks like there was an error...</strong></p>
+              <p>Recent photos are not loading.</p>
+          </div>
+
+          <?php endif; ?>
+        </section>
+      </div>
+
+
+
+
+
+
+
+
+
+
       <div class='social-feed medium-12'>
         <div id='twitter-title'>
           <div id='twitter-title-left'>
-            <img src='<?php bloginfo( 'template_directory' ); ?>/img/twitter_logo.png'>
+            <i class="fa fa-twitter"></i>
           </div>
           <div id='twitter-title-right'>
             <h4>

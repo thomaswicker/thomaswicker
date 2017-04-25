@@ -36,6 +36,7 @@ $black:             #000000;
 $red-potion:        #E90000;
 $green-potion:      #85b933;
 $blue-potion:       #2a98c6;
+$teal-potion:       teal;
 $orange-potion:     #f57e20;
 $yellow-potion:     #e1b225;
 $purple-potion:     #a06eaf;
@@ -91,7 +92,7 @@ $font-2: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $font-3: 'Roboto Slab', serif;
 
 //often used for code blocks
-$font-4: "Courier New", Courier, monospace;
+$font-4: FontAwesome;
 
 $body-text: $font-size-md;
 $body-text-small: $font-size-sm;

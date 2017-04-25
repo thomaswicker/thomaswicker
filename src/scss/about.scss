@@ -1,3 +1,13 @@
+/*
+    _    ____   ___  _   _ _____
+   / \  | __ ) / _ \| | | |_   _|
+  / _ \ |  _ \| | | | | | | | |
+ / ___ \| |_) | |_| | |_| | | |
+/_/   \_\____/ \___/ \___/  |_|
+
+*/
+
+
 #about-header {
   border-top: 5px solid $purple-potion;
 
@@ -45,6 +55,42 @@
       left: 0;
       right: 0;
       width: 100%;
+      padding-top: 0;
+    }
+
+    .bai--left {
+      float: left;
+      width: calc(100% - 300px);
+
+      @include mq(md) {
+        padding-left: 30px;
+      }
+
+      @include mq(sm) {
+        width: 100%;
+      }
+    }
+
+    .bai--right {
+      float: left;
+      width: 300px;
+
+      .slider_1 {
+        left: inherit;
+        right: inherit;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+        width: 100%;
+        text-align: center;
+      }
     }
 
     #how-i-work {
@@ -69,13 +115,38 @@
           }
         }
       }
+
+      .hiw--left {
+        img {
+          margin-top: $unit-md;
+        }
+      }
+
+      .hiw--right {
+
+      }
+
+      @include mq(sm) {
+        .hiw--left {
+          text-align: center;
+        }
+
+        .hiw--right {
+          padding-left: $unit-base;
+          padding-right: $unit-base;
+        }
+      }
     }
 
     h2 {
       font-family: $font-1;
-      font-size: 40px;
-      font-weight: 300;
+      font-size: 24px;
+      font-weight: 400;
       color: $black;
+
+      @include mq(sm) {
+        display: none;
+      }
     }
 
     blockquote {
@@ -86,12 +157,48 @@
       padding-left: $base-unit;;
       font-family: $font-1;
       font-weight: 200;
-      font-size: $font-size-lg;
       color: $purple-potion;
-      line-height: $base-line-height;
-      border-left: 3px solid $purple-potion;
+      line-height: 120%;
+      border-left: 5px solid $purple-potion;
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+
+      }
+
+      @include mq(sm) {
+        margin-top: $unit-md;
+        margin-left: $unit-base;
+        font-size: 30px;
+        line-height: 120%;
+      }
+
+      p {
+        font-size: 45px;
+        line-height: 120%;
+
+        @include mq(lg) {
+          font-size: 35px;
+        }
+
+        @include mq(md) {
+          font-size: 30px;
+          font-weight: 400;
+          line-height: 130%;
+        }
+
+        @include mq(sm) {
+          font-size: 25px;
+          font-weight: 400;
+          line-height: 130%;
+        }
+      }
 
       a {
+        font-weight: 300;
         color: $color-primary;
         text-decoration: underline;
 
@@ -102,7 +209,12 @@
     }
 
     p.body-text {
+      font-family: $font-2;
 
+      @include mq(sm) {
+        padding-left: $unit-base;
+        padding-right: $unit-base;
+      }
     }
   }
 }

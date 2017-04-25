@@ -1,5 +1,5 @@
 /*
- ____   ___  ____ _____ ____
+____   ___  ____ _____ ____
 |  _ \ / _ \/ ___|_   _/ ___|
 | |_) | | | \___ \ | | \___ \
 |  __/| |_| |___) || |  ___) |
@@ -9,9 +9,103 @@
 
 
 /* ==========================================================================
-   %% Styling for Posts %%
-   ========================================================================== */
+%% Styling for Posts %%
+========================================================================== */
 
+ul.post-list {
+  li {
+    float: left;
+    width: 100%;
+    margin-top: $unit-lg;
+    padding: $unit-md $unit-md $unit-md $unit-md;
+    border: 1px solid #EEE;
+    border-left: 3px solid $color-primary;
+
+    &:first-child {
+      margin-top: $unit-base;
+
+      @include mq(sm) {
+        margin-top: $unit-xl;
+      }
+    }
+
+    @include mq(lg) {
+      border-left: 3px solid $color-primary;
+    }
+
+    @include mq(md) {
+      border-left: 3px solid $color-primary;
+    }
+
+    @include mq(sm) {
+      margin-top: $unit-xxl;
+      margin-right: $unit-lg;
+      padding: 0 $unit-md 0 $unit-md;
+      border-top: 0;
+      border-bottom: 0;
+      border-left: 5px solid $color-primary;
+    }
+
+    a.post-title {
+      float: left;
+      width: 100%;
+      margin-bottom: $unit-xs;
+      font-family: $font-1;
+      font-size: $font-size-xxl;
+      color: $black;
+      line-height: 140%;
+
+      @include mq(sm) {
+        font-size: 22px;
+      }
+    }
+
+    .btn-read-more {
+      font-size: 12px;
+
+      @include mq(sm) {
+        width: 100%;
+        margin-top: $unit-xs;
+        padding: $unit-sm $unit-md;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// Styling for Categories Side Bar
+.cat-item {
+  float: left;
+  width: 100%;
+  margin-top: $unit-xs;
+}
+
+.post-content {
+  float: left;
+  width: 100%;
+
+  div {
+    float: left;
+    width: 100% !important;
+  }
+
+  img {
+    float: left;
+    margin-top: $unit-md;
+    margin-bottom: $unit-md;
+    border: 7px solid white;
+    box-shadow: 0px 0px 7px #000;
+  }
+
+  p {
+    float: left;
+    width: 100%;
+    margin-bottom: $unit-xs;
+    font-size: 16px;
+    line-height: 140%;
+    font-family: $font-2;
+  }
+}
 
 .body-post {
   float: left;
@@ -22,25 +116,50 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: $unit-xxl 0 $unit-xl 0;
     background-color: $white;
 
     @include mq(lg) {
-   		width: 90%;
+      width: 90%;
     }
 
     @include mq(md) {
-   		width: 95%;
+      width: 95%;
     }
 
     @include mq(sm) {
-   		width: 95%;
+      width: 95%;
     }
 
     .bp--left {
+      padding: $unit-xxl $unit-xxl 0 0;
+
       h1 {
         font-size: 24px;
         color: black;
+        text-transform: none;
+
+        @include mq(sm) {
+          font-size: 20px;
+        }
+
+        a {
+          line-height: 135%;
+        }
+      }
+
+      h2 {
+        font-family: $font-1;
+        font-size: $font-size-lg;
+        font-weight: 500;
+        color: #AAA;
+
+        a {
+          font-family: $font-1;
+          font-size: $font-size-xl;
+          font-weight: 400;
+          color: $black;
+          text-transform: none;
+        }
       }
 
       p {
@@ -65,7 +184,19 @@
     }
 
     .bp--right {
+      padding: 1.5rem 1.25rem 3rem 1.25rem;
+    	margin-bottom: 2rem;
+    	height: auto;
+    	background-color: lighten($color-primary, 47%);
+    	border: 1px solid lighten($color-primary, 27%);
 
+      @include mq(md) {
+        padding: 2rem 1rem 3rem 1rem;
+      }
+
+      @include mq(sm) {
+        padding: 2.5rem 1rem 3rem 1rem;
+      }
     }
   }
 }

@@ -1,15 +1,11 @@
 /*
-     _    ____ ____ ___  ____  ____ ___ ___  _   _ ____
-    / \  / ___/ ___/ _ \|  _ \|  _ \_ _/ _ \| \ | / ___|
-   / _ \| |  | |  | | | | |_) | | | | | | | |  \| \___ \
-  / ___ \ |__| |__| |_| |  _ <| |_| | | |_| | |\  |___) |
- /_/   \_\____\____\___/|_| \_\____/___\___/|_| \_|____/
+ ____  _   _ ____  _   _    ___     __
+/ ___|| | | | __ )| \ | |  / \ \   / /
+\___ \| | | |  _ \|  \| | / _ \ \ / /
+ ___) | |_| | |_) | |\  |/ ___ \ V /
+|____/ \___/|____/|_| \_/_/   \_\_/
+
 */
-
-
-/* ==========================================================================
-   %% Styling for Vanishing Content %%
-   ========================================================================== */
 
 .subnav {
  	width: auto;
@@ -20,11 +16,21 @@
 
  	li {
     padding: $unit-xs $unit-xs;
- 		margin-bottom: 7px;
+ 		margin-bottom: $unit-xs;
+    border-radius: 50%;
  		text-align: center;
+    transition: all 400ms ease;
+
+    &:hover {
+      cursor: pointer;
+
+      a {
+        color: $black;
+      }
+    }
 
  		a {
- 			font-size: 1.4rem;
+ 			font-size: $font-size-xl;
  			color: white;
  			text-align: center;
  		}
@@ -40,14 +46,14 @@
 
   &.home {
     li {
-      background-color: rgba(34, 135, 190, .4);
+      background-color: rgba(34, 135, 190, .7);
       border: 1px solid $blue-potion;
 
       &:hover {
         background-color: $blue-potion;
 
         a {
-          background-color: $blue-potion;
+
         }
       }
     }
@@ -55,14 +61,29 @@
 
   &.about {
     li {
-      background-color: rgba(160, 110, 175, .4);
+      background-color: rgba(160, 110, 175, .7);
       border: 1px solid $purple-potion;
 
       &:hover {
         background-color: $purple-potion;
 
         a {
-          background-color: $purple-potion;
+
+        }
+      }
+    }
+  }
+
+  &.blog {
+    li {
+      background-color: $teal-potion;
+      border: 1px solid $teal-potion;
+
+      &:hover {
+        background-color: $teal-potion;
+
+        a {
+
         }
       }
     }
@@ -70,14 +91,14 @@
 
   &.portfolio {
     li {
-      background-color: rgba(133, 185, 51, .4);
+      background-color: rgba(133, 185, 51, .7);
       border: 1px solid $green-potion;
 
       &:hover {
         background-color: $green-potion;
 
         a {
-          background-color: $green-potion;
+
         }
       }
     }
@@ -85,14 +106,14 @@
 
   &.photography {
     li {
-      background-color: rgba(231, 30, 37, .4);
+      background-color: rgba(231, 30, 37, .7);
       border: 1px solid $red-potion;
 
       &:hover {
         background-color: $red-potion;
 
         a {
-          background-color: $red-potion;
+
         }
       }
     }
@@ -100,14 +121,14 @@
 
   &.resume {
     li {
-      background-color: rgba(245, 126, 32, .4);
+      background-color: rgba(245, 126, 32, .7);
       border: 1px solid $orange-potion;
 
       &:hover {
         background-color: $orange-potion;
 
         a {
-          background-color: $orange-potion;
+
         }
       }
     }
@@ -122,7 +143,7 @@
         background-color: $yellow-potion;
 
         a {
-          background-color: $yellow-potion;
+
         }
       }
     }

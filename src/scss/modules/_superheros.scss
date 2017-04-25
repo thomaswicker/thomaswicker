@@ -100,74 +100,163 @@
       float: left;
       width: calc(100% - 250px);
       text-align: left;
-      padding: 90px 100px 0 $unit-base;
+      padding: 85px 100px 0 $unit-base;
+      // background-color: orange;
+
+      @include mq(xl) {
+        padding: 80px 100px 0 $unit-base;
+        // background-color: purple;
+      }
+
+      @include mq(lg) {
+        padding: 60px 100px $unit-md $unit-base;
+        // background-color: red;
+      }
 
       @include mq(md) {
-        float: left;
         width: calc(100% - 250px);
-        padding: 40px 100px 0 20px;
+        padding: 65px 30px $unit-md $unit-base;
+        // background-color: blue;
       }
 
       @include mq(sm) {
-        float: left;
         width: 100%;
-        padding: 0 $unit-base $unit-lg $unit-base;
+        padding: $unit-xxs $unit-lg $unit-lg $unit-lg;
         text-align: center;
+        // background-color: green;
       }
 
       h1 {
+        float: left;
+        width: 100%;
         font-family: $font-1;
         font-size: $h1-size;
         font-weight: 200;
         color: white;
+
+        @include mq(md) {
+          font-size: 35px;
+        }
+
+        @include mq(sm) {
+          font-size: 32px;
+        }
       }
 
       h2 {
+        float: left;
+        width: 100%;
         font-family: $font-1;
+        font-size: 24px;
+        font-weight: 400;
         color: $color-primary;
+        line-height: 130%;
+
+        @include mq(lg) {
+          font-size: 24px;
+        }
+
+        @include mq(md) {
+          font-size: 20px;
+          font-weight: 500;
+        }
+
+        @include mq(sm) {
+          font-size: 20px;
+          font-weight: 500;
+        }
       }
 
       p.quote {
+        float: left;
+        width: 100%;
         font-family: $font-2;
-        font-size: $font-size-lg;
+        font-size: 19px;
         color: white;
         line-height: 140%;
+
+        @include mq(md) {
+          font-size: 17px;
+        }
+
+        @include mq(sm) {
+          font-size: 17px;
+        }
       }
 
       p.quotee {
-        display: block;
-        margin-top: 20px;
+        float: left;
+        width: 100%;
+        margin-top: $unit-base;
+        font-size: 20px;
         font-style: italic;
+        font-weight: 500;
         color: $color-primary;
-      }
 
-      .btn-resume {
-        margin-right: 100px;
+        @include mq(md) {
+          font-size: 19px;
+        }
+
+        @include mq(sm) {
+          font-size: 18px;
+        }
       }
     }
   }
 
   &.superhero-home {
     background-image: url("../img/superheroes/bg-code-home.jpg");
+
+    p.quotee {
+      color: $color-primary !important;
+    }
   }
 
   &.superhero-about {
     background-image: url("../img/superheroes/bg-code-about.jpg");
+
+    p.quotee {
+      color: $purple-potion !important;
+    }
+  }
+
+  &.superhero-blog {
+    background-image: url("../img/superheroes/bg-code-blog.jpg");
+
+    p.quotee {
+      color: teal !important;
+    }
   }
 
   &.superhero-portfolio {
     background-image: url("../img/superheroes/bg-code-portfolio.jpg");
+
+    p.quotee {
+      color: $green-potion !important;
+    }
   }
 
   &.superhero-photography {
     background-image: url("../img/superheroes/bg-code-photography.jpg");
+
+    p.quotee {
+      color: $red-potion !important;
+    }
   }
 
   &.superhero-resume {
     background-image: url("../img/superheroes/bg-code-resume.jpg");
+
+    p.quotee {
+      color: $orange-potion !important;
+    }
   }
 
   &.superhero-contact {
     background-image: url("../img/superheroes/bg-code-contact.jpg");
+
+    p.quotee {
+      color: $yellow-potion !important;
+    }
   }
 }

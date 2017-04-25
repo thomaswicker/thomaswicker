@@ -11,6 +11,7 @@
    %% Styling for Standard Buttons %%
    ========================================================================== */
 
+
 .btn, .button, button {
   float: left;
   display: block;
@@ -155,6 +156,17 @@
     background: $light-gray !important;
     color: $off-white;
     pointer-events: none;
+  }
+
+  &.btn-inline {
+    padding: 0;
+    background-color: transparent;
+    color: $orange-potion;
+    border: 0;
+
+    &:hover {
+      color: darken($orange-potion, 20%);
+    }
   }
 
   // creates a small size button
@@ -318,30 +330,23 @@ a.btn {
 }
 
 .btn-header {
-  position: absolute;
-  right: 0;
-  bottom: $unit-base;
+
 
   @include mq(xl) {
-    right: 0;
-    bottom: $unit-base;
+
   }
 
   @include mq(lg) {
-    right: $unit-xxl;
-    bottom: $unit-base;
+
   }
 
   @include mq(md) {
-    right: $unit-base;
-    bottom: $unit-base;
+
   }
 
   @include mq(sm) {
-    right: 0;
-    bottom: $unit-base;
-  }
 
+  }
 }
 
 .btn-portfolio {
@@ -368,8 +373,9 @@ a.btn {
   }
 }
 
-
 .btn-resume {
+  width: 100%;
+  margin-top: $unit-sm;
   color: $orange-potion;
   background-color: transparent;
   border: 1px solid $orange-potion;

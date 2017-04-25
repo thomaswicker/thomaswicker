@@ -1,8 +1,8 @@
-<header class="superhero superhero-portfolio">
+<header id="portfolio-header" class="superhero superhero-portfolio">
 
   <section class="sh--inner">
     <div class="my-pic">
-      <img src="<?php bloginfo( 'template_directory' ); ?>/img/pixelme/pixel-me-portfolio.png" alt="Icon Illustration of Me">
+      <img src="<?php bloginfo( 'template_directory' ); ?>/img/pixelme/pixel-me-portfolio.svg" alt="Icon Illustration of Me">
     </div>
 
     <div class="my-info">

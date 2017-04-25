@@ -15,9 +15,9 @@ Template Name: About Template
 <section id='body-about'>
   <div id='body-about-inner'>
     <section class='grid-row' id='about-me'>
-      <section class='large-9 medium-8 columns'>
+      <section class='bai--left'>
         <h2>
-          About Me
+          A Little About Me...
         </h2>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -29,15 +29,18 @@ Template Name: About Template
         <?php endif; ?>
       </section>
 
-      <div class='large-3 medium-4 columns'>
-        <img src='<?php bloginfo( 'template_directory' ); ?>/img/me_with_the_girls.jpg'>
-      </div>
+      <section class='columns bai--right'>
+        <!-- <img src='<?php bloginfo( 'template_directory' ); ?>/img/me_with_the_girls.jpg'> -->
+        <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+      </section>
     </section>
-    <section class='grid-row' id='how-i-work'>
-      <div class='large-3 medium-4 columns'>
+
+    <section class='grid-row how-i-work' id='how-i-work'>
+      <div class='large-3 medium-4 columns hiw--left'>
         <img src='<?php bloginfo( 'template_directory' ); ?>/img/office_image.jpg'>
       </div>
-      <div class='large-9 medium-8 columns'>
+
+      <div class='large-9 medium-8 columns hiw--right'>
         <h3 class='shim top xs'>
           How I work
         </h3>
@@ -89,28 +92,30 @@ Template Name: About Template
             <a href='https://github.com/thomaswicker/potion-css' target='blank'>
               Potion CSS Framework
             </a>
-            <h3 class='shim top sm'>
-              About this site
-            </h3>
           </li>
-          <ul>
-            <li>
-              Built with
-              <a href='http://haml.info/' target='blank'>
-                HAML
-              </a>
-              &amp;
-              <a href='http://sass-lang.com' target='blank'>
-                SASS
-              </a>
-            </li>
-            <li>
-              Built on top of my custom SASS framework
-              <a href='https://github.com/thomaswicker/potion-css' target='blank'>
-                Potion
-              </a>
-            </li>
-          </ul>
+        </ul>
+
+        <h3 class='shim top sm'>
+          About this site
+        </h3>
+
+        <ul>
+          <li>
+            Built with
+            <a href='http://haml.info/' target='blank'>
+              HAML
+            </a>
+            &amp;
+            <a href='http://sass-lang.com' target='blank'>
+              SASS
+            </a>
+          </li>
+          <li>
+            Built on top of my custom SASS framework
+            <a href='https://github.com/thomaswicker/potion-css' target='blank'>
+              Potion
+            </a>
+          </li>
         </ul>
       </div>
     </section>

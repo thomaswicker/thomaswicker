@@ -19,15 +19,27 @@
   h4 {
     float: left;
     width: 100%;
+    margin-top: $unit-tiny;
+    margin-bottom: $unit-tiny;
+    padding-top: $unit-xs;
     font-family: $font-1;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    color: $teal-potion;
+    border-top: 1px solid $teal-potion;
   }
 
   .widget_categories {
     ul {
       li {
-        a {
+        padding-left: $unit-xs;
 
+        a {
+          color: $black;
+
+          &:hover {
+            color:$teal-potion;
+          }
         }
       }
     }
@@ -43,9 +55,22 @@
         float: left;
         width: 100%;
         margin-top: $unit-sm;
+        padding-left: $unit-xs;
 
         a {
+          line-height: 135%;
+          color: $black;
 
+          &:hover {
+            color:$teal-potion;
+          }
+
+          &:before {
+            content: "\f02e";
+            margin-right: 6px;
+            font-family: $font-4;
+            color: $black;
+          }
         }
       }
     }

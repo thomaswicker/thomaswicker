@@ -41,7 +41,7 @@
     overflow-x: hidden;
 
     @include mq(sm) {
-      margin-top: -$unit-base !important;
+      margin-top: $unit-xs !important;
     }
 
     .portfolio-item {
@@ -76,12 +76,17 @@
         line-height: $base-line-height;
         color: $black;
 
-        @include mq(md) {
+        @include mq(lg) {
+          font-size: $font-size-xl;
+        }
 
+        @include mq(md) {
+          font-size: $font-size-xl;
         }
 
         @include mq(sm) {
           padding: $unit-base $unit-xs 0 $unit-base;
+          font-size: $font-size-xl;
         }
       }
 
@@ -134,6 +139,14 @@
         float: left;
         width: 100%;
         padding: 0 $unit-base $unit-base $unit-base;
+
+        a {
+          @include mq(sm) {
+            float: left;
+            width: 48%;
+            padding: $unit-xs $unit-sm;
+          }
+        }
 
         .button-secondary {
           margin-left: $unit-xs;

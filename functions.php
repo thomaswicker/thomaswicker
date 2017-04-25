@@ -38,8 +38,65 @@ function theme_js() {
     wp_enqueue_script( 'lightboxjs' );
     wp_enqueue_script( 'masonryjs' );
     wp_enqueue_script( 'appjs' );
-
 }
+
+function custom_pagination($numpages = '', $pagerange = '', $paged='') {
+
+  if (empty($pagerange)) {
+    $pagerange = 2;
+  }
+
+  /**
+   * This first part of our function is a fallback
+   * for custom pagination inside a regular loop that
+   * uses the global $paged and global $wp_query variables.
+   *
+   * It's good because we can now override default pagination
+   * in our theme, and use this function in default quries
+   * and custom queries.
+   */
+  global $paged;
+  if (empty($paged)) {
+    $paged = 1;
+  }
+  if ($numpages == '') {
+    global $wp_query;
+    $numpages = $wp_query->max_num_pages;
+    if(!$numpages) {
+        $numpages = 1;
+    }
+  }
+
+  /**
+   * We construct the pagination arguments to enter into our paginate_links
+   * function.
+   */
+  $pagination_args = array(
+    'base'            => get_pagenum_link(1) . '%_%',
+    'format'          => 'page/%#%',
+    'total'           => $numpages,
+    'current'         => $paged,
+    'show_all'        => False,
+    'end_size'        => 1,
+    'mid_size'        => $pagerange,
+    'prev_next'       => True,
+    'prev_text'       => __('&laquo;'),
+    'next_text'       => __('&raquo;'),
+    'type'            => 'plain',
+    'add_args'        => false,
+    'add_fragment'    => ''
+  );
+
+  $paginate_links = paginate_links($pagination_args);
+
+  if ($paginate_links) {
+    echo "<nav class='custom-pagination'>";
+      echo "<span class='page-numbers page-num'>Page " . $paged . " of " . $numpages . "</span> ";
+      echo $paginate_links;
+    echo "</nav>";
+  }
+}
+
 
 function register_my_menu() {
   register_nav_menu('main-menu',__( 'Main Menu' ));
@@ -47,11 +104,23 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
+if ( function_exists( 'add_image_size' ) ) add_theme_support( 'post-thumbnails' );
+if ( function_exists( 'add_image_size' ) ) {
+    add_image_size( 'excerpt-thumb', 0, 100, false );
+    // define excerpt-thumb size here
+    // in the example: 100px wide, height adjusts automatically, no cropping
+}
+
+
 // Changing excerpt length for posts on home page...
 function new_excerpt_length($length) {
-return 150;
+  return 150;
+    // define length of excerpt in number of words
 }
 add_filter('excerpt_length', 'new_excerpt_length');
+
+
+
 
 // Changing excerpt more
 function new_excerpt_more($more) {
@@ -64,6 +133,16 @@ if (function_exists('register_sidebar')) {
   register_sidebar(array(
     'name' => 'lastfm',
     'id'   => 'thomaswicker-sidebar',
+    'description'   => 'This is a widgetized area.',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+  register_sidebar(array(
+    'name' => 'instagram',
+    'id'   => 'instagram-sidebar',
     'description'   => 'This is a widgetized area.',
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',

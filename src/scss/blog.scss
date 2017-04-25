@@ -1,0 +1,175 @@
+/*
+ ____  _     ___   ____
+| __ )| |   / _ \ / ___|
+|  _ \| |  | | | | |  _
+| |_) | |__| |_| | |_| |
+|____/|_____\___/ \____|
+
+*/
+
+#blog-header {
+  border-top: 5px solid teal;
+
+  #home-header-inner {
+
+  }
+}
+
+#body-blog {
+	background-color: #F4F7F8;
+	padding-bottom: 70px;
+
+  #body-blog-inner {
+  	width: 90%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-color: $white;
+
+  	@include mq(lg) {
+  		width: 96%;
+  	}
+
+  	@include mq(md) {
+  		width: 100%;
+  	}
+
+  	@include mq(sm) {
+  		width: 100%;
+
+  		h1 {
+  			padding-top: 1rem;
+  		}
+  	}
+
+    .body-blog-left {
+    	padding: 2.5rem 4rem 0 0;
+
+    	@include mq(lg) {
+    		padding: 2rem 2rem 0 1rem;
+    	}
+
+    	@include mq(md) {
+    		padding: 2rem 2rem 0 1rem;
+    	}
+
+    	@include mq(sm) {
+    		padding: .0 0 0 0;
+    	}
+
+      .btn-view-all {
+        float: right;
+
+        i {
+          margin-left: 3px;
+        }
+
+        @include mq(sm) {
+          float: left;
+          width: 100%;
+          margin-top: 0;
+          padding: $unit-xs $unit-md;
+          background-color: $orange-potion;
+          color: $white;
+        }
+      }
+    }
+
+    .body-blog-right {
+    	padding: 1.5rem 1.25rem 3rem 1.25rem;
+    	margin-bottom: 2rem;
+    	height: auto;
+    	background-color: lighten($color-primary, 47%);
+    	border: 1px solid lighten($color-primary, 27%);
+
+    	@include mq(md) {
+    		padding: 2rem 1rem 3rem 1rem;
+    	}
+
+    	@include mq(sm) {
+    		padding: 2.5rem 1rem 3rem 1rem;
+    	}
+    }
+  }
+}
+
+
+.blog-entry {
+  float: left;
+  width: 100%;
+  margin-top: $unit-lg;
+  padding: $unit-md $unit-md $unit-md $unit-md;
+  border: 1px solid #EEE;
+  border-left: 3px solid $color-primary;
+
+  &:first-child {
+    margin-top: $unit-base;
+
+    @include mq(sm) {
+      margin-top: $unit-base;
+    }
+  }
+
+  @include mq(lg) {
+    border-left: 3px solid $color-primary;
+  }
+
+  @include mq(md) {
+    border-left: 3px solid $color-primary;
+  }
+
+  @include mq(sm) {
+    margin-top: $unit-xxl;
+    margin-right: $unit-lg;
+    padding: 0 $unit-md 0 $unit-md;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 5px solid $color-primary;
+  }
+
+  a.post-title {
+    float: left;
+    width: 100%;
+    margin-bottom: $unit-xs;
+    font-size: 20px;
+    line-height: 140%;
+    color: $black;
+
+    @include mq(sm) {
+      font-size: 22px;
+    }
+  }
+}
+
+nav.custom-pagination {
+  .page-numbers {
+    float: left;
+    margin-left: $unit-xxs;
+    margin-right: $unit-xxs;
+    font-size: 20px;
+
+    &.page-num {
+      float: right;
+      padding-top: 5px;
+      font-size: 16px;
+      color: #AAA;
+    }
+
+    &.current {
+      float: left;
+      text-decoration: underline;
+    }
+
+    &.prev, &.next {
+      position: relative;
+      top: -3px;
+      width: 25px;
+      height: 25px;
+      margin-right: $unit-xs;
+      font-size: 23px;
+      font-weight: 600;
+      background-color: $color-primary;
+      color: $white;
+      text-align: center;
+    }
+  }
+}
