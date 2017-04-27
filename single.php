@@ -2,7 +2,6 @@
 <?php get_template_part('partials/superheroes/superhero-blog'); ?>
 <?php get_template_part('partials/main-nav/main-nav-inner-page'); ?>
 
-
 <section id="body-post" class=" medium-12 body-post">
 	<section class="bp--inner">
 		<div class="bp--left medium-8 columns">

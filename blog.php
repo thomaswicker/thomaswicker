@@ -41,7 +41,7 @@ Template Name: Blog Template
               <div class="post-content">
                 <?php the_excerpt(); ?>
               </div>
-              <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-mini btn-read-more"> Read More...</a>
+              <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-read-more"> Read More...</a>
             </article>
           <?php endwhile; ?>
           <!-- end of the loop -->

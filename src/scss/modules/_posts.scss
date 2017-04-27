@@ -51,23 +51,13 @@ ul.post-list {
       width: 100%;
       margin-bottom: $unit-xs;
       font-family: $font-1;
-      font-size: $font-size-xxl;
+      font-size: 20px;
+      font-weight: 500;
       color: $black;
       line-height: 140%;
 
       @include mq(sm) {
         font-size: 22px;
-      }
-    }
-
-    .btn-read-more {
-      font-size: 12px;
-
-      @include mq(sm) {
-        width: 100%;
-        margin-top: $unit-xs;
-        padding: $unit-sm $unit-md;
-        font-size: 14px;
       }
     }
   }
@@ -100,10 +90,15 @@ ul.post-list {
   p {
     float: left;
     width: 100%;
+    margin-top: 0 !important;
     margin-bottom: $unit-xs;
-    font-size: 16px;
-    line-height: 140%;
     font-family: $font-2;
+    font-size: 13px;
+    line-height: 140%;
+
+    @include mq(sm) {
+      font-size: 13px;
+    }
   }
 }
 
@@ -133,13 +128,21 @@ ul.post-list {
     .bp--left {
       padding: $unit-xxl $unit-xxl 0 0;
 
+      @include mq(sm) {
+        padding: $unit-xxl $unit-sm 0 $unit-sm;
+      }
+
       h1 {
-        font-size: 24px;
-        color: black;
+        margin-bottom: 0;
+        font-family: $font-1;
+        font-size: 20px;
+        font-weight: 500;
+        color: $black;
         text-transform: none;
+        line-height: 135%;
 
         @include mq(sm) {
-          font-size: 20px;
+          font-size: 22px;
         }
 
         a {
@@ -153,32 +156,45 @@ ul.post-list {
         font-weight: 500;
         color: #AAA;
 
+        @include mq(sm) {
+          margin-top: $unit-xxs;
+          margin-bottom: 0;
+          line-height: 135%;;
+        }
+
         a {
           font-family: $font-1;
           font-size: $font-size-xl;
-          font-weight: 400;
+          font-weight: 500;
           color: $black;
           text-transform: none;
+          line-height: 135%;
         }
       }
 
       p {
         float: left;
         width: 100%;
-        margin-top: 15px;
+        margin-top: $unit-xs;
+        margin-bottom: $unit-sm;
         font-family: $font-2;
-        font-size: 16px;
+        font-size: $font-size-base;
         line-height: 135%;
       }
 
       .post-categories {
         a {
           padding: 4px 9px;
-          font-size: 12px;
+          font-size: $font-size-xs;
           font-weight: $font-weight-bold;
           text-transform: uppercase;
-          background-color: $color-secondary;
+          background-color: $color-primary;
           color: white;
+
+          &:hover {
+            background-color: darken($color-primary, 15%);
+            text-decoration: none;
+          }
         }
       }
     }
@@ -195,6 +211,7 @@ ul.post-list {
       }
 
       @include mq(sm) {
+        margin-top: $unit-lg;
         padding: 2.5rem 1rem 3rem 1rem;
       }
     }

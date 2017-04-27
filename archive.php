@@ -2,7 +2,6 @@
 <?php get_template_part('partials/superheroes/superhero-blog'); ?>
 <?php get_template_part('partials/main-nav/main-nav-inner-page-2'); ?>
 
-
 <section id="body-post" class=" medium-12 body-post">
 	<section class="bp--inner">
 		<article class="bp--left medium-8 columns">
@@ -51,7 +50,7 @@
 					<div class="post-content">
 						<?php the_excerpt(); ?>
 					</div>
-					<a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-mini btn-read-more"> Read More...</a>
+					<a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-read-more"> Read More...</a>
 
 				</div>
 

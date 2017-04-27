@@ -1,8 +1,8 @@
-<nav role='navigation' class='superhero-nav'>
+<nav role='navigation' class='superhero-nav superhero-nav-photography'>
   <div id="nav-toggle-container">
-    <div class="nav-current-page">
+    <a href="/" class="nav-current-page">
       Thomaswicker.com
-    </div>
+    </a>
 
     <div id="nav-toggle">
       <i class="fa fa-bars"></i>

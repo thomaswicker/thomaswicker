@@ -21,7 +21,7 @@
              <?php the_excerpt(); ?>
              <?php if ( has_post_thumbnail()) the_post_thumbnail('excerpt-thumb'); ?>
            </div>
-           <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-mini btn-read-more"> Read More...</a>
+           <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-read-more"> Read More...</a>
         </li>
         <?php endforeach; ?>
     </div>

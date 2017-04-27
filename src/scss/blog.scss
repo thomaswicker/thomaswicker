@@ -10,14 +10,19 @@
 #blog-header {
   border-top: 5px solid teal;
 
-  #home-header-inner {
-
+  @include mq(sm) {
+    border-top: 2px solid teal;
   }
 }
 
 #body-blog {
 	background-color: #F4F7F8;
 	padding-bottom: 70px;
+
+  @include mq(sm) {
+    width: 100%;
+    padding-bottom: 140px;
+  }
 
   #body-blog-inner {
   	width: 90%;
@@ -35,6 +40,7 @@
 
   	@include mq(sm) {
   		width: 100%;
+      margin-bottom: $unit-lg;
 
   		h1 {
   			padding-top: 1rem;
@@ -42,7 +48,7 @@
   	}
 
     .body-blog-left {
-    	padding: 2.5rem 4rem 0 0;
+    	padding: 40px 80px 0 0;
 
     	@include mq(lg) {
     		padding: 2rem 2rem 0 1rem;
@@ -53,23 +59,56 @@
     	}
 
     	@include mq(sm) {
-    		padding: .0 0 0 0;
+        padding: 20px 40px 0 0;
     	}
 
-      .btn-view-all {
-        float: right;
+      .blog-entry {
+        float: left;
+        width: 100%;
+        margin-top: $unit-lg;
+        padding: $unit-md $unit-md $unit-md $unit-md;
+        border: 1px solid #EEE;
+        border-left: 3px solid $color-primary;
 
-        i {
-          margin-left: 3px;
+        &:first-child {
+          margin-top: $unit-base;
+
+          @include mq(sm) {
+            margin-top: $unit-base;
+          }
+        }
+
+        @include mq(lg) {
+          border-left: 3px solid $color-primary;
+        }
+
+        @include mq(md) {
+          border-left: 3px solid $color-primary;
         }
 
         @include mq(sm) {
+          margin-top: $unit-lg;
+          margin-left: $unit-base;
+          padding: 0 $unit-xxs 0 $unit-md;
+          border-top: 0;
+          border-right: 0;
+          border-bottom: 0;
+          border-left: 5px solid $color-primary;
+        }
+
+        a.post-title {
           float: left;
           width: 100%;
-          margin-top: 0;
-          padding: $unit-xs $unit-md;
-          background-color: $orange-potion;
-          color: $white;
+          margin-bottom: $unit-xs;
+          font-family: $font-1;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 140%;
+          color: $black;
+
+          @include mq(sm) {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -86,72 +125,40 @@
     	}
 
     	@include mq(sm) {
+        margin-top: $unit-lg;
     		padding: 2.5rem 1rem 3rem 1rem;
     	}
     }
   }
 }
 
-
-.blog-entry {
-  float: left;
-  width: 100%;
-  margin-top: $unit-lg;
-  padding: $unit-md $unit-md $unit-md $unit-md;
-  border: 1px solid #EEE;
-  border-left: 3px solid $color-primary;
-
-  &:first-child {
-    margin-top: $unit-base;
-
-    @include mq(sm) {
-      margin-top: $unit-base;
-    }
-  }
-
-  @include mq(lg) {
-    border-left: 3px solid $color-primary;
-  }
-
-  @include mq(md) {
-    border-left: 3px solid $color-primary;
-  }
+nav.custom-pagination {
 
   @include mq(sm) {
-    margin-top: $unit-xxl;
-    margin-right: $unit-lg;
-    padding: 0 $unit-md 0 $unit-md;
-    border-top: 0;
-    border-bottom: 0;
-    border-left: 5px solid $color-primary;
+    padding-left: 15px;
   }
 
-  a.post-title {
-    float: left;
-    width: 100%;
-    margin-bottom: $unit-xs;
-    font-size: 20px;
-    line-height: 140%;
-    color: $black;
-
-    @include mq(sm) {
-      font-size: 22px;
-    }
-  }
-}
-
-nav.custom-pagination {
   .page-numbers {
     float: left;
     margin-left: $unit-xxs;
     margin-right: $unit-xxs;
     font-size: 20px;
 
+    @include mq(sm) {
+      margin-left: $unit-xs;
+      margin-right: $unit-xs;
+      font-size: 20px;
+    }
+
     &.page-num {
       float: right;
       padding-top: 5px;
       font-size: 16px;
       color: #AAA;
+
+      @include mq(sm) {
+
+      }
     }
 
     &.current {
@@ -170,6 +177,13 @@ nav.custom-pagination {
       background-color: $color-primary;
       color: $white;
       text-align: center;
+
+      @include mq(sm) {
+        top: -5px;
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+      }
     }
   }
 }

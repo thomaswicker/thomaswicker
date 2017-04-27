@@ -11,10 +11,10 @@
 */
 
 #portfolio-header {
-  border-top: $unit-xxs solid $green-potion;
+  border-top: 5px solid $green-potion;
 
-  #portfolio-header-inner {
-
+  @include mq(sm) {
+    border-top: 2px solid $green-potion;
   }
 }
 
@@ -22,6 +22,11 @@
   background-color: $white;
   padding-bottom: $unit-jumbo;
   overflow-x: hidden;
+
+  @include mq(sm) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 #body-portfolio-inner {
@@ -69,63 +74,66 @@
       h3 {
         float: left;
         width: 90%;
+        margin-bottom: 0;
         padding: $unit-base $unit-xl 0 $unit-base;
-        font-family: $font-2;
-        font-size: $font-size-xxl;
-        font-weight: 200;
+        font-family: $font-1;
+        font-size: 18px;
+        font-weight: 500;
         line-height: $base-line-height;
         color: $black;
 
         @include mq(lg) {
-          font-size: $font-size-xl;
-        }
+
+         }
 
         @include mq(md) {
-          font-size: $font-size-xl;
+
         }
 
         @include mq(sm) {
-          padding: $unit-base $unit-xs 0 $unit-base;
-          font-size: $font-size-xl;
+          padding: $unit-base $unit-xs 0 22px;
         }
       }
 
       h4 {
         float: left;
         width: 90%;
-        margin-top: -$unit-xxs;
+        margin-top: 0;
         padding: 0 $unit-xxl 0 $unit-base;
         font-family: $font-1;
-        font-size: $font-size-md;
+        font-size: 14px;
         font-weight: 400;
         line-height: $base-line-height;
         color: $color-primary;
+        text-transform: none;
 
         @include mq(md) {
           font-size: $font-size-base;
         }
 
         @include mq(sm) {
-          padding: 0 $unit-sm 0 $unit-xxl;
-          font-size: $font-size-base;
+          padding: 0 $unit-sm 0 22px;
+          font-size: 15px;
+          font-weight: bold;
         }
       }
 
       h5 {
         float: left;
         width: 90%;
-        padding: 0 $unit-xxl 0 $unit-xl;
+        padding: 0 $unit-xxl 0 $unit-base;
         font-family: $font-1;
         font-size: $font-size-base;
         font-weight: 400;
         line-height: $base-line-height;
-        color: $light-gray;
+        color: #888;
 
         @include mq(md) {
           font-size: $font-size-sm;
         }
 
         @include mq(sm) {
+          padding: 0 $unit-xxl 0 22px;
           font-size: $font-size-sm;
         }
       }

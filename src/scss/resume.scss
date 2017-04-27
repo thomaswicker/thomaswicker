@@ -1,6 +1,3 @@
-@import 'global/vars';
-@import 'global/mixins';
-
 /*
   ____  _____ ____  _   _ __  __ _____
  |  _ \| ____/ ___|| | | |  \/  | ____|
@@ -13,44 +10,44 @@
 #resume-header {
   border-top: 5px solid $orange-potion;
 
-  #resume-header-inner {
-
+  @include mq(sm) {
+    border-top: 2px solid $orange-potion;
   }
 }
 
 #body-resume {
 	float: left;
 	background-color: $white;
-	padding-bottom: 3rem;
-}
+	padding-bottom: $unit-xxl;
 
-#body-resume-inner {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: $white;
+  #body-resume-inner {
+  	width: 80%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-color: $white;
 
-	@include mq(lg) {
-		width: 90%;
-	}
+  	@include mq(lg) {
+  		width: 90%;
+  	}
 
-	@include mq(md) {
-		width: 90%;
-	}
+  	@include mq(md) {
+  		width: 90%;
+  	}
 
-	@include mq(sm) {
-		float: left;
-		width: 100%;
-		padding: 0 .5rem;
+  	@include mq(sm) {
+  		float: left;
+  		width: 100%;
+  		padding: 0 .5rem;
 
-		h1 {
-			padding-top: 1rem;
-		}
+  		h1 {
+  			padding-top: $unit-lg;
+  		}
 
-		h2 {
-			font-size: 1.4rem !important;
-		}
-	}
+  		h2 {
+  			font-size: 1.4rem;
+  		}
+  	}
+  }
 }
 
 .office-image {
@@ -227,7 +224,7 @@
   #mrcd--left {
   	float: left;
   	width: 250px;
-  	margin-top: 1rem;
+  	margin-top: $unit-base;
   	padding: 1.5rem 1.8rem 1.5rem 1.8rem;
   	border: 1px solid #ccc;
 
@@ -243,7 +240,8 @@
   		width: 100%;
   		text-align: center;
   		margin-top: 0;
-  		padding: 1.5rem 0 2rem 0;
+  		padding: $unit-xs 0 $unit-base 0;
+      border: 0;
   	}
 
   	#my-info-contact {
@@ -318,17 +316,17 @@
   		}
 
   		.name-block {
-  			@include font($font-1, normal, $font-size-xxl, $font-weight-bold);
+  			@include font($font-1, normal, 16px, $font-weight-bold);
   			margin-bottom: .25em;
 
   			@include mq(md) {
-  				font-size: 1.5rem;
-  				line-height: 1.7rem;
+  				font-size: 16px;
+          line-height: 135%;
   			}
 
   			@include mq(sm) {
-  				font-size: 1.3rem;
-  				line-height: 1.5rem;
+  				font-size: 22px;
+  				line-height: 135%;
   			}
   		}
 
@@ -337,7 +335,7 @@
   			margin-bottom: $unit-xxs;
 
   			@include mq(sm) {
-  				font-size: 1rem;
+  				font-size: 15px;
   			}
   		}
 
@@ -347,7 +345,7 @@
         display: block;
 
   			@include mq(sm) {
-  				font-size: $font-size-base;
+  				display: none;
   			}
   		}
 
@@ -361,7 +359,16 @@
         border-bottom: 1px solid $xxlight-gray;
 
         @include mq(sm) {
-          font-size: 1rem;
+          margin-top: $unit-sm;
+          padding-top: $unit-xs;
+          padding-bottom: $unit-tiny;
+          font-size: $font-size-base;
+        }
+
+        img {
+          @include mq(sm) {
+            max-width: 200px;
+          }
         }
       }
   	}
@@ -405,10 +412,12 @@
   		h2 {
         float: left;
         width: 100%;
-  			margin: .8rem 0 $unit-md 0;
+  			margin: $unit-sm 0 $unit-tiny 0;
+        font-size: 24px;
+        font-weight: 400;
 
   			@include mq(sm) {
-  				margin: $unit-xs 0 $unit-base 0;
+  				margin: $unit-xs 0 $unit-xs 0;
           font-size: 30px;
   			}
   		}
@@ -668,10 +677,12 @@
 			width: 100%;
 			color: $black;
 			line-height: 110%;
-			@include font($font-2, normal, $font-size-lg, $font-weight-light);
+			@include font($font-2, normal, $font-size-lg, 600);
 
 			@include mq(sm) {
 				margin-top: 1rem;
+        text-align: center;
+        @include font($font-2, normal, $font-size-lg, 600);
 			}
 		}
 
@@ -698,7 +709,7 @@
 			float: left;
 			width: 100%;
 			font-size: .85rem;
-      margin: $unit-xs 0 0 0;
+      margin: $unit-xxs 0 0 0;
 			text-transform: capitalize;
 
 			@include mq(sm) {

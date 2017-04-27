@@ -1,8 +1,8 @@
-<nav role='navigation' class='superhero-nav'>
+<nav role='navigation' class='superhero-nav superhero-nav-blog'>
   <div id="nav-toggle-container">
-    <div class="nav-current-page">
+    <a href="/" class="nav-current-page">
       Thomaswicker.com
-    </div>
+    </a>
 
     <div id="nav-toggle">
       <i class="fa fa-bars"></i>
@@ -11,37 +11,37 @@
 
   <ul>
     <li>
-      <a href='/'>
+      <a href='http://www.thomaswicker.com/'>
         Home
       </a>
     </li>
     <li class="active">
-      <a href='../blog/'>
+      <a href='http://www.thomaswicker.com/blog/'>
         Blog
       </a>
     </li>
     <li>
-      <a href='../about/'>
+      <a href='http://www.thomaswicker.com/about'>
         About
       </a>
     </li>
     <li>
-      <a href='../portfolio/'>
+      <a href='http://www.thomaswicker.com/portfolio/'>
         Portfolio
       </a>
     </li>
     <li>
-      <a href='../photography/'>
+      <a href='http://www.thomaswicker.com/photography/'>
         Photography
       </a>
     </li>
     <li>
-      <a href='../my-resume/'>
+      <a href='http://www.thomaswicker.com/my-resume/'>
         Resume
       </a>
     </li>
     <li>
-      <a href='../contact/'>
+      <a href='http://www.thomaswicker.com/contact/'>
         Contact
       </a>
     </li>

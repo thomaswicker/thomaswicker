@@ -206,11 +206,6 @@
   }
 }
 
-a.btn {
-  text-decoration: none;
-  @include padding($unit, $unit-md);
-}
-
 
 /* ==========================================================================
    %% Styling for Outlined Buttons %%
@@ -396,5 +391,39 @@ a.btn {
     color: $white;
     background-color: $yellow-potion;
     border: 1px solid $yellow-potion;
+  }
+}
+
+.btn-read-more {
+  font-size: 12px;
+  margin-top: $unit-sm;
+  padding: $unit-xxs $unit-sm;
+
+  @include mq(sm) {
+    width: 100%;
+    margin-top: $unit-xs;
+    padding: $unit-xs $unit-md;
+    font-size: 14px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-view-all {
+  float: right;
+
+  i {
+    margin-left: 3px;
+  }
+
+  @include mq(sm) {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    padding: $unit-xs $unit-md;
+    background-color: $orange-potion;
+    color: $white;
   }
 }

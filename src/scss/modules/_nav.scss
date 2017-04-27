@@ -27,16 +27,22 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
     }
 
     .nav-current-page {
-      padding-top: $unit-xs;
+      float: left;
+      padding-top: 14px;
       padding-left: $unit-xs;
-      color: white;
-      text-transform: uppercase;
       font-family: $font-1;
       font-size: 16px;
+      text-transform: uppercase;
+      color: $white;
+
+      &:hover {
+        color: $white !important;
+        text-decoration: none;
+      }
     }
 
     #nav-toggle {
-      position: absolute;
+      position: fixed;
       top: 10px;
       right: 12px;
       z-index: 1000;
@@ -75,11 +81,11 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
       a {
         float: left;
-        padding: $unit-base $unit-base;
+        padding: 22px $unit-base;
         font-family: $font-1;
-        font-size: $font-size-md;
-        font-weight: 600;
-        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        color: $white;
         text-transform: uppercase;
         background-color: $black;
 
@@ -191,6 +197,132 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
           text-transform: uppercase;
           text-align: center;
           background-color: $xdark-gray;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-home #nav-toggle-container {
+    .nav-current-page {
+      color: $color-primary;
+    }
+
+    #nav-toggle {
+      i {
+        color: $color-primary;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-blog #nav-toggle-container {
+    .nav-current-page {
+      color: $teal-potion;
+    }
+
+    #nav-toggle {
+      i {
+        color: $teal-potion;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-about #nav-toggle-container {
+    .nav-current-page {
+      color: $purple-potion;
+    }
+
+    #nav-toggle {
+      i {
+        color: $purple-potion;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-portfolio #nav-toggle-container {
+    .nav-current-page {
+      color: $color-secondary;
+    }
+
+    #nav-toggle {
+      i {
+        color: $color-secondary;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-photography #nav-toggle-container {
+    .nav-current-page {
+      color: $red-potion;
+    }
+
+    #nav-toggle {
+      i {
+        color: $red-potion;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-resume #nav-toggle-container {
+    .nav-current-page {
+      color: $orange-potion;
+    }
+
+    #nav-toggle {
+      i {
+        color: $orange-potion;
+      }
+
+      &:hover {
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-contact #nav-toggle-container {
+    .nav-current-page {
+      color: $yellow-potion;
+    }
+
+    #nav-toggle {
+      i {
+        color: $yellow-potion;
+      }
+
+      &:hover {
+        i {
+          color: white;
         }
       }
     }

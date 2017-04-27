@@ -52,10 +52,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1808,13 +1804,9 @@ _______   ______  _____
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 135%;
   letter-spacing: normal; }
-  @media only screen and (max-width: 640px) {
-    .body-text {
-      font-size: .95rem;
-      line-height: 1.2rem; } }
 
 .body-text-small {
   font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
@@ -2438,13 +2430,6 @@ html[data-useragent*='MSIE 10.0'] .alert {
     font-weight: normal;
     font-size: 13px; }
 
-a.btn {
-  text-decoration: none;
-  padding-top: 20px;
-  padding-right: 25px;
-  padding-bottom: 20px;
-  padding-left: 25px; }
-
 /* ==========================================================================
    %% Styling for Outlined Buttons %%
    ========================================================================== */
@@ -2558,6 +2543,32 @@ a.btn {
     color: #ffffff;
     background-color: #e1b225;
     border: 1px solid #e1b225; }
+
+.btn-read-more {
+  font-size: 12px;
+  margin-top: 15px;
+  padding: 5px 15px; }
+  @media only screen and (max-width: 640px) {
+    .btn-read-more {
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px 25px;
+      font-size: 14px; } }
+  .btn-read-more:hover {
+    text-decoration: none; }
+
+.btn-view-all {
+  float: right; }
+  .btn-view-all i {
+    margin-left: 3px; }
+  @media only screen and (max-width: 640px) {
+    .btn-view-all {
+      float: left;
+      width: 100%;
+      margin-top: 0;
+      padding: 10px 25px;
+      background-color: #f57e20;
+      color: #ffffff; } }
 
 /*
    ____ ___  ____  _____
@@ -3141,14 +3152,18 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
       .superhero-nav #nav-toggle-container {
         display: block; } }
     .superhero-nav #nav-toggle-container .nav-current-page {
-      padding-top: 10px;
+      float: left;
+      padding-top: 14px;
       padding-left: 10px;
-      color: white;
-      text-transform: uppercase;
       font-family: "Roboto", sans-serif;
-      font-size: 16px; }
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #ffffff; }
+      .superhero-nav #nav-toggle-container .nav-current-page:hover {
+        color: #ffffff !important;
+        text-decoration: none; }
     .superhero-nav #nav-toggle-container #nav-toggle {
-      position: absolute;
+      position: fixed;
       top: 10px;
       right: 12px;
       z-index: 1000; }
@@ -3172,11 +3187,11 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
           color: #000000; }
       .superhero-nav ul li a {
         float: left;
-        padding: 20px 20px;
+        padding: 22px 20px;
         font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        font-weight: 600;
-        color: white;
+        font-size: 13px;
+        font-weight: 500;
+        color: #ffffff;
         text-transform: uppercase;
         background-color: #000000; }
         .superhero-nav ul li a:hover {
@@ -3239,6 +3254,48 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
             text-transform: uppercase;
             text-align: center;
             background-color: #222222; } }
+  .superhero-nav.superhero-nav-home #nav-toggle-container .nav-current-page {
+    color: #2a98c6; }
+  .superhero-nav.superhero-nav-home #nav-toggle-container #nav-toggle i {
+    color: #2a98c6; }
+  .superhero-nav.superhero-nav-home #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
+  .superhero-nav.superhero-nav-blog #nav-toggle-container .nav-current-page {
+    color: teal; }
+  .superhero-nav.superhero-nav-blog #nav-toggle-container #nav-toggle i {
+    color: teal; }
+  .superhero-nav.superhero-nav-blog #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
+  .superhero-nav.superhero-nav-about #nav-toggle-container .nav-current-page {
+    color: #a06eaf; }
+  .superhero-nav.superhero-nav-about #nav-toggle-container #nav-toggle i {
+    color: #a06eaf; }
+  .superhero-nav.superhero-nav-about #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
+  .superhero-nav.superhero-nav-portfolio #nav-toggle-container .nav-current-page {
+    color: #85b933; }
+  .superhero-nav.superhero-nav-portfolio #nav-toggle-container #nav-toggle i {
+    color: #85b933; }
+  .superhero-nav.superhero-nav-portfolio #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
+  .superhero-nav.superhero-nav-photography #nav-toggle-container .nav-current-page {
+    color: #E90000; }
+  .superhero-nav.superhero-nav-photography #nav-toggle-container #nav-toggle i {
+    color: #E90000; }
+  .superhero-nav.superhero-nav-photography #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
+  .superhero-nav.superhero-nav-resume #nav-toggle-container .nav-current-page {
+    color: #f57e20; }
+  .superhero-nav.superhero-nav-resume #nav-toggle-container #nav-toggle i {
+    color: #f57e20; }
+  .superhero-nav.superhero-nav-resume #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
+  .superhero-nav.superhero-nav-contact #nav-toggle-container .nav-current-page {
+    color: #e1b225; }
+  .superhero-nav.superhero-nav-contact #nav-toggle-container #nav-toggle i {
+    color: #e1b225; }
+  .superhero-nav.superhero-nav-contact #nav-toggle-container #nav-toggle:hover i {
+    color: white; }
 
 /*
   ____   _    _   _ _____ _     ____
@@ -3346,20 +3403,13 @@ ul.post-list li {
     width: 100%;
     margin-bottom: 10px;
     font-family: "Roboto", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 500;
     color: #000000;
     line-height: 140%; }
     @media only screen and (max-width: 640px) {
       ul.post-list li a.post-title {
         font-size: 22px; } }
-  ul.post-list li .btn-read-more {
-    font-size: 12px; }
-    @media only screen and (max-width: 640px) {
-      ul.post-list li .btn-read-more {
-        width: 100%;
-        margin-top: 10px;
-        padding: 15px 25px;
-        font-size: 14px; } }
 
 .cat-item {
   float: left;
@@ -3381,10 +3431,14 @@ ul.post-list li {
   .post-content p {
     float: left;
     width: 100%;
+    margin-top: 0 !important;
     margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 140%;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 140%; }
+    @media only screen and (max-width: 640px) {
+      .post-content p {
+        font-size: 13px; } }
 
 .body-post {
   float: left;
@@ -3406,13 +3460,20 @@ ul.post-list li {
         width: 95%; } }
     .body-post .bp--inner .bp--left {
       padding: 50px 50px 0 0; }
+      @media only screen and (max-width: 640px) {
+        .body-post .bp--inner .bp--left {
+          padding: 50px 15px 0 15px; } }
       .body-post .bp--inner .bp--left h1 {
-        font-size: 24px;
-        color: black;
-        text-transform: none; }
+        margin-bottom: 0;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000000;
+        text-transform: none;
+        line-height: 135%; }
         @media only screen and (max-width: 640px) {
           .body-post .bp--inner .bp--left h1 {
-            font-size: 20px; } }
+            font-size: 22px; } }
         .body-post .bp--inner .bp--left h1 a {
           line-height: 135%; }
       .body-post .bp--inner .bp--left h2 {
@@ -3420,26 +3481,36 @@ ul.post-list li {
         font-size: 15px;
         font-weight: 500;
         color: #AAA; }
+        @media only screen and (max-width: 640px) {
+          .body-post .bp--inner .bp--left h2 {
+            margin-top: 5px;
+            margin-bottom: 0;
+            line-height: 135%; } }
         .body-post .bp--inner .bp--left h2 a {
           font-family: "Roboto", sans-serif;
           font-size: 20px;
-          font-weight: 400;
+          font-weight: 500;
           color: #000000;
-          text-transform: none; }
+          text-transform: none;
+          line-height: 135%; }
       .body-post .bp--inner .bp--left p {
         float: left;
         width: 100%;
-        margin-top: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 13px;
         line-height: 135%; }
       .body-post .bp--inner .bp--left .post-categories a {
         padding: 4px 9px;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
         text-transform: uppercase;
-        background-color: #85b933;
+        background-color: #2a98c6;
         color: white; }
+        .body-post .bp--inner .bp--left .post-categories a:hover {
+          background-color: #1d6887;
+          text-decoration: none; }
     .body-post .bp--inner .bp--right {
       padding: 1.5rem 1.25rem 3rem 1.25rem;
       margin-bottom: 2rem;
@@ -3451,6 +3522,7 @@ ul.post-list li {
           padding: 2rem 1rem 3rem 1rem; } }
       @media only screen and (max-width: 640px) {
         .body-post .bp--inner .bp--right {
+          margin-top: 30px;
           padding: 2.5rem 1rem 3rem 1rem; } }
 
 /*
@@ -3474,8 +3546,8 @@ ul.post-list li {
     margin-bottom: 2px;
     padding-top: 10px;
     font-family: "Roboto", sans-serif;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     color: teal;
     border-top: 1px solid teal; }
   .alt-sidebar .widget_categories ul li {
@@ -3693,7 +3765,7 @@ ul.post-list li {
             font-weight: 500; } }
         @media only screen and (max-width: 640px) {
           .superhero .sh--inner .my-info h2 {
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 500; } }
       .superhero .sh--inner .my-info p.quote {
         float: left;
@@ -3865,6 +3937,9 @@ ul.post-list li {
 */
 #home-header {
   border-top: 5px solid #2a98c6; }
+  @media only screen and (max-width: 640px) {
+    #home-header {
+      border-top: 2px solid #2a98c6; } }
 
 #body-home {
   background-color: #F4F7F8;
@@ -4030,20 +4105,12 @@ ul.post-list li {
       #lastfm-container #lastfm-title #lastfm-title-left .fa {
         color: white;
         font-size: 22px; }
-      #lastfm-container #lastfm-title #lastfm-title-left img {
-        width: 2.5rem; }
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
-          #lastfm-container #lastfm-title #lastfm-title-left img {
-            width: 1.9rem; } }
-        @media only screen and (max-width: 640px) {
-          #lastfm-container #lastfm-title #lastfm-title-left img {
-            width: 1.9rem; } }
     #lastfm-container #lastfm-title #lastfm-title-right {
       float: left;
       width: calc(100% - 45px); }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         #lastfm-container #lastfm-title #lastfm-title-right {
-          width: calc(100% - 2.5rem); } }
+          width: calc(100% - 45px); } }
       #lastfm-container #lastfm-title #lastfm-title-right h4 {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
         font-style: normal;
@@ -4054,10 +4121,10 @@ ul.post-list li {
         color: #ffffff; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           #lastfm-container #lastfm-title #lastfm-title-right h4 {
-            padding: .2rem 0rem 0rem .2rem; } }
+            padding: 10px 0 0 0; } }
         @media only screen and (max-width: 640px) {
           #lastfm-container #lastfm-title #lastfm-title-right h4 {
-            padding: .2rem 0rem 0rem .2rem; } }
+            padding: 10px 0 0 0; } }
 
 #instagram-container {
   float: left;
@@ -4084,20 +4151,12 @@ ul.post-list li {
       #instagram-container #instagram-title #instagram-title-left .fa {
         color: white;
         font-size: 22px; }
-      #instagram-container #instagram-title #instagram-title-left img {
-        width: 2.5rem; }
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
-          #instagram-container #instagram-title #instagram-title-left img {
-            width: 1.9rem; } }
-        @media only screen and (max-width: 640px) {
-          #instagram-container #instagram-title #instagram-title-left img {
-            width: 1.9rem; } }
     #instagram-container #instagram-title #instagram-title-right {
       float: left;
       width: calc(100% - 45px); }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         #instagram-container #instagram-title #instagram-title-right {
-          width: calc(100% - 2.5rem); } }
+          width: calc(100% - 45px); } }
       #instagram-container #instagram-title #instagram-title-right h4 {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
         font-style: normal;
@@ -4108,25 +4167,24 @@ ul.post-list li {
         color: #ffffff; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           #instagram-container #instagram-title #instagram-title-right h4 {
-            padding: .2rem 0 0 .2rem; } }
+            padding: 10px 0 0 0; } }
         @media only screen and (max-width: 640px) {
           #instagram-container #instagram-title #instagram-title-right h4 {
-            padding: .2rem 0 0 .2rem; } }
+            padding: 10px 0 0 0; } }
 
 .social-feed {
   float: left;
   padding: 0;
   margin: 15px 0 0 0;
   border: 2px solid #2a98c6;
-  background-color: #ffffff;
-  min-height: 18.75rem; }
+  background-color: #ffffff; }
   .social-feed h2 {
     padding: 0; }
   .social-feed aside {
     padding: 0; }
   .social-feed #twitter-feed {
     width: 100%;
-    padding-top: .4rem; }
+    padding-top: 10px; }
   .social-feed #twitter-title {
     float: left;
     width: 100%;
@@ -4140,20 +4198,12 @@ ul.post-list li {
       .social-feed #twitter-title #twitter-title-left .fa {
         color: white;
         font-size: 22px; }
-      .social-feed #twitter-title #twitter-title-left img {
-        width: 2.5rem; }
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
-          .social-feed #twitter-title #twitter-title-left img {
-            width: 1.9rem; } }
-        @media only screen and (max-width: 640px) {
-          .social-feed #twitter-title #twitter-title-left img {
-            width: 1.9rem; } }
     .social-feed #twitter-title #twitter-title-right {
       float: left;
       width: calc(100% - 45px); }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         .social-feed #twitter-title #twitter-title-right {
-          width: calc(100% - 2.5rem); } }
+          width: calc(100% - 45px); } }
       .social-feed #twitter-title #twitter-title-right h4 {
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
         font-style: normal;
@@ -4164,10 +4214,10 @@ ul.post-list li {
         color: #ffffff; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           .social-feed #twitter-title #twitter-title-right h4 {
-            padding: .2rem 0rem 0rem .2rem; } }
+            padding: 10px 0 0 0; } }
         @media only screen and (max-width: 640px) {
           .social-feed #twitter-title #twitter-title-right h4 {
-            padding: .2rem 0rem 0rem .2rem; } }
+            padding: 10px 0 0 0; } }
 
 .var-chromeless .tweet {
   border-bottom: 1px solid #bbbbbb !important;
@@ -4186,10 +4236,17 @@ ul.post-list li {
 */
 #blog-header {
   border-top: 5px solid teal; }
+  @media only screen and (max-width: 640px) {
+    #blog-header {
+      border-top: 2px solid teal; } }
 
 #body-blog {
   background-color: #F4F7F8;
   padding-bottom: 70px; }
+  @media only screen and (max-width: 640px) {
+    #body-blog {
+      width: 100%;
+      padding-bottom: 140px; } }
   #body-blog #body-blog-inner {
     width: 90%;
     margin-left: auto;
@@ -4203,11 +4260,12 @@ ul.post-list li {
         width: 100%; } }
     @media only screen and (max-width: 640px) {
       #body-blog #body-blog-inner {
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 30px; }
         #body-blog #body-blog-inner h1 {
           padding-top: 1rem; } }
     #body-blog #body-blog-inner .body-blog-left {
-      padding: 2.5rem 4rem 0 0; }
+      padding: 40px 80px 0 0; }
       @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         #body-blog #body-blog-inner .body-blog-left {
           padding: 2rem 2rem 0 1rem; } }
@@ -4216,19 +4274,46 @@ ul.post-list li {
           padding: 2rem 2rem 0 1rem; } }
       @media only screen and (max-width: 640px) {
         #body-blog #body-blog-inner .body-blog-left {
-          padding: .0 0 0 0; } }
-      #body-blog #body-blog-inner .body-blog-left .btn-view-all {
-        float: right; }
-        #body-blog #body-blog-inner .body-blog-left .btn-view-all i {
-          margin-left: 3px; }
+          padding: 20px 40px 0 0; } }
+      #body-blog #body-blog-inner .body-blog-left .blog-entry {
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+        padding: 25px 25px 25px 25px;
+        border: 1px solid #EEE;
+        border-left: 3px solid #2a98c6; }
+        #body-blog #body-blog-inner .body-blog-left .blog-entry:first-child {
+          margin-top: 20px; }
+          @media only screen and (max-width: 640px) {
+            #body-blog #body-blog-inner .body-blog-left .blog-entry:first-child {
+              margin-top: 20px; } }
+        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+          #body-blog #body-blog-inner .body-blog-left .blog-entry {
+            border-left: 3px solid #2a98c6; } }
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+          #body-blog #body-blog-inner .body-blog-left .blog-entry {
+            border-left: 3px solid #2a98c6; } }
         @media only screen and (max-width: 640px) {
-          #body-blog #body-blog-inner .body-blog-left .btn-view-all {
-            float: left;
-            width: 100%;
-            margin-top: 0;
-            padding: 10px 25px;
-            background-color: #f57e20;
-            color: #ffffff; } }
+          #body-blog #body-blog-inner .body-blog-left .blog-entry {
+            margin-top: 30px;
+            margin-left: 20px;
+            padding: 0 5px 0 25px;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 0;
+            border-left: 5px solid #2a98c6; } }
+        #body-blog #body-blog-inner .body-blog-left .blog-entry a.post-title {
+          float: left;
+          width: 100%;
+          margin-bottom: 10px;
+          font-family: "Roboto", sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 140%;
+          color: #000000; }
+          @media only screen and (max-width: 640px) {
+            #body-blog #body-blog-inner .body-blog-left .blog-entry a.post-title {
+              font-size: 22px; } }
     #body-blog #body-blog-inner .body-blog-right {
       padding: 1.5rem 1.25rem 3rem 1.25rem;
       margin-bottom: 2rem;
@@ -4240,50 +4325,22 @@ ul.post-list li {
           padding: 2rem 1rem 3rem 1rem; } }
       @media only screen and (max-width: 640px) {
         #body-blog #body-blog-inner .body-blog-right {
+          margin-top: 30px;
           padding: 2.5rem 1rem 3rem 1rem; } }
 
-.blog-entry {
-  float: left;
-  width: 100%;
-  margin-top: 30px;
-  padding: 25px 25px 25px 25px;
-  border: 1px solid #EEE;
-  border-left: 3px solid #2a98c6; }
-  .blog-entry:first-child {
-    margin-top: 20px; }
-    @media only screen and (max-width: 640px) {
-      .blog-entry:first-child {
-        margin-top: 20px; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    .blog-entry {
-      border-left: 3px solid #2a98c6; } }
-  @media only screen and (min-width: 640px) and (max-width: 1024px) {
-    .blog-entry {
-      border-left: 3px solid #2a98c6; } }
-  @media only screen and (max-width: 640px) {
-    .blog-entry {
-      margin-top: 50px;
-      margin-right: 30px;
-      padding: 0 25px 0 25px;
-      border-top: 0;
-      border-bottom: 0;
-      border-left: 5px solid #2a98c6; } }
-  .blog-entry a.post-title {
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-    font-size: 20px;
-    line-height: 140%;
-    color: #000000; }
-    @media only screen and (max-width: 640px) {
-      .blog-entry a.post-title {
-        font-size: 22px; } }
-
+@media only screen and (max-width: 640px) {
+  nav.custom-pagination {
+    padding-left: 15px; } }
 nav.custom-pagination .page-numbers {
   float: left;
   margin-left: 5px;
   margin-right: 5px;
   font-size: 20px; }
+  @media only screen and (max-width: 640px) {
+    nav.custom-pagination .page-numbers {
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 20px; } }
   nav.custom-pagination .page-numbers.page-num {
     float: right;
     padding-top: 5px;
@@ -4303,6 +4360,12 @@ nav.custom-pagination .page-numbers {
     background-color: #2a98c6;
     color: #ffffff;
     text-align: center; }
+    @media only screen and (max-width: 640px) {
+      nav.custom-pagination .page-numbers.prev, nav.custom-pagination .page-numbers.next {
+        top: -5px;
+        width: 35px;
+        height: 35px;
+        font-size: 30px; } }
 
 /*
     _    ____   ___  _   _ _____
@@ -4314,6 +4377,9 @@ nav.custom-pagination .page-numbers {
 */
 #about-header {
   border-top: 5px solid #a06eaf; }
+  @media only screen and (max-width: 640px) {
+    #about-header {
+      border-top: 2px solid #a06eaf; } }
 
 #body-about {
   position: relative;
@@ -4410,14 +4476,14 @@ nav.custom-pagination .page-numbers {
         #body-about #body-about-inner blockquote {
           margin-top: 25px;
           margin-left: 20px;
-          font-size: 30px;
-          line-height: 120%; } }
+          padding-right: 20px;
+          line-height: 125%; } }
       #body-about #body-about-inner blockquote p {
-        font-size: 45px;
-        line-height: 120%; }
+        font-size: 35px;
+        line-height: 125%; }
         @media only screen and (min-width: 1025px) and (max-width: 1440px) {
           #body-about #body-about-inner blockquote p {
-            font-size: 35px; } }
+            font-size: 32px; } }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           #body-about #body-about-inner blockquote p {
             font-size: 30px;
@@ -4439,7 +4505,8 @@ nav.custom-pagination .page-numbers {
       @media only screen and (max-width: 640px) {
         #body-about #body-about-inner p.body-text {
           padding-left: 20px;
-          padding-right: 20px; } }
+          padding-right: 20px;
+          font-size: 14px; } }
 
 /*
  __     ___    ____  ___    _    ____  _     _____ ____
@@ -4626,11 +4693,18 @@ nav.custom-pagination .page-numbers {
 */
 #portfolio-header {
   border-top: 5px solid #85b933; }
+  @media only screen and (max-width: 640px) {
+    #portfolio-header {
+      border-top: 2px solid #85b933; } }
 
 #body-portfolio {
   background-color: #ffffff;
   padding-bottom: 75px;
   overflow-x: hidden; }
+  @media only screen and (max-width: 640px) {
+    #body-portfolio {
+      padding-left: 0 !important;
+      padding-right: 0 !important; } }
 
 #body-portfolio-inner {
   width: 100%;
@@ -4668,53 +4742,50 @@ nav.custom-pagination .page-numbers {
       #body-portfolio-inner .masonry-container .portfolio-item h3 {
         float: left;
         width: 90%;
+        margin-bottom: 0;
         padding: 20px 35px 0 20px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 24px;
-        font-weight: 200;
+        font-family: "Roboto", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
         line-height: 135%;
         color: #000000; }
-        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-          #body-portfolio-inner .masonry-container .portfolio-item h3 {
-            font-size: 20px; } }
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
-          #body-portfolio-inner .masonry-container .portfolio-item h3 {
-            font-size: 20px; } }
         @media only screen and (max-width: 640px) {
           #body-portfolio-inner .masonry-container .portfolio-item h3 {
-            padding: 20px 10px 0 20px;
-            font-size: 20px; } }
+            padding: 20px 10px 0 22px; } }
       #body-portfolio-inner .masonry-container .portfolio-item h4 {
         float: left;
         width: 90%;
-        margin-top: -5px;
+        margin-top: 0;
         padding: 0 50px 0 20px;
         font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 400;
         line-height: 135%;
-        color: #2a98c6; }
+        color: #2a98c6;
+        text-transform: none; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           #body-portfolio-inner .masonry-container .portfolio-item h4 {
             font-size: 13px; } }
         @media only screen and (max-width: 640px) {
           #body-portfolio-inner .masonry-container .portfolio-item h4 {
-            padding: 0 15px 0 50px;
-            font-size: 13px; } }
+            padding: 0 15px 0 22px;
+            font-size: 15px;
+            font-weight: bold; } }
       #body-portfolio-inner .masonry-container .portfolio-item h5 {
         float: left;
         width: 90%;
-        padding: 0 50px 0 35px;
+        padding: 0 50px 0 20px;
         font-family: "Roboto", sans-serif;
         font-size: 13px;
         font-weight: 400;
         line-height: 135%;
-        color: #bbbbbb; }
+        color: #888; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
           #body-portfolio-inner .masonry-container .portfolio-item h5 {
             font-size: 12px; } }
         @media only screen and (max-width: 640px) {
           #body-portfolio-inner .masonry-container .portfolio-item h5 {
+            padding: 0 50px 0 22px;
             font-size: 12px; } }
       #body-portfolio-inner .masonry-container .portfolio-item a {
         font-size: 12px;
@@ -4774,181 +4845,6 @@ nav.custom-pagination .page-numbers {
    END PORTFOLIO PAGE SCSS
    ======================================================== */
 /*
- __     ___    ____  ___    _    ____  _     _____ ____
- \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
-  \ \ / / _ \ | |_) || |  / _ \ |  _ \| |   |  _| \___ \
-   \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
-    \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
-*/
-/* ==========================================================================
-   %% Import your fonts here %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Global Color Palette %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Typography Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Headers h1,h2,h3,h4,h5,h6 %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Spacing Units %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Grid  Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Border Radius %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Button Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Media Query Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Form Variables %%
-   ========================================================================== */
-/*
-  __  __ _____  _____ _   _ ____
- |  \/  |_ _\ \/ /_ _| \ | / ___|
- | |\/| || | \  / | ||  \| \___ \
- | |  | || | /  \ | || |\  |___) |
- |_|  |_|___/_/\_\___|_| \_|____/
-*/
-/* % Potion GRID mixins % */
-/* ==========================================================================
-   %% Flexbox Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include margin(0px);
-  - OR
-  @include margin(0px 10px);
-  - OR
-  @include margin(0px 10px 0px 10px);
-
---------------
-% */
-/* ==========================================================================
-   %% Margin Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include margin(0px);
-  - OR
-  @include margin(0px 10px);
-  - OR
-  @include margin(0px 10px 0px 10px);
-
---------------
-% */
-/* ==========================================================================
-   %% Padding Mixin %%
-   ==========================================================================
-
-
---- USAGE ---
-
-  @include padding(0px);
-  - OR
-  @include padding(0px 10px);
-  - OR
-  @include padding(0px 10px 0px 10px);
-
---------------
-% */
-/* ==========================================================================
-   %% Border radius Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include border-radius(0px);
-
---------------
-% */
-/* ==========================================================================
-   %% Border-box / Border-sizing Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include border-box;
-
---------------
-% */
-/* ==========================================================================
-   %% Box Shadow Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include box-shadow(0px 0px 5px $light-gray);
-
---------------
-% */
-/* ==========================================================================
-   %% Opacity Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include opacity(.5);
-
---------------
-% */
-/* ==========================================================================
-   %% Clearfix %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Prefixers %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Inline-Block for IE %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Retina images 2x %%
-   ==========================================================================
-
---- USAGE ---
-
- background: url("logo.png") no-repeat;
-   @include retina("logo2x.png", 100px, 25px);
-
---------------
-% */
-/* ==========================================================================
-   %% Generic font mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include font($font: $font-1, $style: normal, $size: $h1-size, $weight: normal, color);
-
---------------
-% */
-/* ==========================================================================
-   %% REM conversion to pixels %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Potion Media Query Mixin %%
-   ========================================================================== */
-/*
---- USAGE ---
-
-  @include mq(sm);
-  @include mq(md);
-  @include mq(lg);
-  @include mq(xl);
-  @include mq(jumbo);
-
---------------
-% */
-/*
   ____  _   _  ___ _____ ___   ____ ____      _    ____  _   ___   __
  |  _ \| | | |/ _ \_   _/ _ \ / ___|  _ \    / \  |  _ \| | | \ \ / /
  | |_) | |_| | | | || || | | | |  _| |_) |  / _ \ | |_) | |_| |\ V /
@@ -4957,6 +4853,9 @@ nav.custom-pagination .page-numbers {
 */
 #photography-header {
   border-top: 5px solid #E90000; }
+  @media only screen and (max-width: 640px) {
+    #photography-header {
+      border-top: 2px solid #E90000; } }
 
 #body-photography {
   float: left;
@@ -5473,181 +5372,6 @@ button.mfp-close {
    END PHOTOGRAPHY PAGE SCSS
    ======================================================== */
 /*
- __     ___    ____  ___    _    ____  _     _____ ____
- \ \   / / \  |  _ \|_ _|  / \  | __ )| |   | ____/ ___|
-  \ \ / / _ \ | |_) || |  / _ \ |  _ \| |   |  _| \___ \
-   \ V / ___ \|  _ < | | / ___ \| |_) | |___| |___ ___) |
-    \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
-*/
-/* ==========================================================================
-   %% Import your fonts here %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Global Color Palette %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Typography Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Headers h1,h2,h3,h4,h5,h6 %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Spacing Units %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Grid  Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Border Radius %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Button Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Media Query Variables %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Form Variables %%
-   ========================================================================== */
-/*
-  __  __ _____  _____ _   _ ____
- |  \/  |_ _\ \/ /_ _| \ | / ___|
- | |\/| || | \  / | ||  \| \___ \
- | |  | || | /  \ | || |\  |___) |
- |_|  |_|___/_/\_\___|_| \_|____/
-*/
-/* % Potion GRID mixins % */
-/* ==========================================================================
-   %% Flexbox Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include margin(0px);
-  - OR
-  @include margin(0px 10px);
-  - OR
-  @include margin(0px 10px 0px 10px);
-
---------------
-% */
-/* ==========================================================================
-   %% Margin Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include margin(0px);
-  - OR
-  @include margin(0px 10px);
-  - OR
-  @include margin(0px 10px 0px 10px);
-
---------------
-% */
-/* ==========================================================================
-   %% Padding Mixin %%
-   ==========================================================================
-
-
---- USAGE ---
-
-  @include padding(0px);
-  - OR
-  @include padding(0px 10px);
-  - OR
-  @include padding(0px 10px 0px 10px);
-
---------------
-% */
-/* ==========================================================================
-   %% Border radius Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include border-radius(0px);
-
---------------
-% */
-/* ==========================================================================
-   %% Border-box / Border-sizing Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include border-box;
-
---------------
-% */
-/* ==========================================================================
-   %% Box Shadow Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include box-shadow(0px 0px 5px $light-gray);
-
---------------
-% */
-/* ==========================================================================
-   %% Opacity Mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include opacity(.5);
-
---------------
-% */
-/* ==========================================================================
-   %% Clearfix %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Prefixers %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Inline-Block for IE %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Retina images 2x %%
-   ==========================================================================
-
---- USAGE ---
-
- background: url("logo.png") no-repeat;
-   @include retina("logo2x.png", 100px, 25px);
-
---------------
-% */
-/* ==========================================================================
-   %% Generic font mixin %%
-   ==========================================================================
-
---- USAGE ---
-
-  @include font($font: $font-1, $style: normal, $size: $h1-size, $weight: normal, color);
-
---------------
-% */
-/* ==========================================================================
-   %% REM conversion to pixels %%
-   ========================================================================== */
-/* ==========================================================================
-   %% Potion Media Query Mixin %%
-   ========================================================================== */
-/*
---- USAGE ---
-
-  @include mq(sm);
-  @include mq(md);
-  @include mq(lg);
-  @include mq(xl);
-  @include mq(jumbo);
-
---------------
-% */
-/*
   ____  _____ ____  _   _ __  __ _____
  |  _ \| ____/ ___|| | | |  \/  | ____|
  | |_) |  _| \___ \| | | | |\/| |  _|
@@ -5657,32 +5381,34 @@ button.mfp-close {
 */
 #resume-header {
   border-top: 5px solid #f57e20; }
+  @media only screen and (max-width: 640px) {
+    #resume-header {
+      border-top: 2px solid #f57e20; } }
 
 #body-resume {
   float: left;
   background-color: #ffffff;
-  padding-bottom: 3rem; }
-
-#body-resume-inner {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ffffff; }
-  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    #body-resume-inner {
-      width: 90%; } }
-  @media only screen and (min-width: 640px) and (max-width: 1024px) {
-    #body-resume-inner {
-      width: 90%; } }
-  @media only screen and (max-width: 640px) {
-    #body-resume-inner {
-      float: left;
-      width: 100%;
-      padding: 0 .5rem; }
-      #body-resume-inner h1 {
-        padding-top: 1rem; }
-      #body-resume-inner h2 {
-        font-size: 1.4rem !important; } }
+  padding-bottom: 50px; }
+  #body-resume #body-resume-inner {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      #body-resume #body-resume-inner {
+        width: 90%; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      #body-resume #body-resume-inner {
+        width: 90%; } }
+    @media only screen and (max-width: 640px) {
+      #body-resume #body-resume-inner {
+        float: left;
+        width: 100%;
+        padding: 0 .5rem; }
+        #body-resume #body-resume-inner h1 {
+          padding-top: 30px; }
+        #body-resume #body-resume-inner h2 {
+          font-size: 1.4rem; } }
 
 .office-image {
   width: 90%;
@@ -5815,7 +5541,7 @@ button.mfp-close {
   #my-resume-container-details #mrcd--left {
     float: left;
     width: 250px;
-    margin-top: 1rem;
+    margin-top: 20px;
     padding: 1.5rem 1.8rem 1.5rem 1.8rem;
     border: 1px solid #ccc; }
     @media only screen and (max-width: 640px) {
@@ -5823,7 +5549,8 @@ button.mfp-close {
         width: 100%;
         text-align: center;
         margin-top: 0;
-        padding: 1.5rem 0 2rem 0; } }
+        padding: 10px 0 20px 0;
+        border: 0; } }
     #my-resume-container-details #mrcd--left #my-info-contact p, #my-resume-container-details #mrcd--left #my-info-contact a {
       float: left;
       width: 100%;
@@ -5881,16 +5608,16 @@ button.mfp-close {
       font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: 600;
-      font-size: 24px;
+      font-size: 16px;
       margin-bottom: .25em; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         #my-resume-container-details #mrcd--left #my-info-contact .name-block {
-          font-size: 1.5rem;
-          line-height: 1.7rem; } }
+          font-size: 16px;
+          line-height: 135%; } }
       @media only screen and (max-width: 640px) {
         #my-resume-container-details #mrcd--left #my-info-contact .name-block {
-          font-size: 1.3rem;
-          line-height: 1.5rem; } }
+          font-size: 22px;
+          line-height: 135%; } }
     #my-resume-container-details #mrcd--left #my-info-contact .title-block {
       font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
       font-style: italic;
@@ -5899,7 +5626,7 @@ button.mfp-close {
       margin-bottom: 5px; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-details #mrcd--left #my-info-contact .title-block {
-          font-size: 1rem; } }
+          font-size: 15px; } }
     #my-resume-container-details #mrcd--left #my-info-contact .website-block {
       margin-top: 5px;
       font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
@@ -5909,7 +5636,7 @@ button.mfp-close {
       display: block; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-details #mrcd--left #my-info-contact .website-block {
-          font-size: 13px; } }
+          display: none; } }
     #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block {
       margin-top: 20px;
       margin-bottom: 5px;
@@ -5923,7 +5650,13 @@ button.mfp-close {
       border-bottom: 1px solid #dddddd; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block {
-          font-size: 1rem; } }
+          margin-top: 15px;
+          padding-top: 10px;
+          padding-bottom: 2px;
+          font-size: 13px; } }
+      @media only screen and (max-width: 640px) {
+        #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block img {
+          max-width: 200px; } }
   #my-resume-container-details #mrcd--right {
     float: left;
     width: calc(100% - 250px);
@@ -5961,10 +5694,12 @@ button.mfp-close {
       #my-resume-container-details #mrcd--right #my-objective h2 {
         float: left;
         width: 100%;
-        margin: 0.8rem 0 25px 0; }
+        margin: 15px 0 2px 0;
+        font-size: 24px;
+        font-weight: 400; }
         @media only screen and (max-width: 640px) {
           #my-resume-container-details #mrcd--right #my-objective h2 {
-            margin: 10px 0 20px 0;
+            margin: 10px 0 10px 0;
             font-size: 30px; } }
       #my-resume-container-details #mrcd--right #my-objective p {
         float: left;
@@ -6141,11 +5876,16 @@ button.mfp-close {
       line-height: 110%;
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
       font-style: normal;
-      font-weight: 300;
+      font-weight: 600;
       font-size: 15px; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-experience #my-experience h2 {
-          margin-top: 1rem; } }
+          margin-top: 1rem;
+          text-align: center;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 15px; } }
     #my-resume-container-experience #my-experience h3 {
       float: left;
       width: 100%;
@@ -6170,7 +5910,7 @@ button.mfp-close {
       float: left;
       width: 100%;
       font-size: .85rem;
-      margin: 10px 0 0 0;
+      margin: 5px 0 0 0;
       text-transform: capitalize; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-experience #my-experience h4 {
@@ -6345,6 +6085,9 @@ button.mfp-close {
 */
 #contact-header {
   border-top: 5px solid #e1b225; }
+  @media only screen and (max-width: 640px) {
+    #contact-header {
+      border-top: 2px solid #e1b225; } }
 
 div.wpcf7 {
   float: left;
@@ -6491,10 +6234,11 @@ div.wpcf7 {
   .body-contact-right .btn {
     border: 0; }
   .body-contact-right h2.contact-header {
-    margin: 0 0 15px 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
+    margin: 0 0 5px 0;
+    padding-left: 10px;
+    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 40px;
     font-size: 24px; }
     @media only screen and (max-width: 640px) {
@@ -6579,7 +6323,7 @@ div.wpcf7 {
       .body-contact-right .wpcf7-submit {
         width: 100%;
         font-family: "Roboto", sans-serif;
-        font-size: 16px; } }
+        font-size: 13px; } }
   .body-contact-right .wpcf7 .ajax-loader {
     float: left; }
   .body-contact-right .wpcf7-response-output {

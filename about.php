@@ -49,11 +49,11 @@ Template Name: About Template
             <a href='http://www.apple.com/mac-pro/' target='blank'>
               Late 2013 3.5GHz Intel Xeon E5 6-core Mac Pro (24GB of 1866MHz DDR3 ECC memory and 512GB PCIe-based SSD)
             </a>
-            - running El Capitan with 16TB of Drobo redundant NAS storage
+            - running MacOs Sierra with 16TB of Drobo dual redundant NAS storage
           </li>
           <li>
             <a href='http://www.apple.com/macbook-pro/' target='blank'>
-              2016 2.7GHz Space Gray MacBook Pro(16GB RAM and 512GB PCIe-based SSD
+              2016 2.7GHz Space Gray MacBook Pro (16GB RAM and 512GB PCIe-based SSD)
             </a>
             - running MacOs Sierra
           </li>
