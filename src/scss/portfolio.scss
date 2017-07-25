@@ -10,6 +10,11 @@
 
 */
 
+// hiding all portfolio buttons with no link value
+a[href=""], a[href="#"] {
+  display: none;
+}
+
 #portfolio-header {
   border-top: 5px solid $green-potion;
 

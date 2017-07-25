@@ -21,16 +21,12 @@ Template Name: About Template
         </h2>
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
           <?php the_content(); ?>
-
         <?php endwhile; else: ?>
-
         <?php endif; ?>
       </section>
 
       <section class='columns bai--right'>
-        <!-- <img src='<?php bloginfo( 'template_directory' ); ?>/img/me_with_the_girls.jpg'> -->
         <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
       </section>
     </section>

@@ -40,25 +40,53 @@
 }
 
 .photo-strip-left {
+  position: relative;
   float: left;
   width: $unit-base;
-  min-height: 3850px;
+  min-height: 3200px;
   background-image: url("../img/photo_strip_dot.png");
   background-repeat: repeat-y;
+  display: none;
+
+  @include mq(lg) {
+    min-height: 2800px;
+  }
+
+  @include mq(md) {
+    min-height: 3850px;
+  }
+
+  @include mq(sm) {
+    min-height: 850px;
+  }
 }
 
 .photo-strip-middle {
   float: left;
-  width: calc(100% - 40px);
+  // width: calc(100% - 40px);
+  width: 100%;
   height: 100%;
 }
 
 .photo-strip-right {
   float: left;
   width: $unit-base;
-  min-height: 3850px;
+  min-height: 3200px;
   background-image: url("../img/photo_strip_dot.png");
   background-repeat: repeat-y;
+  display: none;
+
+  @include mq(lg) {
+    min-height: 2800px;
+  }
+
+  @include mq(md) {
+    min-height: 3850px;
+  }
+
+  @include mq(sm) {
+    min-height: 850px;
+  }
 }
 
 

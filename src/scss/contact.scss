@@ -61,7 +61,7 @@ div.wpcf7 {
   }
 
   @include mq(md) {
- 		width: 95%;
+ 		width: 100%;
   }
 
   @include mq(sm) {
@@ -72,6 +72,11 @@ div.wpcf7 {
 .body-contact-left {
 	float: left;
 	padding: $unit-lg $unit-sm 0 $unit-sm;
+
+  @include mq(md) {
+    padding: $unit-md $unit-sm 0 $unit-sm;
+  }
+
 
 	@include mq(sm) {
     padding: $unit-lg $unit-sm 0 $unit-sm;
@@ -244,7 +249,7 @@ div.wpcf7 {
   }
 
 	@include mq(md) {
-		padding: $unit-xxl 0 $unit-lg $unit-xxl !important;
+		padding: $unit-lg 0 $unit-lg $unit-xxl !important;
   }
 
 	@include mq(sm) {
@@ -264,8 +269,8 @@ div.wpcf7 {
 
 	h2.contact-header {
 		margin: 0 0 $unit-xxs 0;
-    padding-left: $unit-xs;
-		@include font($font-1, normal, 40px, 500);
+    padding-left: $unit-sm;
+		@include font($font-1, normal, 40px, 400);
 		font-size: $font-size-xxl;
 
 		@include mq(sm) {

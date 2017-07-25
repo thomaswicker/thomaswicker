@@ -26,7 +26,7 @@
   	background-color: $white;
 
   	@include mq(lg) {
-  		width: 96%;
+  		width: 95%;
   	}
 
   	@include mq(md) {
@@ -37,7 +37,7 @@
   		width: 100%;
 
   		h1 {
-  			padding-top: 1rem;
+  			padding-top: $unit-lg;
   		}
   	}
 
@@ -226,6 +226,21 @@
 	@include mq (sm) {
 		width: 100%;
 	}
+
+  .widget_lastfm_widget {
+    float: left;
+    width: 100%;
+    padding: 15px;
+
+    .lastfm-user {
+      display: none;
+    }
+
+    .lastfm-row {
+      float: left;
+      width: 100%;
+    }
+  }
 
 	#lastfm-title {
 		float: left;

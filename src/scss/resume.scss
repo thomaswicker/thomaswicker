@@ -31,7 +31,7 @@
   	}
 
   	@include mq(md) {
-  		width: 90%;
+  		width: 100%;
   	}
 
   	@include mq(sm) {
@@ -206,19 +206,19 @@
 
 #my-resume-container-details {
 	float: left;
-	padding: 0 0 2.8rem 0;
-	margin: 0 0 2.2rem 0;
+	padding: 0 0 $unit-lg 0;
+	margin: 0 0 $unit-md 0;
 	font-family: $font-1;
-	font-size: .9rem;
+	font-size: 13px;
 	color: $black;
 	border-bottom: 1px dotted $color-primary;
 
 	@include mq(md) {
-		padding: 2rem 0 2.8rem 0;
+		padding: $unit-base 0 $unit-lg 0;
 	}
 
 	@include mq(sm) {
-		padding: 1rem 0 1.1rem 0;
+		padding: $unit-base 0 $unit-base 0;
 	}
 
   #mrcd--left {
@@ -741,7 +741,7 @@
 		p {
 			float: left;
 			width: 100%;
-			@include font($font-1, normal, .9em, $font-weight-normal);
+			@include font($font-2, normal, 13px, $font-weight-normal);
 			color: $black;
 			padding: .5rem 0 .5rem 0;
 			font-size: .9rem;

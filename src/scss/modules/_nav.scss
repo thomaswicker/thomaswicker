@@ -7,6 +7,9 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 */
 
 .superhero-nav {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
   float: left;
   width: 100%;
   min-height: $unit-xxl;

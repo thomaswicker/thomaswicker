@@ -64,18 +64,10 @@ Template Name: Resume Template
       </aside>
       <section id='mrcd--right'>
         <div id='my-objective'>
-          <h2>
-            OBJECTIVE
-          </h2>
-          <p class='body-text'>
-            Hi... I’m Thomas, I make cool things for the interwebs. I am proud to define myself as a UI/UX and Senior Front End Developer. I have over 15 years of hands-on work experience in UI/UX design, rapid prototyping and responsive/responsible front-end development. I am a unique developer as I have a diverse background in development/UI/UX as well as a deep underlying core of fine art and graphic design principles.
-          </p>
-          <p class='body-text'>
-            Whether it be a small start-up or large enterprise, contract or full-time... I am always seeking new and exciting projects to become a part of. I've worked with and for companies both big and small and within a wide variety of industries.
-          </p>
-          <p class='body-text'>
-            I appreciate your consideration of me as an addition to your team, and I look forward to hearing from you. Thanks for stopping by!
-          </p>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php the_content(); ?>
+          <?php endwhile; else: ?>
+          <?php endif; ?>
         </div>
       </section>
     </section>
