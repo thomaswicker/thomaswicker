@@ -263,6 +263,41 @@ Template Name: Resume Template
         <h2>
           PROFESSIONAL EXPERIENCE
         </h2>
+
+        <span class='resume-experience-block'>
+          <div class='large-3 medium-12 columns resume-logo-container'>
+            <img class='resume-logo att' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/di-logo.png'>
+          </div>
+          <div class='large-9 medium-12 columns'>
+            <h3>
+              Principal Software Architect & UI/UX
+            </h3>
+            <h4>
+              <a href='https://info.drillinginfo.com/' target='_blank'>
+                DrillingInfo, Inc. - Littleton, CO
+              </a>
+            </h4>
+            <h5>
+              July 2016 - CURRENT
+            </h5>
+            <p class='body-text'>
+              Currently building a suite of AngularJS apps that focus on creating simple and intuitive interfaces for our clients to more easily consume and understand the complex data set within the oil field services industry. Working primarily with AngularJS, LESS, HAML, Highcharts and D3.
+            </p>
+            <p class='body-text'>
+              Key part of small team building out new native iOS and Android apps to better serve the global DI client base.
+            </p>
+            <p class='body-text'>
+              Key part of team building out a new International product that will serve the unique needs of our International clients.
+            </p>
+            <p class='body-text'>
+              Leading the effort with management and others to build out a dedicated UI/UX department within Drilling Info to better focus on the customer experience and how to improve overall usability for the customer.
+            </p>
+            <p class='body-text'>
+              Pioneering a new Living Styleguide for all DI applications which serves as the single source of truth for all designers/developers/vendors when working with the DI brand in both print and digital applications.
+            </p>
+          </div>
+        </span>
+
         <span class='resume-experience-block'>
           <div class='large-3 medium-12 columns resume-logo-container'>
             <img class='resume-logo oppenheimer' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/oppenheimer-logo.jpg'>
@@ -277,7 +312,7 @@ Template Name: Resume Template
               </a>
             </h4>
             <h5>
-              July 2014 - Current
+              July 2014 - July 2016
             </h5>
             <p class='body-text'>
               Building with HAML, SASS, jQuery, Javascript, AngularJS and Ruby on Rails to create flexible user interfaces

@@ -9,7 +9,7 @@
     <div class='body-home-left medium-7 large-8 columns'>
       <a href="/blog" class="btn btn-inline btn-view-all">VIEW ALL POSTS <i class="fa fa-arrow-right"></i> </a>
       <?php
-        $args = array( 'numberposts' => 5, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
+        $args = array( 'numberposts' => 3, 'post_status'=>"publish",'post_type'=>"post",'orderby'=>"post_date");
         $postslist = get_posts( $args );
         echo '<ul class="post-list">';
          foreach ($postslist as $post) :  setup_postdata($post); ?>
@@ -18,7 +18,7 @@
              <?php the_title(); ?>
            </a>
            <div class="post-content">
-             <?php the_excerpt(); ?>
+             <?php the_content(); ?>
              <?php if ( has_post_thumbnail()) the_post_thumbnail('excerpt-thumb'); ?>
            </div>
            <a href="<?php echo get_permalink(); ?>" class="btn btn-secondary btn-read-more"> Read More...</a>

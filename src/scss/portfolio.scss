@@ -59,9 +59,7 @@ a[href=""], a[href="#"] {
       width: 33.3%;
       height: auto;
       background-color: $white;
-      -moz-box-shadow:    0px 0px 5px #ccc;
-      -webkit-box-shadow: 0px 0px 5px #ccc;
-      box-shadow:         0px 0px 5px #ccc;
+      border: 1px solid #DFDFDF;
       display: inline;
 
       @include mq(lg) {
@@ -80,7 +78,7 @@ a[href=""], a[href="#"] {
         float: left;
         width: 90%;
         margin-bottom: 0;
-        padding: $unit-base $unit-xl 0 $unit-base;
+        padding: $unit-base $unit-base 0 $unit-base;
         font-family: $font-1;
         font-size: 18px;
         font-weight: 500;
@@ -104,7 +102,7 @@ a[href=""], a[href="#"] {
         float: left;
         width: 90%;
         margin-top: 0;
-        padding: 0 $unit-xxl 0 $unit-base;
+        padding: 0 $unit-base 0 $unit-base;
         font-family: $font-1;
         font-size: 14px;
         font-weight: 400;
@@ -126,7 +124,7 @@ a[href=""], a[href="#"] {
       h5 {
         float: left;
         width: 90%;
-        padding: 0 $unit-xxl 0 $unit-base;
+        padding: 0 $unit-base 0 $unit-base;
         font-family: $font-1;
         font-size: $font-size-base;
         font-weight: 400;

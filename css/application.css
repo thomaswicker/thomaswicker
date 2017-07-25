@@ -3448,8 +3448,7 @@ ul.post-list li {
     float: left;
     margin-top: 25px;
     margin-bottom: 25px;
-    border: 7px solid white;
-    box-shadow: 0px 0px 7px #000; }
+    border: 7px solid white; }
   .post-content p {
     float: left;
     width: 100%;
@@ -4763,7 +4762,7 @@ a[href=""], a[href="#"] {
       width: 33.3%;
       height: auto;
       background-color: #ffffff;
-      box-shadow: 0px 0px 5px #ccc;
+      border: 1px solid #DFDFDF;
       display: inline; }
       @media only screen and (min-width: 1025px) and (max-width: 1440px) {
         #body-portfolio-inner .masonry-container .portfolio-item {
@@ -4778,7 +4777,7 @@ a[href=""], a[href="#"] {
         float: left;
         width: 90%;
         margin-bottom: 0;
-        padding: 20px 35px 0 20px;
+        padding: 20px 20px 0 20px;
         font-family: "Roboto", sans-serif;
         font-size: 18px;
         font-weight: 500;
@@ -4791,7 +4790,7 @@ a[href=""], a[href="#"] {
         float: left;
         width: 90%;
         margin-top: 0;
-        padding: 0 50px 0 20px;
+        padding: 0 20px 0 20px;
         font-family: "Roboto", sans-serif;
         font-size: 14px;
         font-weight: 400;
@@ -4809,7 +4808,7 @@ a[href=""], a[href="#"] {
       #body-portfolio-inner .masonry-container .portfolio-item h5 {
         float: left;
         width: 90%;
-        padding: 0 50px 0 20px;
+        padding: 0 20px 0 20px;
         font-family: "Roboto", sans-serif;
         font-size: 13px;
         font-weight: 400;

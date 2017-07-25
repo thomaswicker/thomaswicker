@@ -20,8 +20,7 @@ Template Name: Portfolio Template
 
           $args = array(
               'post_type' => 'portfolio_item',
-              'posts_per_page' => -1,
-              'order'          => 'DSC'
+              'posts_per_page' => -1
           );
 
           $the_query = new WP_Query( $args );
@@ -37,6 +36,7 @@ Template Name: Portfolio Template
 
         <h4>
           <span><?php the_field( 'itemcompany' ); ?></span>
+          <span style="padding-left: 2px; padding-right: 2px;">-</span>
           <span><?php the_field( 'itemcompanylocation' ); ?></span>
         </h4>
 
