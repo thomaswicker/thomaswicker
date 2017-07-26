@@ -350,12 +350,10 @@
   		}
 
       .linkedin-block {
-        margin-top: $unit-base;
         margin-bottom: $unit-xxs;
-        padding-top: $unit-base;
+        padding-top: 5px;
         padding-bottom: $unit-base;
         @include font($font-1, italic, $font-size-lg, $font-weight-normal);
-        border-top: 1px solid $xxlight-gray;
         border-bottom: 1px solid $xxlight-gray;
 
         @include mq(sm) {

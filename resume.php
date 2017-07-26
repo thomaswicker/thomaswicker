@@ -28,39 +28,14 @@ Template Name: Resume Template
     <section class='medium-12 columns' id='my-resume-container-details'>
       <aside id='mrcd--left'>
         <div id='my-info-contact'>
-          <p class='name-block'>
-            Thomas J. Wicker
-          </p>
-          <p class='title-block'>
-            Senior Front End Developer
-          </p>
-          <a class='website-block' href='mailto:thomas@thomaswicker.com'>
-            thomas@thomaswicker.com
-          </a>
           <a class='linkedin-block' href='http://www.linkedin.com/in/thomaswicker' target='_blank'>
             <img src='<?php bloginfo( 'template_directory' ); ?>/img/linkedin_logo.png'>
           </a>
         </div>
 
-        <a class='btn btn-header btn-resume' href='<?php echo get_template_directory_uri(); ?>/pdfs/resume.pdf' target="_blank">
+        <a class='btn btn-header btn-resume' href='<?php bloginfo( 'template_directory' ); ?>/pdfs/resume-072617.pdf' target="_blank">
           Download Resume
         </a>
-        <!-- <div id='download-resume-btns'>
-          <div class='medium-12'>
-            <h3>Download Resume</h3>
-          </div>
-          <div class='medium-12 download-links'>
-            <a href='resume.pdf' target='_blank'>
-              <i class='fa fa-file-pdf-o download-icons'></i>
-            </a>
-            <a href='word-resume.zip' target='_blank'>
-              <i class='fa fa-file-word-o download-icons'></i>
-            </a>
-            <a href='javascript:window.print()' target='_blank'>
-              <i class='fa fa-print download-icons'></i>
-            </a>
-          </div>
-        </div> -->
       </aside>
       <section id='mrcd--right'>
         <div id='my-objective'>

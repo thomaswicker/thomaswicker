@@ -5693,15 +5693,13 @@ button.mfp-close {
         #my-resume-container-details #mrcd--left #my-info-contact .website-block {
           display: none; } }
     #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block {
-      margin-top: 20px;
       margin-bottom: 5px;
-      padding-top: 20px;
+      padding-top: 5px;
       padding-bottom: 20px;
       font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
       font-style: italic;
       font-weight: 400;
       font-size: 15px;
-      border-top: 1px solid #dddddd;
       border-bottom: 1px solid #dddddd; }
       @media only screen and (max-width: 640px) {
         #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block {
