@@ -5597,8 +5597,7 @@ button.mfp-close {
     float: left;
     width: 250px;
     margin-top: 20px;
-    padding: 1.5rem 1.8rem 1.5rem 1.8rem;
-    border: 1px solid #ccc; }
+    padding: 0; }
     @media only screen and (max-width: 640px) {
       #my-resume-container-details #mrcd--left {
         width: 100%;
@@ -5624,92 +5623,38 @@ button.mfp-close {
       #my-resume-container-details #mrcd--left #my-info-contact a:hover {
         text-decoration: underline;
         background-color: transparent; }
-    #my-resume-container-details #mrcd--left #my-info-contact .btn-resume {
+    #my-resume-container-details #mrcd--left #my-info-contact .resume-img-block {
       float: left;
       width: 100%;
-      margin-top: 30px;
-      margin-right: 0; }
-      @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .btn-resume {
-          right: 70px; } }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .btn-resume {
-          padding: 10px 15px; } }
+      height: 180px; }
       @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .btn-resume {
-          float: left;
-          width: 100%;
-          margin-top: 20px;
-          margin-right: 0;
-          padding: 15px 15px; } }
-    #my-resume-container-details #mrcd--left #my-info-contact button {
-      margin-top: 10;
-      font-size: .4rem;
-      padding: 8px 11px 8px 11px; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        #my-resume-container-details #mrcd--left #my-info-contact button {
-          font-size: .1rem;
-          padding: 6px 9px 6px 9px; } }
-      @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact button {
-          margin-top: 15px;
-          width: 100%; } }
-      #my-resume-container-details #mrcd--left #my-info-contact button a {
-        text-decoration: none;
-        color: #ffffff; }
-        #my-resume-container-details #mrcd--left #my-info-contact button a:hover {
-          text-decoration: none; }
-    #my-resume-container-details #mrcd--left #my-info-contact .name-block {
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 16px;
-      margin-bottom: .25em; }
-      @media only screen and (min-width: 640px) and (max-width: 1024px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .name-block {
-          font-size: 16px;
-          line-height: 135%; } }
-      @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .name-block {
-          font-size: 22px;
-          line-height: 135%; } }
-    #my-resume-container-details #mrcd--left #my-info-contact .title-block {
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 15px;
-      margin-bottom: 5px; }
-      @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .title-block {
-          font-size: 15px; } }
-    #my-resume-container-details #mrcd--left #my-info-contact .website-block {
-      margin-top: 5px;
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 15px;
-      display: block; }
-      @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .website-block {
+        #my-resume-container-details #mrcd--left #my-info-contact .resume-img-block {
           display: none; } }
-    #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block {
-      margin-bottom: 5px;
-      padding-top: 5px;
-      padding-bottom: 20px;
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
-      font-style: italic;
-      font-weight: 400;
-      font-size: 15px;
-      border-bottom: 1px solid #dddddd; }
+    #my-resume-container-details #mrcd--left #my-info-contact .resume-img-btn {
+      float: left;
+      width: 100%;
+      margin-top: 25px;
+      min-height: 30px;
+      text-align: center; }
       @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block {
-          margin-top: 15px;
-          padding-top: 10px;
-          padding-bottom: 2px;
-          font-size: 13px; } }
-      @media only screen and (max-width: 640px) {
-        #my-resume-container-details #mrcd--left #my-info-contact .linkedin-block img {
-          max-width: 200px; } }
+        #my-resume-container-details #mrcd--left #my-info-contact .resume-img-btn {
+          margin-top: 0; } }
+      #my-resume-container-details #mrcd--left #my-info-contact .resume-img-btn .btn-resume-inline {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid #2a98c6;
+        color: #2a98c6;
+        background-color: white; }
+        #my-resume-container-details #mrcd--left #my-info-contact .resume-img-btn .btn-resume-inline i {
+          margin-right: 4px; }
+        #my-resume-container-details #mrcd--left #my-info-contact .resume-img-btn .btn-resume-inline:hover {
+          border: 1px solid #2a98c6;
+          color: white;
+          background-color: #2a98c6;
+          text-decoration: none; }
   #my-resume-container-details #mrcd--right {
     float: left;
     width: calc(100% - 250px);
@@ -5719,10 +5664,10 @@ button.mfp-close {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.3rem;
-    padding: 1.5rem 4rem 1rem 3rem; }
+    padding: 1.5rem 4rem 1rem 2rem; }
     @media only screen and (min-width: 1025px) and (max-width: 1440px) {
       #my-resume-container-details #mrcd--right {
-        padding: 1rem 4rem 1rem 3rem; } }
+        padding: 1rem 4rem 1rem 2rem; } }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
       #my-resume-container-details #mrcd--right {
         padding: 0; } }
@@ -5791,6 +5736,7 @@ button.mfp-close {
     border-bottom: 1px dotted #2a98c6;
     padding-bottom: 1.7rem; }
     #my-resume-container-skills #skills-block h2 {
+      margin-bottom: 18px;
       color: #8ACE39;
       font-size: 1.2rem;
       font-weight: 500;
@@ -5944,8 +5890,8 @@ button.mfp-close {
       width: 100%;
       font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
       font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
+      font-weight: 600;
+      font-size: 17px;
       line-height: 110%;
       color: black;
       margin: 10px 0 0 0; }
@@ -5953,7 +5899,7 @@ button.mfp-close {
         #my-resume-container-experience #my-experience h3 {
           font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
           font-style: normal;
-          font-weight: 400;
+          font-weight: 600;
           font-size: 14px;
           margin: 10px 0 0 0;
           height: auto; }
@@ -6040,9 +5986,7 @@ button.mfp-close {
             width: 100%;
             max-width: 110px;
             margin-top: -5px;
-            border-radius: 50%;
-            border: 1px solid #2a98c6;
-            padding: 7px; }
+            border-radius: 50%; }
             @media only screen and (max-width: 640px) {
               #my-resume-container-experience #my-references .ref-card .ref-card-top .ref-card-top-left img {
                 width: 40%;
@@ -6062,7 +6006,7 @@ button.mfp-close {
             float: left;
             clear: right;
             width: 100%;
-            color: #2a98c6;
+            color: #006EA2;
             font-family: "Roboto", sans-serif; }
           #my-resume-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p1 {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
@@ -6071,7 +6015,7 @@ button.mfp-close {
             font-size: 1.05rem;
             padding: 0 0 5px 0;
             text-transform: uppercase;
-            color: #2a98c6; }
+            color: #006EA2; }
           #my-resume-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p2 {
             font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
             font-style: normal;
@@ -6085,7 +6029,7 @@ button.mfp-close {
             font-style: italic;
             font-weight: 400;
             font-size: 0.95rem;
-            color: #2a98c6; }
+            color: #006EA2; }
             @media only screen and (max-width: 640px) {
               #my-resume-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p3 {
                 margin-bottom: 1rem; } }
@@ -6098,31 +6042,28 @@ button.mfp-close {
         font-size: 1rem;
         line-height: 140%;
         padding-top: 10px;
-        color: #2a98c6; }
+        color: #006EA2; }
 
 .progress {
-  background: #e9e5e2;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#e9e5e2));
-  background-image: -webkit-linear-gradient(top, #dddddd, #e9e5e2);
-  background-image: linear-gradient(top, #dddddd, #e9e5e2);
-  height: .6rem;
+  background: #DFDFDF;
+  height: 10px;
   padding: 0;
   margin: 0; }
 
-.adobe, .html, .css, .sass, .javascript, .react, .angular, .commandline, .haml, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
+.adobe, .html, .css, .sass, .javascript, .react, .aws, .angular, .commandline, .haml, .sktech, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
   -webkit-transition: width 4s ease !important;
   transition: width 4s ease !important; }
 
 .progress-frontend {
-  height: .5rem;
+  height: 10px;
   background-color: #8ACE39; }
 
 .progress-backend {
-  height: .5rem;
+  height: 10px;
   background-color: #FFCC00; }
 
 .progress-uiux {
-  height: .5rem;
+  height: 10px;
   background-color: #007EC3; }
 
 /* ========================================================

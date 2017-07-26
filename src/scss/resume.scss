@@ -225,8 +225,7 @@
   	float: left;
   	width: 250px;
   	margin-top: $unit-base;
-  	padding: 1.5rem 1.8rem 1.5rem 1.8rem;
-  	border: 1px solid #ccc;
+  	padding: 0;
 
   	@include mq(lg) {
 
@@ -267,105 +266,46 @@
   			}
   		}
 
-      .btn-resume {
+      .resume-img-block {
         float: left;
         width: 100%;
-        margin-top: $unit-lg;
-        margin-right: 0;
-
-        @include mq(lg) {
-          right: 70px;
-        }
-
-        @include mq(md) {
-          padding: $unit-xs $unit-sm;
-        }
+        height: 180px;
 
         @include mq(sm) {
-          float: left;
-          width: 100%;
-          margin-top: $unit-base;
-          margin-right: 0;
-          padding: $unit-sm $unit-sm;
+          display: none;
         }
       }
 
-  		button {
-  			margin-top: 10;
-  			font-size: .4rem;
-  			padding: 8px 11px 8px 11px;
-
-  			@include mq(md) {
-  				font-size: .1rem;
-  				padding: 6px 9px 6px 9px;
-  			}
-
-  			@include mq(sm) {
-  				margin-top: 15px;
-  				width: 100%;
-  			}
-
-  			a {
-  				text-decoration: none;
-  				color: $white;
-
-  				&:hover {
-  					text-decoration: none;
-  				}
-  			}
-  		}
-
-  		.name-block {
-  			@include font($font-1, normal, 16px, $font-weight-bold);
-  			margin-bottom: .25em;
-
-  			@include mq(md) {
-  				font-size: 16px;
-          line-height: 135%;
-  			}
-
-  			@include mq(sm) {
-  				font-size: 22px;
-  				line-height: 135%;
-  			}
-  		}
-
-  		.title-block {
-  			@include font($font-1, italic, $font-size-lg, $font-weight-normal);
-  			margin-bottom: $unit-xxs;
-
-  			@include mq(sm) {
-  				font-size: 15px;
-  			}
-  		}
-
-  		.website-block {
-        margin-top: $unit-xxs;
-  			@include font($font-1, italic, $font-size-lg, $font-weight-normal);
-        display: block;
-
-  			@include mq(sm) {
-  				display: none;
-  			}
-  		}
-
-      .linkedin-block {
-        margin-bottom: $unit-xxs;
-        padding-top: 5px;
-        padding-bottom: $unit-base;
-        @include font($font-1, italic, $font-size-lg, $font-weight-normal);
-        border-bottom: 1px solid $xxlight-gray;
+      .resume-img-btn {
+        float: left;
+        width: 100%;
+        margin-top: 25px;
+        min-height: 30px;
+        text-align: center;
 
         @include mq(sm) {
-          margin-top: $unit-sm;
-          padding-top: $unit-xs;
-          padding-bottom: $unit-tiny;
-          font-size: $font-size-base;
+          margin-top: 0;
         }
 
-        img {
-          @include mq(sm) {
-            max-width: 200px;
+        .btn-resume-inline {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-family: $font-1;
+          font-size: 14px;
+          font-weight: 600;
+          border: 1px solid $color-primary;
+          color: $color-primary;
+          background-color: white;
+
+          i {
+            margin-right: 4px;
+          }
+
+          &:hover {
+            border: 1px solid $color-primary;
+            color: white;
+            background-color: $color-primary;
+            text-decoration: none;
           }
         }
       }
@@ -378,10 +318,10 @@
   	max-width: 1500px;
   	@include font($font-1, normal, $font-size-sm, $font-weight-normal);
   	line-height: 1.3rem;
-  	padding: 1.5rem 4rem 1rem 3rem;
+  	padding: 1.5rem 4rem 1rem 2rem;
 
   	@include mq(lg) {
-  		padding: 1rem 4rem 1rem 3rem;
+  		padding: 1rem 4rem 1rem 2rem;
   	}
 
   	@include mq(md) {
@@ -474,6 +414,7 @@
 		padding-bottom: 1.7rem;
 
 		h2 {
+      margin-bottom: 18px;
 			color: #8ACE39;
 			font-size: 1.2rem;
 			font-weight: 500;
@@ -687,13 +628,13 @@
 		h3 {
 			float: left;
 			width: 100%;
-			@include font($font-1, normal, 18px, $font-weight-normal);
+			@include font($font-1, normal, 17px, $font-weight-bold);
 			line-height: 110%;
 			color: black;
 			margin: $unit-xs 0 0 0;
 
 			@include mq(sm) {
-				@include font($font-1, normal, 14px, $font-weight-normal);
+				@include font($font-1, normal, 14px, $font-weight-bold);
         margin: $unit-xs 0 0 0;
 				height: auto;
 
@@ -801,8 +742,6 @@
 						max-width: 110px;
 						margin-top: -5px;
 						border-radius: 50%;
-						border: 1px solid $color-primary;
-						padding: 7px;
 
 						@include mq(sm) {
 							width: 40%;
@@ -829,7 +768,7 @@
 						float: left;
 						clear: right;
 						width: 100%;
-						color: $color-primary;
+						color: $color-primary-alt;
 						font-family: $font-1;
 					}
 
@@ -837,19 +776,19 @@
 						@include font($font-2, normal, 1.05rem, $font-weight-bold);
 						padding: 0 0 5px 0;
 						text-transform: uppercase;
-						color: $color-primary;
+            color: $color-primary-alt;
 					}
 
 					.ref-card-p2 {
 						@include font($font-1, normal, 1rem, $font-weight-normal);
 						font-style: italic;
 	  				padding: 0 0 5px 0;
-						color: $color-primary;
+            color: $color-primary;
 					}
 
 					.ref-card-p3 {
 						@include font($font-1, italic, .95rem, $font-weight-normal);
-						color: $color-primary;
+            color: $color-primary-alt;
 
 						@include mq(sm) {
 							margin-bottom: 1rem;
@@ -864,26 +803,20 @@
 				@include font($font-1, normal, 1rem, $font-weight-normal);
 				line-height: 140%;
 				padding-top: 10px;
-				color: $color-primary;
+				color: $color-primary-alt;
 			}
 		}
 	}
 }
 
 .progress {
-	background: #e9e5e2;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#e9e5e2));
-	background-image: -webkit-linear-gradient(top, #dddddd, #e9e5e2);
-	background-image: -moz-linear-gradient(top, #dddddd, #e9e5e2);
-	background-image: -ms-linear-gradient(top, #dddddd, #e9e5e2);
-	background-image: -o-linear-gradient(top, #dddddd, #e9e5e2);
-	background-image: linear-gradient(top, #dddddd, #e9e5e2);
-	height: .6rem;
+	background: #DFDFDF;
+  height: 10px;
 	padding: 0;
 	margin: 0;
 }
 
-.adobe, .html, .css, .sass, .javascript, .react, .angular, .commandline, .haml, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
+.adobe, .html, .css, .sass, .javascript, .react, .aws, .angular, .commandline, .haml, .sktech, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
 	 -webkit-transition: width 4s ease !important;
 	 -moz-transition: width 4s ease !important;
 	 -o-transition: width 4s ease !important;
@@ -891,21 +824,19 @@
  }
 
 .progress-frontend {
-	height: .5rem;
+  height: 10px;
 	background-color: #8ACE39;
 }
 
 .progress-backend {
-	height: .5rem;
+  height: 10px;
 	background-color: #FFCC00;
 }
 
 .progress-uiux {
-	height: .5rem;
+  height: 10px;
 	background-color: #007EC3;
 }
-
-
 
 
 /* ========================================================

@@ -28,14 +28,16 @@ Template Name: Resume Template
     <section class='medium-12 columns' id='my-resume-container-details'>
       <aside id='mrcd--left'>
         <div id='my-info-contact'>
-          <a class='linkedin-block' href='http://www.linkedin.com/in/thomaswicker' target='_blank'>
-            <img src='<?php bloginfo( 'template_directory' ); ?>/img/linkedin_logo.png'>
-          </a>
+          <div class="resume-img-block">
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/resume/resume-img-color.svg" alt="My Resume Pic">
+          </div>
+          <div class="resume-img-btn">
+            <a class='btn-resume-inline' href='<?php bloginfo( 'template_directory' ); ?>/pdfs/resume-072617.pdf' target="_blank">
+              <i class="fa fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
         </div>
-
-        <a class='btn btn-header btn-resume' href='<?php bloginfo( 'template_directory' ); ?>/pdfs/resume-072617.pdf' target="_blank">
-          Download Resume
-        </a>
       </aside>
       <section id='mrcd--right'>
         <div id='my-objective'>
@@ -77,7 +79,7 @@ Template Name: Resume Template
             </div>
           </div>
           <div class='skills-top'>
-            sass
+            sass/less
           </div>
           <div class='skills-bottom'>
             <div class='progress'>
@@ -85,7 +87,7 @@ Template Name: Resume Template
             </div>
           </div>
           <div class='skills-top'>
-            javascript/jquery
+            javascript
           </div>
           <div class='skills-bottom'>
             <div class='progress'>
@@ -162,7 +164,7 @@ Template Name: Resume Template
             </div>
           </div>
           <div class='skills-top'>
-            rapid prototyping
+            prototyping tools, invision, flinto
           </div>
           <div class='skills-bottom'>
             <div class='progress'>
@@ -177,11 +179,27 @@ Template Name: Resume Template
               <div class='adobe progress-bar progress-uiux' role='progressbar' style='width: {{ adobe }}'></div>
             </div>
           </div>
+          <div class='skills-top'>
+            sketch app
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='sketch progress-bar progress-uiux' role='progressbar' style='width: {{ sketch }}'></div>
+            </div>
+          </div>
         </div>
         <div class='medium-4 large-4 columns' id='skills-block-right'>
           <h2>
             BACKEND & DEV TOOLS
           </h2>
+          <div class='skills-top'>
+            amazon web services
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='aws progress-bar progress-backend' role='progressbar' style='width: {{ aws }}'></div>
+            </div>
+          </div>
           <div class='skills-top'>
             ruby on rails
           </div>

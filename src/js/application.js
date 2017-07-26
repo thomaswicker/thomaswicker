@@ -22,20 +22,22 @@ $(document).ready(function() {
   $('.wordpress').css('width', '90%');
 
   $('.ui').css('width', '100%');
-  $('.ux').css('width', '95%');
+  $('.ux').css('width', '100%');
   $('.zurb').css('width', '100%');
   $('.rwd').css('width', '98%');
   $('.agile').css('width', '90%');
   $('.rapidproto').css('width', '100%');
   $('.adobe').css('width', '98%');
+  $('.sketch').css('width', '100%');
 
-  $('.rails').css('width', '70%');
-  $('.php').css('width', '50%');
+  $('.rails').css('width', '50%');
+  $('.php').css('width', '60%');
   $('.heroku').css('width', '90%');
   $('.git').css('width', '85%');
   $('.db').css('width', '30%');
   $('.commandline').css('width', '75%');
   $('.git').css('width', '85%');
+  $('.aws').css('width', '50%');
 
   var siteNav = $(".superhero-nav"),
       navToggle = $("#nav-toggle"),
