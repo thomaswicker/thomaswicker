@@ -91,11 +91,11 @@
 
   &.portfolio {
     li {
-      background-color: rgba(133, 185, 51, .7);
-      border: 1px solid $green-potion;
+      background-color: rgba(160, 110, 175, .7);
+      border: 1px solid $purple-potion;
 
       &:hover {
-        background-color: $green-potion;
+        background-color: $purple-potion;
 
         a {
 
@@ -111,6 +111,21 @@
 
       &:hover {
         background-color: $red-potion;
+
+        a {
+
+        }
+      }
+    }
+  }
+
+  &.culinary {
+    li {
+      background-color: rgba(133, 185, 51, .7);
+      border: 1px solid $green-potion;
+
+      &:hover {
+        background-color: $green-potion;
 
         a {
 

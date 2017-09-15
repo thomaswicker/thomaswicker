@@ -16,10 +16,34 @@ a[href=""], a[href="#"] {
 }
 
 #portfolio-header {
-  border-top: 5px solid $green-potion;
+  border-top: 5px solid $purple-potion;
 
   @include mq(sm) {
-    border-top: 2px solid $green-potion;
+    border-top: 3px solid $purple-potion;
+  }
+
+  .superheo-btn-behance {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    padding: 10px 25px;
+    background-color: rgba(160, 110, 175, .8);
+    border: 1px solid $white;
+    color: $white;
+    font-size: 13px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $white;
+      border: 1px solid $white;
+      color: $purple-potion;
+      text-decoration: none;
+    }
+
+    @include mq(sm) {
+      position: static;
+
+    }
   }
 }
 

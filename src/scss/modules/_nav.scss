@@ -115,13 +115,13 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
       &:nth-child(2) {
         &:hover {
-          border-bottom: 4px solid $teal-potion;
+          border-bottom: 4px solid $purple-potion;
         }
       }
 
       &:nth-child(3) {
         &:hover {
-          border-bottom: 4px solid $purple-potion;
+          border-bottom: 4px solid $red-potion;
         }
       }
 
@@ -133,17 +133,11 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
       &:nth-child(5) {
         &:hover {
-          border-bottom: 4px solid $red-potion;
-        }
-      }
-
-      &:nth-child(6) {
-        &:hover {
           border-bottom: 4px solid $orange-potion;
         }
       }
 
-      &:nth-child(7) {
+      &:nth-child(6) {
         &:hover {
           border-bottom: 4px solid $yellow-potion;
         }
@@ -207,7 +201,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
   &.superhero-nav-home #nav-toggle-container {
     .nav-current-page {
-      color: $color-primary;
+      color: $white;
     }
 
     #nav-toggle {
@@ -217,33 +211,15 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
       &:hover {
         i {
-          color: white;
+          color: $white;
         }
       }
     }
   }
 
-  &.superhero-nav-blog #nav-toggle-container {
+  &.superhero-nav-portfolio #nav-toggle-container {
     .nav-current-page {
-      color: $teal-potion;
-    }
-
-    #nav-toggle {
-      i {
-        color: $teal-potion;
-      }
-
-      &:hover {
-        i {
-          color: white;
-        }
-      }
-    }
-  }
-
-  &.superhero-nav-about #nav-toggle-container {
-    .nav-current-page {
-      color: $purple-potion;
+      color: $white;
     }
 
     #nav-toggle {
@@ -253,25 +229,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
       &:hover {
         i {
-          color: white;
-        }
-      }
-    }
-  }
-
-  &.superhero-nav-portfolio #nav-toggle-container {
-    .nav-current-page {
-      color: $color-secondary;
-    }
-
-    #nav-toggle {
-      i {
-        color: $color-secondary;
-      }
-
-      &:hover {
-        i {
-          color: white;
+          color: $white;
         }
       }
     }
@@ -279,7 +237,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
   &.superhero-nav-photography #nav-toggle-container {
     .nav-current-page {
-      color: $red-potion;
+      color: $white;
     }
 
     #nav-toggle {
@@ -289,7 +247,25 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
       &:hover {
         i {
-          color: white;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &.superhero-nav-culinary #nav-toggle-container {
+    .nav-current-page {
+      color: $white;
+    }
+
+    #nav-toggle {
+      i {
+        color: $green-potion;
+      }
+
+      &:hover {
+        i {
+          color: $white;
         }
       }
     }
@@ -297,7 +273,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
   &.superhero-nav-resume #nav-toggle-container {
     .nav-current-page {
-      color: $orange-potion;
+      color: $white;
     }
 
     #nav-toggle {
@@ -315,7 +291,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
 
   &.superhero-nav-contact #nav-toggle-container {
     .nav-current-page {
-      color: $yellow-potion;
+      color: $white;
     }
 
     #nav-toggle {

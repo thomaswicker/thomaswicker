@@ -1,0 +1,738 @@
+/*
+  ____ _   _ _     ___ _   _    _    ______   __
+ / ___| | | | |   |_ _| \ | |  / \  |  _ \ \ / /
+| |   | | | | |    | ||  \| | / _ \ | |_) \ V /
+| |___| |_| | |___ | || |\  |/ ___ \|  _ < | |
+ \____|\___/|_____|___|_| \_/_/   \_\_| \_\|_|
+
+*/
+
+/* ==========================================================================
+%% Styling for CULINARY.PHP --> Culinary Page Template %%
+========================================================================== */
+
+#culinary-header {
+  border-top: 5px solid $green-potion;
+
+  @include mq(sm) {
+    border-top: 3px solid $green-potion;
+  }
+}
+
+#dpsp-floating-sidebar {
+  top: 50px !important;
+}
+
+@media print {
+  #dpsp-floating-sidebar {
+    display: none;
+  }
+}
+
+.recipe-item {
+  float: left;
+  width: 100%;
+  padding: 15px 20px 0px 20px;
+
+  &:nth-child(even) {
+    background-color: #edf6fb;
+  }
+
+  // @include mq(lg) {
+  //   background-color: red;
+  // }
+  //
+  // @include mq(md) {
+  //   background-color: blue;
+  // }
+  //
+  // @include mq(sm) {
+  //   background-color: orange;
+  // }
+
+  &.recipe-item-first {
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+
+  h2 {
+    float: left;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: none;
+
+    a {
+      color: $black;
+    }
+  }
+
+  h3 {
+    float: left;
+    font-family: $font-1;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  section {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-right: $unit-tiny;
+
+    span {
+      float: left;
+    }
+
+    &.recipe-rating-and-title {
+      margin-bottom: 5px;
+
+      @include mq(sm) {
+        text-align: center;
+      }
+
+      a {
+
+      }
+
+      h2 {
+        max-width: 450px;
+        margin-right: 8px;
+        margin-bottom: 0;
+        font-family: $font-1;
+        font-size: 22px;
+        font-weight: 600;
+        color: $black;
+        text-transform: none;
+        line-height: 145%;
+
+        @include mq(sm) {
+          float: left;
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .recipe-rating-img {
+        position: absolute;
+        top: 3px;
+        right: 0px;
+        float: left;
+        max-width: 130px;
+        margin-left: 0;
+
+        @include mq(lg) {
+
+        }
+
+        @include mq(md) {
+          position: relative;
+          clear: both;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          margin-left: 0;
+        }
+
+        @include mq(sm) {
+          position: static;
+          float: none;
+          margin: 5px auto 10px;
+        }
+      }
+    }
+
+    &.recipe-images {
+      @include mq(sm) {
+        display: none;
+      }
+    }
+
+    &.recipe-btn-container {
+      float: left;
+      width: 100%;
+
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &.recipe-details {
+      margin-bottom: 0;
+      padding: 0 20px 10px 0;
+      color: $color-primary;
+      background-color: transparent;
+
+      @include mq(lg) {
+
+      }
+
+      @include mq(md) {
+        text-align: center;
+      }
+
+      @include mq(sm) {
+        text-align: center;
+      }
+
+      .recipe-prep-time, .recipe-cook-time, .recipe-total-portions {
+        float: left;
+        width: 33.333%;
+        padding-right: 15px;
+        text-align: center;
+        font-weight: bold;
+        color: $color-primary;
+
+        @include mq(lg) {
+          float: left;
+          width: 100%;
+          text-align: center;
+        }
+
+        @include mq(md) {
+          float: none;
+          width: 100%;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          text-align: center;
+        }
+
+        h3 {
+          float: left;
+          font-family: Roboto,sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: #888888;
+
+          @include mq(sm) {
+            float: none;
+          }
+        }
+
+        span.the-value {
+          float: left;
+          margin-left: 5px;
+          margin-right: 15px;
+          font-family: Roboto,sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: #888888;
+
+          @include mq(sm) {
+            float: none;
+          }
+        }
+      }
+    }
+
+    &.recipe-grouped {
+      .recipe-image-container {
+        float: left;
+        width: 40%;
+        max-height: 200px;
+        overflow: hidden;
+
+        img {
+
+        }
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+        }
+      }
+
+      .recipe-notes {
+        float: left;
+        width: 60%;
+
+        @include mq(md) {
+          width: 100%;
+          margin-top: 25px;
+          padding: 0;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          margin-top: 25px;
+          padding: 0;
+        }
+
+        h3 {
+          font-family: Roboto,sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: #888888;
+
+          &.header {
+            font-size: 18px;
+            font-weight: 500;
+            color: $black;
+          }
+        }
+
+        .note-content {
+          float: left;
+          width: 100%;
+          font-size: 15px;
+          line-height: 145%;
+        }
+
+        span.the-value {
+          float: left;
+          margin-left: 5px;
+          margin-right: 15px;
+          font-family: Roboto,sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+          color: #888888;
+        }
+      }
+    }
+
+    &.recipe-categories {
+      @include mq(sm) {
+        text-align: center;
+      }
+
+      a {
+        float: left;
+        margin-top: 2px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding: 4px 9px;
+        font-size: $font-size-xs;
+        font-weight: $font-weight-bold;
+        text-transform: uppercase;
+        background-color: #AAAAAA;
+        color: $white;
+
+        &:hover {
+          background-color: $color-secondary;
+          text-decoration: none;
+        }
+
+        @include mq(sm) {
+          float: none;
+        }
+      }
+    }
+
+    &.recipe-ingredients {
+      padding: 0 20px 0 20px;
+    }
+
+    &.recipe-steps {
+      padding: 0 20px 0 20px;
+    }
+
+    &.recipe-notes {
+      padding: 0 20px 0 20px;
+      float: left;
+      width: 100%;
+      margin-bottom: 5px;
+      font-family: $font-2;
+      font-size: 13px;
+      line-height: 140%;
+    }
+
+    &.recipe-comments {
+      margin-top: 10px;
+      padding-top: 20px;
+      border-top: 1px dotted #CCCCCC;
+
+      @include mq(sm) {
+        display: none;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .justified-gallery {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .justified-gallery > a {
+    border: 2px solid $white;
+  }
+
+  ul {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 30px;
+    list-style-type: disc;
+
+    li {
+      float: left;
+      width: 100%;
+      margin-bottom: 5px;
+      font-family: $font-2;
+      font-size: 13px;
+      line-height: 140%;
+    }
+  }
+
+  ol {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 30px;
+    list-style-type: decimal;
+
+    li {
+      float: left;
+      width: 100%;
+      margin-bottom: 5px;
+      font-family: $font-2;
+      font-size: 13px;
+      line-height: 140%;
+    }
+  }
+
+  &.recipe-item-archives {
+    section {
+      &.recipe-rating-and-title {
+
+        h2 {
+          @include mq(lg) {
+
+          }
+
+          @include mq(md) {
+            width: 100%;
+          }
+
+          @include mq(sm) {
+
+          }
+        }
+
+        .recipe-rating-img {
+          position: relative;
+          top: 1px;
+          float: left;
+          max-width: 130px;
+          margin-left: 8px;
+        }
+      }
+
+      &.recipe-images {
+        a {
+          &:nth-child(2) {
+            display: none !important;
+          }
+
+          &:nth-child(3) {
+            display: none !important;
+          }
+
+          &:nth-child(4) {
+            display: none !important;
+          }
+
+          &:nth-child(5) {
+            display: none !important;
+          }
+
+          &:nth-child(6) {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .comment-reply-title {
+    display: none;
+  }
+
+  .comment-form-comment {
+    label {
+      display: none;
+    }
+  }
+
+  .logged-in-as {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .submit {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: $blue-potion;
+    color: white;
+    font-family: $font-1;
+    font-size: 13px;
+    text-transform: uppercase;
+    border: 0px;
+
+    &:hover {
+      background-color: lighten($blue-potion, 10%);
+    }
+  }
+}
+
+#body-culinary {
+  float: left;
+  width: 100%;
+	padding-bottom: 70px;
+
+  @include mq(sm) {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  #body-culinary-inner {
+  	width: 90%;
+  	margin-left: auto;
+  	margin-right: auto;
+  	background-color: $white;
+
+  	@include mq(lg) {
+  		width: 96%;
+  	}
+
+  	@include mq(md) {
+  		width: 100%;
+  	}
+
+  	@include mq(sm) {
+  		width: 100%;
+
+  		h1 {
+  			padding-top: 1rem;
+  		}
+  	}
+
+    .body-culinary-left {
+    	padding: 40px 80px 0 0;
+
+    	@include mq(lg) {
+    		padding: 2rem 2rem 0 1rem;
+    	}
+
+    	@include mq(md) {
+    		padding: 2rem 2rem 0 1rem;
+    	}
+
+    	@include mq(sm) {
+        padding: 20px 10px 0 10px;
+    	}
+
+      .bcl--intro-block {
+        float: left;
+        width: 100%;
+        padding: 0 0 10px 0;
+
+        h2 {
+          float: left;
+          width: 100%;
+          font-family: $font-1;
+          font-size: 24px;
+          font-weight: 400;
+          color: $black;
+          text-transform: uppercase;
+        }
+
+        p {
+          float: left;
+          width: 100%;
+        }
+
+        .bcl--intro-block-left {
+          float: left;
+          width: calc(100% - 200px);
+          padding-right: 30px;
+
+          @include mq(md) {
+            padding-left: 10px;
+            padding-right: 15px;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 15px;
+          }
+        }
+
+        .bcl--intro-block-right {
+          float: left;
+          width: 200px;
+
+          .slider_1 {
+            position: relative;
+            top: -40px;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+          }
+        }
+      }
+
+      .culinary-entry {
+        float: left;
+        width: 100%;
+        margin-top: $unit-lg;
+        padding: $unit-md $unit-md $unit-md $unit-md;
+        border: 1px solid #EEE;
+        border-left: 3px solid $color-primary;
+
+        &:first-child {
+          margin-top: $unit-base;
+
+          @include mq(sm) {
+            margin-top: $unit-base;
+          }
+        }
+
+        @include mq(lg) {
+          border-left: 3px solid $color-primary;
+        }
+
+        @include mq(md) {
+          border-left: 3px solid $color-primary;
+        }
+
+        @include mq(sm) {
+          margin-top: $unit-lg;
+          margin-left: $unit-base;
+          padding: 0 $unit-xxs 0 $unit-md;
+          border-top: 0;
+          border-right: 0;
+          border-bottom: 0;
+          border-left: 5px solid $color-primary;
+        }
+
+        a.post-title {
+          float: left;
+          width: 100%;
+          margin-bottom: $unit-xs;
+          font-family: $font-1;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 140%;
+          color: $black;
+
+          @include mq(sm) {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .body-culinary-right {
+      height: auto;
+    	padding: 1rem 1.25rem 1.5rem 1.25rem;
+    	margin-bottom: 2rem;
+    	background-color: lighten($color-secondary, 40%);
+    	border: 1px solid lighten($color-secondary, 5%);
+
+    	@include mq(md) {
+    		padding: 2rem 1rem 1.5rem 1rem;
+    	}
+
+    	@include mq(sm) {
+        margin-top: $unit-lg;
+    		padding: 20px 20px 20px 20px !important;
+        border: 1px solid lighten($color-secondary, 27%);
+    	}
+
+      .alt-sidebar {
+        h4 {
+          float: left;
+          width: 100%;
+          margin-top: 2px;
+          margin-bottom: 2px;
+          padding-top: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          color: darken($color-secondary, 2%);
+          border-top: 2px solid darken($color-secondary, 2%);
+        }
+
+        .widget_search {
+          width: 94%;
+
+          input {
+            position: relative;
+            top: -2px;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 10px;
+            /* margin-left: 3%; */
+            border: 0;
+            box-shadow: none;
+            outline: 0;
+            color: black;
+          }
+        }
+
+        ul {
+          margin-left: 0;
+          padding-left: 0;
+
+          li {
+            &:before {
+              content: "\f02b";
+              position: relative;
+              left: -6px;
+              font-family: FontAwesome;
+              color: black;
+            }
+          }
+        }
+
+        .widget_categories {
+          ul {
+            margin-left: 0;
+            padding-left: 0;
+
+            li {
+              margin-top: 15px;
+              padding-left: 5px;
+
+              &:before {
+                content: "\f02b";
+                position: relative;
+                left: -6px;
+                font-family: FontAwesome;
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.justified-gallery > a > .caption, .justified-gallery > div > .caption {
+  color: $white !important;
+  font-size: 13px;
+  font-weight: 300;
+  font-family: sans-serif;
+  background: rgba(0,0,0,0.9) !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

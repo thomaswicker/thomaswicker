@@ -48,4 +48,25 @@ $(document).ready(function() {
       siteNav.toggleClass('active-main');
       siteNavUL.toggleClass('active-nav');
     });
+
+  var instagramToggleBtn = $('.instagram-toggle-btn'),
+      flickrToggleBtn = $('.flickr-toggle-btn'),
+      instagramToggleContent = $('.psm--instagram'),
+      flickrToggleContent = $('.psm--flickr');
+
+      instagramToggleBtn.click(function(e) {
+        e.preventDefault();
+        instagramToggleBtn.addClass( "toggle-active" );
+        flickrToggleBtn.removeClass( "toggle-active" );
+        flickrToggleContent.removeClass( "active" );
+        instagramToggleContent.addClass( "active" );
+      });
+
+      flickrToggleBtn.click(function(e) {
+        e.preventDefault();
+        instagramToggleBtn.removeClass( "toggle-active" );
+        flickrToggleBtn.addClass( "toggle-active" );
+        instagramToggleContent.removeClass( "active" );
+        flickrToggleContent.addClass( "active" );
+      });
 });

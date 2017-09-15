@@ -126,6 +126,14 @@ _______   ______  _____
   @include font($font: $font-2, $style: normal, $size: 14px, $weight: $font-weight-normal);
   line-height: 135%;
   letter-spacing: normal;
+
+  @include mq(md) {
+    @include font($font: $font-2, $style: normal, $size: 15px, $weight: $font-weight-normal);
+  }
+
+  @include mq(sm) {
+    @include font($font: $font-2, $style: normal, $size: 16px, $weight: $font-weight-normal);
+  }
 }
 
 .body-text-small {

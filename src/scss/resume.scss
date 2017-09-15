@@ -11,7 +11,7 @@
   border-top: 5px solid $orange-potion;
 
   @include mq(sm) {
-    border-top: 2px solid $orange-potion;
+    border-top: 3px solid $orange-potion;
   }
 }
 
@@ -291,11 +291,12 @@
           padding-top: 10px;
           padding-bottom: 10px;
           font-family: $font-1;
-          font-size: 14px;
+          font-size: 13px;
           font-weight: 600;
           border: 1px solid $color-primary;
           color: $color-primary;
           background-color: white;
+          text-transform: uppercase;
 
           i {
             margin-right: 4px;

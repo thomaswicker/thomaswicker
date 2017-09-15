@@ -68,6 +68,7 @@
 @import "modules/nav";
 @import "modules/panels";
 @import "modules/posts";
+@import "modules/search";
 @import "modules/sidebars";
 @import "modules/subnav";
 @import "modules/superheros";
@@ -75,12 +76,15 @@
 @import "modules/tooltips";
 
 /* ## Pages ## */
+@import "archives";
 @import "header";
 @import "body";
 @import "home";
 @import "blog";
 @import "about";
+@import "culinary";
 @import "portfolio";
 @import "photography";
+@import "recipe";
 @import "resume";
 @import "contact";

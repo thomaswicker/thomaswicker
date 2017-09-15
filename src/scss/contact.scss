@@ -11,7 +11,7 @@
   border-top: 5px solid $yellow-potion;
 
   @include mq(sm) {
-    border-top: 2px solid $yellow-potion;
+    border-top: 3px solid $yellow-potion;
   }
 }
 
@@ -277,6 +277,20 @@ div.wpcf7 {
 			font-size: $font-size-xl;
 		}
 	}
+
+  .body-text {
+    @include mq(lg) {
+      padding-left: 15px;
+    }
+
+    @include mq(md) {
+      padding-left: 15px;
+    }
+
+    @include mq(sm) {
+      padding-left: 15px;
+    }
+  }
 
 	.contact-blurb {
 		font-size: $font-size-lg;

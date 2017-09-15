@@ -1,4 +1,4 @@
-<header id="photography-header" class="superhero superhero-photography">
+<header id="photography-header" class="hide-for-print superhero superhero-photography">
 
   <section class="sh--inner">
     <div class="my-pic">
@@ -11,6 +11,9 @@
 
       <p class="quotee">~ Ansel Adams</p>
     </div>
+
+    <a href="https://www.instagram.com/thomasjwicker/" target="blank" class="superheo-btn-instagram"><i class="fa fa-instagram" style="margin-right: 3px;" aria-hidden="true"></i>
+ VIEW MY INSTAGRAM</a>
   </section>
 
   <ul class="subnav photography" role="navigation">

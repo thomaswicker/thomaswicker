@@ -1,4 +1,4 @@
-<header id="resume-header" class="superhero superhero-resume">
+<header id="resume-header" class="hide-for-print superhero superhero-resume">
   <section class="sh--inner">
     <div class="my-pic large-2 medium-3 columns">
       <img src="<?php bloginfo( 'template_directory' ); ?>/img/pixelme/pixel-me-resume.svg" alt="Icon Illustration of Me">

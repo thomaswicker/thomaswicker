@@ -19,7 +19,7 @@
 		<link href='img/favicon.ico' rel='shortcut icon'>
 		<meta content='Personal website and portfolio for Thomas Wicker: Front End Dev' property='og:title'>
 
-		<!-- <link href='css/foundation.min.css' rel='stylesheet'> -->
+		<link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css' rel='stylesheet'>
 		<!-- <link href='bower_components/motion-ui/dist/motion-ui.min.css' rel='stylesheet'> -->
 		<!-- <link href='bower_components/components-font-awesome/css/font-awesome.min.css' rel='stylesheet'> -->
 		<!-- <link href='css/application.min.css' rel='stylesheet'> -->
@@ -30,7 +30,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
 		<?php // icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) ?>
-		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -49,11 +49,9 @@
 		<?php // drop Google Analytics Here ?>
 		<?php // end analytics ?>
 
-		<!-- Application Spells -->
-		<!-- <link href='bower_components/foundation-sites/dist/foundation.min.css' rel='stylesheet'>
-		<link href='bower_components/lightbox2/dist/css/lightbox.min.css' rel='stylesheet'>
-		<link href='css/application.min.css' rel='stylesheet'>
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'> -->
+		<meta property="og:url"                content="http://thomaswicker.com/" />
+		<meta property="og:title"              content="Thomas Wicker - Senior Front End Developer UI/UX" />
+		<meta property="og:image"              content="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/tw-og-image.jpg" />
 
 	</head>
 

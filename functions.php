@@ -8,6 +8,8 @@ if ( !is_admin() ) {
     wp_enqueue_script('jqueryJS');
 }
 
+add_filter( 'jetpack_enable_open_graph', '__return_false' );
+
 // BEGIN LOAD THEME CSS
 
 function theme_styles() {
@@ -159,7 +161,42 @@ if (function_exists('register_sidebar')) {
     'before_title'  => '<h4>',
     'after_title'   => '</h4>'
   ));
+
+  register_sidebar(array(
+    'name' => 'recipes-sidebar',
+    'id'   => 'recipes-sidebar',
+    'description'   => 'This is a widgetized area.',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+  register_sidebar(array(
+    'name' => 'recipes-sidebar-short',
+    'id'   => 'recipes-sidebar-short',
+    'description'   => 'This is a widgetized area.',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
 }
+function namespace_add_custom_types( $query ) {
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'nav_menu_item', 'culinary'
+		));
+	  return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'namespace_add_custom_types' );
+
+
+function wpse20150812_jetpack_publicize_support() {
+    add_post_type_support( 'culinary', 'publicize' );
+}
+add_action('init', 'wpse20150812_jetpack_publicize_support');
 
 // add google analytics to footer
 function add_google_analytics() {

@@ -1,4 +1,4 @@
-<header id="contact-header" class="superhero superhero-contact">
+<header id="contact-header" class="hide-for-print superhero superhero-contact">
   <section class="sh--inner">
     <div class="my-pic">
       <img src="<?php bloginfo( 'template_directory' ); ?>/img/pixelme/pixel-me-contact.svg" alt="Icon Illustration of Me">

@@ -1,4 +1,4 @@
-<nav role='navigation' class='superhero-nav superhero-nav-photography'>
+<nav role='navigation' class='superhero-nav superhero-nav-photography hide-for-print'>
   <div id="nav-toggle-container">
     <a href="/" class="nav-current-page">
       Thomaswicker.com
@@ -16,16 +16,6 @@
       </a>
     </li>
     <li>
-      <a href='../blog/'>
-        Blog
-      </a>
-    </li>
-    <li>
-      <a href='../about/'>
-        About
-      </a>
-    </li>
-    <li>
       <a href='../portfolio/'>
         Portfolio
       </a>
@@ -33,6 +23,11 @@
     <li class="active">
       <a href='../photography/'>
         Photography
+      </a>
+    </li>
+    <li>
+      <a href='../culinary/'>
+        Culinary
       </a>
     </li>
     <li>

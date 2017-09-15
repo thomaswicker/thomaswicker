@@ -11,7 +11,7 @@
   border-top: 5px solid $color-primary;
 
   @include mq(sm) {
-    border-top: 2px solid $color-primary;
+    border-top: 3px solid $color-primary;
   }
 }
 
@@ -41,6 +41,116 @@
   		}
   	}
 
+    h2 {
+      float: left;
+      width: 100%;
+
+      &.home-subheader {
+        margin-top: 25px;
+        color: red;
+
+        @include mq(md) {
+          padding-top: 10px;
+        }
+
+        @include mq(sm) {
+          padding-top: 10px;
+        }
+      }
+
+      &.home-subheader-first {
+        margin-top: 35px;
+
+        @include mq(md) {
+          margin-top: 5px;
+        }
+
+        @include mq(sm) {
+
+        }
+      }
+    }
+
+    .home-body-content {
+      float: left;
+      width: 100%;
+
+      @include mq(md) {
+        padding-bottom: 30px;
+      }
+
+      @include mq(sm) {
+        padding-bottom: 30px;
+      }
+
+      .hbc--left {
+        float: left;
+        width: calc(100% - 265px);
+        padding-right: 30px;
+
+        @include mq(md) {
+          width: 100%;
+          padding-right: 0;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          padding-right: 0;
+        }
+      }
+
+      .hbc--right {
+        float: left;
+        width: 265px;
+
+        .slider_1 {
+          position: relative;
+          top: -40px;
+
+          img {
+            width: 300px !important;
+            height: 325px !important;
+          }
+        }
+
+        @include mq(md) {
+          width: 100%;
+
+          .slider_1 {
+            position: relative;
+            top: 0;
+
+            img {
+              width: 300px !important;
+              height: 350px !important;
+            }
+          }
+        }
+
+        @include mq(sm) {
+          width: 100%;
+
+          .slider_1 {
+            position: relative;
+            top: 0;
+
+            img {
+              width: 300px !important;
+              height: 350px !important;
+            }
+          }
+        }
+      }
+    }
+
+    .body-text strong {
+      font-style: italic;
+    }
+
+    .body-text span.emphasize {
+      font-style: italic;
+    }
+
     .body-home-left {
     	padding: 2.5rem 4rem 0 0;
 
@@ -53,8 +163,193 @@
     	}
 
     	@include mq(sm) {
-    		padding: .0 0 0 0;
+    		padding: 0 0 0 0;
     	}
+
+      .how-i-work {
+        float: left;
+        width: 100%;
+        margin-top: 25px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        border-top: 4px solid #eee;
+        border-bottom: 4px solid #eee;
+
+        .hiw--left {
+          float: left;
+          width: 250px;
+
+          @include mq(md) {
+            width: 100%;
+            padding-top: 20px;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+            padding-top: 20px;
+          }
+
+          img {
+          }
+        }
+
+        .hiw--right {
+          float: left;
+          width: calc(100% - 250px);
+          max-width: 700px;
+          padding-left: 30px;
+
+          @include mq(md) {
+            width: 100%;
+            padding-left: 0;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+            padding-right: 25px;
+            padding-left: 20px;
+          }
+
+          h3 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 140%;
+            color: #000;
+            text-transform: uppercase;
+
+            @include mq(sm) {
+              width: 100%;
+              padding-left: 0;
+            }
+          }
+
+          ul {
+            margin-top: $unit-xs;
+            margin-left: $unit-base;
+            list-style-type: disc;
+
+            @include mq(md) {
+              margin-left: 20px;
+            }
+
+            @include mq(sm) {
+              margin-left: 20px;
+            }
+
+            li {
+              margin-top: 10px;
+              font-size: 16px;
+              line-height: 145%;
+
+              @include mq(lg) {
+                font-size: 15px;
+                line-height: 145%;
+              }
+
+              @include mq(md) {
+                font-size: 14px;
+                line-height: 145%;
+              }
+
+              @include mq(sm) {
+                font-size: 14px;
+                line-height: 145%;
+                font-weight: 400;
+                line-height: 130%;
+              }
+
+              a {
+
+              }
+            }
+          }
+        }
+      }
+
+      h2 {
+        font-family: $font-1;
+        font-size: 24px;
+        font-weight: 400;
+        color: $black;
+
+        @include mq(sm) {
+          padding-left: 20px;
+        }
+      }
+
+      blockquote {
+        float: left;
+        max-width: 850px;
+        padding-left: $base-unit;
+        margin-bottom: 10px;
+        font-family: $font-1;
+        font-size: 30px;
+        font-weight: 300;
+        color: $blue-potion;
+        line-height: 130%;
+        border-left: 5px solid $blue-potion;
+
+        @include mq(xl) {
+          font-size: 27px;
+        }
+
+        @include mq(lg) {
+          font-size: 24px;
+        }
+
+        @include mq(md) {
+          font-size: 22px;
+          font-weight: 500;
+        }
+
+        @include mq(sm) {
+          margin: 5px 0 $base-unit $base-unit;
+          padding-right: $base-unit;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 135%;
+        }
+
+        p {
+          font-size: 35px;
+          line-height: 125%;
+
+          @include mq(lg) {
+            font-size: 32px;
+          }
+
+          @include mq(md) {
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 130%;
+          }
+
+          @include mq(sm) {
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 130%;
+          }
+        }
+
+        a {
+          font-weight: 300;
+          color: $color-primary;
+          text-decoration: underline;
+
+          &:hover {
+            color: black;
+          }
+        }
+      }
+
+      p.body-text {
+        @include mq(sm) {
+          padding-left: $unit-base;
+          padding-right: $unit-base;
+        }
+      }
 
       .btn-view-all {
         float: right;
@@ -87,7 +382,7 @@
     	}
 
     	@include mq(sm) {
-    		padding: 2.5rem 1rem 3rem 1rem;
+    		padding: 1.5rem 1rem 3rem 1rem;
     	}
     }
   }
@@ -239,6 +534,14 @@
     .lastfm-row {
       float: left;
       width: 100%;
+
+      .lastfm-col-twenty {
+        flex: 0 0 10%;
+      }
+
+      img {
+        max-width: 50px;
+      }
     }
   }
 

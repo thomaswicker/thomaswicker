@@ -1,0 +1,299 @@
+/*
+    _    ____   ____ _   _ _____     _______ ____
+   / \  |  _ \ / ___| | | |_ _\ \   / / ____/ ___|
+  / _ \ | |_) | |   | |_| || | \ \ / /|  _| \___ \
+ / ___ \|  _ <| |___|  _  || |  \ V / | |___ ___) |
+/_/   \_\_| \_\\____|_| |_|___|  \_/  |_____|____/
+
+*/
+
+
+/* ==========================================================================
+%% Styling for ARCHIVES.PHP --> Categories Page Template %%
+========================================================================== */
+
+.body-recipe-archives {
+  float: left;
+  width: 100%;
+  padding-bottom: $unit-xxl;
+
+  .bra--inner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $white;
+
+    @include mq(lg) {
+      width: 90%;
+    }
+
+    @include mq(md) {
+      width: 95%;
+    }
+
+    @include mq(sm) {
+      width: 95%;
+    }
+
+    .bra--left {
+      padding: $unit-xxl $unit-xxl 0 0;
+
+      @include mq(md) {
+        padding: $unit-lg 0 0 0;
+      }
+
+      @include mq(sm) {
+        padding: $unit-lg 0 0 0;
+      }
+
+      .post-item {
+        float: left;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 15px 15px 0 15px;
+
+        &:nth-child(even) {
+          background-color: #edf6fb;
+        }
+
+        img {
+          max-width: 300px;
+        }
+      }
+
+      h1 {
+        margin-bottom: 0;
+        font-family: $font-1;
+        font-size: 20px;
+        font-weight: 500;
+        color: $black;
+        text-transform: none;
+        line-height: 135%;
+
+        @include mq(sm) {
+          font-size: 22px;
+        }
+
+        a {
+          line-height: 135%;
+        }
+      }
+
+      h2 {
+        float: left;
+        width: 100%;
+        margin-bottom: 25px;
+        font-family: $font-1;
+        font-size: 24px;
+        font-weight: 400;
+
+        @include mq(md) {
+          margin-bottom: 25px;
+        }
+
+        @include mq(sm) {
+          margin-top: $unit-xxs;
+          margin-bottom: 25px;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 135%;;
+          text-align: center;
+        }
+
+        span {
+          font-weight: 600;
+          font-style: italic;
+          color: $color-secondary;
+        }
+
+        a {
+          font-family: Roboto,sans-serif;
+          font-size: 24px;
+          font-weight: 500;
+          color: #000;
+          text-transform: none;
+          line-height: 135%;
+        }
+      }
+
+      .recipe-item-archives {
+        padding: 0;
+
+        @include mq(md) {
+          margin-bottom: 0;
+        }
+
+        @include mq(sm) {
+          margin-bottom: 0;
+        }
+      }
+
+      .recipe-images {
+        float: left;
+        width: 170px;
+        max-height: 150px;
+        overflow: hidden;
+
+        @include mq(md) {
+          width: 100%;
+          max-height: 200px;
+          margin-bottom: 25px;
+          display: block;
+          overflow: hidden;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+          display: block;
+        }
+
+        img {
+          max-width: 150px;
+
+          @include mq(md) {
+            width: 100%;
+            max-width: none;
+          }
+
+          @include mq(sm) {
+            width: 100%;
+            max-width: none;
+          }
+        }
+      }
+
+      .recipe-rating-and-title {
+        float: left;
+        width: calc(100% - 170px);
+
+        @include mq(md) {
+          width: 100%;
+        }
+
+        @include mq(sm) {
+          width: 100%;
+        }
+
+        h3 {
+          a {
+            font-family: $font-1;
+            font-size: 22px;
+            color: $black;
+            text-transform: none;
+          }
+        }
+
+        .recipe-rating-img {
+          position: absolute;
+          top: 0;
+          right: 0;
+          max-width: 130px;
+          margin-left: 0;
+          margin-bottom: 10px;
+
+          @include mq(md) {
+            top: -5px;
+            right: 0;
+          }
+
+          @include mq(sm) {
+            position: static;
+            float: left;
+            clear: both;
+          }
+        }
+
+        .recipe-notes {
+          margin-top: 10px;
+          margin-left: 0;
+          padding-left: 0;
+
+          @include mq(md) {
+            text-align: left;
+          }
+
+          @include mq(sm) {
+            text-align: left;
+          }
+        }
+      }
+
+      .post-categories {
+        a {
+          padding: 4px 9px;
+          font-size: $font-size-xs;
+          font-weight: $font-weight-bold;
+          text-transform: uppercase;
+          background-color: $color-primary;
+          color: white;
+
+          &:hover {
+            background-color: darken($color-primary, 15%);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .bra--right {
+      padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+    	margin-bottom: 2rem;
+    	height: auto;
+    	background-color: lighten($color-secondary, 40%);
+    	border: 1px solid $color-secondary;
+
+      @include mq(md) {
+        padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+      }
+
+      @include mq(sm) {
+        padding: 1.5rem 1.25rem 1.5rem 1.25rem;
+      }
+
+      .alt-sidebar {
+        h4 {
+          float: left;
+          width: 100%;
+          margin-top: 2px;
+          margin-bottom: 2px;
+          padding-top: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          color: darken($color-secondary, 2%);
+          border-top: 2px solid darken($color-secondary, 2%);
+        }
+      }
+
+      .widget_categories {
+        ul {
+          margin-left: 0;
+          padding-left: 0;
+
+          li {
+            margin-top: 15px;
+            padding-left: 5px;
+
+            &:before {
+              content: "\f02b";
+              position: relative;
+              left: -6px;
+              font-family: FontAwesome;
+              color: black;
+            }
+          }
+        }
+      }
+
+      .widget_recent_entries {
+        ul {
+          margin-left: 0;
+          padding-left: 0;
+
+          li {
+            padding-left: 2px;
+          }
+        }
+      }
+    }
+  }
+}
