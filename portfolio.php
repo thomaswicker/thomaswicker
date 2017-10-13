@@ -12,8 +12,8 @@ Template Name: Portfolio Template
 <?php get_template_part('partials/main-nav/main-nav-portfolio'); ?>
 
 
-<section class='medium-12 columns' id='body-portfolio'>
-  <div class='medium-12 columns' id='body-portfolio-inner' role='main'>
+<section class='medium-12 columns' id='body-portfolio' role="main">
+  <div class='medium-12 columns' id='body-portfolio-inner'>
     <div class='masonry-container transitions-enabled infinite-scroll clearfix' id='masonry-container'>
 
       <?php
@@ -29,7 +29,7 @@ Template Name: Portfolio Template
 
       <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-      <article class='portfolio-item'>
+      <article class='portfolio-item <?php the_field( 'passed-class' ); ?>'>
         <h3>
           <?php the_field( 'itemtype' ); ?>
         </h3>

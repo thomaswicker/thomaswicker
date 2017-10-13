@@ -50,15 +50,18 @@
         float: left;
         width: 100%;
         margin-bottom: 15px;
-        padding: 15px 15px 0 15px;
-
-        &:nth-child(even) {
-          background-color: #edf6fb;
-        }
+        padding: 15px 20px 0px 20px;
+        background-color: #fff;
+        border: 1px solid $green-potion;
+        border-left: 5px solid $green-potion;
 
         img {
           max-width: 300px;
         }
+      }
+
+      .recipe-item {
+        border: 0;
       }
 
       h1 {
@@ -82,6 +85,7 @@
       h2 {
         float: left;
         width: 100%;
+        margin-top: 10px;
         margin-bottom: 25px;
         font-family: $font-1;
         font-size: 24px;
@@ -183,6 +187,17 @@
           }
         }
 
+        .btn-read-more {
+          background-color: $green-potion;
+          border: 1px solid $green-potion;
+
+          &:hover {
+            background-color: lighten($green-potion, 15%);
+            border: 1px solid lighten($green-potion, 15%);
+            text-decoration: none;
+          }
+        }
+
         .recipe-rating-img {
           position: absolute;
           top: 0;
@@ -207,6 +222,8 @@
           margin-top: 10px;
           margin-left: 0;
           padding-left: 0;
+          font-family: $font-2;
+          font-size: 15px;
 
           @include mq(md) {
             text-align: left;
@@ -251,6 +268,13 @@
       }
 
       .alt-sidebar {
+        h3 {
+          margin-top: 10px;
+          font-family: $font-1;
+          font-size: 15px;
+          font-weight: 600;
+        }
+
         h4 {
           float: left;
           width: 100%;
@@ -261,6 +285,23 @@
           font-weight: 600;
           color: darken($color-secondary, 2%);
           border-top: 2px solid darken($color-secondary, 2%);
+        }
+      }
+
+      .widget_search {
+        width: 94%;
+
+        input {
+          position: relative;
+          top: -2px;
+          width: 100%;
+          height: 28px;
+          margin-bottom: 15px;
+          /* margin-left: 3%; */
+          border: 1px solid #AAA;
+          box-shadow: none;
+          outline: 0;
+          color: $black;
         }
       }
 

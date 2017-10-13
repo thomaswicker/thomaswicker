@@ -71,14 +71,21 @@ div.wpcf7 {
 
 .body-contact-left {
 	float: left;
-	padding: $unit-lg $unit-sm 0 $unit-sm;
+  width: 300px;
+	padding: 0 $unit-sm 0 $unit-xl;
+  text-align: center;
 
-  @include mq(md) {
-    padding: $unit-md $unit-sm 0 $unit-sm;
+  @include mq(lg) {
+    padding: 0 $unit-sm 0 $unit-xl;
   }
 
 
+  @include mq(md) {
+    padding: 0 $unit-sm 0 $unit-xl;
+  }
+
 	@include mq(sm) {
+    width: 100%;
     padding: $unit-lg $unit-sm 0 $unit-sm;
 		text-align: center;
 	}
@@ -110,8 +117,14 @@ div.wpcf7 {
     }
 
     h3 {
-      margin-top: $unit-xl;
-      font-size: $font-size-xl;
+      float: left;
+      width: 100%;
+      margin: 95px 0 2px 0;
+      font-family: $font-1;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      color: $black;
 
       @include mq(sm) {
         display: none;
@@ -128,6 +141,8 @@ div.wpcf7 {
       line-height: $base-line-height;
 
       &.name {
+        margin-top: 20px;
+
         strong {
           font-weight: 600 !important;
         }
@@ -237,8 +252,9 @@ div.wpcf7 {
 }
 
 .body-contact-right {
-	float: left;
-	padding: $unit-xxl $unit-sm $unit-xxl $unit-sm !important;
+  float: left;
+  width: calc(100% - 300px);
+	padding: 35px 15px 50px 15px;
 
   @include mq(xl) {
 
@@ -249,12 +265,14 @@ div.wpcf7 {
   }
 
 	@include mq(md) {
-		padding: $unit-lg 0 $unit-lg $unit-xxl !important;
+		padding: $unit-lg 0 $unit-lg 20px;
   }
 
 	@include mq(sm) {
-		padding: $unit-lg 0 $unit-lg 0 !important;
+    width: 100%;
+		padding: $unit-lg 0 $unit-lg 0;
 	}
+
 
   .btn {
     border: 0;
@@ -267,18 +285,9 @@ div.wpcf7 {
 
   }
 
-	h2.contact-header {
-		margin: 0 0 $unit-xxs 0;
-    padding-left: $unit-sm;
-		@include font($font-1, normal, 40px, 400);
-		font-size: $font-size-xxl;
-
-		@include mq(sm) {
-			font-size: $font-size-xl;
-		}
-	}
-
   .body-text {
+    max-width: 1100px;
+
     @include mq(lg) {
       padding-left: 15px;
     }
@@ -307,11 +316,13 @@ div.wpcf7 {
         width: 100% !important;
       }
     }
+
     .btn-secondary {
       @include mq(sm) {
         margin-top: $unit-base;
       }
     }
+
     .btn-gray {
       @include mq(sm) {
         margin-top: $unit-xs;
@@ -321,6 +332,11 @@ div.wpcf7 {
 
   label {
     font-weight: 600;
+
+    @include mq(sm) {
+      margin-bottom: 4px;
+      font-size: 13px;
+    }
   }
 
 	input {
@@ -345,7 +361,7 @@ div.wpcf7 {
 		}
 
 		@include mq(sm) {
-			width: 90%;
+			width: 100%;
 		}
 	}
 
@@ -374,13 +390,13 @@ div.wpcf7 {
     min-width: $unit-jumbo;
     margin-top: $unit-md;
     padding: $unit-sm $unit-md;
-    border: 2px solid $color-primary;
+    border: 2px solid $yellow-potion;
     border-radius: 0;
     font-family: $font-1;
     font-size: $font-size;
     font-weight: $font-weight-semibold;
     text-align: center;
-    background: $color-primary;
+    background: $yellow-potion;
     color: $white;
     cursor: pointer;
     text-transform: uppercase;
@@ -390,14 +406,14 @@ div.wpcf7 {
     display: block;
 
     &:hover {
-      border: 2px solid darken($color-primary, 15%);
-      background: darken($color-primary, 15%);
+      border: 2px solid lighten($yellow-potion, 10%);
+      background: lighten($yellow-potion, 10%);
     }
 
     @include mq(sm) {
       width: 100%;
       font-family: $font-1;
-      font-size: 13px;
+      font-size: 15px;
     }
   }
 

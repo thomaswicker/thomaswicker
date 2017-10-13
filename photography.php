@@ -13,8 +13,8 @@ Template Name: Photography Template
 <?php get_template_part('partials/main-nav/main-nav-photography'); ?>
 
 
-<section id='body-photography'>
-  <div id='body-photography-inner' role='main'>
+<section id='body-photography' role="main">
+  <div id='body-photography-inner'>
     <div class='photo-strip-left'></div>
     <div class='photo-strip-middle'>
 

@@ -11,11 +11,11 @@
 		<?php // force Internet Explorer to use the latest rendering engine available ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<title><?php wp_title(''); ?></title>
+		<title>ThomasWicker.com</title>
 
 		<meta content='Personal website and portfolio for Thomas Wicker: Software Developer in Denver, CO' name='description'>
 		<meta content='IE=edge' http-equiv='X-UA-Compatible'>
-		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes' name='viewport'>
 		<link href='img/favicon.ico' rel='shortcut icon'>
 		<meta content='Personal website and portfolio for Thomas Wicker: Front End Dev' property='og:title'>
 

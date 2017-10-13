@@ -32,23 +32,25 @@
 .recipe-item {
   float: left;
   width: 100%;
-  padding: 15px 20px 0px 20px;
-
-  &:nth-child(even) {
-    background-color: #edf6fb;
-  }
+  margin-bottom: 20px;
+  padding: 15px 20px 15px 30px;
+  background-color: #fff;
+  border: 1px solid $green-potion;
+  border-left: 5px solid $green-potion;
 
   // @include mq(lg) {
   //   background-color: red;
   // }
   //
-  // @include mq(md) {
-  //   background-color: blue;
-  // }
-  //
-  // @include mq(sm) {
-  //   background-color: orange;
-  // }
+  @include mq(md) {
+    margin-bottom: 15px;
+    padding: 15px 15px 5px 20px;
+  }
+
+  @include mq(sm) {
+    margin-bottom: 15px;
+    padding: 15px 15px 5px 20px;
+  }
 
   &.recipe-item-first {
     margin-bottom: 15px;
@@ -57,6 +59,7 @@
 
   h2 {
     float: left;
+    margin-top: 0;
     font-size: 22px;
     font-weight: 500;
     text-transform: none;
@@ -77,7 +80,7 @@
     position: relative;
     float: left;
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding-right: $unit-tiny;
 
     span {
@@ -104,16 +107,17 @@
         font-weight: 600;
         color: $black;
         text-transform: none;
-        line-height: 145%;
+        line-height: 135%;
 
         @include mq(sm) {
           float: left;
           width: 100%;
           text-align: center;
+          line-height: 145%;
         }
       }
 
-      .recipe-rating-img {
+      .recipe-rating {
         position: absolute;
         top: 3px;
         right: 0px;
@@ -152,7 +156,12 @@
       width: 100%;
 
       a {
+        background-color: $green-potion;
+        border: 1px solid $green-potion;
+
         &:hover {
+          background-color: lighten($green-potion, 15%);
+          border: 1px solid lighten($green-potion, 15%);
           text-decoration: none;
         }
       }
@@ -160,7 +169,7 @@
 
     &.recipe-details {
       margin-bottom: 0;
-      padding: 0 20px 10px 0;
+      padding: 0 0 10px 0;
       color: $color-primary;
       background-color: transparent;
 
@@ -175,57 +184,6 @@
       @include mq(sm) {
         text-align: center;
       }
-
-      .recipe-prep-time, .recipe-cook-time, .recipe-total-portions {
-        float: left;
-        width: 33.333%;
-        padding-right: 15px;
-        text-align: center;
-        font-weight: bold;
-        color: $color-primary;
-
-        @include mq(lg) {
-          float: left;
-          width: 100%;
-          text-align: center;
-        }
-
-        @include mq(md) {
-          float: none;
-          width: 100%;
-        }
-
-        @include mq(sm) {
-          width: 100%;
-          text-align: center;
-        }
-
-        h3 {
-          float: left;
-          font-family: Roboto,sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          color: #888888;
-
-          @include mq(sm) {
-            float: none;
-          }
-        }
-
-        span.the-value {
-          float: left;
-          margin-left: 5px;
-          margin-right: 15px;
-          font-family: Roboto,sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          color: #888888;
-
-          @include mq(sm) {
-            float: none;
-          }
-        }
-      }
     }
 
     &.recipe-grouped {
@@ -235,8 +193,8 @@
         max-height: 200px;
         overflow: hidden;
 
-        img {
-
+        @include mq(lg) {
+          width: 30%;
         }
 
         @include mq(md) {
@@ -252,6 +210,10 @@
         float: left;
         width: 60%;
 
+        @include mq(lg) {
+          width: 70%;
+        }
+
         @include mq(md) {
           width: 100%;
           margin-top: 25px;
@@ -268,7 +230,7 @@
           font-family: Roboto,sans-serif;
           font-size: 14px;
           font-weight: 500;
-          color: #888888;
+          color: #555;
 
           &.header {
             font-size: 18px;
@@ -277,21 +239,111 @@
           }
         }
 
+        .recipe-details {
+          float: left;
+          width: 100%;
+          margin-top: 5px;
+
+          @include mq(sm) {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            padding: 5px 3px;
+          }
+
+          .recipe-prep-time, .recipe-cook-time, .recipe-total-portions {
+            float: left;
+            width: 33.333%;
+            padding: 5px 10px 5px 10px;
+            text-align: center;
+            background-color: #EEE;
+            font-weight: bold;
+            color: $color-primary;
+            border: 1px solid $white;
+
+            @include mq(lg) {
+              text-align: center;
+            }
+
+            @include mq(md) {
+              text-align: center;
+            }
+
+            @include mq(sm) {
+              text-align: center;
+            }
+
+            h3 {
+              float: left;
+              margin-bottom: 0;
+              font-family: Roboto,sans-serif;
+              font-size: 14px;
+              font-weight: 500;
+              color: #555;
+
+              @include mq(lg) {
+                float: none;
+                text-align: center;
+              }
+
+              @include mq(md) {
+                float: none;
+                text-align: center;
+              }
+
+              @include mq(sm) {
+                float: none;
+                text-align: center;
+              }
+            }
+
+            span.the-value {
+              float: left;
+              margin-left: 5px;
+              font-family: $font-1;
+              font-size: 14px;
+              font-weight: 500;
+              color: #888888;
+
+              span {
+                @include mq(lg) {
+                  float: none;
+                  text-align: center;
+                }
+
+                @include mq(md) {
+                  float: none;
+                  text-align: center;
+                }
+
+                @include mq(sm) {
+                  float: none;
+                  text-align: center;
+                }
+              }
+
+              @include mq(lg) {
+                float: none !important;
+                text-align: center;
+              }
+
+              @include mq(md) {
+                float: none !important;
+                text-align: center;
+              }
+
+              @include mq(sm) {
+                float: none !important;
+                text-align: center;
+              }
+            }
+          }
+        }
+
         .note-content {
           float: left;
           width: 100%;
           font-size: 15px;
           line-height: 145%;
-        }
-
-        span.the-value {
-          float: left;
-          margin-left: 5px;
-          margin-right: 15px;
-          font-family: Roboto,sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          color: #888888;
         }
       }
     }
@@ -316,10 +368,6 @@
         &:hover {
           background-color: $color-secondary;
           text-decoration: none;
-        }
-
-        @include mq(sm) {
-          float: none;
         }
       }
     }
@@ -408,16 +456,20 @@
       &.recipe-rating-and-title {
 
         h2 {
-          @include mq(lg) {
+          line-height: 140%;
 
+          @include mq(lg) {
+            line-height: 140%;
           }
 
           @include mq(md) {
             width: 100%;
+            line-height: 140%;
           }
 
           @include mq(sm) {
-
+            line-height: 135%;
+            margin-bottom: 10px;
           }
         }
 
@@ -540,17 +592,8 @@
       .bcl--intro-block {
         float: left;
         width: 100%;
+        margin-bottom: 20px;
         padding: 0 0 10px 0;
-
-        h2 {
-          float: left;
-          width: 100%;
-          font-family: $font-1;
-          font-size: 24px;
-          font-weight: 400;
-          color: $black;
-          text-transform: uppercase;
-        }
 
         p {
           float: left;
@@ -658,6 +701,13 @@
     	}
 
       .alt-sidebar {
+        h3 {
+          margin-top: 10px;
+          font-family: $font-1;
+          font-size: 15px;
+          font-weight: 600;
+        }
+
         h4 {
           float: left;
           width: 100%;
@@ -677,13 +727,13 @@
             position: relative;
             top: -2px;
             width: 100%;
-            height: 30px;
-            margin-bottom: 10px;
+            height: 28px;
+            margin-bottom: 15px;
             /* margin-left: 3%; */
-            border: 0;
+            border: 1px solid #AAA;
             box-shadow: none;
             outline: 0;
-            color: black;
+            color: $black;
           }
         }
 
@@ -708,8 +758,18 @@
             padding-left: 0;
 
             li {
-              margin-top: 15px;
+              margin-top: 0;
               padding-left: 5px;
+              float: left;
+              width: 100%;
+              padding-top: 10px;
+              padding-bottom: 10px;
+
+              a {
+                &:hover {
+                  color: darken($green-potion, 15%);
+                }
+              }
 
               &:before {
                 content: "\f02b";

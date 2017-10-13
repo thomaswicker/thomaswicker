@@ -36,9 +36,9 @@ $black:             #000000;
 $red-potion:        #E90000;
 $green-potion:      #85b933;
 $blue-potion:       #2a98c6;
-$teal-potion:       teal;
+$teal-potion:       #0DABA7;
 $orange-potion:     #f57e20;
-$yellow-potion:     #e1b225;
+$yellow-potion:     $teal-potion;
 $purple-potion:     #a06eaf;
 
 // Set your global app/site variables here
@@ -186,7 +186,7 @@ $xl-end:    1992px;
 $jumbo-start:  1993px;
 
 // Always declare site background fallback
-$site-background: $black;
+$site-background: $white;
 
 
 /* ==========================================================================

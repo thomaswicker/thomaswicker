@@ -46,7 +46,7 @@
 							</section>
 
 							<section class="recipe-btn-container">
-								<a href="<?php echo get_permalink(); ?>" class="btn btn-primary btn-mini">
+								<a href="<?php echo get_permalink(); ?>" class="btn btn-read-more btn-mini">
 									VIEW THIS RECIPE
 								</a>
 							</section>

@@ -123,9 +123,19 @@ _______   ______  _____
   float: left;
   width: 100%;
   margin: $unit-xs 0;
-  @include font($font: $font-2, $style: normal, $size: 14px, $weight: $font-weight-normal);
+  @include font($font: $font-2, $style: normal, $size: 17px, $weight: $font-weight-normal);
   line-height: 135%;
   letter-spacing: normal;
+
+  @include mq(xl) {
+    @include font($font: $font-2, $style: normal, $size: 16px, $weight: $font-weight-normal);
+    line-height: 140%;
+  }
+
+  @include mq(lg) {
+    @include font($font: $font-2, $style: normal, $size: 16px, $weight: $font-weight-normal);
+    line-height: 145%;
+  }
 
   @include mq(md) {
     @include font($font: $font-2, $style: normal, $size: 15px, $weight: $font-weight-normal);

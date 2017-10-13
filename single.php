@@ -2,10 +2,10 @@
 <?php get_template_part('partials/superheroes/superhero-culinary'); ?>
 <?php get_template_part('partials/main-nav/main-nav-inner-page'); ?>
 
-<section id="body-single-recipe" itemscope itemtype="http://schema.org/Recipe" class=" medium-12 body-single-recipe">
+<section id="body-single-recipe" itemscope itemtype="http://schema.org/Recipe" class=" medium-12 body-single-recipe" role="main">
 	<section class="bsr--inner">
 		<div class="bsr--left large-8 medium-6 small-12 columns">
-			<a href="http://www.thomaswicker.com/culinary" class="btn btn-primary btn-mini back-btn hide-for-print">
+			<a href="http://www.thomaswicker.com/culinary" class="btn btn-secondary btn-mini back-btn hide-for-print">
 				<i class="fa fa-arrow-left" aria-hidden="true"></i>
 				Back to Recipes
 			</a>
@@ -21,7 +21,13 @@
 								<?php the_title(); ?>
 	            </h2>
 
-	            <img class="recipe-rating-img hide-for-print" src="<?php the_field( 'recipe_rating' ); ?>" alt="Recipe Rating">
+							<section class="recipe-rating <?php the_field( 'recipe_star_rating' ); ?>">
+								<span><i class="fa fa-star star-1"></i></span>
+								<span><i class="fa fa-star star-2"></i></span>
+								<span><i class="fa fa-star star-3"></i></span>
+								<span><i class="fa fa-star star-4"></i></span>
+								<span><i class="fa fa-star star-5"></i></span>
+							</section>
 
 							<div class="aggregate-rating" itemprop="aggregateRating">
 								<?php the_field( 'recipe_rating_number' ); ?>
@@ -58,14 +64,6 @@
 
 		<div class="bsr--right large-4 medium-6 small-12 columns">
 			<article class="recipe-item-single recipe-item-first">
-				<span class="hide-for-print">
-					<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('recipes-sidebar-short')) : else : ?>
-						<div class="hide-for-print pre-widget">
-							<h3 class="hide-for-print">Recipes Sidebar</h3>
-							<p>Something went wrong... the Recipes Sidebar is not loading right now.</p>
-						</div>
-					<?php endif; ?>
-				</span>
 
 				<section class="recipe-details">
 					<div class="recipe-prep-time">

@@ -20,6 +20,7 @@
 
   @include mq(sm) {
     margin-top: 40px;
+    background-position-x: -1200px;
   }
 
   &.short {
@@ -61,7 +62,7 @@
 
     @include mq(sm) {
       min-height: 350px;
-      padding-bottom: 30px;
+      padding-bottom: 50px;
       text-align: center;
     }
 
@@ -103,29 +104,24 @@
       width: calc(100% - 250px);
       text-align: left;
       padding: 85px 100px 0 $unit-base;
-      // background-color: orange;
 
       @include mq(xl) {
         padding: 80px 100px 0 $unit-base;
-        // background-color: purple;
       }
 
       @include mq(lg) {
         padding: 60px 100px $unit-md $unit-base;
-        // background-color: red;
       }
 
       @include mq(md) {
         width: calc(100% - 250px);
         padding: 65px 30px $unit-md $unit-base;
-        // background-color: blue;
       }
 
       @include mq(sm) {
         width: 100%;
         padding: $unit-xxs $unit-lg $unit-lg $unit-lg;
         text-align: center;
-        // background-color: green;
       }
 
       h1 {
@@ -150,6 +146,7 @@
       h2 {
         float: left;
         width: 100%;
+        margin-top: 0;
         font-family: $font-1;
         font-size: 24px;
         font-weight: 400;
@@ -244,6 +241,10 @@
   &.superhero-photography {
     background-image: url("../img/superheroes/bg-code-photography.jpg");
 
+    @include mq(sm) {
+      background-position-x: -800px;
+    }
+
     p.quotee {
       color: $red-potion !important;
     }
@@ -251,6 +252,10 @@
 
   &.superhero-culinary {
     background-image: url("../img/superheroes/bg-code-culinary.jpg");
+
+    @include mq(sm) {
+      background-position-x: -1600px;
+    }
 
     p.quotee {
       color: $green-potion !important;
@@ -260,6 +265,10 @@
   &.superhero-resume {
     background-image: url("../img/superheroes/bg-code-resume.jpg");
 
+    @include mq(sm) {
+      background-position-x: -1600px;
+    }
+
     p.quotee {
       color: $orange-potion !important;
     }
@@ -267,6 +276,10 @@
 
   &.superhero-contact {
     background-image: url("../img/superheroes/bg-code-contact.jpg");
+
+    @include mq(sm) {
+      background-position-x: -800px;
+    }
 
     p.quotee {
       color: $yellow-potion !important;

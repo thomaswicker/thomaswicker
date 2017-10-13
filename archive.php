@@ -2,7 +2,7 @@
 <?php get_template_part('partials/superheroes/superhero-culinary'); ?>
 <?php get_template_part('partials/main-nav/main-nav-inner-page-2'); ?>
 
-<section id="body-recipe-archives" class="medium-12 body-recipe-archives">
+<section id="body-recipe-archives" class="medium-12 body-recipe-archives" role="main">
 	<section class="bra--inner">
 		<article class="bra--left large-8 medium-12 columns">
 
@@ -50,7 +50,13 @@
 												<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 											</h3>
 
-											<img class="recipe-rating-img" src="<?php the_field( 'recipe_rating' ); ?>" alt="Recipe Rating">
+											<section class="recipe-rating <?php the_field( 'recipe_star_rating' ); ?>">
+												<span><i class="fa fa-star star-1"></i></span>
+												<span><i class="fa fa-star star-2"></i></span>
+												<span><i class="fa fa-star star-3"></i></span>
+												<span><i class="fa fa-star star-4"></i></span>
+												<span><i class="fa fa-star star-5"></i></span>
+											</section>
 
 											<section class="recipe-notes">
 												<span itemprop="description">
@@ -78,6 +84,8 @@
 
 		<aside class='bra--right large-4 medium-12 columns'>
 			<section class="alt-sidebar">
+				<h3>Search All Recipes</h3>
+
 				<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('recipes-sidebar')) : else : ?>
 					<div class="pre-widget">
 							<h3>Recipes Sidebar</h3>

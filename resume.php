@@ -11,49 +11,30 @@ Template Name: Resume Template
 
 <?php get_template_part('partials/main-nav/main-nav-resume'); ?>
 
+<aside id='job-status' role="complementary">
+  <p>
+    <span>
+      <span>
+        <i class='fa fa-exclamation-circle'></i>
+        Employment Status:
+      </span>
+      <span> Working full time and happily employed. I am however still taking on new freelance contracts in my free time. Please <a href="/contact">contact me</a> directly if you have something you would like a quote on.</span>
+    </span>
+  </p>
+</aside>
 
-<section class='medium-12 columns' id='body-resume' role='main'>
-  <div id='job-status'>
-    <p>
-      <i class='fa fa-exclamation-circle'></i>
-      <span>
-        Employment status:
-      </span>
-      <span>
-        Working full time, but always looking for new freelance work.
-      </span>
-    </p>
-  </div>
+<section class='medium-12 columns' id='body-resume' role="main">
   <div id='body-resume-inner'>
-    <section class='medium-12 columns' id='my-resume-container-details'>
-      <aside id='mrcd--left'>
-        <div id='my-info-contact'>
-          <div class="resume-img-block">
-            <img src="<?php bloginfo( 'template_directory' ); ?>/img/resume/resume-img-color.svg" alt="My Resume Pic">
-          </div>
-          <div class="resume-img-btn">
-            <a class='btn-resume-inline' href='<?php bloginfo( 'template_directory' ); ?>/pdfs/resume-072617.pdf' target="_blank">
-              <i class="fa fa-download"></i>
-              <span>Download Resume</span>
-            </a>
-          </div>
-        </div>
-      </aside>
-      <section id='mrcd--right'>
-        <div id='my-objective'>
-          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php the_content(); ?>
-          <?php endwhile; else: ?>
-          <?php endif; ?>
-        </div>
-      </section>
-    </section>
-    <section class='medium-12 columns' id='my-resume-container-skills'>
+    <section class='' id='my-resume--left'>
       <div class='medium-12' id='skills-block'>
-        <div class='medium-4 large-4 columns' id='skills-block-left'>
-          <h2>
+        <h2 class="professional-experience-header">
+          SKILLS
+        </h2>
+
+        <div class='medium-12 large-12 columns' id='skills-block-left'>
+          <h3>
             FRONT END
-          </h2>
+          </h3>
           <div class='skills-top'>
             html5
           </div>
@@ -119,10 +100,10 @@ Template Name: Resume Template
             </div>
           </div>
         </div>
-        <div class='medium-4 large-4 columns' id='skills-block-middle'>
-          <h2>
+        <div class='medium-12 large-12 columns' id='skills-block-middle'>
+          <h3>
             UI/UX
-          </h2>
+          </h3>
           <div class='skills-top'>
             (ui) user interface design
           </div>
@@ -188,10 +169,10 @@ Template Name: Resume Template
             </div>
           </div>
         </div>
-        <div class='medium-4 large-4 columns' id='skills-block-right'>
-          <h2>
+        <div class='medium-12 large-12 columns' id='skills-block-right'>
+          <h3>
             BACKEND & DEV TOOLS
-          </h2>
+          </h3>
           <div class='skills-top'>
             amazon web services
           </div>
@@ -250,18 +231,237 @@ Template Name: Resume Template
           </div>
         </div>
       </div>
+
+
+      <section class='medium-12 columns' id='my-references-container-experience'>
+        <aside class='medium-12 large-12 columns' id='my-references'>
+          <h2 class="professional-experience-header">
+            REFERENCES
+          </h2>
+
+
+
+          <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+            <ul class="orbit-container">
+              <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span><i class="fa fa-caret-left"></i></button>
+              <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span><i class="fa fa-caret-right"></i></button>
+              <li class="is-active orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/rob_christie.png'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Rob Christie
+                      </div>
+                      <div class='ref-card-p2'>
+                        Christie Consulting
+                      </div>
+                      <div class='ref-card-p3'>
+                        Owner
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    Thomas is one of those front-end developers that every team hopes to have. He is artistic, can do design, responsive layouts, and UI/UX work. Additionally he knows javascript, ruby, haml, sass, and git. As a mid-tier developer, it was a pleasure to collaborate with Thomas.
+                  </div>
+                </section>
+              </li>
+              <li class="orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/cody_palmer.jpg'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Cody Palmer
+                      </div>
+                      <div class='ref-card-p2'>
+                        Pivotal Labs
+                      </div>
+                      <div class='ref-card-p3'>
+                        Senior Software Engineer
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    Thomas is truly a worker that loves his craft. I've seen him work harder than those hungry first year career employees, despite the fact that he has nothing to prove. Also, this anecdote is not a story of him taking on extra work, it is him loving to learn new things in his own time.
+                    <br>
+                    <br>
+                    His position at Oppenheimer Funds was front end but he loved to take on new challenges such as the VPN server he set up at home or his personal website fully built on Ruby on Rails. I would highly recommend him in any role knowing fully that he will rise to the occasion, and enjoy every moment of it.
+                  </div>
+                </section>
+              </li>
+
+              <li class="orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/chris_aron.jpg'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Christopher Aron
+                      </div>
+                      <div class='ref-card-p2'>
+                        AT&T Mobility
+                      </div>
+                      <div class='ref-card-p3'>
+                        Product Marketing Manager
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    Thomas is an extremely gifted and creative individual. If you are looking for a quality designer or general marketing professional you cannot go wrong by adding him to your team. Thomas is a highly productive, intelligent, and flexible person who will help raise the quality of any team he is a part of.
+                  </div>
+                </section>
+              </li>
+
+              <li class="orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/damon_veazey.jpg'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Damon Veazey
+                      </div>
+                      <div class='ref-card-p2'>
+                        RBSI Consulting, Inc.
+                      </div>
+                      <div class='ref-card-p3'>
+                        President
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    RBSI initially hired Thomas for a 2 month project for some web related development we needed for one of our customers. Thomas did such an outstanding job for us that the assignment stretched to 7 months. We plan on using Thomas again on upcoming projects we have slated. Not only did Thomas do exceptionally good work for us - but he has a great attitude and interfaces extremely well with the end customer.
+                  </div>
+                </section>
+              </li>
+
+              <li class="orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/richard_cook.jpg'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Richard Cook
+                      </div>
+                      <div class='ref-card-p2'>
+                        Cricket Communications
+                      </div>
+                      <div class='ref-card-p3'>
+                        Manager - Software Engineer
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    Thomas is a detail oriented designer with great imagination. He is responsible for the majority of our custom CRM system look and feel redo and manages the UI/UX for just about every front end project here at Cricket. His designs are clean, mirrors what the customer wants and delivered on time.
+                    <br>
+                    <br>
+                    Thomas is such a valuable member of our contracting team that we are bringing him on full time here at Cricket. I would highly recommend Thomas for any UI/UX work.
+                  </div>
+                </section>
+              </li>
+
+              <li class="orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/allie_golon.jpg'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Allie Golon
+                      </div>
+                      <div class='ref-card-p2'>
+                        Regis Company
+                      </div>
+                      <div class='ref-card-p3'>
+                        Business Development Manager
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    Thomas is very adept at quickly learning what we needed from a graphics perspective, despite hazy directive. He always delivered on-time or ahead of time and his work was top quality. I look forward to asking Thomas to work on future projects...
+                  </div>
+                </section>
+              </li>
+
+              <li class="orbit-slide">
+                <section class='ref-card'>
+                  <div class='ref-card-top'>
+                    <div class='ref-card-top-left'>
+                      <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/michael_bowlin.jpg'>
+                    </div>
+                    <div class='ref-card-top-right'>
+                      <div class='ref-card-p1'>
+                        Michael Bowlin
+                      </div>
+                      <div class='ref-card-p2'>
+                        Arrow Electronics
+                      </div>
+                      <div class='ref-card-p3'>
+                        UI/UX Developer
+                      </div>
+                    </div>
+                  </div>
+                  <div class='ref-card-bottom'>
+                    I had the pleasure of working with Thomas Wicker during my time with AT&T, formally Cricket Communications. I was brought on to Thomas's development team in late 2013 and with his guidance as team-lead we successfully delivered a robust, Enterprise User-Interface for Cricket Wireless.
+                    <br>
+                    <br>
+                    Thomas possessed excellent leadership skills as a project-manager, and as a colleague he was essential in excelling the project above and beyond the initial scope. Thomas's rich background in art and design gives him an a eye for intuitive User Experience and he is a excellent Front-End Developer. I would highly recommend him for any UI/UX development project.
+                  </div>
+                </section>
+              </li>
+            </ul>
+            <nav class="orbit-bullets">
+              <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+              <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+              <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+              <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+              <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+              <button data-slide="5"><span class="show-for-sr">Sixth slide details.</span></button>
+              <button data-slide="6"><span class="show-for-sr">Seventh slide details.</span></button>
+              <button data-slide="7"><span class="show-for-sr">Eigth slide details.</span></button>
+            </nav>
+          </div>
+
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+
+        </aside>
+      </section>
     </section>
-    <section class='medium-12 columns' id='my-resume-container-experience'>
-      <div class='medium-7 large-8 columns' id='my-experience'>
-        <h2>
+
+
+
+
+    <section class='' id='my-resume--right' role="main">
+      <section id='mrcd--content'>
+        <div id='my-objective'>
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php the_content(); ?>
+          <?php endwhile; else: ?>
+          <?php endif; ?>
+        </div>
+      </section>
+
+      <div class='medium-12 large-12 columns' id='my-experience' class="my-experience-container">
+        <h2 class="professional-experience-header">
           PROFESSIONAL EXPERIENCE
         </h2>
 
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo att' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/di-logo.png'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right columns'>
             <h3>
               Principal Software Architect & UI/UX
             </h3>
@@ -292,10 +492,10 @@ Template Name: Resume Template
         </span>
 
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left columns resume-logo-container'>
             <img class='resume-logo oppenheimer' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/oppenheimer-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               Senior Front End Developer
             </h3>
@@ -322,10 +522,10 @@ Template Name: Resume Template
           </div>
         </span>
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo davita' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/davita-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               Senior Front End Developer
             </h3>
@@ -352,10 +552,10 @@ Template Name: Resume Template
           </div>
         </span>
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo att' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/att-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               Lead UI/UX Developer
               <span>
@@ -388,10 +588,10 @@ Template Name: Resume Template
           </div>
         </span>
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo cricket' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/cricket-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               Software Engineer III
             </h3>
@@ -421,10 +621,10 @@ Template Name: Resume Template
           </div>
         </span>
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo regis' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/regis-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               UI/UX Designer & Consultant
             </h3>
@@ -451,10 +651,10 @@ Template Name: Resume Template
           </div>
         </span>
         <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo rbsi' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/rbsi-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               UI/UX Developer & Consultant
             </h3>
@@ -480,11 +680,11 @@ Template Name: Resume Template
             </p>
           </div>
         </span>
-        <span class='resume-experience-block'>
-          <div class='large-3 medium-12 columns resume-logo-container'>
+        <span class='resume-experience-block no-bottom-border'>
+          <div class='reb--left resume-logo-container'>
             <img class='resume-logo apex' src='<?php bloginfo( 'template_directory' ); ?>/img/resume/apex-logo.jpg'>
           </div>
-          <div class='large-9 medium-12 columns'>
+          <div class='reb--right'>
             <h3>
               UI/UX Designer & Developer
               <span></span>
@@ -513,167 +713,7 @@ Template Name: Resume Template
           </div>
         </span>
       </div>
-      <aside class='medium-5 large-4 columns' id='my-references'>
-        <h2>
-          REFERENCES
-        </h2>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/rob_christie.png'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Rob Christie
-              </div>
-              <div class='ref-card-p2'>
-                Christie Consulting
-              </div>
-              <div class='ref-card-p3'>
-                Owner
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            Thomas is one of those front-end developers that every team hopes to have. He is artistic, can do design, responsive layouts, and UI/UX work. Additionally he knows javascript, ruby, haml, sass, and git. As a mid-tier developer, it was a pleasure to collaborate with Thomas.
-          </div>
-        </section>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/cody_palmer.jpg'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Cody Palmer
-              </div>
-              <div class='ref-card-p2'>
-                Pivotal Labs
-              </div>
-              <div class='ref-card-p3'>
-                Senior Software Engineer
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            Thomas is truly a worker that loves his craft. I've seen him work harder than those hungry first year career employees, despite the fact that he has nothing to prove. Also, this anecdote is not a story of him taking on extra work, it is him loving to learn new things in his own time.
-            <br>
-            <br>
-            His position at Oppenheimer Funds was front end but he loved to take on new challenges such as the VPN server he set up at home or his personal website fully built on Ruby on Rails. I would highly recommend him in any role knowing fully that he will rise to the occasion, and enjoy every moment of it.
-          </div>
-        </section>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/chris_aron.jpg'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Christopher Aron
-              </div>
-              <div class='ref-card-p2'>
-                AT&T Mobility
-              </div>
-              <div class='ref-card-p3'>
-                Product Marketing Manager
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            Thomas is an extremely gifted and creative individual. If you are looking for a quality designer or general marketing professional you cannot go wrong by adding him to your team. Thomas is a highly productive, intelligent, and flexible person who will help raise the quality of any team he is a part of.
-          </div>
-        </section>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/damon_veazey.jpg'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Damon Veazey
-              </div>
-              <div class='ref-card-p2'>
-                RBSI Consulting, Inc.
-              </div>
-              <div class='ref-card-p3'>
-                President
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            RBSI initially hired Thomas for a 2 month project for some web related development we needed for one of our customers. Thomas did such an outstanding job for us that the assignment stretched to 7 months. We plan on using Thomas again on upcoming projects we have slated. Not only did Thomas do exceptionally good work for us - but he has a great attitude and interfaces extremely well with the end customer.
-          </div>
-        </section>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/richard_cook.jpg'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Richard Cook
-              </div>
-              <div class='ref-card-p2'>
-                Cricket Communications
-              </div>
-              <div class='ref-card-p3'>
-                Manager - Software Engineer
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            Thomas is a detail oriented designer with great imagination. He is responsible for the majority of our custom CRM system look and feel redo and manages the UI/UX for just about every front end project here at Cricket. His designs are clean, mirrors what the customer wants and delivered on time.
-            <br>
-            <br>
-            Thomas is such a valuable member of our contracting team that we are bringing him on full time here at Cricket. I would highly recommend Thomas for any UI/UX work.
-          </div>
-        </section>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/allie_golon.jpg'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Allie Golon
-              </div>
-              <div class='ref-card-p2'>
-                Regis Company
-              </div>
-              <div class='ref-card-p3'>
-                Business Development Manager
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            Thomas is very adept at quickly learning what we needed from a graphics perspective, despite hazy directive. He always delivered on-time or ahead of time and his work was top quality. I look forward to asking Thomas to work on future projects...
-          </div>
-        </section>
-        <section class='ref-card'>
-          <div class='ref-card-top'>
-            <div class='ref-card-top-left'>
-              <img src='<?php bloginfo( 'template_directory' ); ?>/img/resume/michael_bowlin.jpg'>
-            </div>
-            <div class='ref-card-top-right'>
-              <div class='ref-card-p1'>
-                Michael Bowlin
-              </div>
-              <div class='ref-card-p2'>
-                Arrow Electronics
-              </div>
-              <div class='ref-card-p3'>
-                UI/UX Developer
-              </div>
-            </div>
-          </div>
-          <div class='ref-card-bottom'>
-            I had the pleasure of working with Thomas Wicker during my time with AT&T, formally Cricket Communications. I was brought on to Thomas's development team in late 2013 and with his guidance as team-lead we successfully delivered a robust, Enterprise User-Interface for Cricket Wireless.
-            <br>
-            <br>
-            Thomas possessed excellent leadership skills as a project-manager, and as a colleague he was essential in excelling the project above and beyond the initial scope. Thomas's rich background in art and design gives him an a eye for intuitive User Experience and he is a excellent Front-End Developer. I would highly recommend him for any UI/UX development project.
-          </div>
-        </section>
-      </aside>
+
     </section>
   </div>
 </section>

@@ -39,34 +39,78 @@ $(document).ready(function() {
   $('.git').css('width', '85%');
   $('.aws').css('width', '50%');
 
-  var siteNav = $(".superhero-nav"),
-      navToggle = $("#nav-toggle"),
-      siteNavUL = $(".superhero-nav ul");
+  var $homeBTN = $(".main-nav-home"),
+      $portfolioBTN = $(".main-nav-portfolio"),
+      $photographyBTN = $(".main-nav-photography"),
+      $culinaryBTN = $(".main-nav-culinary"),
+      $resumeBTN = $(".main-nav-resume"),
+      $contactBTN = $(".main-nav-contact"),
+      $svgBGColor = $(".svg-bg-color"),
+      $svgContainer = $(".svg-container .pixel-me .left-eye, .svg-container  .pixel-me .right-eye"),
+      $siteNav = $(".superhero-nav"),
+      $navToggle = $("#nav-toggle"),
+      $siteNavUL = $(".superhero-nav ul"),
+      $instagramToggleBtn = $('.instagram-toggle-btn'),
+      $flickrToggleBtn = $('.flickr-toggle-btn'),
+      $instagramToggleContent = $('.psm--instagram'),
+      $flickrToggleContent = $('.psm--flickr'),
+      $instagramSuperheroBtn = $('.superheo-btn-instagram'),
+      $flickrSuperheroBtn = $('.superheo-btn-flickr');
 
-    navToggle.on('click', function () {
-      console.log('toggle clicked!');
-      siteNav.toggleClass('active-main');
-      siteNavUL.toggleClass('active-nav');
+
+    $homeBTN.hover(function() {
+      $svgContainer.toggleClass('main-nav-home-is-active');
+      $svgBGColor.toggleClass('svg-bg-home');
     });
 
-  var instagramToggleBtn = $('.instagram-toggle-btn'),
-      flickrToggleBtn = $('.flickr-toggle-btn'),
-      instagramToggleContent = $('.psm--instagram'),
-      flickrToggleContent = $('.psm--flickr');
+    $portfolioBTN.hover(function() {
+      $svgContainer.toggleClass('main-nav-portfolio-is-active');
+      $svgBGColor.toggleClass('svg-bg-portfolio');
+    });
 
-      instagramToggleBtn.click(function(e) {
-        e.preventDefault();
-        instagramToggleBtn.addClass( "toggle-active" );
-        flickrToggleBtn.removeClass( "toggle-active" );
-        flickrToggleContent.removeClass( "active" );
-        instagramToggleContent.addClass( "active" );
-      });
+    $photographyBTN.hover(function() {
+      $svgContainer.toggleClass('main-nav-photography-is-active');
+      $svgBGColor.toggleClass('svg-bg-photography');
+    });
 
-      flickrToggleBtn.click(function(e) {
-        e.preventDefault();
-        instagramToggleBtn.removeClass( "toggle-active" );
-        flickrToggleBtn.addClass( "toggle-active" );
-        instagramToggleContent.removeClass( "active" );
-        flickrToggleContent.addClass( "active" );
-      });
+    $culinaryBTN.hover(function() {
+      $svgContainer.toggleClass('main-nav-culinary-is-active');
+      $svgBGColor.toggleClass('svg-bg-culinary');
+    });
+
+    $resumeBTN.hover(function() {
+      $svgContainer.toggleClass('main-nav-resume-is-active');
+      $svgBGColor.toggleClass('svg-bg-resume');
+    });
+
+    $contactBTN.hover(function() {
+      $svgContainer.toggleClass('main-nav-contact-is-active');
+      $svgBGColor.toggleClass('svg-bg-contact');
+    });
+
+    $navToggle.on('click', function () {
+      console.log('toggle clicked!');
+      $siteNav.toggleClass('active-main');
+      $siteNavUL.toggleClass('active-nav');
+    });
+
+    $instagramToggleBtn.click(function(e) {
+      e.preventDefault();
+      $instagramToggleBtn.addClass('toggle-active');
+      $flickrToggleBtn.removeClass('toggle-active');
+      $flickrToggleContent.removeClass('active');
+      $instagramToggleContent.addClass('active');
+      $flickrSuperheroBtn.removeClass('active');
+      $instagramSuperheroBtn.addClass('active');
+    });
+
+    $flickrToggleBtn.click(function(e) {
+      e.preventDefault();
+      $instagramToggleBtn.removeClass('toggle-active');
+      $flickrToggleBtn.addClass('toggle-active');
+      $instagramToggleContent.removeClass('active');
+      $flickrToggleContent.addClass('active');
+      $instagramSuperheroBtn.removeClass('active');
+      $flickrSuperheroBtn.addClass('active');
+    });
 });

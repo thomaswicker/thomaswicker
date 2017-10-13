@@ -10,7 +10,7 @@ Template Name: Culinary Template
 
 <?php get_template_part('partials/main-nav/main-nav-culinary'); ?>
 
-<section id='body-culinary'>
+<section id='body-culinary' role="main">
   <div id='body-culinary-inner'>
     <div class='body-culinary-left large-8 medium-12 columns'>
       <section class="bcl--intro-block">
@@ -39,7 +39,7 @@ Template Name: Culinary Template
 
           $args = array(
               'post_type' => 'culinary',
-              'posts_per_page' => -1
+              'posts_per_page' => 5
           );
 
           $the_query = new WP_Query( $args );
@@ -55,7 +55,13 @@ Template Name: Culinary Template
               </a>
             </h2>
 
-            <img class="recipe-rating-img" src="<?php the_field( 'recipe_rating' ); ?>" alt="Recipe Rating">
+            <section class="recipe-rating <?php the_field( 'recipe_star_rating' ); ?>">
+              <span><i class="fa fa-star star-1"></i></span>
+              <span><i class="fa fa-star star-2"></i></span>
+              <span><i class="fa fa-star star-3"></i></span>
+              <span><i class="fa fa-star star-4"></i></span>
+              <span><i class="fa fa-star star-5"></i></span>
+            </section>
 
           </section>
 
@@ -72,20 +78,20 @@ Template Name: Culinary Template
               <section class="note-content"><?php the_field( 'recipe_notes' ); ?></section>
 
               <section class="recipe-details">
-                <p class="recipe-prep-time">
+                <div class="recipe-prep-time">
                   <h3>Prep Time:</h3>
                   <span class="the-value"><?php the_field( 'recipe_prep_time' ); ?></span>
-                </p>
+                </div>
 
-                <p class="recipe-cook-time">
+                <div class="recipe-cook-time">
                   <h3>Cook Time:</h3>
                   <span class="the-value"><?php the_field( 'recipe_cook_time' ); ?></span>
-                </p>
+                </div>
 
-                <p class="recipe-total-portions">
-                  <h3>Total Portions:</h3>
+                <div class="recipe-total-portions">
+                  <h3>Portions:</h3>
                   <span class="the-value"><?php the_field( 'total_portions' ); ?></span>
-                </p>
+                </div>
               </section>
 
               <section class="recipe-btn-container">
@@ -108,8 +114,9 @@ Template Name: Culinary Template
 
     </div>
 
-    <aside class='body-culinary-right large-4 medium-12 columns'>
+    <aside class='body-culinary-right large-4 medium-12 columns' role="complementary">
       <section class="alt-sidebar">
+        <h3>Search All Recipes</h3>
 				<?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('recipes-sidebar')) : else : ?>
   				<div class="pre-widget">
             <h3>Recipes Sidebar</h3>

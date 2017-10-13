@@ -25,6 +25,123 @@
   }
 }
 
+.recipe-rating {
+  .fa {
+    margin-right: 5px;
+    font-size: 22px;
+  }
+
+  &.one {
+    .star-1 {
+      color: $green-potion;
+    }
+
+    .star-2 {
+      color: #555;
+    }
+
+    .star-3 {
+      color: #555;
+    }
+
+    .star-4 {
+      color: #555;
+    }
+
+    .star-5 {
+      color: #555;
+    }
+  }
+
+  &.two {
+    .star-1 {
+      color: $green-potion;
+    }
+
+    .star-2 {
+      color: $green-potion;
+    }
+
+    .star-3 {
+      color: #555;
+    }
+
+    .star-4 {
+      color: #555;
+    }
+
+    .star-5 {
+      color: #555;
+    }
+  }
+
+  &.three {
+    .star-1 {
+      color: $green-potion;
+    }
+
+    .star-2 {
+      color: $green-potion;
+    }
+
+    .star-3 {
+      color: $green-potion;
+    }
+
+    .star-4 {
+      color: #555;
+    }
+
+    .star-5 {
+      color: #555;
+    }
+  }
+
+  &.four {
+    .star-1 {
+      color: $green-potion;
+    }
+
+    .star-2 {
+      color: $green-potion;
+    }
+
+    .star-3 {
+      color: $green-potion;
+    }
+
+    .star-4 {
+      color: $green-potion;
+    }
+
+    .star-5 {
+      color: #555;
+    }
+  }
+
+  &.five {
+    .star-1 {
+      color: $green-potion;
+    }
+
+    .star-2 {
+      color: $green-potion;
+    }
+
+    .star-3 {
+      color: $green-potion;
+    }
+
+    .star-4 {
+      color: $green-potion;
+    }
+
+    .star-5 {
+      color: $green-potion;
+    }
+  }
+}
+
 .body-single-recipe {
   float: left;
   width: 100%;
@@ -120,8 +237,7 @@
             h2 {
               float: left;
               width: 100%;
-              margin-right: 8px;
-              margin-bottom: 10px;
+              margin: 10px 8px 10px 0;
               text-transform: none;
               line-height: 145%;
 
@@ -231,7 +347,6 @@
               font-weight: $font-weight-bold;
               background-color: #AAAAAA;
               color: $white;
-              border-radius: 5px;
               word-break: keep-all;
 
               &:hover {

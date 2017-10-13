@@ -19,10 +19,11 @@
     bottom: 20px;
     padding: 10px 25px;
     background-color: rgba(233, 0, 0, .8);
-    border: 1px solid white;
-    color: white;
+    border: 1px solid $white;
+    color: $white;
     font-size: 13px;
     font-weight: 600;
+    display: none;
 
     &:hover {
       background-color: $white;
@@ -31,9 +32,63 @@
       text-decoration: none;
     }
 
+    @include mq(md) {
+      position: absolute;
+      right: 20px;
+    }
+
     @include mq(sm) {
-      position: static;
-      margin-bottom: 25px;
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      bottom: 20px;
+      margin-top: 20px;
+      border: 0px;
+      background-color: rgba(233, 0, 0, .95);
+      display: block;
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+  .superheo-btn-flickr {
+    position: absolute;
+    right: 100px;
+    bottom: 20px;
+    padding: 10px 25px;
+    background-color: rgba(233, 0, 0, .8);
+    border: 1px solid white;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+
+    &:hover {
+      background-color: $white;
+      border: 1px solid $white;
+      color: $red-potion;
+      text-decoration: none;
+    }
+
+    @include mq(md) {
+      position: absolute;
+      right: 20px;
+    }
+
+    @include mq(sm) {
+      position: absolute;
+      left: 50px;
+      right: 50px;
+      bottom: 20px;
+      margin-top: 20px;
+      border: 0px;
+      background-color: rgba(233, 0, 0, .95);
+    }
+
+    &.active {
+      display: block;
     }
   }
 }
