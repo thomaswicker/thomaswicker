@@ -1,57 +1,48 @@
 
-//Gravvvy Gulp Setup file
+// Gulp Setup file
 var autoprefixer 	= require('gulp-autoprefixer'),
 		cache         = require('gulp-cache'),
+    cssnano       = require('gulp-cssnano'),
 		concat        = require('gulp-concat'),
 		connect 			= require('gulp-connect'),
-		gulp 					= require('gulp')
-		livereload 		= require('gulp-livereload'),
-		haml 					= require('gulp-ruby-haml'),
-		minifyHtml	 	= require('gulp-minify-html'),
-		imagemin      = require('gulp-imagemin'),
+		gulp 					= require('gulp'),
 		minifycss 		= require('gulp-minify-css'),
 		notify        = require('gulp-notify'),
 		rename 				= require('gulp-rename'),
-		sass 					= require('gulp-ruby-sass'),
+    sass          = require('gulp-sass'),
 		uglify        = require('gulp-uglify');
 
-// Compile Haml into HTML
-// gulp.task('haml', function() {
-//   gulp.src('src/views/**/*.haml')
-//     .pipe(haml().on('error', function(e) { console.log(e.message); }))
-//     .pipe(gulp.dest('./'))
-// 		.pipe(notify({ message: 'Compile HAML task complete' }))
-// 		.pipe(livereload());
-// });
-//
-// gulp.task('minify-index-html', function () {
-//     gulp.src('index.html') // path to your files
-//     .pipe(minifyHtml())
-//     .pipe(gulp.dest('./'))
-// 		.pipe(notify({ message: 'Minify index file -- task complete' }));
-// });
-//
-// gulp.task('minify-partials-html', function () {
-//     gulp.src('partials/*.html') // path to your files
-//     .pipe(minifyHtml())
-//     .pipe(gulp.dest('partials'))
-// 		.pipe(notify({ message: 'Minify partials -- task complete' }));
-// });
+var currentdate = new Date();
+var datetime = currentdate.getDate() + "/"
+               + (currentdate.getMonth()+1)  + "/"
+               + currentdate.getFullYear() + " @ "
+               + currentdate.getHours() + ":"
+               + currentdate.getMinutes() + ":"
+               + currentdate.getSeconds();
 
-gulp.task('scss', function() {
-	return sass('src/scss/application.scss', { sourcemap: false })
-		.on('error', function (err) { console.log("ERROR: " + err.message); })
-		.pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-		.pipe(gulp.dest('css'))
+ //source variables
+ var jsSources = ['src/js/application.js'];
+ var sassSources = ['src/scss/**/*.scss'];
+
+// Basic Gulp task syntax
+gulp.task('hello', function() {
+  console.log('\n######################################################################## \n Hello Thomas! You started this gulpfile at: ' + datetime + ' \n########################################################################');
+})
+
+// Compile SASS & Minify CSS
+gulp.task('sass', function(){
+  return gulp.src('src/scss/application.scss')
+    .pipe(sass())
+    .pipe(gulp.dest('css'))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(minifycss())
+    .pipe(cssnano())
 		.pipe(gulp.dest('css'))
-		.pipe(notify({ message: 'Minify SCSS -- task complete' }))
-		.pipe(livereload());
+    .pipe(notify({ message: '\n_______________________________________________________\n %%% SASS COMPILED %%%\n_______________________________________________________' }))
 });
 
-gulp.task('mainjs', function() {
-	return gulp.src('src/js/application.js')
+// Compile Javascript & Minify
+gulp.task('javascript', function() {
+	return gulp.src(jsSources)
 		.pipe(concat('application.js'))
 		.pipe(gulp.dest('js'))
 		.pipe(rename({suffix: '.min'}))
@@ -59,40 +50,16 @@ gulp.task('mainjs', function() {
 				console.log(e);
 		 }))
 		 .pipe(gulp.dest('js'))
-		 .pipe(notify({ message: 'Compile main javascript -- task complete' }))
-		.pipe(livereload());
-});
+     .pipe(notify({ message: '\n_______________________________________________________\n %%% JAVASCRIPT  COMPILED %%%\n_______________________________________________________' }))
+})
 
-// gulp.task('otherjs', function() {
-// 	return gulp.src('src/js/**/*.js')
-// 		.pipe(gulp.dest('js'))
-// 		.pipe(uglify().on('error', function(e){
-// 				console.log(e);
-// 		 }))
-// 		 .pipe(gulp.dest('js'))
-// 		 .pipe(notify({ message: 'Compile other javascript -- task complete' }))
-// 		.pipe(livereload());
-// });
-//
-// gulp.task('images', function() {
-// 	return gulp.src('src/img/**/*')
-// 		.pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-// 		.pipe(gulp.dest('img'))
-// 		.pipe(notify({ message: 'Minify images -- task complete' }))
-// 		.pipe(livereload());
-// });
-
-
+// Watch & Rerun Gulp
 gulp.task('watch', function() {
-	livereload.listen();
-	// gulp.watch('src/views/**/*.haml', ['haml']).on('change', livereload.changed);
-  gulp.watch('src/scss/**/*.scss', ['scss']).on('change', livereload.changed);
-  gulp.watch('src/js/**/*.js', ['mainjs']).on('change', livereload.changed);
-  // gulp.watch('src/img/**/*', ['images']).on('change', livereload.changed);
-	livereload.listen();
+  gulp.watch(sassSources, ['sass']);
+  gulp.watch(jsSources, ['javascript']);
 });
 
-// Kick off
+// Initalize
 gulp.task('default', ['watch'], function() {
-	gulp.start('scss', 'mainjs');
+	gulp.start('hello', 'sass', 'javascript');
 });

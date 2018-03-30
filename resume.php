@@ -466,7 +466,7 @@ Template Name: Resume Template
               Principal Software Architect & UI/UX
             </h3>
             <h4>
-              <a href='https://info.drillinginfo.com/' target='_blank'>
+              <a href='https://info.drillinginfo.com/' target='_blank' rel="noopener">
                 DrillingInfo, Inc. - Littleton, CO
               </a>
             </h4>
@@ -500,7 +500,7 @@ Template Name: Resume Template
               Senior Front End Developer
             </h3>
             <h4>
-              <a href='https://www.oppenheimerfunds.com/investors' target='_blank'>
+              <a href='https://www.oppenheimerfunds.com/investors' target='_blank' rel="noopener">
                 Oppenheimer Funds - Centennial, CO
               </a>
             </h4>
@@ -530,7 +530,7 @@ Template Name: Resume Template
               Senior Front End Developer
             </h3>
             <h4>
-              <a href='http://www.davita.com' target='_blank'>
+              <a href='http://www.davita.com' target='_blank' rel="noopener">
                 DaVita - Denver, CO
               </a>
             </h4>
@@ -563,7 +563,7 @@ Template Name: Resume Template
               </span>
             </h3>
             <h4>
-              <a href='https://www.att.com' target='_blank'>
+              <a href='https://www.att.com' target='_blank' rel="noopener">
                 AT&T Mobility - Denver, CO
               </a>
             </h4>
@@ -596,7 +596,7 @@ Template Name: Resume Template
               Software Engineer III
             </h3>
             <h4>
-              <a href='http://www.cricketwireless.com' target='_blank'>
+              <a href='http://www.cricketwireless.com' target='_blank' rel="noopener">
                 Cricket Communications - Greenwood Village, CO
               </a>
             </h4>
@@ -629,7 +629,7 @@ Template Name: Resume Template
               UI/UX Designer & Consultant
             </h3>
             <h4>
-              <a href='http://www.regiscompany.com' target='_blank'>
+              <a href='http://www.regiscompany.com' target='_blank' rel="noopener">
                 Regis Learning - Golden, CO
               </a>
             </h4>
@@ -659,7 +659,7 @@ Template Name: Resume Template
               UI/UX Developer & Consultant
             </h3>
             <h4>
-              <a href='http://www.rbsiconsulting.com' target='_blank'>
+              <a href='http://www.rbsiconsulting.com' target='_blank' rel="noopener">
                 RBSI Consulting - Bartonville, TX
               </a>
             </h4>
@@ -691,7 +691,7 @@ Template Name: Resume Template
               (Project Lead)
             </h3>
             <h4>
-              <a href='http://www.apexsystemsinc.com' target='_blank'>
+              <a href='http://www.apexsystemsinc.com' target='_blank' rel="noopener">
                 APEX Systems, Inc. - Denver, CO
               </a>
             </h4>

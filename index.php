@@ -25,7 +25,7 @@
 
       <aside class="how-i-work">
         <section class="hiw--left">
-          <img src='<?php bloginfo( 'template_directory' ); ?>/img/office_image.jpg'>
+          <img src='<?php bloginfo( 'template_directory' ); ?>/img/office_image.jpg' alt="My Office" style="margin-top: 10px; max-width: 220px;">
         </section>
 
         <section class="hiw--right">
@@ -34,10 +34,10 @@
           </h3>
           <ul>
             <li>
-              <a href='http://www.apple.com/mac-pro/' target='blank' title='Link to apple spec page on Mac Pro' aria-label="Link to Apple spec page on Mac Pro">
-                Late 2013 3.5GHz Intel Xeon E5 6-core Mac Pro (24GB of 1866MHz DDR3 ECC memory and 512GB PCIe-based SSD)
+              <a href='https://www.apple.com/imac-pro/' target='blank' title='Link to apple spec page on iMac Pro' aria-label="Link to Apple spec page on iMac Pro">
+                2017 5k iMac Pro (3.2GHz 8 Core Intel Xeon with 32GB DDR4 RAM and 1TB SSD) + 2 LG full of 4k monitor goodness
               </a>
-              - running MacOs Sierra with 16TB of Drobo dual redundant NAS storage
+              - running MacOs High Sierra with 16TB of Drobo dual redundant NAS storage
             </li>
             <li>
               <a href='http://www.apple.com/macbook-pro/' target='blank' title='link to apple spec page on Macbook Pro' aria-label="Link to Apple spec page on Macbook Pro">
@@ -49,7 +49,7 @@
               <a href='http://www.atom.io/' target='blank' title='link to Atom Editor' aria-label="Link to Atom Editor">
                 Atom Editor
               </a>
-              is my IDE of choice although I use VIM now and again to appease my inner nerd
+              is my IDE of choice although I use VIM now and again to appease my inner nerd. Apparently VS Code is the new kid on the block, so I guess I should look at that soon as well. :)
             </li>
             <li>
               Command line, command line and more command line...
@@ -96,7 +96,7 @@
         </div>
 
         <div class="hbc--right">
-          <?php echo do_shortcode("[huge_it_slider id='1']"); ?>
+          <img src='<?php bloginfo( 'template_directory' ); ?>/img/about-pics-rockies-photo.jpg' alt="Me & My Girls">
         </div>
 
       </section>

@@ -15,11 +15,11 @@
 
 		<meta content='Personal website and portfolio for Thomas Wicker: Software Developer in Denver, CO' name='description'>
 		<meta content='IE=edge' http-equiv='X-UA-Compatible'>
-		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes' name='viewport'>
+		<meta content='width=device-width, initial-scale=1' name='viewport'>
 		<link href='img/favicon.ico' rel='shortcut icon'>
 		<meta content='Personal website and portfolio for Thomas Wicker: Front End Dev' property='og:title'>
 
-		<link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css' rel='stylesheet'>
+		<!-- <link href='https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css' rel='stylesheet'> -->
 		<!-- <link href='bower_components/motion-ui/dist/motion-ui.min.css' rel='stylesheet'> -->
 		<!-- <link href='bower_components/components-font-awesome/css/font-awesome.min.css' rel='stylesheet'> -->
 		<!-- <link href='css/application.min.css' rel='stylesheet'> -->
@@ -39,6 +39,10 @@
 		<?php // or, set /favicon.ico for IE10 win ?>
 
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
+
+		<!-- Manifest File for Lighthouse -->
+		<meta name="theme-color" content="#2a98c6">
+		<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/manifest.json">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
