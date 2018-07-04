@@ -15,6 +15,204 @@ a[href=""], a[href="#"] {
   display: none;
 }
 
+.body-portfolio-single {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: $unit-tiny 25% $unit-md 25%;
+  background-color: rgba(0, 0, 0, .95);
+  border-top: 5px solid $purple-potion;
+  padding-bottom: $unit-jumbo;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 10000000;
+
+  @include mq(sm) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border-top: 0px solid $purple-potion;
+  }
+
+  .portfolio-navigation-buttons {
+    display: flex;
+    flex: 1 100%;
+    justify-content: flex-end;
+
+    .btn-back-to-portfolio {
+      &:hover {
+        text-decoration: none;
+      }
+    
+      @include mq(md) {
+    
+      }
+    
+      @include mq(sm) {
+        position: relative;
+        top: -$unit-tiny;
+        padding: $unit-sm 14px;
+        z-index: 100000001;
+      }
+    
+      i {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .portfolio-item-details {
+    display: flex;
+    flex: 1 100%;
+    flex-wrap: wrap;
+
+    @include mq(md) {
+      padding-top: 45px;
+    }
+
+    @include mq(sm) {
+      padding-top: 45px;
+    }
+
+    h2, h3, h4, h5, p {
+      flex: 1 100%;
+      font-family: $font-1;
+      color: white;
+      text-align: left;
+    }
+
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 1;
+      margin: 0;
+      font-family: $font-1;
+      font-size: 40px;
+      font-weight: 900;
+      color: $white;
+      text-transform: none;
+
+      span {
+        flex: 1 100%;        
+      }
+    }
+
+    h2 {
+      display: flex;
+      flex-wrap: wrap;
+      flex: 0;
+      margin: 0 0 10px 0;
+      font-family: $font-1;
+      font-size: 20px;
+      font-weight: 700;
+      color: $white;
+      text-transform: none;
+
+      span {
+        flex: 1 100%;        
+      }
+    }
+
+    h3 {
+      margin-top: 6px;
+      color: $purple-potion;
+      text-transform: none;
+    }
+  
+    h4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-family: $font-1;
+      font-size: 22px;
+
+      span {
+  
+      }
+    }
+
+    h5 {
+      flex: 1 100%;
+      padding: 15px $unit-base 0 0;
+      font-family: $font-1;
+      font-size: $font-size-base;
+      font-weight: 400;
+      line-height: $base-line-height;
+      color: #CDCDCD;
+      text-transform: none;
+    }
+
+    p {
+      font-family: $font-2;
+    }
+
+    .portfolio-item-type {
+      padding: 3px $unit-base 0 0;
+      font-family: $font-1;
+      font-size: 15px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: $base-line-height;
+      color: $purple-potion;
+    }
+
+    .portfolio-item-description {
+      flex: 1 100%;
+      padding-top: $unit-base;
+      font-family: $font-2;
+      font-size: 13px;
+      line-height: 140%;
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+
+    p.tech-used {
+      flex: 1 100%;
+      padding-top: 0;
+      padding-bottom: $unit-sm;
+      font-family: $font-2;
+      font-size: 13px;
+      line-height: 140%;
+    }
+
+    .portfolio-item-images {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: center;
+
+      li {
+        &.full-width {
+          flex: 1 100%;
+        }
+
+        &.half-width {
+          flex: 1 50%;
+        }
+
+        &.quarter-width {
+          flex: 1 25%;
+        }
+
+        img {
+          width: 100%;
+          border: 3px solid #111111;
+          margin: 5px;
+          box-shadow: 2px 2px 4px #000000;
+        }
+      }
+    }
+  
+    .item-description {
+  
+    }
+  }
+}
+
 #portfolio-header {
   border-top: 5px solid $purple-potion;
 
@@ -58,171 +256,260 @@ a[href=""], a[href="#"] {
   }
 }
 
-#body-portfolio {
+.body-portfolio {
   background-color: $white;
   padding-bottom: $unit-jumbo;
   overflow-x: hidden;
+
+  &.no-scroll {
+    overflow: hidden;
+
+    .body-portfolio-inner {
+      overflow: hidden;
+    }
+  }
 
   @include mq(sm) {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-}
 
-#body-portfolio-inner {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 0 $unit-xl 0;
-  overflow-x: hidden;
-
-  .masonry-container {
-    float: left;
+  .body-portfolio-inner {
     width: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-    color: white !important;
-    background-color: $white !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 $unit-xl 0;
     overflow-x: hidden;
-
-    @include mq(sm) {
-      margin-top: $unit-xs !important;
-    }
-
-    .portfolio-item {
+  
+    .masonry-container {
       float: left;
-      width: 33.3%;
-      height: auto;
-      background-color: $white;
-      border: 1px solid #DFDFDF;
-      display: inline;
-
-      @include mq(lg) {
-        width: 49.95%;
-      }
-
-      @include mq(md) {
-        width: 49.90%;
-      }
-
+      width: 100%;
+      margin: 0 !important;
+      padding: 0 !important;
+      color: white !important;
+      background-color: $white !important;
+      overflow-x: hidden;
+  
       @include mq(sm) {
-        width: 100%;
+        margin-top: $unit-xs !important;
       }
-
-      &.new {
-        &:after {
-          content: "NEW";
-          position: absolute;
-          right: 20px;
-          top: 20px;
-          width: auto;
-          height: auto;
-          padding: 2px 5px;
-          font-family: $font-1;
-          font-size: 12px;
-          font-weight: bold;
-          background: $orange-potion;
-          color: white;
-        }
-      }
-
-      h3 {
+  
+      .portfolio-item {
         float: left;
-        width: 90%;
-        margin-bottom: 0;
-        padding: $unit-base $unit-base 0 $unit-base;
-        font-family: $font-1;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: $base-line-height;
-        color: $black;
-
+        width: 33.3%;
+        height: auto;
+        padding: 15px 10px 20px 10px;
+        background-color: $white;
+        border: 1px solid #DFDFDF;
+        display: inline;
+  
         @include mq(lg) {
-
-         }
-
+          width: 49.95%;
+        }
+  
         @include mq(md) {
-
+          width: 49.90%;
         }
-
+  
         @include mq(sm) {
-          padding: $unit-base $unit-xs 0 22px;
+          width: 100%;
         }
-      }
-
-      h4 {
-        float: left;
-        width: 90%;
-        margin-top: 4px;
-        padding: 0 $unit-base 0 $unit-base;
-        font-family: $font-1;
-        font-size: 17px;
-        font-style: italic;
-        font-weight: 500;
-        line-height: $base-line-height;
-        color: $purple-potion;
-        text-transform: none;
-
-        @include mq(md) {
-          font-size: 17px;
-        }
-
-        @include mq(sm) {
-          padding: 0 $unit-sm 0 22px;
-          font-size: 17px;
-          font-weight: bold;
-        }
-      }
-
-      h5 {
-        float: left;
-        width: 90%;
-        padding: 0 $unit-base 0 $unit-base;
-        font-family: $font-1;
-        font-size: $font-size-base;
-        font-weight: 400;
-        line-height: $base-line-height;
-        color: #888;
-
-        @include mq(md) {
-          font-size: $font-size-sm;
-        }
-
-        @include mq(sm) {
-          padding: 0 $unit-xxl 0 22px;
-          font-size: $font-size-sm;
-        }
-      }
-
-      a {
-        font-size: $font-size-sm;
-        text-decoration: none;
-      }
-
-      .buttons {
-        float: left;
-        width: 100%;
-        padding: 0 $unit-base $unit-base $unit-base;
-
-        a {
-          @include mq(sm) {
-            float: left;
-            width: 48%;
-            padding: $unit-xs $unit-sm;
+  
+        .button-footer {
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          padding: 5px 0 0 5px;
+  
+          a {
+            @include mq(sm) {
+              float: left;
+              width: 48%;
+              padding: $unit-xs $unit-sm;
+            }
+  
+            margin-right: 5px;
+          
+            &.btn-link--details {
+              background-color: $purple-potion;
+              color: $white;
+              border: 1px solid $purple-potion;
+          
+              &:hover {
+                background-color: lighten($purple-potion, 15%);
+                color: $white;
+                border: 1px solid lighten($purple-potion, 15%);
+              }
+            }
+          
+            &.btn-link--site {
+              background-color: $blue-potion;
+              color: $white;
+              border: 1px solid $blue-potion;
+          
+              &:hover {
+                background-color: darken($blue-potion, 15%);
+                color: $white;
+                border: 1px solid darken($blue-potion, 15%);
+              }
+            }
+          
+            &.btn-link--behance {
+              background-color: $green-potion;
+              color: $black;
+              border: 1px solid $green-potion;
+          
+              &:hover {
+                background-color: lighten($green-potion, 15%);
+                border: 1px solid lighten($green-potion, 15%);
+              }
+            }
+          
+            &.btn-link--github {
+              background-color: $medium-gray;
+              color: $white;
+              border: 1px solid $medium-gray;
+          
+              &:hover {
+                background-color: darken($medium-gray, 15%);
+                color: $white;
+                border: 1px solid darken($medium-gray, 15%);
+              }
+            }
+          }
+  
+          .button-secondary {
+            margin-left: $unit-xs;
           }
         }
-
-        .button-secondary {
-          margin-left: $unit-xs;
+  
+        .portfolio-new-label {
+          position: absolute;
+          top: 12px;
+          right: 12px;
+          padding: 3px 6px;
+          background-color: orange;
+          color: white;
+          font-size: 11px;
+          font-weight: 600;
+          text-transform: uppercase;
         }
-
-        @include mq(sm) {
-          padding: $unit-base;
+  
+        &.new {
+          &:after {
+            content: "NEW";
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            width: auto;
+            height: auto;
+            padding: 2px 5px;
+            font-family: $font-1;
+            font-size: 12px;
+            font-weight: bold;
+            background: $orange-potion;
+            color: white;
+          }
         }
-      }
-
-      .image {
-        padding: $unit-base;
+  
+        h1, h2, h3, h4, h5, h6 {
+          font-family: $font-1;
+          text-align: left;
+        }
+  
+        h2 {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1 100%;
+          margin: 0;
+          padding-left: 5px;
+          font-family: Roboto;
+          font-size: 30px;
+          font-weight: 900;
+          text-transform: none;
+          color: black;
+        }
+  
+        h3 {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1 100%;
+          margin-bottom: 0;
+          padding: 0 20px 0 5px;
+          font-family: $font-1;
+          font-size: 17px;
+          font-weight: 400;
+          line-height: $base-line-height;
+          color: $purple-potion;
+          text-transform: none;
+  
+          @include mq(lg) {
+  
+           }
+  
+          @include mq(md) {
+  
+          }
+  
+          @include mq(sm) {
+  
+          }
+        }
+  
+        h4 {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1 100%;
+          margin-top: 0;
+          margin-bottom: 5px;
+          padding: 0 $unit-base 0 5px;
+          font-family: $font-1;
+          font-size: 17px;
+          font-style: italic;
+          font-weight: 500;
+          line-height: $base-line-height;
+          color: $purple-potion;
+          text-transform: none;
+  
+          @include mq(md) {
+            font-size: 17px;
+          }
+  
+          @include mq(sm) {
+            font-size: 17px;
+            font-weight: bold;
+          }
+        }
+  
+        h5 {
+          display: flex;
+          flex-wrap: wrap;
+          flex: 1 100%;
+          padding: 0 $unit-base 0 5px;
+          font-family: $font-1;
+          font-size: $font-size-base;
+          font-weight: 400;
+          line-height: $base-line-height;
+          color: #888;
+          text-transform: none;
+  
+          @include mq(md) {
+            font-size: $font-size-sm;
+          }
+  
+          @include mq(sm) {
+            font-size: $font-size-sm;
+          }
+        }
+  
+        a {
+          font-size: $font-size-sm;
+          text-decoration: none;
+        }
+  
+        .image {
+          padding: 5px;
+        }
       }
     }
   }

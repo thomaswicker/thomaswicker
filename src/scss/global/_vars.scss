@@ -6,14 +6,6 @@
     \_/_/   \_\_| \_\___/_/   \_\____/|_____|_____|____/
 */
 
-
-/* ==========================================================================
-   %% Import your fonts here %%
-   ========================================================================== */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100,500,500italic,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300);
-
 /* ==========================================================================
    %% Global Color Palette %%
    ========================================================================== */
@@ -89,8 +81,8 @@ $font-1: 'Roboto', sans-serif;
 //base san-serif font family
 $font-2: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 
-//secondary custom font family
-$font-3: 'Roboto Slab', serif;
+//serif font family
+$font-3: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;;
 
 //often used for code blocks
 $font-4: FontAwesome;
@@ -116,13 +108,13 @@ $h6-size: $font-size-xs;
    %% Spacing Units %%
    ========================================================================== */
 
-
-$unit-tiny:   2px;
-$unit-xxs:    5px;
+$unit-micro:  2px;
+$unit-tiny:   5px;
+$unit-xxs:    8px;
 $unit-xs:     10px;
-$unit-sm:     15px;
-$unit-base:   20px;
-$unit-md:     25px;
+$unit-sm:     12px;
+$unit-base:   15px;
+$unit-md:     20px;
 $unit-lg:     30px;
 $unit-xl:     35px;
 $unit-xxl:    50px;

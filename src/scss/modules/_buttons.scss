@@ -344,46 +344,6 @@
   }
 }
 
-.btn-portfolio {
-  padding: 7px 10px !important;
-
-  &.btn-link--behance {
-    background-color: $purple-potion;
-    color: $white;
-    border: 1px solid $purple-potion;
-
-    &:hover {
-      background-color: lighten($purple-potion, 15%);
-      color: $white;
-      border: 1px solid lighten($purple-potion, 15%);
-    }
-  }
-
-  &.btn-link--site {
-    background-color: $blue-potion;
-    color: $white;
-    border: 1px solid $blue-potion;
-
-    &:hover {
-      background-color: darken($blue-potion, 15%);
-      color: $white;
-      border: 1px solid darken($blue-potion, 15%);
-    }
-  }
-
-  &.btn-link--github {
-    background-color: $medium-gray;
-    color: $white;
-    border: 1px solid $medium-gray;
-
-    &:hover {
-      background-color: darken($medium-gray, 15%);
-      color: $white;
-      border: 1px solid darken($medium-gray, 15%);
-    }
-  }
-}
-
 .btn-photography {
   color: $red-potion;
   background-color: transparent;

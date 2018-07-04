@@ -89,3 +89,18 @@
 @import "recipe";
 @import "resume";
 @import "contact";
+
+html {
+  &.html-portfolio-single {
+    overflow: hidden !important;
+  }
+}
+
+body {
+  position: relative;
+  background-color: #FFFFFF;
+
+  &.body-for-portfolio-single-item {
+    overflow: hidden !important;
+  }
+}
