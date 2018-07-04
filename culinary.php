@@ -17,7 +17,7 @@ Template Name: Culinary Template
 
         <div class="bcl--intro-block-left">
           <h2>
-            A FEW OF MY FAVORITES...
+            A Few of My Favorites...
           </h2>
 
           <p class='body-text'>

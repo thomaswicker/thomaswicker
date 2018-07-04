@@ -8,20 +8,20 @@
     <?php get_template_part('partials/portfolio-tiles'); ?>
 </section>
 
-<section class='body-portfolio-single' id='body-portfolio-single'>
-    <section class="portfolio-navigation-buttons">
-        <?php
-        $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
-        echo "<a href='$url' class='btn btn-purple btn-mini btn-back-to-portfolio'>
-        <i class='fa fa-arrow-left' aria-hidden='true'></i>Back to Portfolio</a>"; 
-        ?>
-    </section>
+<section class="portfolio-navigation-buttons">
+    <?php
+    $url = htmlspecialchars($_SERVER['HTTP_REFERER']);
+    echo "<a href='$url' class='btn btn-green btn-mini btn-back-to-portfolio'>
+    <i class='fa fa-arrow-left' aria-hidden='true'></i>Back to Portfolio</a>"; 
+    ?>
+</section>
 
+<section class='body-portfolio-single' id='body-portfolio-single'>
     <?php /* The loop */ ?>
     <?php while ( have_posts() ) : the_post(); ?>
         <section class="portfolio-item-details">
             <?php if( get_field('itemcompany') ): ?>
-                <h1><?php the_field( 'itemcompany' ); ?></h1>
+                <h1><?php the_title(); ?></h1>
             <?php endif; ?>
 
             <?php if( get_field('itemtype') ): ?>

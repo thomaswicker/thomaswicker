@@ -28,7 +28,7 @@ Template Name: Resume Template
     <section class='' id='my-resume--left'>
       <div class='medium-12' id='skills-block'>
         <h2 class="professional-experience-header">
-          SKILLS
+          Skills
         </h2>
 
         <div class='medium-12 large-12 columns' id='skills-block-left'>
@@ -236,7 +236,7 @@ Template Name: Resume Template
       <section class='medium-12 columns' id='my-references-container-experience'>
         <aside class='medium-12 large-12 columns' id='my-references'>
           <h2 class="professional-experience-header">
-            REFERENCES
+            References
           </h2>
 
 
@@ -454,7 +454,7 @@ Template Name: Resume Template
 
       <div class='medium-12 large-12 columns' id='my-experience' class="my-experience-container">
         <h2 class="professional-experience-header">
-          PROFESSIONAL EXPERIENCE
+          Professional Experience
         </h2>
 
         <span class='resume-experience-block'>

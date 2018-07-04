@@ -15,6 +15,52 @@ a[href=""], a[href="#"] {
   display: none;
 }
 
+.portfolio-navigation-buttons {
+  display: flex;
+  flex: 1 100%;
+  justify-content: flex-end;
+
+  .btn-back-to-portfolio {
+    position: fixed;
+    top: 30px;
+    right: 25%;
+    max-height: 30px;
+    min-width: 200px;
+    max-height: 50px;
+    padding: $unit-xxs 14px;
+    z-index: 100000001;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @include mq(lg) {
+      top: $unit-lg;
+      right: 15%;
+    }
+  
+    @include mq(md) {
+      top: $unit-tiny;
+      right: 10%;
+      max-height: 50px;
+      padding: $unit-sm 14px;
+    }
+  
+    @include mq(sm) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      max-height: 50px;
+      padding: 12px 14px;
+    }
+  
+    i {
+      margin-right: 4px;
+    }
+  }
+}
+
 .body-portfolio-single {
   position: fixed;
   top: 0;
@@ -25,61 +71,42 @@ a[href=""], a[href="#"] {
   flex-wrap: wrap;
   width: 100%;
   padding: $unit-tiny 25% $unit-md 25%;
-  background-color: rgba(0, 0, 0, .95);
+  background-color: rgba(0, 0, 0, .88);
   border-top: 5px solid $purple-potion;
   padding-bottom: $unit-jumbo;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: 10000000;
 
+  @include mq(lg) {
+    padding: $unit-tiny 10% $unit-md 10%;
+  }
+
+  @include mq(md) {
+    padding: $unit-tiny 10% $unit-md 10%;
+  }
+
   @include mq(sm) {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding: 20px;
     border-top: 0px solid $purple-potion;
   }
 
-  .portfolio-navigation-buttons {
-    display: flex;
-    flex: 1 100%;
-    justify-content: flex-end;
-
-    .btn-back-to-portfolio {
-      &:hover {
-        text-decoration: none;
-      }
-    
-      @include mq(md) {
-    
-      }
-    
-      @include mq(sm) {
-        position: relative;
-        top: -$unit-tiny;
-        padding: $unit-sm 14px;
-        z-index: 100000001;
-      }
-    
-      i {
-        margin-right: 4px;
-      }
-    }
-  }
-
   .portfolio-item-details {
-    display: flex;
-    flex: 1 100%;
-    flex-wrap: wrap;
+    float: left;
+    width: 100%;
+    padding-top: 30px;
 
     @include mq(md) {
-      padding-top: 45px;
+      padding-top: 20px;
     }
 
     @include mq(sm) {
-      padding-top: 45px;
+      padding-top: 20px;
     }
 
     h2, h3, h4, h5, p {
-      flex: 1 100%;
+      float: left;
+      width: 100%;
       font-family: $font-1;
       color: white;
       text-align: left;
@@ -90,14 +117,25 @@ a[href=""], a[href="#"] {
       flex-wrap: wrap;
       flex: 1;
       margin: 0;
+      padding-right: 200px;
       font-family: $font-1;
       font-size: 40px;
       font-weight: 900;
       color: $white;
       text-transform: none;
+      line-height: 125%;
 
       span {
         flex: 1 100%;        
+      }
+
+      @include mq(md) {
+        padding-top: 20px;
+      }
+  
+      @include mq(sm) {
+        padding-top: 20px;
+        padding-right: 20px;
       }
     }
 
@@ -105,7 +143,7 @@ a[href=""], a[href="#"] {
       display: flex;
       flex-wrap: wrap;
       flex: 0;
-      margin: 0 0 10px 0;
+      margin: $unit-base 0 10px 0;
       font-family: $font-1;
       font-size: 20px;
       font-weight: 700;
@@ -119,6 +157,7 @@ a[href=""], a[href="#"] {
 
     h3 {
       margin-top: 6px;
+      font-size: 18px;
       color: $purple-potion;
       text-transform: none;
     }
@@ -181,29 +220,42 @@ a[href=""], a[href="#"] {
     }
 
     .portfolio-item-images {
-      display: flex;
-      flex-wrap: wrap;
+      display: inline;
       text-align: center;
 
       li {
+        padding-top: $unit-base;
+        padding-bottom: $unit-base;
+
         &.full-width {
-          flex: 1 100%;
+          float: left;
+          width: 100%;
         }
 
         &.half-width {
-          flex: 1 50%;
+          float: left;
+          width: 50%;
         }
 
         &.quarter-width {
-          flex: 1 25%;
+          float: left;
+          width: 25%;
         }
 
         img {
           width: 100%;
-          border: 3px solid #111111;
+          border: 4px solid rgba(255, 255, 255, 1);
           margin: 5px;
           box-shadow: 2px 2px 4px #000000;
         }
+      }
+
+      @include mq(md) {
+        display: inline;
+      }
+
+      @include mq(sm) {
+        display: inline;
       }
     }
   
@@ -298,7 +350,7 @@ a[href=""], a[href="#"] {
         float: left;
         width: 33.3%;
         height: auto;
-        padding: 15px 10px 20px 10px;
+        padding: 25px $unit-xs $unit-md $unit-xs;
         background-color: $white;
         border: 1px solid #DFDFDF;
         display: inline;
@@ -331,14 +383,14 @@ a[href=""], a[href="#"] {
             margin-right: 5px;
           
             &.btn-link--details {
-              background-color: $purple-potion;
+              background-color: $green-potion;
               color: $white;
-              border: 1px solid $purple-potion;
+              border: 1px solid $green-potion;
           
               &:hover {
-                background-color: lighten($purple-potion, 15%);
+                background-color: lighten($green-potion, 15%);
                 color: $white;
-                border: 1px solid lighten($purple-potion, 15%);
+                border: 1px solid lighten($green-potion, 15%);
               }
             }
           
@@ -553,6 +605,13 @@ a[href=""], a[href="#"] {
     margin-top: $unit-lg;
   }
 }
+
+h2.professional-experience-header {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: none;
+}
+
 /* ========================================================
    END PORTFOLIO PAGE SCSS
    ======================================================== */

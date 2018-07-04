@@ -915,9 +915,6 @@
 
       <p class="quotee">~ Milton Glaser</p>
     </div>
-
-    <a href="https://www.behance.net/thomaswicker" target="blank" class="superheo-btn-behance" title="View my Behance" aria-label="Link to view my Behance portfolio"><i class="fa fa-behance-square" style="margin-right: 3px;" aria-hidden="true"></i>
- VIEW MY BEHANCE</a>
   </section>
 
   <ul class="subnav portfolio" role="navigation" aria-label="social media navigation">

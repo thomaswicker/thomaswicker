@@ -621,7 +621,7 @@ html {
   overflow-x: hidden; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: #ffffff;
   letter-spacing: normal;
   overflow-y: auto; }
@@ -1664,7 +1664,7 @@ _______   ______  _____
   text-transform: uppercase !important; }
 
 .font-1 {
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
 
 .font-2 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -1823,7 +1823,7 @@ _______   ______  _____
       font-size: 16px; } }
 
 .body-text-small {
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -1832,7 +1832,7 @@ _______   ______  _____
   margin-bottom: 1.1em; }
 
 .body-text-large {
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1977,7 +1977,7 @@ _______   ______  _____
   padding-top: 30px; }
 
 .shim.top.xl {
-  padding-top: 35px; }
+  padding-top: 40px; }
 
 .shim.top.jumbo {
   padding-top: 75px; }
@@ -1998,7 +1998,7 @@ _______   ______  _____
   padding-right: 30px; }
 
 .shim.right.xl {
-  padding-right: 35px; }
+  padding-right: 40px; }
 
 .shim.right.jumbo {
   padding-right: 75px; }
@@ -2019,7 +2019,7 @@ _______   ______  _____
   padding-bottom: 30px; }
 
 .shim.bottom.xl {
-  padding-bottom: 35px; }
+  padding-bottom: 40px; }
 
 .shim.bottom.jumbo {
   padding-bottom: 75px; }
@@ -2040,7 +2040,7 @@ _______   ______  _____
   padding-left: 30px; }
 
 .shim.left.xl {
-  padding-left: 35px; }
+  padding-left: 40px; }
 
 .shim.left.jumbo {
   padding-left: 75px; }
@@ -2061,7 +2061,7 @@ _______   ______  _____
   padding: 30px; }
 
 .shim.all.xl {
-  padding: 35px; }
+  padding: 40px; }
 
 .shim.all.jumbo {
   padding: 75px; }
@@ -2085,7 +2085,7 @@ _______   ______  _____
   margin-top: 30px; }
 
 .margin.top.xl {
-  margin-top: 35px; }
+  margin-top: 40px; }
 
 .margin.top.jumbo {
   margin-top: 75px; }
@@ -2106,7 +2106,7 @@ _______   ______  _____
   margin-right: 30px; }
 
 .margin.right.xl {
-  margin-right: 35px; }
+  margin-right: 40px; }
 
 .margin.right.jumbo {
   margin-right: 75px; }
@@ -2127,7 +2127,7 @@ _______   ______  _____
   margin-bottom: 30px; }
 
 .margin.bottom.xl {
-  margin-bottom: 35px; }
+  margin-bottom: 40px; }
 
 .margin.bottom.jumbo {
   margin-bottom: 75px; }
@@ -2148,7 +2148,7 @@ _______   ______  _____
   margin-left: 30px; }
 
 .margin.left.xl {
-  margin-left: 35px; }
+  margin-left: 40px; }
 
 .margin.left.jumbo {
   margin-left: 75px; }
@@ -2429,7 +2429,7 @@ html[data-useragent*='MSIE 10.0'] .alert {
   padding: 15px 20px;
   border: 2px solid #2a98c6;
   border-radius: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-align: center;
@@ -2524,21 +2524,21 @@ html[data-useragent*='MSIE 10.0'] .alert {
   .btn.btn-small, .button.btn-small, button.btn-small {
     min-width: 0;
     padding: .75rem 1.25rem;
-    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px; }
   .btn.btn-mini, .button.btn-mini, button.btn-mini {
     min-width: 0;
     padding: 7px 14px;
-    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px; }
   .btn.btn-small, .button.btn-small, button.btn-small {
     min-width: 0;
     padding: 12px 12px;
-    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 13px; }
@@ -2550,7 +2550,7 @@ html[data-useragent*='MSIE 10.0'] .alert {
     min-width: 0;
     padding-left: 4.5rem;
     padding-right: 4.5rem;
-    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 13px; }
@@ -2713,7 +2713,7 @@ html[data-useragent*='MSIE 10.0'] .alert {
   padding: 15px 20px;
   border: 2px solid #85b933 !important;
   border-radius: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 500;
   text-align: center;
@@ -2756,7 +2756,7 @@ code, .code {
   border: 1px solid #4aafd9;
   background-color: #f3fafc;
   letter-spacing: normal;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   margin: .5em 0em 1.2em 0em;
@@ -2766,7 +2766,7 @@ code, .code {
     color: #1a5e7a;
     padding: 1px 4px 1px 4px;
     font-weight: 700;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", Arial, Helvetica, sans-serif; }
     code span.tabspace0, .code span.tabspace0 {
       margin-left: 0px; }
     code span.tabspace1, .code span.tabspace1 {
@@ -2804,7 +2804,7 @@ code, .code {
   background-color: #bbbbbb;
   padding: 1px 4px 1px 4px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", Arial, Helvetica, sans-serif; }
   .highlight.primary {
     background-color: #2a98c6; }
   .highlight.secondary {
@@ -2826,7 +2826,7 @@ code, .code {
 .post-comments {
   float: left;
   width: 100%;
-  margin-top: 35px; }
+  margin-top: 40px; }
 
 /*
   _____ ___  ____  __  __ ____
@@ -3007,7 +3007,7 @@ h1 {
     margin-bottom: 1.3em; }
 
 h2 {
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 40px; }
@@ -3159,7 +3159,7 @@ figure > img {
    %% Bullet Lists %%
    ========================================================================== */
 .bulleted-list {
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 0.95rem;
@@ -3256,7 +3256,7 @@ figure > img {
 
 .modal-body {
   padding: 0px 40px 40px 40px;
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -3309,7 +3309,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
       float: left;
       padding-top: 14px;
       padding-left: 10px;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 16px;
       text-transform: uppercase;
       color: #ffffff; }
@@ -3343,7 +3343,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
       .superhero-nav ul li a {
         float: left;
         padding: 22px 15px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 13px;
         font-weight: 500;
         color: #ffffff;
@@ -3398,7 +3398,7 @@ _   _    ___     _____ ____    _  _____ ___ ___  _   _
             float: left;
             width: 100%;
             padding: 15px 15px;
-            font-family: "Roboto", sans-serif;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
             font-size: 14px;
             font-weight: 600;
             color: white;
@@ -3758,7 +3758,7 @@ ____   ___  ____ _____ ____
           max-width: 300px; }
       .body-post .bp--inner .bp--left h1 {
         margin-bottom: 0;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 20px;
         font-weight: 500;
         color: #000000;
@@ -3771,7 +3771,7 @@ ____   ___  ____ _____ ____
           line-height: 135%; }
       .body-post .bp--inner .bp--left h2 {
         float: left;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 30px;
         font-weight: 400; }
         @media only screen and (max-width: 640px) {
@@ -3780,7 +3780,7 @@ ____   ___  ____ _____ ____
             margin-bottom: 0;
             line-height: 135%; } }
         .body-post .bp--inner .bp--left h2 a {
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 20px;
           font-weight: 500;
           color: #000000;
@@ -3839,7 +3839,7 @@ ____   ___  ____ _____ ____
     float: left;
     width: 100%;
     margin: 40px 0 25px 0;
-    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 28px; }
@@ -3861,7 +3861,7 @@ ____   ___  ____ _____ ____
     #body-search #body-search-inner h2 a {
       float: left;
       width: 100%;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 24px;
       font-weight: 500;
       text-transform: none;
@@ -3997,7 +3997,7 @@ ____   ___  ____ _____ ____
     margin-top: 5px;
     margin-bottom: 5px;
     padding-top: 10px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #0DABA7;
@@ -4039,7 +4039,7 @@ ____   ___  ____ _____ ____
 .subnav {
   width: auto;
   position: absolute;
-  top: 35px;
+  top: 40px;
   right: 20px;
   z-index: 10000000; }
   .subnav li {
@@ -4201,7 +4201,7 @@ ____   ___  ____ _____ ____
       .superhero .sh--inner .my-info h1 {
         float: left;
         width: 100%;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 50px;
         font-weight: 200;
         color: white; }
@@ -4217,7 +4217,7 @@ ____   ___  ____ _____ ____
         float: left;
         width: 100%;
         margin-top: 0;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 24px;
         font-weight: 400;
         color: #2a98c6;
@@ -4473,7 +4473,7 @@ ____   ___  ____ _____ ____
         border: 0; }
       .body-recipe-archives .bra--inner .bra--left h1 {
         margin-bottom: 0;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 20px;
         font-weight: 500;
         color: #000000;
@@ -4489,7 +4489,7 @@ ____   ___  ____ _____ ____
         width: 100%;
         margin-top: 10px;
         margin-bottom: 25px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 24px;
         font-weight: 400; }
         @media only screen and (min-width: 640px) and (max-width: 1024px) {
@@ -4558,7 +4558,7 @@ ____   ___  ____ _____ ____
           .body-recipe-archives .bra--inner .bra--left .recipe-rating-and-title {
             width: 100%; } }
         .body-recipe-archives .bra--inner .bra--left .recipe-rating-and-title h3 a {
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 22px;
           color: #000000;
           text-transform: none; }
@@ -4621,7 +4621,7 @@ ____   ___  ____ _____ ____
           padding: 1.5rem 1.25rem 1.5rem 1.25rem; } }
       .body-recipe-archives .bra--inner .bra--right .alt-sidebar h3 {
         margin-top: 10px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 15px;
         font-weight: 600; }
       .body-recipe-archives .bra--inner .bra--right .alt-sidebar h4 {
@@ -4667,7 +4667,7 @@ ____   ___  ____ _____ ____
 
 h2 {
   margin: 30px 0 10px 0;
-  font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 28px; }
@@ -4792,7 +4792,11 @@ h2 {
           padding: 0 0 0 0; } }
       #body-home #body-home-inner .body-home-left h2 {
         position: relative;
-        top: -5px; }
+        top: -5px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+        text-transform: none; }
       #body-home #body-home-inner .body-home-left .how-i-work {
         float: left;
         width: 100%;
@@ -4829,11 +4833,12 @@ h2 {
           #body-home #body-home-inner .body-home-left .how-i-work .hiw--right h3 {
             margin-top: 0;
             margin-bottom: 0;
-            font-size: 18px;
-            font-weight: 600;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
+            font-size: 28px;
+            font-weight: 900;
             line-height: 140%;
-            color: #000;
-            text-transform: uppercase; }
+            color: #000000;
+            text-transform: none; }
             @media only screen and (min-width: 640px) and (max-width: 1024px) {
               #body-home #body-home-inner .body-home-left .how-i-work .hiw--right h3 {
                 font-size: 22px; } }
@@ -4855,7 +4860,7 @@ h2 {
                 margin-left: 20px; } }
             #body-home #body-home-inner .body-home-left .how-i-work .hiw--right ul li {
               margin-top: 10px;
-              font-family: "Roboto", sans-serif;
+              font-family: "Roboto", Arial, Helvetica, sans-serif;
               font-size: 16px;
               line-height: 145%; }
               @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -4876,7 +4881,7 @@ h2 {
         max-width: 850px;
         padding-left: 15px;
         margin-bottom: 10px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 30px;
         font-weight: 300;
         color: #2a98c6;
@@ -5067,7 +5072,7 @@ h2 {
         float: left;
         width: 100%; }
         #lastfm-container .widget_lastfm_widget .lastfm-row .lastfm-col small {
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 13px;
           line-height: 145%; }
           #lastfm-container .widget_lastfm_widget .lastfm-row .lastfm-col small:first-child {
@@ -5290,7 +5295,7 @@ h2 {
           float: left;
           width: 100%;
           margin-bottom: 10px;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 20px;
           font-weight: 500;
           line-height: 140%;
@@ -5440,7 +5445,7 @@ nav.custom-pagination .page-numbers {
         padding-left: 15px;
         padding-right: 15px; } }
     #body-about #body-about-inner h2 {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 24px;
       font-weight: 400;
       color: #000000; }
@@ -5453,7 +5458,7 @@ nav.custom-pagination .page-numbers {
       max-width: 1000px;
       margin-bottom: 15px;
       padding-left: 15px;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-weight: 200;
       color: #a06eaf;
       line-height: 120%;
@@ -5547,7 +5552,7 @@ nav.custom-pagination .page-numbers {
       color: #000000; }
   .recipe-item h3 {
     float: left;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600; }
   .recipe-item section {
@@ -5567,7 +5572,7 @@ nav.custom-pagination .page-numbers {
         max-width: 450px;
         margin-right: 8px;
         margin-bottom: 0;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 22px;
         font-weight: 600;
         color: #000000;
@@ -5710,7 +5715,7 @@ nav.custom-pagination .page-numbers {
           .recipe-item section.recipe-grouped .recipe-notes .recipe-details .recipe-prep-time span.the-value, .recipe-item section.recipe-grouped .recipe-notes .recipe-details .recipe-cook-time span.the-value, .recipe-item section.recipe-grouped .recipe-notes .recipe-details .recipe-total-portions span.the-value {
             float: left;
             margin-left: 5px;
-            font-family: "Roboto", sans-serif;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
             font-size: 14px;
             font-weight: 500;
             color: #888888; }
@@ -5859,7 +5864,7 @@ nav.custom-pagination .page-numbers {
     padding: 10px 20px;
     background-color: #2a98c6;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 13px;
     text-transform: uppercase;
     border: 0px; }
@@ -5922,6 +5927,10 @@ nav.custom-pagination .page-numbers {
               width: 100%;
               padding-left: 10px;
               padding-right: 15px; } }
+          #body-culinary #body-culinary-inner .body-culinary-left .bcl--intro-block .bcl--intro-block-left h2 {
+            font-size: 35px;
+            font-weight: 900;
+            text-transform: none; }
         #body-culinary #body-culinary-inner .body-culinary-left .bcl--intro-block .bcl--intro-block-right {
           float: left;
           width: 200px; }
@@ -5962,7 +5971,7 @@ nav.custom-pagination .page-numbers {
           float: left;
           width: 100%;
           margin-bottom: 10px;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 20px;
           font-weight: 500;
           line-height: 140%;
@@ -5986,7 +5995,7 @@ nav.custom-pagination .page-numbers {
           border: 1px solid #c4e294; } }
       #body-culinary #body-culinary-inner .body-culinary-right .alt-sidebar h3 {
         margin-top: 10px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 15px;
         font-weight: 600; }
       #body-culinary #body-culinary-inner .body-culinary-right .alt-sidebar h4 {
@@ -6233,6 +6242,42 @@ nav.custom-pagination .page-numbers {
 a[href=""], a[href="#"] {
   display: none; }
 
+.portfolio-navigation-buttons {
+  display: flex;
+  flex: 1 100%;
+  justify-content: flex-end; }
+  .portfolio-navigation-buttons .btn-back-to-portfolio {
+    position: fixed;
+    top: 30px;
+    right: 25%;
+    max-height: 30px;
+    min-width: 200px;
+    max-height: 50px;
+    padding: 8px 14px;
+    z-index: 100000001; }
+    .portfolio-navigation-buttons .btn-back-to-portfolio:hover {
+      text-decoration: none; }
+    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+      .portfolio-navigation-buttons .btn-back-to-portfolio {
+        top: 30px;
+        right: 15%; } }
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+      .portfolio-navigation-buttons .btn-back-to-portfolio {
+        top: 5px;
+        right: 10%;
+        max-height: 50px;
+        padding: 12px 14px; } }
+    @media only screen and (max-width: 640px) {
+      .portfolio-navigation-buttons .btn-back-to-portfolio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-height: 50px;
+        padding: 12px 14px; } }
+    .portfolio-navigation-buttons .btn-back-to-portfolio i {
+      margin-right: 4px; }
+
 .body-portfolio-single {
   position: fixed;
   top: 0;
@@ -6243,44 +6288,36 @@ a[href=""], a[href="#"] {
   flex-wrap: wrap;
   width: 100%;
   padding: 5px 25% 20px 25%;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.88);
   border-top: 5px solid #a06eaf;
   padding-bottom: 75px;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   z-index: 10000000; }
+  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .body-portfolio-single {
+      padding: 5px 10% 20px 10%; } }
+  @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    .body-portfolio-single {
+      padding: 5px 10% 20px 10%; } }
   @media only screen and (max-width: 640px) {
     .body-portfolio-single {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
+      padding: 20px;
       border-top: 0px solid #a06eaf; } }
-  .body-portfolio-single .portfolio-navigation-buttons {
-    display: flex;
-    flex: 1 100%;
-    justify-content: flex-end; }
-    .body-portfolio-single .portfolio-navigation-buttons .btn-back-to-portfolio:hover {
-      text-decoration: none; }
-    @media only screen and (max-width: 640px) {
-      .body-portfolio-single .portfolio-navigation-buttons .btn-back-to-portfolio {
-        position: relative;
-        top: -5px;
-        padding: 12px 14px;
-        z-index: 100000001; } }
-    .body-portfolio-single .portfolio-navigation-buttons .btn-back-to-portfolio i {
-      margin-right: 4px; }
   .body-portfolio-single .portfolio-item-details {
-    display: flex;
-    flex: 1 100%;
-    flex-wrap: wrap; }
+    float: left;
+    width: 100%;
+    padding-top: 30px; }
     @media only screen and (min-width: 640px) and (max-width: 1024px) {
       .body-portfolio-single .portfolio-item-details {
-        padding-top: 45px; } }
+        padding-top: 20px; } }
     @media only screen and (max-width: 640px) {
       .body-portfolio-single .portfolio-item-details {
-        padding-top: 45px; } }
+        padding-top: 20px; } }
     .body-portfolio-single .portfolio-item-details h2, .body-portfolio-single .portfolio-item-details h3, .body-portfolio-single .portfolio-item-details h4, .body-portfolio-single .portfolio-item-details h5, .body-portfolio-single .portfolio-item-details p {
-      flex: 1 100%;
-      font-family: "Roboto", sans-serif;
+      float: left;
+      width: 100%;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       color: white;
       text-align: left; }
     .body-portfolio-single .portfolio-item-details h1 {
@@ -6288,19 +6325,28 @@ a[href=""], a[href="#"] {
       flex-wrap: wrap;
       flex: 1;
       margin: 0;
-      font-family: "Roboto", sans-serif;
+      padding-right: 200px;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 40px;
       font-weight: 900;
       color: #ffffff;
-      text-transform: none; }
+      text-transform: none;
+      line-height: 125%; }
       .body-portfolio-single .portfolio-item-details h1 span {
         flex: 1 100%; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-portfolio-single .portfolio-item-details h1 {
+          padding-top: 20px; } }
+      @media only screen and (max-width: 640px) {
+        .body-portfolio-single .portfolio-item-details h1 {
+          padding-top: 20px;
+          padding-right: 20px; } }
     .body-portfolio-single .portfolio-item-details h2 {
       display: flex;
       flex-wrap: wrap;
       flex: 0;
-      margin: 0 0 10px 0;
-      font-family: "Roboto", sans-serif;
+      margin: 15px 0 10px 0;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 20px;
       font-weight: 700;
       color: #ffffff;
@@ -6309,17 +6355,18 @@ a[href=""], a[href="#"] {
         flex: 1 100%; }
     .body-portfolio-single .portfolio-item-details h3 {
       margin-top: 6px;
+      font-size: 18px;
       color: #a06eaf;
       text-transform: none; }
     .body-portfolio-single .portfolio-item-details h4 {
       margin-top: 0;
       margin-bottom: 10px;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 22px; }
     .body-portfolio-single .portfolio-item-details h5 {
       flex: 1 100%;
       padding: 15px 15px 0 0;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 13px;
       font-weight: 400;
       line-height: 135%;
@@ -6329,7 +6376,7 @@ a[href=""], a[href="#"] {
       font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
     .body-portfolio-single .portfolio-item-details .portfolio-item-type {
       padding: 3px 15px 0 0;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-size: 15px;
       font-style: italic;
       font-weight: 500;
@@ -6351,20 +6398,31 @@ a[href=""], a[href="#"] {
       font-size: 13px;
       line-height: 140%; }
     .body-portfolio-single .portfolio-item-details .portfolio-item-images {
-      display: flex;
-      flex-wrap: wrap;
+      display: inline;
       text-align: center; }
-      .body-portfolio-single .portfolio-item-details .portfolio-item-images li.full-width {
-        flex: 1 100%; }
-      .body-portfolio-single .portfolio-item-details .portfolio-item-images li.half-width {
-        flex: 1 50%; }
-      .body-portfolio-single .portfolio-item-details .portfolio-item-images li.quarter-width {
-        flex: 1 25%; }
-      .body-portfolio-single .portfolio-item-details .portfolio-item-images li img {
-        width: 100%;
-        border: 3px solid #111111;
-        margin: 5px;
-        box-shadow: 2px 2px 4px #000000; }
+      .body-portfolio-single .portfolio-item-details .portfolio-item-images li {
+        padding-top: 15px;
+        padding-bottom: 15px; }
+        .body-portfolio-single .portfolio-item-details .portfolio-item-images li.full-width {
+          float: left;
+          width: 100%; }
+        .body-portfolio-single .portfolio-item-details .portfolio-item-images li.half-width {
+          float: left;
+          width: 50%; }
+        .body-portfolio-single .portfolio-item-details .portfolio-item-images li.quarter-width {
+          float: left;
+          width: 25%; }
+        .body-portfolio-single .portfolio-item-details .portfolio-item-images li img {
+          width: 100%;
+          border: 4px solid white;
+          margin: 5px;
+          box-shadow: 2px 2px 4px #000000; }
+      @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        .body-portfolio-single .portfolio-item-details .portfolio-item-images {
+          display: inline; } }
+      @media only screen and (max-width: 640px) {
+        .body-portfolio-single .portfolio-item-details .portfolio-item-images {
+          display: inline; } }
 
 #portfolio-header {
   border-top: 5px solid #a06eaf; }
@@ -6417,7 +6475,7 @@ a[href=""], a[href="#"] {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 0 35px 0;
+    padding: 0 0 40px 0;
     overflow-x: hidden; }
     .body-portfolio .body-portfolio-inner .masonry-container {
       float: left;
@@ -6434,7 +6492,7 @@ a[href=""], a[href="#"] {
         float: left;
         width: 33.3%;
         height: auto;
-        padding: 15px 10px 20px 10px;
+        padding: 25px 10px 20px 10px;
         background-color: #ffffff;
         border: 1px solid #DFDFDF;
         display: inline; }
@@ -6460,13 +6518,13 @@ a[href=""], a[href="#"] {
                 width: 48%;
                 padding: 10px 12px; } }
             .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item .button-footer a.btn-link--details {
-              background-color: #a06eaf;
+              background-color: #85b933;
               color: #ffffff;
-              border: 1px solid #a06eaf; }
+              border: 1px solid #85b933; }
               .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item .button-footer a.btn-link--details:hover {
-                background-color: #c09fca;
+                background-color: #a9d464;
                 color: #ffffff;
-                border: 1px solid #c09fca; }
+                border: 1px solid #a9d464; }
             .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item .button-footer a.btn-link--site {
               background-color: #2a98c6;
               color: #ffffff;
@@ -6510,13 +6568,13 @@ a[href=""], a[href="#"] {
           width: auto;
           height: auto;
           padding: 2px 5px;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 12px;
           font-weight: bold;
           background: #f57e20;
           color: white; }
         .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h1, .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h2, .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h3, .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h4, .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h5, .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h6 {
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           text-align: left; }
         .body-portfolio .body-portfolio-inner .masonry-container .portfolio-item h2 {
           display: flex;
@@ -6535,7 +6593,7 @@ a[href=""], a[href="#"] {
           flex: 1 100%;
           margin-bottom: 0;
           padding: 0 20px 0 5px;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 17px;
           font-weight: 400;
           line-height: 135%;
@@ -6548,7 +6606,7 @@ a[href=""], a[href="#"] {
           margin-top: 0;
           margin-bottom: 5px;
           padding: 0 15px 0 5px;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 17px;
           font-style: italic;
           font-weight: 500;
@@ -6567,7 +6625,7 @@ a[href=""], a[href="#"] {
           flex-wrap: wrap;
           flex: 1 100%;
           padding: 0 15px 0 5px;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 13px;
           font-weight: 400;
           line-height: 135%;
@@ -6617,6 +6675,11 @@ a[href=""], a[href="#"] {
       width: 90%; } }
   .modules article img {
     margin-top: 30px; }
+
+h2.professional-experience-header {
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: none; }
 
 /* ========================================================
    END PORTFOLIO PAGE SCSS
@@ -7460,7 +7523,7 @@ button.mfp-close {
         .body-single-recipe .bsr--inner .bsr--left .recipe-item-single h3 {
           float: left;
           width: 100%;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 16px;
           font-weight: 600; }
         .body-single-recipe .bsr--inner .bsr--left .recipe-item-single section {
@@ -7588,7 +7651,7 @@ button.mfp-close {
           padding: 10px 20px;
           background-color: #2a98c6;
           color: white;
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 13px;
           text-transform: uppercase;
           border: 0px; }
@@ -7596,7 +7659,7 @@ button.mfp-close {
             background-color: #4aafd9; }
       .body-single-recipe .bsr--inner .bsr--left h1 {
         margin-bottom: 0;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 20px;
         font-weight: 500;
         color: #000000;
@@ -7609,7 +7672,7 @@ button.mfp-close {
           line-height: 135%; }
       .body-single-recipe .bsr--inner .bsr--left h2 {
         float: left;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 30px;
         font-weight: 400; }
         @media only screen and (max-width: 640px) {
@@ -7618,7 +7681,7 @@ button.mfp-close {
             margin-bottom: 0;
             line-height: 135%; } }
         .body-single-recipe .bsr--inner .bsr--left h2 a {
-          font-family: "Roboto", sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif;
           font-size: 20px;
           font-weight: 500;
           color: #000000;
@@ -7711,7 +7774,7 @@ button.mfp-close {
         font-weight: 600; }
       .body-single-recipe .bsr--inner .bsr--right .recipe-item-single .item-value {
         font-size: 30px;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-weight: 300;
         color: white; }
       .body-single-recipe .bsr--inner .bsr--right .recipe-item-single .recipe-prep-time, .body-single-recipe .bsr--inner .bsr--right .recipe-item-single .recipe-cook-time, .body-single-recipe .bsr--inner .bsr--right .recipe-item-single .recipe-total-portions {
@@ -7887,7 +7950,7 @@ button.mfp-close {
       width: 100%;
       padding-left: 15px;
       padding-right: 15px;
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-style: italic;
       font-weight: 500;
       color: #ffffff; }
@@ -7907,7 +7970,7 @@ button.mfp-close {
           #job-status p span span:last-child a {
             color: #ffffff;
             text-decoration: underline;
-            font-family: "Roboto", sans-serif;
+            font-family: "Roboto", Arial, Helvetica, sans-serif;
             font-weight: 400; }
             #job-status p span span:last-child a:hover {
               color: #ffffff;
@@ -7943,11 +8006,11 @@ button.mfp-close {
       float: left;
       width: 100%;
       color: #000000;
-      font-family: Roboto, sans-serif, Helvetica, Arial, sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
       font-style: normal;
       margin: 35px 0 2px;
-      font-size: 26px;
-      font-weight: 500; }
+      font-size: 32px;
+      font-weight: 900; }
       @media only screen and (min-width: 90.1441px) and (max-width: 1992px) {
         #my-resume--left #skills-block h2 {
           font-size: 26px; } }
@@ -7972,7 +8035,7 @@ button.mfp-close {
       float: left;
       width: 100%;
       margin: 20px 0 15px 0;
-      font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+      font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
       font-style: normal;
       font-weight: 600;
       font-size: 19px;
@@ -7980,13 +8043,13 @@ button.mfp-close {
       color: #000000; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         #my-resume--left #skills-block h3 {
-          font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 17px; } }
       @media only screen and (max-width: 640px) {
         #my-resume--left #skills-block h3 {
-          font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+          font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
           font-style: normal;
           font-weight: 600;
           font-size: 18px;
@@ -8036,7 +8099,7 @@ button.mfp-close {
   width: 75%;
   margin: 0 0 20px 0;
   padding-left: 50px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #000000; }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -8054,7 +8117,7 @@ button.mfp-close {
     float: left;
     width: 100%;
     max-width: 1500px;
-    font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -8068,7 +8131,7 @@ button.mfp-close {
         width: 100%;
         height: auto;
         padding: 1rem 0 1rem 0;
-        font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 0.9rem; } }
@@ -8076,7 +8139,11 @@ button.mfp-close {
       padding: 0; }
       #my-resume--right #mrcd--content #my-objective h2 {
         position: relative;
-        top: -5px; }
+        top: -5px;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: 900;
+        text-transform: none; }
       #my-resume--right #mrcd--content #my-objective p {
         float: left;
         margin-top: 1.8rem;
@@ -8142,8 +8209,9 @@ button.mfp-close {
     margin-top: 20px;
     margin-bottom: 0;
     color: #000000;
-    font-family: "Roboto", sans-serif;
-    font-size: 22px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
     text-transform: none; }
     @media only screen and (min-width: 1025px) and (max-width: 1440px) {
       .resume-experience-block h3 {
@@ -8427,7 +8495,7 @@ button.mfp-close {
             clear: right;
             width: 100%;
             color: #006EA2;
-            font-family: "Roboto", sans-serif; }
+            font-family: "Roboto", Arial, Helvetica, sans-serif; }
           #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p1 {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif, Helvetica, Arial, sans-serif;
             font-style: normal;
@@ -8450,7 +8518,7 @@ button.mfp-close {
                 font-weight: 600;
                 font-size: 22px; } }
           #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p2 {
-            font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+            font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -8459,18 +8527,18 @@ button.mfp-close {
             text-align: center; }
             @media only screen and (min-width: 640px) and (max-width: 1024px) {
               #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p2 {
-                font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+                font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 16px; } }
             @media only screen and (max-width: 640px) {
               #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p2 {
-                font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+                font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 18px; } }
           #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p3 {
-            font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+            font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
             font-style: italic;
             font-weight: 400;
             font-size: 15px;
@@ -8478,7 +8546,7 @@ button.mfp-close {
             text-align: center; }
             @media only screen and (min-width: 640px) and (max-width: 1024px) {
               #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p3 {
-                font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+                font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 15px; } }
@@ -8486,7 +8554,7 @@ button.mfp-close {
               #my-references-container-experience #my-references .ref-card .ref-card-top .ref-card-top-right .ref-card-p3 {
                 margin-top: 5px;
                 margin-bottom: 15px;
-                font-family: "Roboto", sans-serif, Helvetica, Arial, sans-serif;
+                font-family: "Roboto", Arial, Helvetica, sans-serif, Helvetica, Arial, sans-serif;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 15px; } }
@@ -8553,6 +8621,10 @@ button.mfp-close {
   @media only screen and (max-width: 640px) {
     #contact-header {
       border-top: 3px solid #0DABA7; } }
+  #contact-header h2 {
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: none; }
 
 div.wpcf7 {
   float: left;
@@ -8567,7 +8639,7 @@ div.wpcf7 {
 .wpcf7-form-control-wrap {
   float: left;
   width: 100%;
-  margin-top: 5px; }
+  margin-top: 10px; }
 
 #body-contact {
   background-color: #ffffff;
@@ -8583,7 +8655,7 @@ div.wpcf7 {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 0 35px 0;
+  padding: 0 0 40px 0;
   background-color: #ffffff; }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     #body-contact-inner {
@@ -8598,14 +8670,14 @@ div.wpcf7 {
 .body-contact-left {
   float: left;
   width: 300px;
-  padding: 0 12px 0 35px;
+  padding: 0 12px 0 40px;
   text-align: center; }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
     .body-contact-left {
-      padding: 0 12px 0 35px; } }
+      padding: 0 12px 0 40px; } }
   @media only screen and (min-width: 640px) and (max-width: 1024px) {
     .body-contact-left {
-      padding: 0 12px 0 35px; } }
+      padding: 0 12px 0 40px; } }
   @media only screen and (max-width: 640px) {
     .body-contact-left {
       width: 100%;
@@ -8630,11 +8702,12 @@ div.wpcf7 {
       float: left;
       width: 100%;
       margin: 95px 0 2px 0;
-      font-family: "Roboto", sans-serif;
-      font-size: 20px;
+      font-family: "Roboto", Arial, Helvetica, sans-serif;
+      font-size: 24px;
       font-style: normal;
-      font-weight: 500;
-      color: #000000; }
+      font-weight: 900;
+      color: #000000;
+      text-transform: none; }
       @media only screen and (max-width: 640px) {
         .body-contact-left .contact-info-container h3 {
           display: none; } }
@@ -8647,6 +8720,7 @@ div.wpcf7 {
       .body-contact-left .contact-info-container p.name {
         margin-top: 20px; }
         .body-contact-left .contact-info-container p.name strong {
+          font-size: 20px;
           font-weight: 600 !important; }
         @media only screen and (max-width: 640px) {
           .body-contact-left .contact-info-container p.name {
@@ -8677,7 +8751,7 @@ div.wpcf7 {
   @media only screen and (max-width: 640px) {
     .body-contact-left .contact-page-email-btn a {
       width: 100%;
-      margin-top: 35px;
+      margin-top: 40px;
       font-size: 1rem !important; } }
   .body-contact-left .google-map {
     float: left;
@@ -8717,6 +8791,10 @@ div.wpcf7 {
     .body-contact-right {
       width: 100%;
       padding: 30px 0 30px 0; } }
+  .body-contact-right h2 {
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: none; }
   .body-contact-right .btn {
     border: 0; }
   .body-contact-right .body-text {
@@ -8795,7 +8873,7 @@ div.wpcf7 {
     padding: 12px 20px;
     border: 2px solid #0DABA7;
     border-radius: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 500;
     text-align: center;
@@ -8813,7 +8891,7 @@ div.wpcf7 {
     @media only screen and (max-width: 640px) {
       .body-contact-right .wpcf7-submit {
         width: 100%;
-        font-family: "Roboto", sans-serif;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
         font-size: 15px; } }
   .body-contact-right .wpcf7 .ajax-loader {
     float: left; }
@@ -8832,7 +8910,10 @@ div.wpcf7 {
   .body-contact-right .wpcf7-form label {
     float: left;
     width: 100%;
-    margin: 12px 0 0 0; }
+    margin: 12px 0 0 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600; }
   .body-contact-right .wpcf7-not-valid-tip {
     float: left;
     width: 100%;

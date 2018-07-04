@@ -24,7 +24,7 @@ Template Name: Contact Template
           </strong>
         </p>
         <p class="title">
-          Senior Software Developer
+          Sr UI/UX Developer
         </p>
         <p class="address">
           Aurora / CO 80016

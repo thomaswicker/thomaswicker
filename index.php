@@ -43,13 +43,13 @@
               <a href='http://www.apple.com/macbook-pro/' target='blank' title='link to apple spec page on Macbook Pro' aria-label="Link to Apple spec page on Macbook Pro">
                 2016 2.7GHz Space Gray MacBook Pro (16GB RAM and 512GB PCIe-based SSD)
               </a>
-              - running MacOs Sierra
+              - running MacOs High Sierra
             </li>
             <li>
-              <a href='http://www.atom.io/' target='blank' title='link to Atom Editor' aria-label="Link to Atom Editor">
-                Atom Editor
+              <a href='https://code.visualstudio.com/' target='blank' title='link to Atom Editor' aria-label="Link to Atom Editor">
+                VS Code
               </a>
-              is my IDE of choice although I use VIM now and again to appease my inner nerd. Apparently VS Code is the new kid on the block, so I guess I should look at that soon as well. :)
+              is my IDE of choice. I made the switch this year away from Atom Editor and haven't looked back. I do also enjoy using VIM from time to time to appease my inner nerd. :)
             </li>
             <li>
               Command line, command line and more command line...
@@ -62,10 +62,7 @@
               <a href='https://www.sketchapp.com/' target='blank' title='link to Sketch app for Mac' aria-label="Link to Sketch app">
                 Sketch App
               </a>
-              ,
-              <a href='https://www.adobe.com/products/illustrator.html?promoid=KLXLT' target='blank' title='link to Aobe Illustrator' aria-label="Link to Adobe Illustrator">
-                Adobe Illustrator
-              </a>
+              
               and the
               <a href='http://www.invisionapp.com/' target='blank' title='link to Invision App' aria-label="Link to Invision App">
                 Invision Prototyping App

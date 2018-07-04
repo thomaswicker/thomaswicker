@@ -5,6 +5,8 @@
 
           $args = array(
               'post_type' => 'portfolio_item',
+              'public' => true,
+              '_builtin' => false,
               'posts_per_page' => -1
           );
 
@@ -22,7 +24,7 @@
 
           <?php if( get_field('itemcompany') ): ?>
             <h2>
-                <span class="name"><?php the_field( 'itemcompany' ); ?></span>
+                <span class="name"><?php the_title(); ?></span>
             </h2>
           <?php endif; ?>
 

@@ -222,11 +222,11 @@
       float: left;
       width: 100%;
       color: $black;
-      font-family: Roboto, sans-serif, Helvetica, Arial, sans-serif;
+      font-family: $font-1;
       font-style: normal;
       margin: 35px 0 2px;
-      font-size: 26px;
-      font-weight: 500;
+      font-size: 32px;
+      font-weight: 900;
 
       @include mq(xl) {
         font-size: 26px;
@@ -398,6 +398,10 @@
       h2 {
         position: relative;
         top: -5px;
+        font-family: $font-1;
+        font-size: 35px;
+        font-weight: 900;
+        text-transform: none;
       }
 
   		p {
@@ -508,7 +512,8 @@
     margin-bottom: 0;
     color: $black;
     font-family: $font-1;
-    font-size: 22px;
+    font-size: 26px;
+    font-weight: 600;
     text-transform: none;
 
     @include mq(lg) {
