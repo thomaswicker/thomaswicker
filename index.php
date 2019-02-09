@@ -12,7 +12,7 @@
       </h2>
 
       <blockquote>
-        Currently working as a Principal Software Architect for <a href="http://info.drillinginfo.com" title="Link to www.drilling.info" aria-label="Link to www.drilling.info">Drilling Info</a> based in Littleton, CO.
+        Currently working as a Principal UX Designer for <a href="http://info.drillinginfo.com" title="Link to www.drilling.info" aria-label="Link to www.drilling.info">Drilling Info</a> based in Littleton, CO.
       </blockquote>
 
       <p class="body-text">
@@ -20,7 +20,11 @@
       </p>
 
       <p class="body-text">
-        Fast forward to present day, I now have over 15 years of hands-on real world experience in UI/UX design, rapid prototyping and front-end/mid-tier development. I have created websites and applications for a wide range of industries ranging from apparel to health care to the financial industry to oil and gas. I focus my attention on implementing sound design principles basing all of my decisions on a blend of user driven need and clean semantic code. In 2005 I opened a small freelance development shop in Denver, <a href="http://www.xiri.io" title="Link to www.xiri.io" aria-label="Link to www.xiri.io">XIRI Media, LLC.</a> Through this company I entertain small and large contracts for businesses around Denver and throughout the US. In the little spare time I seem to have these days... I develop personal software applications and work on open source projects that interest me.
+        Fast forward to present day, I now have over 15 years of hands-on real world experience in UI/UX design, rapid prototyping and front-end/mid-tier development. I have created websites and applications for a wide range of industries ranging from apparel to health care to the financial industry to oil and gas. I focus my attention on implementing sound design principles basing all of my decisions on a blend of user driven need and clean semantic code.
+      </p>
+
+      <p class="body-text">
+        In 2005 I opened a small freelance development shop in Denver, <a href="http://www.xiri.io" title="Link to www.xiri.io" aria-label="Link to www.xiri.io">XIRI Media, LLC.</a> Through this company I entertain small and large contracts for businesses around Denver and throughout the US. In the little spare time I seem to have these days... I develop personal software applications and work on open source projects that interest me.
       </p>
 
       <aside class="how-i-work">
@@ -34,16 +38,10 @@
           </h3>
           <ul>
             <li>
-              <a href='https://www.apple.com/imac-pro/' target='blank' title='Link to apple spec page on iMac Pro' aria-label="Link to Apple spec page on iMac Pro">
-                2017 5k iMac Pro (3.2GHz 8 Core Intel Xeon with 32GB DDR4 RAM and 1TB SSD) + 2 LG full of 4k monitor goodness
-              </a>
-              - running MacOs High Sierra with 16TB of Drobo dual redundant NAS storage
-            </li>
-            <li>
               <a href='http://www.apple.com/macbook-pro/' target='blank' title='link to apple spec page on Macbook Pro' aria-label="Link to Apple spec page on Macbook Pro">
-                2016 2.7GHz Space Gray MacBook Pro (16GB RAM and 512GB PCIe-based SSD)
+                2018 2.6GHz Six Core Intel i7 Space Gray MacBook Pro (32GB RAM and 1TB PCIe-based SSD)
               </a>
-              - running MacOs High Sierra
+              - running MacOs Mojave
             </li>
             <li>
               <a href='https://code.visualstudio.com/' target='blank' title='link to Atom Editor' aria-label="Link to Atom Editor">
@@ -107,7 +105,7 @@
           </div>
           <div id='lastfm-title-right'>
             <h4>
-              LISTENING TO
+              LISTENING TO 🔥
             </h4>
           </div>
         </div>
@@ -131,7 +129,7 @@
           </div>
           <div id='instagram-title-right'>
             <h4>
-              RECENT PHOTOS
+              RECENT PHOTOS 📷
             </h4>
           </div>
         </div>
@@ -145,6 +143,153 @@
           </div>
 
           <?php endif; ?>
+        </section>
+      </div>
+
+      <div class='medium-12' id='goat-container'>
+        <div id='goat-title'>
+          <div id='goat-title-left'>
+            <i class="fa fa-instagram"></i>
+          </div>
+          <div id='goat-title-right'>
+            <h4>
+              MY TOP 10 📽
+            </h4>
+          </div>
+        </div>
+
+        <section id="goat-sidebar">
+          <ul class="movie-list">
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0151804" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--office-space.png" alt="Favorite Movies - Office Space">
+                </div>
+
+                <div class="movie-title">
+                  <div>Office Space</div>
+                  <div>1999</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0110912" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--pulp-fiction.png" alt="Favorite Movies - Pulp Fiction">
+                </div>
+
+                <div class="movie-title">
+                  <div>Pulp Fiction</div>
+                  <div>1994</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt1156398" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--zombieland.png" alt="Favorite Movies - Zombieland">
+                </div>
+
+                <div class="movie-title">
+                  <div>Zombieland</div>
+                  <div>2009</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0375679" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--crash.png" alt="Favorite Movies - Crash">
+                </div>
+
+                <div class="movie-title">
+                  <div>Crash</div>
+                  <div>2005</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0119396" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--jackie-brown.png" alt="Favorite Movies - Jackie Brown">
+                </div>
+
+                <div class="movie-title">
+                  <div>Jackie Brown</div>
+                  <div>1997</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0319262" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--day-after-tomorrow.png" alt="Favorite Movies - The Day After Tomorrow">
+                </div>
+
+                <div class="movie-title">
+                  <div>The Day After Tomorrow</div>
+                  <div>2004</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0120689" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--green-mile.png" alt="Favorite Movies - The Green Mile">
+                </div>
+
+                <div class="movie-title">
+                  <div>The Green Mile</div>
+                  <div>1999</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0128442" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--rounders.png" alt="Favorite Movies - Rounders">
+                </div>
+
+                <div class="movie-title">
+                  <div>Rounders</div>
+                  <div>1998</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt1028532" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--hachi.png" alt="Favorite Movies - Hachi - A Dog's Tale">
+                </div>
+
+                <div class="movie-title">
+                  <div>Hachi - A Dog's Tale</div>
+                  <div>2010</div>
+                </div>
+              </a>
+            </li>
+
+            <li class="movie-row">
+              <a href="https://www.imdb.com/title/tt0111161" target="_blank">
+                <div class="movie-img">
+                  <img src="http://www.thomaswicker.com/wp-content/themes/thomaswicker/img/goat-movies/goat--shawshank-redemption.png" alt="Favorite Movies - The Shawshank Redemption">
+                </div>
+
+                <div class="movie-title">
+                  <div>The Shawshank Redemption</div>
+                  <div>1994</div>
+                </div>
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
 

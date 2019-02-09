@@ -911,8 +911,8 @@
 
     <div class="my-info">
       <h1>Thomas Wicker</h1>
-      <h2>Senior Front End UI/UX Developer</h2>
-      <p class="quote">Code monkey, $AAPL enthusiast, lifelong learner, entrepreneur, gambler, golfer, fine artist, photographer, father of two healthy girls</p>
+      <h2>Full Stack Designer</h2>
+      <p class="quote">Code monkey, UX specialist, $AAPL enthusiast, lifelong learner, entrepreneur, gambler, golfer, fine artist, photographer, father of two healthy girls</p>
     </div>
   </section>
 

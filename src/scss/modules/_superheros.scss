@@ -129,8 +129,9 @@
         width: 100%;
         font-family: $font-1;
         font-size: $h1-size;
-        font-weight: 200;
+        font-weight: 900;
         color: white;
+        text-transform: none;
 
         @include mq(md) {
           font-size: 35px;

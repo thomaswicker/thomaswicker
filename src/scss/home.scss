@@ -1,3 +1,6 @@
+@import "global/mixins";
+@import "global/vars";
+
 /*
   _   _  ___  __  __ _____
  | | | |/ _ \|  \/  | ____|
@@ -125,7 +128,8 @@
         }
 
         @include mq(sm) {
-          width: 310px;
+          width: 100%;
+          text-align: center;
 
           .slider_1 {
             position: relative;
@@ -166,7 +170,7 @@
         position: relative;
         top: -5px;
         font-family: $font-1;
-        font-size: 35px;
+        font-size: 30px;
         font-weight: 900;
         text-transform: none;
       }
@@ -187,11 +191,21 @@
           @include mq(md) {
             width: 100%;
             padding-top: 20px;
+            text-align: center;
+
+            img {
+            }
           }
 
           @include mq(sm) {
             width: 100%;
             padding-top: 20px;
+            text-align: center;
+
+            img {
+              width: 100%;
+              max-width: none !important;
+            }
           }
 
           img {
@@ -658,6 +672,149 @@
 		}
 
 		#instagram-title-right {
+			float: left;
+			width: calc(100% - 45px);
+
+			@include mq(md) {
+        width: calc(100% - 45px);
+			}
+
+			h4 {
+				@include font($font-2, normal, $font-size-md, $font-weight-semibold);
+				padding: $unit-xs 0 0 0;
+        font-weight: 600;
+				color: $white;
+
+				@include mq(md) {
+          padding: $unit-xs 0 0 0;
+				}
+
+				@include mq(sm) {
+          padding: $unit-xs 0 0 0;
+				}
+			}
+		}
+	}
+}
+
+
+#goat-container {
+	float: left;
+  margin-top: $unit-sm;
+	border: 2px solid $purple-potion;
+  background-color: $white;
+  display: flex;
+  flex-wrap: wrap;
+
+	@include mq (sm) {
+		width: 100%;
+	}
+
+  #goat-sidebar {
+    background-color: $black;
+
+    ul.movie-list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 10px;
+
+      li {
+        display: flex;
+        flex: 1 100%;
+        margin-top: 5px;
+        padding-top: 5px;
+        border-bottom: 1px solid #333333;
+
+        &:last-child {
+          border-bottom: 0px;
+        }
+
+        a {
+          display: flex;
+          flex: 1 100%;
+          transition: all 120ms ease-in-out;
+          background-color: black;
+
+          &:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+
+            @include mq(md) {
+              transform: scale(1);
+            }
+
+            @include mq(sm) {
+              transform: scale(1);
+            }
+          }
+        }
+
+        .movie-img {
+          flex: 1 15%;
+          padding-left: 5px;
+          text-align: center;
+
+          img {
+            max-width: 30px;
+          }
+        }
+        .movie-title {
+          flex: 1 85%;
+          padding-top: 5px;
+          padding-left: 10px;
+
+          div {
+            &:first-child {
+              font-family: $font-1;
+              font-size: 15px;
+              font-weight: 600;
+              color: white;
+            }
+
+            &:last-child {
+              padding-top: 5px;
+              font-family: $font-1;
+              font-size: 12px;
+              font-weight: 500;
+              color: #CDCDCD;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .zoom-goat-widget__items {
+    padding: 3px;
+  }
+
+  .zoom-goat-widget__item {
+    margin-bottom: 0 !important;
+  }
+
+	#goat-title {
+		float: left;
+		width: 100%;
+		padding: 0;
+		background-color: $purple-potion;
+
+		#goat-title-left {
+			float: left;
+			width: 45px;
+      padding: $unit-xxs 0 0 0;
+			text-align: center;
+
+			@include mq(md) {
+
+			}
+
+      .fa {
+        color: white;
+        font-size: 22px;
+      }
+		}
+
+		#goat-title-right {
 			float: left;
 			width: calc(100% - 45px);
 

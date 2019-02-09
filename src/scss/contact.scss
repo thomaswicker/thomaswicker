@@ -1,3 +1,6 @@
+@import "global/mixins";
+@import "global/vars";
+
 /*
    ____ ___  _   _ _____  _    ____ _____
   / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
@@ -6,20 +9,6 @@
   \____\___/|_| \_| |_/_/   \_\____| |_|
 
 */
-
-#contact-header {
-  border-top: 5px solid $yellow-potion;
-
-  @include mq(sm) {
-    border-top: 3px solid $yellow-potion;
-  }
-
-  h2 {
-    font-size: 35px;
-    font-weight: 900;
-    text-transform: none;
-  }
-}
 
 div.wpcf7 {
   float: left;
@@ -282,7 +271,7 @@ div.wpcf7 {
 	}
 
   h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     text-transform: none;
   }

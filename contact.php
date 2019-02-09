@@ -34,7 +34,7 @@ Template Name: Contact Template
           <a class='' href='mailto:thomas@thomaswicker.com' title="Email me"></a>
         </div>
 
-        <div class='google-map'><iframe frameborder='0' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24571.598854494034!2d-104.8441364!3d39.662094100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c880a27879cbb%3A0x52429aef1755f930!2sAurora%2C+CO+80014!5e0!3m2!1sen!2sus!4v1413480283525'></iframe></div>
+        <div class='google-map'><iframe frameborder='0' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24571.598854494034!2d-104.8441364!3d39.662094100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c880a27879cbb%3A0x52429aef1755f930!2sAurora%2C+CO+80016!5e0!3m2!1sen!2sus!4v1413480283525'></iframe></div>
       </div>
     </section>
 

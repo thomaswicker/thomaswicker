@@ -916,7 +916,7 @@
       <p class="quotee">~ Steve Jobs</p>
     </div>
 
-    <a href='<?php bloginfo( 'template_directory' ); ?>/pdfs/resume-072617.pdf' target="_blank" rel="noopener" id="superheo-btn-resume" class="superheo-btn-resume active" title="Download my resume" aria-label="Link to download my resume"><i class="fa fa-download" style="margin-right: 3px;" aria-hidden="true"></i>
+    <a href='<?php bloginfo( 'template_directory' ); ?>/resume/resume.pdf' target="_blank" rel="noopener" id="superheo-btn-resume" class="superheo-btn-resume active" title="Download my resume" aria-label="Link to download my resume"><i class="fa fa-download" style="margin-right: 3px;" aria-hidden="true"></i>
    DOWNLOAD RESUME</a>
   </section>
 

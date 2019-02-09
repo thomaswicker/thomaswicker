@@ -18,7 +18,7 @@ Template Name: Resume Template
         <i class='fa fa-exclamation-circle'></i>
         Employment Status:
       </span>
-      <span> Working full time and happily employed. I am however still taking on new freelance contracts in my free time. Please <a href="/contact">contact me</a> directly if you have something you would like a quote on.</span>
+      <span> Working full time and happily employed. I am however still taking on new freelance contracts in my free time. </br>Please <a href="/contact">contact me</a> directly if you have something you would like a quote on.</span>
     </span>
   </p>
 </aside>
@@ -28,7 +28,7 @@ Template Name: Resume Template
     <section class='' id='my-resume--left'>
       <div class='medium-12' id='skills-block'>
         <h2 class="professional-experience-header">
-          Skills
+          Magic Powers
         </h2>
 
         <div class='medium-12 large-12 columns' id='skills-block-left'>
@@ -463,7 +463,7 @@ Template Name: Resume Template
           </div>
           <div class='reb--right columns'>
             <h3>
-              Principal Software Architect & UI/UX
+              Principal UX Designer
             </h3>
             <h4>
               <a href='https://info.drillinginfo.com/' target='_blank' rel="noopener">

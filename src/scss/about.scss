@@ -1,3 +1,6 @@
+@import "global/mixins";
+@import "global/vars";
+
 /*
     _    ____   ___  _   _ _____
    / \  | __ ) / _ \| | | |_   _|
@@ -6,7 +9,6 @@
 /_/   \_\____/ \___/ \___/  |_|
 
 */
-
 
 #about-header {
   border-top: 5px solid $purple-potion;
