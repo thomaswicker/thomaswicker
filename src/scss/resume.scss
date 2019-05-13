@@ -195,7 +195,7 @@
   float: left;
   width: 25%;
 	text-align: left;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-left: 0;
   padding-right: 20px;
 
@@ -219,7 +219,12 @@
 	#skills-block {
 		float: left;
 		width: 100%;
-		padding-bottom: 1.7rem;
+    padding-bottom: 1.7rem;
+    
+    .certification-container {
+      width: 100%;
+      text-align: center;
+    }
 
     h2 {
       float: left;
@@ -432,7 +437,7 @@
   display: block;
 
   &.no-bottom-border {
-    border-bottom: 0px;
+    border-bottom: 0;
   }
 
   .columns {
@@ -440,6 +445,7 @@
   }
 
   h3 {
+    font-size: 22px;
     font-weight: 500;
   }
 
@@ -979,7 +985,7 @@ button.orbit-next {
   }
 }
 
-.adobe, .html, .css, .sass, .javascript, .react, .aws, .angular, .commandline, .haml, .sktech, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
+.adobe, .html, .css, .sass, .javascript, .react, .aws, .angular, .commandline, .haml, .sktech, .rails, .git, .php, .heroku, .db, .uxtesting, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
 	 -webkit-transition: width 4s ease !important;
 	 -moz-transition: width 4s ease !important;
 	 -o-transition: width 4s ease !important;

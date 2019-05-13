@@ -27,79 +27,14 @@ Template Name: Resume Template
   <div id='body-resume-inner'>
     <section class='' id='my-resume--left'>
       <div class='medium-12' id='skills-block'>
+        <div class="certification-container">
+          <a href="https://www.nngroup.com/ux-certification/verify/"><img src="https://media.nngroup.com/nng-uxc-badge.png" width="200" height="174" border="0" style="border:none;"alt="UX Certification Badge from Nielsen Norman Group" /></a>
+        </div>
+
         <h2 class="professional-experience-header">
           Magic Powers
         </h2>
 
-        <div class='medium-12 large-12 columns' id='skills-block-left'>
-          <h3>
-            FRONT END
-          </h3>
-          <div class='skills-top'>
-            html5
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='html progress-bar progress-frontend' role='progressbar' style='width: {{ html5 }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            haml
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='haml progress-bar progress-frontend' role='progressbar' style='width: {{ haml }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            css3/css
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='css progress-bar progress-frontend' role='progressbar' style='width: {{ css }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            sass/less
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='sass progress-bar progress-frontend' role='progressbar' style='width: {{ sass }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            javascript
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='javascript progress-bar progress-frontend' role='progressbar' style='width: {{ javascript }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            react
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='react progress-bar progress-frontend' role='progressbar' style='width: {{ react }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            angularjs
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='angular progress-bar progress-frontend' role='progressbar' style='width: {{ angular }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            wordpress
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='wordpress progress-bar progress-frontend' role='progressbar' style='width: {{ wordpress }}'></div>
-            </div>
-          </div>
-        </div>
         <div class='medium-12 large-12 columns' id='skills-block-middle'>
           <h3>
             UI/UX
@@ -121,11 +56,11 @@ Template Name: Resume Template
             </div>
           </div>
           <div class='skills-top'>
-            bootstrap, foundation, and other frameworks
+            usability testing
           </div>
           <div class='skills-bottom'>
             <div class='progress'>
-              <div class='zurb progress-bar progress-uiux' role='progressbar' style='width: {{ zurb }}'></div>
+              <div class='uxtesting progress-bar progress-uiux' role='progressbar' style='width: {{ uxtesting }}'></div>
             </div>
           </div>
           <div class='skills-top'>
@@ -144,22 +79,7 @@ Template Name: Resume Template
               <div class='agile progress-bar progress-uiux' role='progressbar' style='width: {{ agile }}'></div>
             </div>
           </div>
-          <div class='skills-top'>
-            prototyping tools, invision, flinto
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='rapidproto progress-bar progress-uiux' role='progressbar' style='width: {{ rapidproto }}'></div>
-            </div>
-          </div>
-          <div class='skills-top'>
-            anything adobe
-          </div>
-          <div class='skills-bottom'>
-            <div class='progress'>
-              <div class='adobe progress-bar progress-uiux' role='progressbar' style='width: {{ adobe }}'></div>
-            </div>
-          </div>
+          
           <div class='skills-top'>
             sketch app
           </div>
@@ -168,7 +88,94 @@ Template Name: Resume Template
               <div class='sketch progress-bar progress-uiux' role='progressbar' style='width: {{ sketch }}'></div>
             </div>
           </div>
+
+          <div class='skills-top'>
+            prototyping tools, invision, figma
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='rapidproto progress-bar progress-uiux' role='progressbar' style='width: {{ rapidproto }}'></div>
+            </div>
+          </div>
+
+          <div class='skills-top'>
+            adobe illustrator, photoshop, indesign
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='adobe progress-bar progress-uiux' role='progressbar' style='width: {{ adobe }}'></div>
+            </div>
+          </div>
         </div>
+
+        <div class='medium-12 large-12 columns' id='skills-block-left'>
+          <h3>
+            FRONT END
+          </h3>
+          <div class='skills-top'>
+            html5
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='html progress-bar progress-frontend' role='progressbar' style='width: {{ html5 }}'></div>
+            </div>
+          </div>
+
+          <div class='skills-top'>
+            haml
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='haml progress-bar progress-frontend' role='progressbar' style='width: {{ haml }}'></div>
+            </div>
+          </div>
+
+          <div class='skills-top'>
+            css3/css
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='css progress-bar progress-frontend' role='progressbar' style='width: {{ css }}'></div>
+            </div>
+          </div>
+
+          <div class='skills-top'>
+            sass/less
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='sass progress-bar progress-frontend' role='progressbar' style='width: {{ sass }}'></div>
+            </div>
+          </div>
+          
+          <div class='skills-top'>
+            javascript
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='javascript progress-bar progress-frontend' role='progressbar' style='width: {{ javascript }}'></div>
+            </div>
+          </div>
+
+          <div class='skills-top'>
+            angularjs
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='angular progress-bar progress-frontend' role='progressbar' style='width: {{ angular }}'></div>
+            </div>
+          </div>
+
+          <div class='skills-top'>
+            wordpress
+          </div>
+          <div class='skills-bottom'>
+            <div class='progress'>
+              <div class='wordpress progress-bar progress-frontend' role='progressbar' style='width: {{ wordpress }}'></div>
+            </div>
+          </div>
+        </div>
+
         <div class='medium-12 large-12 columns' id='skills-block-right'>
           <h3>
             BACKEND & DEV TOOLS
@@ -467,7 +474,7 @@ Template Name: Resume Template
             </h3>
             <h4>
               <a href='https://info.drillinginfo.com/' target='_blank' rel="noopener">
-                DrillingInfo, Inc. - Littleton, CO
+                Drillinginfo, Inc. - Littleton, CO
               </a>
             </h4>
             <h5>
@@ -483,7 +490,7 @@ Template Name: Resume Template
               Key part of team building out a new International product that will serve the unique needs of our International clients.
             </p>
             <p class='body-text'>
-              Leading the effort with management and others to build out a dedicated UI/UX department within Drilling Info to better focus on the customer experience and how to improve overall usability for the customer.
+              Leading the effort with management and others to build out a dedicated UI/UX department within Drillinginfo to better focus on the customer experience and how to improve overall usability for the customer.
             </p>
             <p class='body-text'>
               Pioneering a new Living Styleguide for all DI applications which serves as the single source of truth for all designers/developers/vendors when working with the DI brand in both print and digital applications.

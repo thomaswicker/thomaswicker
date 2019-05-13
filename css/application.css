@@ -5613,8 +5613,7 @@ h2 {
       margin-bottom: 2rem;
       height: auto;
       min-height: 62.5rem;
-      background-color: #e6f4fa;
-      border: 1px solid #92cee8; }
+      background-color: #ffffff; }
       @media only screen and (min-width: 640px) and (max-width: 1024px) {
         #body-home #body-home-inner .body-home-right {
           padding: 2rem 1rem 3rem 1rem; } }
@@ -9761,7 +9760,7 @@ button.mfp-close {
   float: left;
   width: 25%;
   text-align: left;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-left: 0;
   padding-right: 20px; }
   @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -9782,6 +9781,9 @@ button.mfp-close {
     float: left;
     width: 100%;
     padding-bottom: 1.7rem; }
+    #my-resume--left #skills-block .certification-container {
+      width: 100%;
+      text-align: center; }
     #my-resume--left #skills-block h2 {
       float: left;
       width: 100%;
@@ -9941,10 +9943,11 @@ button.mfp-close {
   border-bottom: 1px solid #d5d5d5;
   display: block; }
   .resume-experience-block.no-bottom-border {
-    border-bottom: 0px; }
+    border-bottom: 0; }
   .resume-experience-block .columns {
     padding-left: 0; }
   .resume-experience-block h3 {
+    font-size: 22px;
     font-weight: 500; }
   .resume-experience-block .reb--left {
     float: left;
@@ -10358,7 +10361,7 @@ button.mfp-close {
     .progress {
       height: 20px; } }
 
-.adobe, .html, .css, .sass, .javascript, .react, .aws, .angular, .commandline, .haml, .sktech, .rails, .git, .php, .heroku, .db, .zurb, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
+.adobe, .html, .css, .sass, .javascript, .react, .aws, .angular, .commandline, .haml, .sktech, .rails, .git, .php, .heroku, .db, .uxtesting, .wordpress, .ui, .ux, .rwd, .agile, .rapidproto {
   -webkit-transition: width 4s ease !important;
   -moz-transition: width 4s ease !important;
   -o-transition: width 4s ease !important;

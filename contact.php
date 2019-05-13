@@ -23,9 +23,6 @@ Template Name: Contact Template
             Thomas Wicker
           </strong>
         </p>
-        <p class="title">
-          Sr UI/UX Developer
-        </p>
         <p class="address">
           Aurora / CO 80016
         </p>

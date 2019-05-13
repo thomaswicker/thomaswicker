@@ -2,12 +2,17 @@
 
 // BEGIN - Load jQuery for thomaswicker.com
 
-if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-function my_jquery_enqueue() {
-   wp_deregister_script('jquery');
-   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js", false, null);
-   wp_enqueue_script('jquery');
+function my_init() {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', false, '2.24', true);
+		wp_enqueue_script('jquery');
+
+		// load a JS file from my theme: js/theme.js
+		wp_enqueue_script('my_script', get_bloginfo('template_url') . '/js/theme.js', array('jquery'), '1.0', true);
+	}
 }
+add_action('init', 'my_init');
 
 add_filter( 'jetpack_enable_open_graph', '__return_false' );
 

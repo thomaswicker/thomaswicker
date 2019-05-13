@@ -386,8 +386,7 @@
     	margin-bottom: 2rem;
     	height: auto;
     	min-height: 62.5rem;
-    	background-color: lighten($color-primary, 47%);
-    	border: 1px solid lighten($color-primary, 27%);
+    	background-color: $white;
 
     	@include mq(md) {
     		padding: 2rem 1rem 3rem 1rem;

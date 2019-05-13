@@ -12,7 +12,7 @@
       </h2>
 
       <blockquote>
-        Currently working as a Principal UX Designer for <a href="http://info.drillinginfo.com" title="Link to www.drilling.info" aria-label="Link to www.drilling.info">Drilling Info</a> based in Littleton, CO.
+        Currently working as a Principal UX Designer for <a href="http://info.drillinginfo.com" title="Link to www.drilling.info" aria-label="Link to www.drilling.info">Drillinginfo</a> based in Littleton, CO.
       </blockquote>
 
       <p class="body-text">
